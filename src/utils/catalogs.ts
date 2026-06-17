@@ -1,4 +1,5 @@
 import idCatalogJson from "../data/id-catalog.json"
+import itemCatalogJson from "../data/item-catalog.json"
 
 interface IdCatalogEntry {
   id: number
@@ -12,7 +13,34 @@ interface IdCatalog {
   typesById: Record<string, IdCatalogEntry>
 }
 
+interface ItemCatalogEntry {
+  id: number
+  idHex: string
+  name: string
+  category: string
+  localized?: {
+    caption?: { en?: string }
+    description?: { en?: string }
+    lore?: { en?: string }
+  }
+}
+
+interface ItemCatalog {
+  itemsById: Record<string, ItemCatalogEntry>
+}
+
+export interface ItemRef {
+  id: number
+  idHex: string
+  name?: string
+  category?: string
+  caption?: string
+  description?: string
+  displayName?: string
+}
+
 const idCatalog = idCatalogJson as IdCatalog
+const itemCatalog = itemCatalogJson as ItemCatalog
 
 export function resolveManagerName(key: number): string | null {
   const entry = idCatalog.managersById[String(key)]
@@ -35,6 +63,29 @@ export function formatHashKey(value: number): string {
   return `0x${u.toString(16).padStart(8, "0").toUpperCase()}`
 }
 
-export function formatItemRef(itemId: number): { id: number; idHex: string } {
-  return { id: itemId, idHex: formatHashKey(itemId) }
+export function formatItemRef(itemId: number): ItemRef {
+  const entry = itemCatalog.itemsById[String(itemId)]
+  if (!entry) {
+    return { id: itemId, idHex: formatHashKey(itemId) }
+  }
+
+  const out: ItemRef = {
+    id: itemId,
+    idHex: entry.idHex,
+    name: entry.name,
+    category: entry.category,
+  }
+
+  const caption = entry.localized?.caption?.en
+  if (caption) {
+    out.caption = caption
+    out.displayName = caption
+  }
+
+  const description = entry.localized?.description?.en
+  if (description) {
+    out.description = description
+  }
+
+  return out
 }
