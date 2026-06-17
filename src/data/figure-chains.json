@@ -1,0 +1,12 @@
+{
+  "maiden": {
+    "displaySource": "FG24",
+    "sources": ["FG24", "FG37", "FG34", "FG38", "FG35", "FG39", "FG36"]
+  },
+  "envoys": [
+    { "displaySource": "FG30", "sources": ["FG30", "FG40"] },
+    { "displaySource": "FG31", "sources": ["FG31", "FG41"] },
+    { "displaySource": "FG32", "sources": ["FG32", "FG42"] },
+    { "displaySource": "FG33", "sources": ["FG33", "FG43"] }
+  ]
+}
