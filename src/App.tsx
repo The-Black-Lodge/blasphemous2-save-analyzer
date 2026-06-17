@@ -1,10 +1,8 @@
-import './App.css'
-import SaveProvider from './components/SaveProvider'
+import "./App.css"
+import SaveProvider from "./components/SaveProvider"
 
 function App() {
-  return (
-<SaveProvider></SaveProvider>
-  )
+  return <SaveProvider></SaveProvider>
 }
 
 export default App

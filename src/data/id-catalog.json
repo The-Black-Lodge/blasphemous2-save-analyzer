@@ -1,0 +1,562 @@
+﻿{
+    "extractedAt":  "2026-06-16T19:20:03.0438646-04:00",
+    "hashAlgorithm":  "Unity IL2CPP GetLegacyNonRandomizedHashCode",
+    "source":  "Il2CppDumper dump.cs + GameAssembly decompile",
+    "managerCount":  29,
+    "typeCount":  81,
+    "managersById":  {
+                         "-749611200":  {
+                                            "id":  -749611200,
+                                            "idHex":  "0xD351D740",
+                                            "guid":  "Abilities"
+                                        },
+                         "531557624":  {
+                                           "id":  531557624,
+                                           "idHex":  "0x1FAEECF8",
+                                           "guid":  "CheckMissingDLCQuestItemsManager"
+                                       },
+                         "-1373800792":  {
+                                             "id":  -1373800792,
+                                             "idHex":  "0xAE1D76A8",
+                                             "guid":  "CherubsCountFix"
+                                         },
+                         "-1594727753":  {
+                                             "id":  -1594727753,
+                                             "idHex":  "0xA0F262B7",
+                                             "guid":  "CherubsManager"
+                                         },
+                         "2050676998":  {
+                                            "id":  2050676998,
+                                            "idHex":  "0x7A3AD906",
+                                            "guid":  "EQUIPMENT_MANAGER_ID"
+                                        },
+                         "-2039793652":  {
+                                             "id":  -2039793652,
+                                             "idHex":  "0x866B380C",
+                                             "guid":  "GoldenLumpsCountFix"
+                                         },
+                         "-606878797":  {
+                                            "id":  -606878797,
+                                            "idHex":  "0xDBD3C3B3",
+                                            "guid":  "ID_ABILITYLOCK_MANAGER"
+                                        },
+                         "-937038792":  {
+                                            "id":  -937038792,
+                                            "idHex":  "0xC825EC38",
+                                            "guid":  "ID_ACHIEVEMENTS_MANAGER"
+                                        },
+                         "-746443934":  {
+                                            "id":  -746443934,
+                                            "idHex":  "0xD3822B62",
+                                            "guid":  "ID_COMPLETION_MANAGER"
+                                        },
+                         "-1995221284":  {
+                                             "id":  -1995221284,
+                                             "idHex":  "0x891356DC",
+                                             "guid":  "ID_DIALOG_MANAGER"
+                                         },
+                         "751276915":  {
+                                           "id":  751276915,
+                                           "idHex":  "0x2CC79373",
+                                           "guid":  "ID_ENEMYSPAWN_MANAGER"
+                                       },
+                         "1956689667":  {
+                                            "id":  1956689667,
+                                            "idHex":  "0x74A0B703",
+                                            "guid":  "ID_GAMEMODE_MANAGER"
+                                        },
+                         "275776593":  {
+                                           "id":  275776593,
+                                           "idHex":  "0x10700451",
+                                           "guid":  "ID_GUILT_MANAGER"
+                                       },
+                         "-178794694":  {
+                                            "id":  -178794694,
+                                            "idHex":  "0xF557CF3A",
+                                            "guid":  "ID_MAP_MANAGER"
+                                        },
+                         "-21615756":  {
+                                           "id":  -21615756,
+                                           "idHex":  "0xFEB62B74",
+                                           "guid":  "ID_NAVIGATIONHELPER_MANAGER_GLOBAL"
+                                       },
+                         "1734810091":  {
+                                            "id":  1734810091,
+                                            "idHex":  "0x676719EB",
+                                            "guid":  "ID_PLAYER_PERSISTENT_COMPONENT"
+                                        },
+                         "1917961604":  {
+                                            "id":  1917961604,
+                                            "idHex":  "0x7251C584",
+                                            "guid":  "ID_PLAYERSPAWN_MANAGER"
+                                        },
+                         "-1805148515":  {
+                                             "id":  -1805148515,
+                                             "idHex":  "0x94679E9D",
+                                             "guid":  "ID_PRIEDIEU_MANAGER"
+                                         },
+                         "-596494782":  {
+                                            "id":  -596494782,
+                                            "idHex":  "0xDC723642",
+                                            "guid":  "ID_QUEST_MANAGER"
+                                        },
+                         "156089639":  {
+                                           "id":  156089639,
+                                           "idHex":  "0x094DBD27",
+                                           "guid":  "ID_SAVEDATA_MANAGER"
+                                       },
+                         "2101226087":  {
+                                            "id":  2101226087,
+                                            "idHex":  "0x7D3E2A67",
+                                            "guid":  "ID_SHAREDDATA_MANAGER"
+                                        },
+                         "606594176":  {
+                                           "id":  606594176,
+                                           "idHex":  "0x2427E480",
+                                           "guid":  "ID_SHOP_MANAGER"
+                                       },
+                         "-1001463677":  {
+                                             "id":  -1001463677,
+                                             "idHex":  "0xC44EE083",
+                                             "guid":  "ID_TELEPORT_MANAGER"
+                                         },
+                         "964021442":  {
+                                           "id":  964021442,
+                                           "idHex":  "0x3975CCC2",
+                                           "guid":  "ID_TUTORIAL_MANAGER"
+                                       },
+                         "-816988227":  {
+                                            "id":  -816988227,
+                                            "idHex":  "0xCF4DBFBD",
+                                            "guid":  "ID_WeaponMemory_MANAGER"
+                                        },
+                         "51037994":  {
+                                          "id":  51037994,
+                                          "idHex":  "0x030AC72A",
+                                          "guid":  "Inventory"
+                                      },
+                         "-2011491654":  {
+                                             "id":  -2011491654,
+                                             "idHex":  "0x881B12BA",
+                                             "guid":  "MeaCulpaUnlockedFix"
+                                         },
+                         "-911447619":  {
+                                            "id":  -911447619,
+                                            "idHex":  "0xC9AC69BD",
+                                            "guid":  "STATS"
+                                        },
+                         "-564255920":  {
+                                            "id":  -564255920,
+                                            "idHex":  "0xDE5E2350",
+                                            "guid":  "VolatilePersistenceManager"
+                                        }
+                     },
+    "typesById":  {
+                      "608822697":  {
+                                        "id":  608822697,
+                                        "idHex":  "0x2449E5A9",
+                                        "name":  "TGK.Persistence.PersistentDataBlob"
+                                    },
+                      "909337202":  {
+                                        "id":  909337202,
+                                        "idHex":  "0x36336272",
+                                        "name":  "TGK.Achievements.LocalAchievementsWrapper+AllAchievementsData"
+                                    },
+                      "-434810862":  {
+                                         "id":  -434810862,
+                                         "idHex":  "0xE6155012",
+                                         "name":  "TGK.Achievements.LocalAchievementsWrapper+AchievementData"
+                                     },
+                      "1328749376":  {
+                                         "id":  1328749376,
+                                         "idHex":  "0x4F331B40",
+                                         "name":  "TGK.Achievements.LocalAchievementsWrapper+ProgressData"
+                                     },
+                      "-2016544685":  {
+                                          "id":  -2016544685,
+                                          "idHex":  "0x87CDF853",
+                                          "name":  "TGK.Game.Components.StatsSystem.PlayerStatsComponentPersistance+StatsPersistentData+StatWithValue"
+                                      },
+                      "-1995490736":  {
+                                          "id":  -1995490736,
+                                          "idHex":  "0x890F3A50",
+                                          "name":  "TGK.Game.Components.StatsSystem.PlayerStatsComponentPersistance+StatsPersistentData+StatWithUpgradeAndValue"
+                                      },
+                      "1558313371":  {
+                                         "id":  1558313371,
+                                         "idHex":  "0x5CE1F99B",
+                                         "name":  "TGK.Game.Components.StatsSystem.PlayerStatsComponentPersistance+StatsPersistentData"
+                                     },
+                      "-324083514":  {
+                                         "id":  -324083514,
+                                         "idHex":  "0xECAEE0C6",
+                                         "name":  "TGK.Game.Components.Persistence.ElevatorPersistent+ElevatorPersistentData"
+                                     },
+                      "840618470":  {
+                                        "id":  840618470,
+                                        "idHex":  "0x321AD1E6",
+                                        "name":  "TGK.Game.Components.Persistence.MovingLadderPersistent+MovingLadderPersistentData"
+                                    },
+                      "-491451676":  {
+                                         "id":  -491451676,
+                                         "idHex":  "0xE2B50AE4",
+                                         "name":  "TGK.Game.Components.Persistence.PersistenceComponent+PersistentComponentData+PersistemItem"
+                                     },
+                      "-1450677494":  {
+                                          "id":  -1450677494,
+                                          "idHex":  "0xA9886B0A",
+                                          "name":  "TGK.Game.Components.Persistence.PersistenceComponent+PersistentComponentData"
+                                      },
+                      "-2081769189":  {
+                                          "id":  -2081769189,
+                                          "idHex":  "0x83EAB91B",
+                                          "name":  "TGK.Game.Components.Persistence.PersistentCharacterPosition+CharacterPositionData"
+                                      },
+                      "1015691321":  {
+                                         "id":  1015691321,
+                                         "idHex":  "0x3C8A3839",
+                                         "name":  "TGK.Game.Components.Persistence.PlayerPersistentComponent+PersistentComponentData+PersistemItem"
+                                     },
+                      "1789216117":  {
+                                         "id":  1789216117,
+                                         "idHex":  "0x6AA54575",
+                                         "name":  "TGK.Game.Components.Persistence.PlayerPersistentComponent+PersistentComponentData"
+                                     },
+                      "1290383832":  {
+                                         "id":  1290383832,
+                                         "idHex":  "0x4CE9B1D8",
+                                         "name":  "TGK.Game.Components.Inventory.PlayerAbilitiesPersistenceComponent+AbilitiesPersistentData+AbilityData"
+                                     },
+                      "1396061605":  {
+                                         "id":  1396061605,
+                                         "idHex":  "0x533635A5",
+                                         "name":  "TGK.Game.Components.Inventory.PlayerAbilitiesPersistenceComponent+AbilitiesPersistentData"
+                                     },
+                      "51571551":  {
+                                       "id":  51571551,
+                                       "idHex":  "0x0312EB5F",
+                                       "name":  "TGK.Game.Components.Inventory.PlayerInventoryPersistenceComponent+InventoryPersistentData+ItemData"
+                                   },
+                      "-1166172745":  {
+                                          "id":  -1166172745,
+                                          "idHex":  "0xBA7D9DB7",
+                                          "name":  "TGK.Game.Components.Inventory.PlayerInventoryPersistenceComponent+InventoryPersistentData+StackableItemData"
+                                      },
+                      "1260739192":  {
+                                         "id":  1260739192,
+                                         "idHex":  "0x4B255A78",
+                                         "name":  "TGK.Game.Components.Inventory.PlayerInventoryPersistenceComponent+InventoryPersistentData+EquippablesItemData"
+                                     },
+                      "-78210373":  {
+                                        "id":  -78210373,
+                                        "idHex":  "0xFB569ABB",
+                                        "name":  "TGK.Game.Components.Inventory.PlayerInventoryPersistenceComponent+InventoryPersistentData+AltarPiecePresetData"
+                                    },
+                      "-1051881499":  {
+                                          "id":  -1051881499,
+                                          "idHex":  "0xC14D8FE5",
+                                          "name":  "TGK.Game.Components.Inventory.PlayerInventoryPersistenceComponent+InventoryPersistentData"
+                                      },
+                      "-1474572783":  {
+                                          "id":  -1474572783,
+                                          "idHex":  "0xA81BCE11",
+                                          "name":  "TGK.Game.Components.Interactables.EtheralGatePersistence+EtheralGateData"
+                                      },
+                      "556508785":  {
+                                        "id":  556508785,
+                                        "idHex":  "0x212BA671",
+                                        "name":  "TGK.Game.Components.Interactables.EtheralPlatformPersistence+EtheralPlatformData"
+                                    },
+                      "1477894611":  {
+                                         "id":  1477894611,
+                                         "idHex":  "0x5816E1D3",
+                                         "name":  "TGK.Game.Components.Interactables.PersistenTriggerImpl+TriggerData"
+                                     },
+                      "44549367":  {
+                                       "id":  44549367,
+                                       "idHex":  "0x02A7C4F7",
+                                       "name":  "TGK.Game.Components.Interactables.PersistentTrigger+TriggerData"
+                                   },
+                      "-4094798":  {
+                                       "id":  -4094798,
+                                       "idHex":  "0xFFC184B2",
+                                       "name":  "TGK.Game.Components.Interactables.TearListInteractable+TearListData"
+                                   },
+                      "-1644758777":  {
+                                          "id":  -1644758777,
+                                          "idHex":  "0x9DF6F907",
+                                          "name":  "TGK.Game.Managers.AbilityLockManager+AbilityLockPersistenceData"
+                                      },
+                      "1413450726":  {
+                                         "id":  1413450726,
+                                         "idHex":  "0x543F8BE6",
+                                         "name":  "TGK.Game.Managers.CherubsCountFix+CherubsCountFixPersistenceData"
+                                     },
+                      "-281029570":  {
+                                         "id":  -281029570,
+                                         "idHex":  "0xEF3FD43E",
+                                         "name":  "TGK.Game.Managers.CherubsManager+CherubsACHManagerPersistenceData"
+                                     },
+                      "1213313324":  {
+                                         "id":  1213313324,
+                                         "idHex":  "0x4851B12C",
+                                         "name":  "TGK.Game.Managers.FMODAudioPersistenceManager+MyPersistentData"
+                                     },
+                      "1999809593":  {
+                                         "id":  1999809593,
+                                         "idHex":  "0x7732AC39",
+                                         "name":  "TGK.Game.Managers.BloodSplatterManager+EmptyPersistenceData"
+                                     },
+                      "1422425054":  {
+                                         "id":  1422425054,
+                                         "idHex":  "0x54C87BDE",
+                                         "name":  "TGK.Game.Managers.CameraShakesAvailabilityPersistence+CameraShakesAvailabilityPersistencePersistentData"
+                                     },
+                      "-1981237487":  {
+                                          "id":  -1981237487,
+                                          "idHex":  "0x89E8B711",
+                                          "name":  "TGK.Game.Managers.ChallengesManager+ChallengesPersistentData"
+                                      },
+                      "590780103":  {
+                                        "id":  590780103,
+                                        "idHex":  "0x233696C7",
+                                        "name":  "TGK.Game.Managers.CheckMissingDLCQuestItemsManager+CheckMissingDLCQuestItemsPersistenceData"
+                                    },
+                      "-640053653":  {
+                                         "id":  -640053653,
+                                         "idHex":  "0xD9D98E6B",
+                                         "name":  "TGK.Game.Managers.CompletionManager+CompletionPersistenceData"
+                                     },
+                      "-1685024255":  {
+                                          "id":  -1685024255,
+                                          "idHex":  "0x9B909201",
+                                          "name":  "TGK.Game.Managers.DamageNumbersManager+DamageNumbersManagerPersistencePersistentData"
+                                      },
+                      "934917739":  {
+                                        "id":  934917739,
+                                        "idHex":  "0x37B9B66B",
+                                        "name":  "TGK.Game.Managers.DialogManager+DialogPersistenceData"
+                                    },
+                      "485452905":  {
+                                        "id":  485452905,
+                                        "idHex":  "0x1CEF6C69",
+                                        "name":  "TGK.Game.Managers.MeaCulpaUnlockedFix+MeaCulpaFixPersistenceData"
+                                    },
+                      "-1381270177":  {
+                                          "id":  -1381270177,
+                                          "idHex":  "0xADAB7D5F",
+                                          "name":  "TGK.Game.Managers.EnemySpawnManagerPersistence+EnemySpawnManagerEntryPersistenceData"
+                                      },
+                      "279818751":  {
+                                        "id":  279818751,
+                                        "idHex":  "0x10ADB1FF",
+                                        "name":  "TGK.Game.Managers.EnemySpawnManagerPersistence+EnemySpawnManagerPersistenceData"
+                                    },
+                      "692775779":  {
+                                        "id":  692775779,
+                                        "idHex":  "0x294AEB63",
+                                        "name":  "TGK.Game.Managers.EquipmentManager+EquipmentPersistence"
+                                    },
+                      "185942801":  {
+                                        "id":  185942801,
+                                        "idHex":  "0x0B154311",
+                                        "name":  "TGK.Game.Managers.EulaManager+EulaPersistentData"
+                                    },
+                      "-1362326183":  {
+                                          "id":  -1362326183,
+                                          "idHex":  "0xAECC8D59",
+                                          "name":  "TGK.Game.Managers.PlayerFamiliarsManagerPersistence+PlayerFamiliarsManagerPersistentData"
+                                      },
+                      "705410096":  {
+                                        "id":  705410096,
+                                        "idHex":  "0x2A0BB430",
+                                        "name":  "TGK.Game.Managers.PlayerFamiliarsManagerPersistence+PlayerFamiliarsManagerPersistentData_v2+FamiliarData",
+                                        "alternative":  true
+                                    },
+                      "-450241861":  {
+                                         "id":  -450241861,
+                                         "idHex":  "0xE529DABB",
+                                         "name":  "TGK.Game.Managers.PlayerFamiliarsManagerPersistence+FamiliarData"
+                                     },
+                      "1128056235":  {
+                                         "id":  1128056235,
+                                         "idHex":  "0x433CC5AB",
+                                         "name":  "TGK.Game.Managers.GameModeManager+GameModePersistenceData"
+                                     },
+                      "-1775304879":  {
+                                          "id":  -1775304879,
+                                          "idHex":  "0x962EFF51",
+                                          "name":  "TGK.Game.Managers.GlobalConfigManager+GlobalConfigPersistentData"
+                                      },
+                      "-1237541914":  {
+                                          "id":  -1237541914,
+                                          "idHex":  "0xB63C9BE6",
+                                          "name":  "TGK.Game.Managers.GoldenLumpsCountFix+GoldenLumpsCountFixPersistenceData"
+                                      },
+                      "-1446766763":  {
+                                          "id":  -1446766763,
+                                          "idHex":  "0xA9C41755",
+                                          "name":  "TGK.Game.Managers.GuiltManager+GuiltPersistenceData+Drop"
+                                      },
+                      "-212362945":  {
+                                         "id":  -212362945,
+                                         "idHex":  "0xF357993F",
+                                         "name":  "TGK.Game.Managers.GuiltManager+GuiltPersistenceData"
+                                     },
+                      "1796194181":  {
+                                         "id":  1796194181,
+                                         "idHex":  "0x6B0FBF85",
+                                         "name":  "TGK.Game.Managers.InmunityToInstaDeathPersistence+InstantDeathInTrapsPersistencePersistentData"
+                                     },
+                      "1749548290":  {
+                                         "id":  1749548290,
+                                         "idHex":  "0x6847FD02",
+                                         "name":  "TGK.Game.Managers.RewiredKeyboardSupport+KBMapEntry"
+                                     },
+                      "14246425":  {
+                                       "id":  14246425,
+                                       "idHex":  "0x00D96219",
+                                       "name":  "TGK.Game.Managers.RewiredKeyboardSupport+KBPersistence"
+                                   },
+                      "426905521":  {
+                                        "id":  426905521,
+                                        "idHex":  "0x19720FB1",
+                                        "name":  "TGK.Game.Managers.LifebarsManager+LifebarsManagerPersistencePersistentData"
+                                    },
+                      "-584150119":  {
+                                         "id":  -584150119,
+                                         "idHex":  "0xDD2E9399",
+                                         "name":  "TGK.Game.Managers.AudioLanguagePersistence+MyPersistentData"
+                                     },
+                      "1984155481":  {
+                                         "id":  1984155481,
+                                         "idHex":  "0x7643CF59",
+                                         "name":  "TGK.Game.Managers.LocalizationPersistence+LocalizationPersistentData"
+                                     },
+                      "-438853465":  {
+                                         "id":  -438853465,
+                                         "idHex":  "0xE5D7A0A7",
+                                         "name":  "TGK.Game.Managers.MapManager+MapModificationsData+CellKeyData"
+                                     },
+                      "217716187":  {
+                                        "id":  217716187,
+                                        "idHex":  "0x0CFA15DB",
+                                        "name":  "TGK.Game.Managers.MapManager+MapModificationsData+MarkData"
+                                    },
+                      "-545975763":  {
+                                         "id":  -545975763,
+                                         "idHex":  "0xDF75122D",
+                                         "name":  "TGK.Game.Managers.MapManager+MapModificationsData"
+                                     },
+                      "730407931":  {
+                                        "id":  730407931,
+                                        "idHex":  "0x2B8923FB",
+                                        "name":  "TGK.Game.Managers.MapManager+MapPersistenceData"
+                                    },
+                      "574390041":  {
+                                        "id":  574390041,
+                                        "idHex":  "0x223C7F19",
+                                        "name":  "TGK.Game.Managers.InputMappingPersistence+InputMappingPersistentData"
+                                    },
+                      "-643021610":  {
+                                         "id":  -643021610,
+                                         "idHex":  "0xD9AC44D6",
+                                         "name":  "TGK.Game.Managers.VolatilePersistenceManager+VolatilePersistenceData"
+                                     },
+                      "-1273357237":  {
+                                          "id":  -1273357237,
+                                          "idHex":  "0xB41A1C4B",
+                                          "name":  "TGK.Game.Managers.PlayerSpawnManager+PlayerSpawnPersistenceData"
+                                      },
+                      "19146731":  {
+                                       "id":  19146731,
+                                       "idHex":  "0x012427EB",
+                                       "name":  "TGK.Game.Managers.PrieDieuManager+PrieDieuPersistenceData"
+                                   },
+                      "606251086":  {
+                                        "id":  606251086,
+                                        "idHex":  "0x2422A84E",
+                                        "name":  "TGK.Game.Managers.QuestManager+QuestPersistenceData+QuestVariable"
+                                    },
+                      "-1386926307":  {
+                                          "id":  -1386926307,
+                                          "idHex":  "0xAD552F1D",
+                                          "name":  "TGK.Game.Managers.QuestManager+QuestPersistenceData+QuestInternalData"
+                                      },
+                      "-940688109":  {
+                                         "id":  -940688109,
+                                         "idHex":  "0xC7EE3D13",
+                                         "name":  "TGK.Game.Managers.QuestManager+QuestPersistenceData"
+                                     },
+                      "-1626270140":  {
+                                          "id":  -1626270140,
+                                          "idHex":  "0x9F111644",
+                                          "name":  "TGK.Game.Managers.CRTFilterManager+CRTFilterManagerPersistentData"
+                                      },
+                      "-1692631842":  {
+                                          "id":  -1692631842,
+                                          "idHex":  "0x9B1C7CDE",
+                                          "name":  "TGK.Game.Managers.ScreenResolutionManager+ScreenResolutionManagerPersistentData"
+                                      },
+                      "-1198190703":  {
+                                          "id":  -1198190703,
+                                          "idHex":  "0xB8950F91",
+                                          "name":  "TGK.Game.Managers.RumbleManager+RumbleManagerPersistencePersistentData"
+                                      },
+                      "647842299":  {
+                                        "id":  647842299,
+                                        "idHex":  "0x269D49FB",
+                                        "name":  "TGK.Game.Managers.SaveDataManager+SavePersistenceData"
+                                    },
+                      "-1221153451":  {
+                                          "id":  -1221153451,
+                                          "idHex":  "0xB736AD55",
+                                          "name":  "TGK.Game.Managers.SharedDataManager+SharedDataPersistenceData+SharedDataInteractablesPersistenceData"
+                                      },
+                      "-462988533":  {
+                                         "id":  -462988533,
+                                         "idHex":  "0xE4675B0B",
+                                         "name":  "TGK.Game.Managers.SharedDataManager+SharedDataPersistenceData"
+                                     },
+                      "117116636":  {
+                                        "id":  117116636,
+                                        "idHex":  "0x06FB0EDC",
+                                        "name":  "TGK.Game.Managers.ShopManager+ShopPersistenceData+ShopData"
+                                    },
+                      "1677843371":  {
+                                         "id":  1677843371,
+                                         "idHex":  "0x6401DBAB",
+                                         "name":  "TGK.Game.Managers.ShopManager+ShopPersistenceData"
+                                     },
+                      "-325423804":  {
+                                         "id":  -325423804,
+                                         "idHex":  "0xEC9A6D44",
+                                         "name":  "TGK.Game.Managers.UnlockedSkinsPersistence+UnlockedSkinsPersistencePersistentData"
+                                     },
+                      "1050849643":  {
+                                         "id":  1050849643,
+                                         "idHex":  "0x3EA2B16B",
+                                         "name":  "TGK.Game.Managers.TeleportManager+TeleportPersistenceData"
+                                     },
+                      "-1060419349":  {
+                                          "id":  -1060419349,
+                                          "idHex":  "0xC0CB48EB",
+                                          "name":  "TGK.Game.Managers.TutorialManager+TutorialPersistenceData"
+                                      },
+                      "190479667":  {
+                                        "id":  190479667,
+                                        "idHex":  "0x0B5A7D33",
+                                        "name":  "TGK.Game.Managers.UINavigationHelper+NavHelperPersistenceData"
+                                    },
+                      "-2099234901":  {
+                                          "id":  -2099234901,
+                                          "idHex":  "0x82E037AB",
+                                          "name":  "TGK.Game.Managers.WeaponMemoryManager+WeaponMemoryPersistenceData"
+                                      },
+                      "-1707278306":  {
+                                          "id":  -1707278306,
+                                          "idHex":  "0x9A3D001E",
+                                          "name":  "TGK.Game.Managers.SkinsCheckerManager+SkinsCheckerManagerPersistentData"
+                                      }
+                  }
+}

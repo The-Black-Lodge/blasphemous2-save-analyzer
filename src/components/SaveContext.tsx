@@ -1,4 +1,4 @@
-import { createContext } from "react"
+import { createContext, useContext } from "react"
 import type { SaveContextType } from "../types/save"
 
 const SaveContext = createContext<SaveContextType>({
@@ -7,3 +7,7 @@ const SaveContext = createContext<SaveContextType>({
 })
 
 export default SaveContext
+
+export function useSave(): SaveContextType {
+  return useContext(SaveContext)
+}
