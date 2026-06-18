@@ -22,7 +22,7 @@ function PrayerList({
   )
 
   return (
-    <>
+    <div className="prayer-column">
       <h3>{label}</h3>
       <ul>
         {sources.map((source) => {
@@ -43,7 +43,7 @@ function PrayerList({
           )
         })}
       </ul>
-    </>
+    </div>
   )
 }
 
@@ -82,13 +82,15 @@ export default function Prayer() {
   }
 
   return (
-    <>
+    <section className="prayer">
       <h2>Prayers</h2>
-      <PrayerList label="Chants" sources={chants} acquired={acquired} />
-      <PrayerList label="Verses" sources={verses} acquired={acquired} />
+      <div className="prayer-columns">
+        <PrayerList label="Chants" sources={chants} acquired={acquired} />
+        <PrayerList label="Verses" sources={verses} acquired={acquired} />
+      </div>
       {unclassified.length > 0 ? (
         <PrayerList label="Other" sources={unclassified} acquired={acquired} />
       ) : null}
-    </>
+    </section>
   )
 }

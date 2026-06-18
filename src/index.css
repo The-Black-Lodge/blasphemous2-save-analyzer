@@ -107,3 +107,105 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.altar-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.altar-column {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.altar-column h3 {
+  font-family: var(--heading);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-h);
+  margin: 0 0 6px;
+  letter-spacing: -0.14px;
+}
+
+.altar-column ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 135%;
+}
+
+.altar-column li {
+  margin-bottom: 4px;
+}
+
+.prayer-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.prayer-column {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.prayer-column h3 {
+  font-family: var(--heading);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-h);
+  margin: 0 0 6px;
+  letter-spacing: -0.14px;
+}
+
+.prayer-column ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 135%;
+}
+
+.prayer-column li {
+  margin-bottom: 4px;
+}
+
+.app-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+  padding: 0 1rem;
+}
+
+.app-tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: 0.75rem 1rem;
+  font: inherit;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.app-tab:hover {
+  color: var(--text-h);
+}
+
+.app-tab[aria-selected="true"] {
+  color: var(--text-h);
+  border-bottom-color: var(--accent);
+}
+
+.app-content {
+  padding: 1rem;
+}
+
+.app-content > * + * {
+  margin-top: 2rem;
+}

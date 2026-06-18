@@ -132,14 +132,14 @@ function FigureList({
   if (sources.length === 0) return null
 
   return (
-    <>
+    <div className="altar-column">
       <h3>{label}</h3>
       <ul>
         {sources.map((source) => (
           <FigureRow key={source} source={source} acquired={acquired} />
         ))}
       </ul>
-    </>
+    </div>
   )
 }
 
@@ -174,19 +174,21 @@ export default function Altar() {
   }
 
   return (
-    <>
+    <section className="altar">
       <h2>Altar</h2>
-      {FIGURE_KIND_ORDER.map((kind) => (
-        <FigureList
-          key={kind}
-          label={FIGURE_KIND_LABELS[kind]}
-          sources={byKind.get(kind) ?? []}
-          acquired={acquired}
-        />
-      ))}
-      {unclassified.length > 0 ? (
-        <FigureList label="Other" sources={unclassified} acquired={acquired} />
-      ) : null}
-    </>
+      <div className="altar-columns">
+        {FIGURE_KIND_ORDER.map((kind) => (
+          <FigureList
+            key={kind}
+            label={FIGURE_KIND_LABELS[kind]}
+            sources={byKind.get(kind) ?? []}
+            acquired={acquired}
+          />
+        ))}
+        {unclassified.length > 0 ? (
+          <FigureList label="Other" sources={unclassified} acquired={acquired} />
+        ) : null}
+      </div>
+    </section>
   )
 }
