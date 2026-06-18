@@ -43,10 +43,7 @@ function MaidenLabel({ chainIndex }: { chainIndex: number | null }) {
         <i key={`heart-${index}`} className="fa-solid fa-heart"></i>
       ))}
       {Array.from({ length: 3 - repairs }, (_, index) => (
-        <i
-          key={`heart-crack-${index}`}
-          className="fa-solid fa-heart-crack"
-        ></i>
+        <i key={`heart-crack-${index}`} className="fa-solid fa-heart-crack"></i>
       ))}
     </>
   )
@@ -65,67 +62,73 @@ export default function Altar() {
   )
 
   return (
-    <ul>
-      {b2data.figures.map((figure) => {
-        if (hiddenChainSources.has(figure.source)) {
-          return null
-        }
+    <>
+      <h2>Altar</h2>
+      <ul>
+        {b2data.figures.map((figure) => {
+          if (hiddenChainSources.has(figure.source)) {
+            return null
+          }
 
-        if (figure.source === maidenChain.displaySource) {
-          const chainIndex = getHighestAcquiredChainIndex(maidenChain, acquired)
+          if (figure.source === maidenChain.displaySource) {
+            const chainIndex = getHighestAcquiredChainIndex(
+              maidenChain,
+              acquired,
+            )
+
+            return (
+              <li key={figure.source}>
+                <i
+                  className={
+                    isChainAcquired(maidenChain, acquired)
+                      ? "fa-regular fa-square-check"
+                      : "fa-regular fa-square"
+                  }
+                ></i>{" "}
+                <MaidenLabel chainIndex={chainIndex} />
+              </li>
+            )
+          }
+
+          const envoyChain = getEnvoyChain(figure.source)
+          if (envoyChain) {
+            const burntSource = envoyChain.sources[1]
+            const isBurnt = acquired.has(burntSource)
+
+            return (
+              <li key={figure.source}>
+                <i
+                  className={
+                    isChainAcquired(envoyChain, acquired)
+                      ? "fa-regular fa-square-check"
+                      : "fa-regular fa-square"
+                  }
+                ></i>{" "}
+                {figure.caption.en}
+                {isBurnt ? (
+                  <>
+                    {" "}
+                    <i className="fa-solid fa-fire"></i>
+                  </>
+                ) : null}
+              </li>
+            )
+          }
 
           return (
             <li key={figure.source}>
               <i
                 className={
-                  isChainAcquired(maidenChain, acquired)
-                    ? "fa-regular fa-square-check"
-                    : "fa-regular fa-square"
-                }
-              ></i>{" "}
-              <MaidenLabel chainIndex={chainIndex} />
-            </li>
-          )
-        }
-
-        const envoyChain = getEnvoyChain(figure.source)
-        if (envoyChain) {
-          const burntSource = envoyChain.sources[1]
-          const isBurnt = acquired.has(burntSource)
-
-          return (
-            <li key={figure.source}>
-              <i
-                className={
-                  isChainAcquired(envoyChain, acquired)
+                  acquired.has(figure.source)
                     ? "fa-regular fa-square-check"
                     : "fa-regular fa-square"
                 }
               ></i>{" "}
               {figure.caption.en}
-              {isBurnt ? (
-                <>
-                  {" "}
-                  <i className="fa-solid fa-fire"></i>
-                </>
-              ) : null}
             </li>
           )
-        }
-
-        return (
-          <li key={figure.source}>
-            <i
-              className={
-                acquired.has(figure.source)
-                  ? "fa-regular fa-square-check"
-                  : "fa-regular fa-square"
-              }
-            ></i>{" "}
-            {figure.caption.en}
-          </li>
-        )
-      })}
-    </ul>
+        })}
+      </ul>
+    </>
   )
 }
