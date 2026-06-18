@@ -1,24 +1,36 @@
 import { useState } from "react"
+import type { ComponentType } from "react"
 import Altar from "./components/Altar"
+import Player from "./components/Player"
 import Prayer from "./components/Prayer"
+import Quest from "./components/Quest"
 import Rosary from "./components/Rosary"
 import SaveProvider from "./components/SaveProvider"
+import Weapon from "./components/Weapon"
 
-type Tab = "all" | "rosary" | "prayers" | "altar"
+type SectionTab = "player" | "rosary" | "quest" | "prayers" | "altar" | "weapon"
+type Tab = "all" | SectionTab
+
+const SECTIONS: { id: SectionTab; label: string; Component: ComponentType }[] =
+  [
+    { id: "player", label: "The Penitent One", Component: Player },
+    { id: "rosary", label: "Rosary Beads", Component: Rosary },
+    { id: "quest", label: "Quest Items", Component: Quest },
+    { id: "prayers", label: "Prayers", Component: Prayer },
+    { id: "altar", label: "Altarpiece of Favours", Component: Altar },
+    { id: "weapon", label: "Weapon Memories", Component: Weapon },
+  ]
 
 const TABS: { id: Tab; label: string }[] = [
   { id: "all", label: "Show All" },
-  { id: "rosary", label: "Rosary Beads" },
-  { id: "prayers", label: "Prayers" },
-  { id: "altar", label: "Altarpiece of Favours" },
+  ...SECTIONS,
 ]
 
 function AppContent() {
   const [tab, setTab] = useState<Tab>("all")
 
-  const showRosary = tab === "all" || tab === "rosary"
-  const showPrayers = tab === "all" || tab === "prayers"
-  const showAltar = tab === "all" || tab === "altar"
+  const visibleSections =
+    tab === "all" ? SECTIONS : SECTIONS.filter((section) => section.id === tab)
 
   return (
     <>
@@ -37,9 +49,9 @@ function AppContent() {
         ))}
       </nav>
       <main className="app-content">
-        {showRosary ? <Rosary /> : null}
-        {showPrayers ? <Prayer /> : null}
-        {showAltar ? <Altar /> : null}
+        {visibleSections.map(({ id, Component }) => (
+          <Component key={id} />
+        ))}
       </main>
     </>
   )
