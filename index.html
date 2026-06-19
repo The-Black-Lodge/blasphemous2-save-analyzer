@@ -7,6 +7,23 @@
     <title>blasphemous2-save-analyzer</title>
   </head>
   <body>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="0"
+      height="0"
+      aria-hidden="true"
+      style="position: absolute"
+    >
+      <defs>
+        <filter
+          id="altar-figure-missing-tint"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-color="#373737" result="flood" />
+          <feComposite in="flood" in2="SourceGraphic" operator="in" />
+        </filter>
+      </defs>
+    </svg>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
