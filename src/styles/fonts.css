@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/blasphemous2-save-analyzer/fonts/Cormorant-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/blasphemous2-save-analyzer/fonts/Cormorant-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/blasphemous2-save-analyzer/fonts/Cormorant-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/blasphemous2-save-analyzer/fonts/Cormorant-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/blasphemous2-save-analyzer/fonts/Cormorant-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/blasphemous2-save-analyzer/fonts/Cormorant-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/blasphemous2-save-analyzer/fonts/Cormorant-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/blasphemous2-save-analyzer/fonts/Cormorant-SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/blasphemous2-save-analyzer/fonts/Cormorant-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/blasphemous2-save-analyzer/fonts/Cormorant-BoldItalic.ttf') format('truetype');
+}

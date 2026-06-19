@@ -1,29 +1,29 @@
 import figureKindsJson from "../data/figure-kinds.json"
 
 export type FigureKind =
-  | "candle"
-  | "dagger"
-  | "skull"
-  | "feather"
-  | "neutral"
-  | "sin"
+  | "erudition"
+  | "punishment"
+  | "faith"
+  | "pilgrimage"
+  | "empty"
+  | "grace"
 
 export const FIGURE_KIND_ORDER: FigureKind[] = [
-  "candle",
-  "dagger",
-  "skull",
-  "feather",
-  "sin",
-  "neutral",
+  "erudition",
+  "punishment",
+  "faith",
+  "pilgrimage",
+  "empty",
+  "grace",
 ]
 
 export const FIGURE_KIND_LABELS: Record<FigureKind, string> = {
-  candle: "Candle",
-  dagger: "Dagger",
-  skull: "Skull",
-  feather: "Feather",
-  neutral: "Neutral",
-  sin: "Sin",
+  erudition: "Erudition",
+  punishment: "Punishment",
+  faith: "Faith",
+  pilgrimage: "Pilgrimage",
+  empty: "Empty",
+  grace: "Grace",
 }
 
 const kindBySource = new Map<string, FigureKind>()

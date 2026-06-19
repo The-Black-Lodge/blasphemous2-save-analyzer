@@ -11,8 +11,8 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: 'Cormorant', Georgia, 'Times New Roman', serif;
+  --heading: var(--sans);
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -67,11 +67,11 @@ body {
 h1,
 h2 {
   font-family: var(--heading);
-  font-weight: 500;
   color: var(--text-h);
 }
 
 h1 {
+  font-weight: 700;
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
@@ -81,6 +81,7 @@ h1 {
   }
 }
 h2 {
+  font-weight: 600;
   font-size: 24px;
   line-height: 118%;
   letter-spacing: -0.24px;
@@ -88,6 +89,12 @@ h2 {
   @media (max-width: 1024px) {
     font-size: 20px;
   }
+}
+
+h3 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-h);
 }
 p {
   margin: 0;
@@ -121,12 +128,30 @@ code {
 }
 
 .altar-column h3 {
-  font-family: var(--heading);
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-h);
+  font-size: 16px;
   margin: 0 0 6px;
-  letter-spacing: -0.14px;
+  letter-spacing: 0.02em;
+}
+
+.altar-column-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: var(--figure-cat-sprite-size);
+}
+
+.altar-category-icon-slot {
+  flex: 0 0 var(--figure-cat-sprite-size);
+  width: var(--figure-cat-sprite-size);
+  height: var(--figure-cat-sprite-size);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.altar-category-icon-slot .fg-cat-sprite {
+  transform: scale(var(--figure-cat-sprite-scale));
+  transform-origin: left center;
 }
 
 .altar-column ul {
@@ -186,12 +211,9 @@ code {
 }
 
 .prayer-column h3 {
-  font-family: var(--heading);
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-h);
+  font-size: 16px;
   margin: 0 0 6px;
-  letter-spacing: -0.14px;
+  letter-spacing: 0.02em;
 }
 
 .prayer-column ul {

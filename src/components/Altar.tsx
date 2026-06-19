@@ -1,10 +1,12 @@
 import b2data from "../data/b2data.json"
+import { FigureCategorySprite } from "./FigureCategorySprite"
 import { FigureSprite } from "./FigureSprite"
 import { useSave } from "./SaveContext"
 import {
   FIGURE_KIND_LABELS,
   FIGURE_KIND_ORDER,
   getFigureKind,
+  type FigureKind,
 } from "../utils/figureKinds"
 import {
   getEnvoyChain,
@@ -155,11 +157,11 @@ function FigureRow({
 }
 
 function FigureList({
-  label,
+  kind,
   sources,
   acquired,
 }: {
-  label: string
+  kind: FigureKind
   sources: string[]
   acquired: Set<string>
 }) {
@@ -167,7 +169,10 @@ function FigureList({
 
   return (
     <div className="altar-column">
-      <h3>{label}</h3>
+      <h3 className="altar-column-heading">
+        <FigureCategorySprite kind={kind} />
+        <span>{FIGURE_KIND_LABELS[kind]}</span>
+      </h3>
       <ul>
         {sources.map((source) => (
           <FigureRow key={source} source={source} acquired={acquired} />
@@ -214,13 +219,22 @@ export default function Altar() {
         {FIGURE_KIND_ORDER.map((kind) => (
           <FigureList
             key={kind}
-            label={FIGURE_KIND_LABELS[kind]}
+            kind={kind}
             sources={byKind.get(kind) ?? []}
             acquired={acquired}
           />
         ))}
         {unclassified.length > 0 ? (
-          <FigureList label="Other" sources={unclassified} acquired={acquired} />
+          <div className="altar-column">
+            <h3 className="altar-column-heading">
+              <span>Other</span>
+            </h3>
+            <ul>
+              {unclassified.map((source) => (
+                <FigureRow key={source} source={source} acquired={acquired} />
+              ))}
+            </ul>
+          </div>
         ) : null}
       </div>
     </section>
