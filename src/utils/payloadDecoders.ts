@@ -1,5 +1,6 @@
 import {
   B2BinaryReader,
+  getPersistentObjectList,
   readNestedPersistentObject,
   type NestedPersistentObject,
 } from "./binaryReader"
@@ -9,8 +10,22 @@ import {
   resolveManagerName,
   resolveTypeName,
 } from "./catalogs"
+import {
+  decodeAbilitiesPersistentPayload,
+  decodeAbilityLockPersistencePayload,
+  decodeCherubsPersistencePayload,
+  decodeCompletionPersistencePayload,
+  decodeGuiltPersistencePayload,
+  decodeStatsPersistentPayload,
+  decodeWeaponMemoryPersistencePayload,
+} from "./playerDecoders"
 
 const INVENTORY_COMPONENT_ID = 51037994
+const STATS_COMPONENT_ID = -911447619
+const ABILITIES_COMPONENT_ID = -749611200
+const STATS_TYPE_IDS = new Set([0x5ce1f99b, 0xefa6f720])
+const ABILITIES_TYPE_ID = 0x533635a5
+const WEAPON_MEMORY_TYPE_IDS = new Set([0x82e037ab, 0x9b2e8fbc])
 
 function dateTimeFromBinary(value: bigint): Date | null {
   if (value === 0n) return null
@@ -30,17 +45,6 @@ function typeNameMatch(typeName: string | null, pattern: string): boolean {
   if (!typeName) return false
   const needle = pattern.replace(/\*/g, "")
   return typeName.includes(needle)
-}
-
-function getPersistentObjectList(
-  reader: B2BinaryReader,
-): NestedPersistentObject[] {
-  const count = reader.readInt32()
-  const items: NestedPersistentObject[] = []
-  for (let i = 0; i < count; i++) {
-    items.push(readNestedPersistentObject(reader))
-  }
-  return items
 }
 
 function decodeItemFields(
@@ -152,6 +156,10 @@ function decodePersistemItemPayload(
     const obj = readNestedPersistentObject(r)
     if (id === INVENTORY_COMPONENT_ID) {
       nested = decodeInventoryPersistentPayload(obj.payload)
+    } else if (id === STATS_COMPONENT_ID) {
+      nested = decodeStatsPersistentPayload(obj.payload)
+    } else if (id === ABILITIES_COMPONENT_ID) {
+      nested = decodeAbilitiesPersistentPayload(obj.payload)
     }
     if (!nested) {
       nested = decodePersistentPayload(obj.typeIdRaw, obj.payload)
@@ -300,6 +308,54 @@ export function decodePersistentPayload(
   }
 
   if (
+    STATS_TYPE_IDS.has(typeId) ||
+    typeNameMatch(typeName, "StatsPersistentData")
+  ) {
+    const stats = decodeStatsPersistentPayload(payload)
+    if (stats) return stats
+  }
+
+  if (
+    typeId === ABILITIES_TYPE_ID ||
+    typeNameMatch(typeName, "AbilitiesPersistentData")
+  ) {
+    const abilities = decodeAbilitiesPersistentPayload(payload)
+    if (abilities) return abilities
+  }
+
+  if (typeNameMatch(typeName, "CherubsACHManagerPersistenceData")) {
+    const cherubs = decodeCherubsPersistencePayload(payload)
+    if (cherubs) return cherubs
+  }
+
+  if (typeNameMatch(typeName, "CompletionPersistenceData")) {
+    const completion = decodeCompletionPersistencePayload(payload)
+    if (completion) return completion
+  }
+
+  if (typeNameMatch(typeName, "AbilityLockPersistenceData")) {
+    const abilityLock = decodeAbilityLockPersistencePayload(payload)
+    if (abilityLock) return abilityLock
+  }
+
+  if (
+    typeNameMatch(typeName, "GuiltPersistenceData") &&
+    typeName !== null &&
+    !typeName.includes("Drop")
+  ) {
+    const guilt = decodeGuiltPersistencePayload(payload)
+    if (guilt) return guilt
+  }
+
+  if (
+    WEAPON_MEMORY_TYPE_IDS.has(typeId) ||
+    typeNameMatch(typeName, "WeaponMemoryPersistenceData")
+  ) {
+    const weaponMemory = decodeWeaponMemoryPersistencePayload(payload)
+    if (weaponMemory) return weaponMemory
+  }
+
+  if (
     typeNameMatch(typeName, "ItemData") ||
     typeNameMatch(typeName, "StackableItemData") ||
     typeNameMatch(typeName, "EquippablesItemData")
@@ -407,6 +463,43 @@ export function toInventorySummary(
 export function extractInventorySummary(
   parsed: ParsedSave,
 ): Record<string, unknown> | null {
+  return extractPlayerSummary(parsed)
+}
+
+function getCommonManagerData(
+  parsed: ParsedSave,
+  managerKey: string,
+): unknown {
+  const common = parsed.snapshot.commonElements
+  for (const [key, entry] of Object.entries(common)) {
+    if (formatElementKey(Number(key), "manager") !== managerKey) continue
+    return entry.object.decoded
+  }
+  return null
+}
+
+function getSpawnPlayerComponents(
+  parsed: ParsedSave,
+): Record<string, { data?: unknown }> | null {
+  const common = parsed.snapshot.commonElements
+  for (const [key, entry] of Object.entries(common)) {
+    if (formatElementKey(Number(key), "manager") !== "ID_PLAYERSPAWN_MANAGER") {
+      continue
+    }
+    const spawn = entry.object.decoded as Record<string, unknown> | null
+    if (!spawn) return null
+
+    const persistence = spawn.playerPersistence as
+      | { components?: Record<string, { data?: unknown }> }
+      | undefined
+    return persistence?.components ?? null
+  }
+  return null
+}
+
+export function extractPlayerSummary(
+  parsed: ParsedSave,
+): Record<string, unknown> | null {
   const summary: Record<string, unknown> = {}
   const common = parsed.snapshot.commonElements
 
@@ -422,6 +515,17 @@ export function extractInventorySummary(
   for (const [key, entry] of Object.entries(common)) {
     if (formatElementKey(Number(key), "manager") !== "ID_PLAYERSPAWN_MANAGER")
       continue
+    const spawnDecoded = entry.object.decoded as Record<string, unknown> | null
+    if (spawnDecoded) {
+      summary.spawn = {
+        spawnRoom: spawnDecoded.spawnRoom,
+        spawnEntryId: spawnDecoded.spawnEntryId,
+        spawnType: spawnDecoded.spawnType,
+        prieuDieuRoom: spawnDecoded.prieuDieuRoom,
+        prieuDieuId: spawnDecoded.prieuDieuId,
+      }
+    }
+
     const inv = getPlayerInventoryFromSpawnPayload(entry.object.payload)
     if (inv) {
       summary.inventory = inv
@@ -429,6 +533,28 @@ export function extractInventorySummary(
     }
     break
   }
+
+  const components = getSpawnPlayerComponents(parsed)
+  if (components?.STATS?.data) summary.stats = components.STATS.data
+  if (components?.Abilities?.data) summary.abilities = components.Abilities.data
+
+  const saveMeta = getCommonManagerData(parsed, "ID_SAVEDATA_MANAGER")
+  if (saveMeta) summary.saveMeta = saveMeta
+
+  const completion = getCommonManagerData(parsed, "ID_COMPLETION_MANAGER")
+  if (completion) summary.completion = completion
+
+  const cherubs = getCommonManagerData(parsed, "CherubsManager")
+  if (cherubs) summary.cherubs = cherubs
+
+  const weaponMemory = getCommonManagerData(parsed, "ID_WeaponMemory_MANAGER")
+  if (weaponMemory) summary.weaponMemory = weaponMemory
+
+  const guilt = getCommonManagerData(parsed, "ID_GUILT_MANAGER")
+  if (guilt) summary.guilt = guilt
+
+  const abilityLock = getCommonManagerData(parsed, "ID_ABILITYLOCK_MANAGER")
+  if (abilityLock) summary.abilityLock = abilityLock
 
   return Object.keys(summary).length > 0 ? summary : null
 }

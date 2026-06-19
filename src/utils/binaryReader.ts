@@ -153,3 +153,14 @@ export function readNestedPersistentObject(
     decoded: null,
   }
 }
+
+export function getPersistentObjectList(
+  reader: B2BinaryReader,
+): NestedPersistentObject[] {
+  const count = reader.readInt32()
+  const items: NestedPersistentObject[] = []
+  for (let i = 0; i < count; i++) {
+    items.push(readNestedPersistentObject(reader))
+  }
+  return items
+}

@@ -1,0 +1,1531 @@
+﻿{
+    "extractedAt":  "2026-06-17T23:23:23.7082873-04:00",
+    "hashAlgorithm":  "Unity IL2CPP GetLegacyNonRandomizedHashCode",
+    "sources":  [
+                    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Blasphemous 2\\Blasphemous 2_Data\\StreamingAssets\\aa\\catalog.json",
+                    "C:\\Users\\jen\\blasphemous-save\\tools\\il2cpp-dump\\dump.cs"
+                ],
+    "entryCount":  304,
+    "namesByHex":  {
+                       "0x7BEE66F5":  {
+                                          "name":  "Player Stats Component Ref ID",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Player Stats Component Ref ID.asset"
+                                      },
+                       "0xE05DF508":  {
+                                          "name":  "PlayerStatsComponent Ref",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/PlayerStatsComponent Ref.asset"
+                                      },
+                       "0x2DD42338":  {
+                                          "name":  "Ailments Stats Map",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Ailments/Ailments Stats Map.asset"
+                                      },
+                       "0x213CC89E":  {
+                                          "name":  "Crit Chance Percentage",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Bonuseables/Crit Chance Percentage.asset"
+                                      },
+                       "0x4247B577":  {
+                                          "name":  "Crit Multiplier Percentage",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Bonuseables/Crit Multiplier Percentage.asset"
+                                      },
+                       "0x6B30D194":  {
+                                          "name":  "Execution Chance Percentage",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Bonuseables/Execution Chance Percentage.asset"
+                                      },
+                       "0x20123106":  {
+                                          "name":  "Projectile Resistance Percentage",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Bonuseables/Projectile Resistance Percentage.asset"
+                                      },
+                       "0x69E324AA":  {
+                                          "name":  "Blood",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Main/Blood.asset"
+                                      },
+                       "0x0E243FF2":  {
+                                          "name":  "Faith",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Main/Faith.asset"
+                                      },
+                       "0x7118D22D":  {
+                                          "name":  "Repentance",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Main/Repentance.asset"
+                                      },
+                       "0xCD3AD456":  {
+                                          "name":  "Base Elemental attack",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Base Elemental attack.asset"
+                                      },
+                       "0xF630C1AC":  {
+                                          "name":  "Base Physical attack",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Base Physical attack.asset"
+                                      },
+                       "0x6A1CDF09":  {
+                                          "name":  "Base Status Attack",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Base Status Attack.asset"
+                                      },
+                       "0xC56ECDD2":  {
+                                          "name":  "Blade Berserk Damage Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Blade Berserk Damage Factor.asset"
+                                      },
+                       "0x40478147":  {
+                                          "name":  "Blade Berserk Duration Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Blade Berserk Duration Factor.asset"
+                                      },
+                       "0x38FBA12E":  {
+                                          "name":  "Blade Berserk Fill Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Blade Berserk Fill Factor.asset"
+                                      },
+                       "0x580643AC":  {
+                                          "name":  "Blade Berserk Health Cost Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Blade Berserk Health Cost Factor.asset"
+                                      },
+                       "0xE89871E1":  {
+                                          "name":  "Blade Stun Chance Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Blade Stun Chance Factor.asset"
+                                      },
+                       "0x5B65C96D":  {
+                                          "name":  "Blade Ultimate Health Cost Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Blade Ultimate Health Cost Factor.asset"
+                                      },
+                       "0xCDB6D856":  {
+                                          "name":  "Censer Charge Time Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Censer Charge Time Factor.asset"
+                                      },
+                       "0x838A1F1A":  {
+                                          "name":  "Censer Ignited Fervour Consumption",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Censer Ignited Fervour Consumption.asset"
+                                      },
+                       "0x788574F7":  {
+                                          "name":  "Censer Stun Chance Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Censer Stun Chance Factor.asset"
+                                      },
+                       "0xEE95BA0F":  {
+                                          "name":  "Dash CoolDown",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Dash CoolDown.asset"
+                                      },
+                       "0x53F62217":  {
+                                          "name":  "Dash Duration Multiplier",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Dash Duration Multiplier.asset"
+                                      },
+                       "0xB931D4E8":  {
+                                          "name":  "Dash Speed Multiplier",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Dash Speed Multiplier.asset"
+                                      },
+                       "0x40811AC4":  {
+                                          "name":  "Elemental resistence",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Elemental resistence.asset"
+                                      },
+                       "0xFAC388D5":  {
+                                          "name":  "Execution Fervour Gain Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Execution Fervour Gain Factor.asset"
+                                      },
+                       "0xEA139790":  {
+                                          "name":  "Execution Health Gain Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Execution Health Gain Factor.asset"
+                                      },
+                       "0x12090EDB":  {
+                                          "name":  "Fervour Gain On Hit Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Fervour Gain On Hit Factor.asset"
+                                      },
+                       "0xCED09D26":  {
+                                          "name":  "Full Prayer Charge Timer Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Full Prayer Charge Timer Factor.asset"
+                                      },
+                       "0x338694A5":  {
+                                          "name":  "Global Defense",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Global Defense.asset"
+                                      },
+                       "0xA0D11387":  {
+                                          "name":  "Guilt Attack Reduction Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Guilt Attack Reduction Factor.asset"
+                                      },
+                       "0x71D75097":  {
+                                          "name":  "Guilt Bonus On Death",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Guilt Bonus On Death.asset"
+                                      },
+                       "0x783C91DC":  {
+                                          "name":  "Guilt Fervour Reduction Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Guilt Fervour Reduction Factor.asset"
+                                      },
+                       "0xBDBCE1BD":  {
+                                          "name":  "Healing Flasks Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Healing Flasks Factor.asset"
+                                      },
+                       "0x707E2F7D":  {
+                                          "name":  "Ignition Mode damage",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Ignition Mode damage.asset"
+                                      },
+                       "0x05A3A1FD":  {
+                                          "name":  "Item Drop Probability",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Item Drop Probability.asset"
+                                      },
+                       "0x5C68A0C9":  {
+                                          "name":  "Orbs XP Addition Bonus",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Orbs XP Addition Bonus.asset"
+                                      },
+                       "0x7FD687CD":  {
+                                          "name":  "Parry Window Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Parry Window Factor.asset"
+                                      },
+                       "0x81BC6790":  {
+                                          "name":  "Physical resistence",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Physical resistence.asset"
+                                      },
+                       "0xFC585EB0":  {
+                                          "name":  "Prayer Fervour Cost Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Prayer Fervour Cost Factor.asset"
+                                      },
+                       "0xC35BE3CE":  {
+                                          "name":  "Rapier Stun Chance Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Rapier Stun Chance Factor.asset"
+                                      },
+                       "0x4EB6274B":  {
+                                          "name":  "Rapier VD Gain Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Rapier VD Gain Factor.asset"
+                                      },
+                       "0x35136CA0":  {
+                                          "name":  "Rapier VD Lost On Hit Factor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Rapier VD Lost On Hit Factor.asset"
+                                      },
+                       "0x0C46E28A":  {
+                                          "name":  "Tears Addition Bonus",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Modificable/Tears Addition Bonus.asset"
+                                      },
+                       "0x2512AEF9":  {
+                                          "name":  "BerserkMode",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Range/BerserkMode.asset"
+                                      },
+                       "0x2DCD0917":  {
+                                          "name":  "Burnt",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Range/Burnt.asset"
+                                      },
+                       "0xE16595BB":  {
+                                          "name":  "Fervour",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Range/Fervour.asset"
+                                      },
+                       "0x6596D476":  {
+                                          "name":  "FervourCancelled",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Range/FervourCancelled.asset"
+                                      },
+                       "0xB4CDF6CB":  {
+                                          "name":  "Flask",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Range/Flask.asset"
+                                      },
+                       "0x731BE50B":  {
+                                          "name":  "Guilt",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Range/Guilt.asset"
+                                      },
+                       "0xCB5EC6EC":  {
+                                          "name":  "Health",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Range/Health.asset"
+                                      },
+                       "0xE5579E25":  {
+                                          "name":  "KnockedDownRes",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Range/KnockedDownRes.asset"
+                                      },
+                       "0x84D092D3":  {
+                                          "name":  "MCBerserkMode",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Range/MCBerserkMode.asset"
+                                      },
+                       "0x650A1EB5":  {
+                                          "name":  "Poisoned",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Range/Poisoned.asset"
+                                      },
+                       "0x5B81AE2D":  {
+                                          "name":  "Shocked",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Range/Shocked.asset"
+                                      },
+                       "0x8845C836":  {
+                                          "name":  "StaggeredRes",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Range/StaggeredRes.asset"
+                                      },
+                       "0x0EB2EDCB":  {
+                                          "name":  "Stunned",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Range/Stunned.asset"
+                                      },
+                       "0x1EC1217B":  {
+                                          "name":  "TrueSkill",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Range/TrueSkill.asset"
+                                      },
+                       "0x19B90959":  {
+                                          "name":  "TrueSkillBars",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Range/TrueSkillBars.asset"
+                                      },
+                       "0x757184B1":  {
+                                          "name":  "Orb Experience",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/RangeAutoUpgrade/Orb Experience.asset"
+                                      },
+                       "0x14575494":  {
+                                          "name":  "AltarPieceUpgrade",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Value/AltarPieceUpgrade.asset"
+                                      },
+                       "0xC8A74A24":  {
+                                          "name":  "MarksPreceptor",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Value/MarksPreceptor.asset"
+                                      },
+                       "0xAB3D5C9C":  {
+                                          "name":  "Orbs",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Value/Orbs.asset"
+                                      },
+                       "0x2702E13E":  {
+                                          "name":  "RosaryBeadUnlockedSlots",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Value/RosaryBeadUnlockedSlots.asset"
+                                      },
+                       "0x1C8FEF3D":  {
+                                          "name":  "Tears",
+                                          "category":  "stat",
+                                          "path":  "Assets/#Data/StatSystem/Stats/Value/Tears.asset"
+                                      },
+                       "0x5D16D02F":  {
+                                          "name":  "AC20 Token 0",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC20 Token 0.asset"
+                                      },
+                       "0xFFBE44CA":  {
+                                          "name":  "AC20 Token 1",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC20 Token 1.asset"
+                                      },
+                       "0xA265B965":  {
+                                          "name":  "AC20 Token 2",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC20 Token 2.asset"
+                                      },
+                       "0x450D2E00":  {
+                                          "name":  "AC20 Token 3",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC20 Token 3.asset"
+                                      },
+                       "0xE7B4A29B":  {
+                                          "name":  "AC20 Token 4",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC20 Token 4.asset"
+                                      },
+                       "0x8A5C1736":  {
+                                          "name":  "AC20 Token 5",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC20 Token 5.asset"
+                                      },
+                       "0x2D038BD1":  {
+                                          "name":  "AC20 Token 6",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC20 Token 6.asset"
+                                      },
+                       "0xCFAB006C":  {
+                                          "name":  "AC20 Token 7",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC20 Token 7.asset"
+                                      },
+                       "0x47DB2B57":  {
+                                          "name":  "AC20 Token 8",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC20 Token 8.asset"
+                                      },
+                       "0xEA829FF2":  {
+                                          "name":  "AC20 Token 9",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC20 Token 9.asset"
+                                      },
+                       "0x4C7AACCE":  {
+                                          "name":  "AC21 Token CH01",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH01.asset"
+                                      },
+                       "0x4C7AACCF":  {
+                                          "name":  "AC21 Token CH02",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH02.asset"
+                                      },
+                       "0x4C7AACD0":  {
+                                          "name":  "AC21 Token CH03",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH03.asset"
+                                      },
+                       "0x4C7AACC9":  {
+                                          "name":  "AC21 Token CH04",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH04.asset"
+                                      },
+                       "0x4C7AACCA":  {
+                                          "name":  "AC21 Token CH05",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH05.asset"
+                                      },
+                       "0x4C7AACCB":  {
+                                          "name":  "AC21 Token CH06",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH06.asset"
+                                      },
+                       "0x4C7AACCC":  {
+                                          "name":  "AC21 Token CH07",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH07.asset"
+                                      },
+                       "0x4C7AACD5":  {
+                                          "name":  "AC21 Token CH08",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH08.asset"
+                                      },
+                       "0x4C7AACD6":  {
+                                          "name":  "AC21 Token CH09",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH09.asset"
+                                      },
+                       "0xEF222168":  {
+                                          "name":  "AC21 Token CH10",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH10.asset"
+                                      },
+                       "0xEF222169":  {
+                                          "name":  "AC21 Token CH11",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH11.asset"
+                                      },
+                       "0xEF22216A":  {
+                                          "name":  "AC21 Token CH12",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH12.asset"
+                                      },
+                       "0xEF22216B":  {
+                                          "name":  "AC21 Token CH13",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH13.asset"
+                                      },
+                       "0xEF222164":  {
+                                          "name":  "AC21 Token CH14",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH14.asset"
+                                      },
+                       "0xEF222165":  {
+                                          "name":  "AC21 Token CH15",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH15.asset"
+                                      },
+                       "0xEF222166":  {
+                                          "name":  "AC21 Token CH16",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH16.asset"
+                                      },
+                       "0xEF222167":  {
+                                          "name":  "AC21 Token CH17",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH17.asset"
+                                      },
+                       "0xEF222170":  {
+                                          "name":  "AC21 Token CH18",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH18.asset"
+                                      },
+                       "0xEF222171":  {
+                                          "name":  "AC21 Token CH19",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH19.asset"
+                                      },
+                       "0x072BC397":  {
+                                          "name":  "AC21 Token CH20",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH20.asset"
+                                      },
+                       "0x072BC398":  {
+                                          "name":  "AC21 Token CH21",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH21.asset"
+                                      },
+                       "0x072BC399":  {
+                                          "name":  "AC21 Token CH22",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH22.asset"
+                                      },
+                       "0x072BC39A":  {
+                                          "name":  "AC21 Token CH23",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH23.asset"
+                                      },
+                       "0x072BC393":  {
+                                          "name":  "AC21 Token CH24",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH24.asset"
+                                      },
+                       "0x072BC394":  {
+                                          "name":  "AC21 Token CH25",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH25.asset"
+                                      },
+                       "0x072BC395":  {
+                                          "name":  "AC21 Token CH26",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH26.asset"
+                                      },
+                       "0x072BC396":  {
+                                          "name":  "AC21 Token CH27",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH27.asset"
+                                      },
+                       "0x072BC39F":  {
+                                          "name":  "AC21 Token CH28",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH28.asset"
+                                      },
+                       "0x072BC3A0":  {
+                                          "name":  "AC21 Token CH29",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH29.asset"
+                                      },
+                       "0xA9D33832":  {
+                                          "name":  "AC21 Token CH30",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH30.asset"
+                                      },
+                       "0xA9D33833":  {
+                                          "name":  "AC21 Token CH31",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH31.asset"
+                                      },
+                       "0xA9D33834":  {
+                                          "name":  "AC21 Token CH32",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH32.asset"
+                                      },
+                       "0xA9D33835":  {
+                                          "name":  "AC21 Token CH33",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC21 Token CH33.asset"
+                                      },
+                       "0xD2CE7111":  {
+                                          "name":  "AC23 Token 01",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC23 Token 01.asset"
+                                      },
+                       "0xD2CE7112":  {
+                                          "name":  "AC23 Token 02",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC23 Token 02.asset"
+                                      },
+                       "0xD2CE7113":  {
+                                          "name":  "AC23 Token 03",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC23 Token 03.asset"
+                                      },
+                       "0xD2CE710C":  {
+                                          "name":  "AC23 Token 04",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC23 Token 04.asset"
+                                      },
+                       "0xD2CE710D":  {
+                                          "name":  "AC23 Token 05",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC23 Token 05.asset"
+                                      },
+                       "0xD2CE710E":  {
+                                          "name":  "AC23 Token 06",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC23 Token 06.asset"
+                                      },
+                       "0xD2CE710F":  {
+                                          "name":  "AC23 Token 07",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC23 Token 07.asset"
+                                      },
+                       "0xD2CE7108":  {
+                                          "name":  "AC23 Token 08",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC23 Token 08.asset"
+                                      },
+                       "0xD2CE7109":  {
+                                          "name":  "AC23 Token 09",
+                                          "category":  "token",
+                                          "path":  "Assets/#Data/Achievements/Tokens/AC23 Token 09.asset"
+                                      },
+                       "0x3B6A298E":  {
+                                          "name":  "MEM_201_BLAZING_STUN",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM_201_BLAZING_STUN.asset"
+                                      },
+                       "0x34DF9497":  {
+                                          "name":  "MEM_201_CORE_CHARGE_ATTACK",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM_201_CORE_CHARGE_ATTACK.asset"
+                                      },
+                       "0x1D8F8953":  {
+                                          "name":  "MEM_201_CORE_DASH_ATTACK",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM_201_CORE_DASH_ATTACK.asset"
+                                      },
+                       "0x1C254CBF":  {
+                                          "name":  "MEM_201_CORE_IGNITION",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM_201_CORE_IGNITION.asset"
+                                      },
+                       "0xEBF23B6A":  {
+                                          "name":  "MEM_201_FINISHER",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM_201_FINISHER.asset"
+                                      },
+                       "0x1E4089C7":  {
+                                          "name":  "MEM_201_GRAPPLING_STRIKE",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM_201_GRAPPLING_STRIKE.asset"
+                                      },
+                       "0x990CFDB2":  {
+                                          "name":  "MEM_201_GRAPPLING_STRIKE_UPGRADE",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM_201_GRAPPLING_STRIKE_UPGRADE.asset"
+                                      },
+                       "0xAA9D12BF":  {
+                                          "name":  "MEM_201_PASSIVE_FERVOUR_GAIN",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM_201_PASSIVE_FERVOUR_GAIN.asset"
+                                      },
+                       "0xC38E8FF4":  {
+                                          "name":  "MEM_201_PASSIVE_WHIP_BASE_DMG1",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM_201_PASSIVE_WHIP_BASE_DMG1.asset"
+                                      },
+                       "0x20E71B59":  {
+                                          "name":  "MEM_201_PASSIVE_WHIP_BASE_DMG2",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM_201_PASSIVE_WHIP_BASE_DMG2.asset"
+                                      },
+                       "0x08E6F630":  {
+                                          "name":  "MEM_201_PASSIVE_WHIP_FIRE_DMG",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM_201_PASSIVE_WHIP_FIRE_DMG.asset"
+                                      },
+                       "0x8FDE0AC0":  {
+                                          "name":  "MEM_201_PASSIVE_WHIP_SACRED_DMG",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM_201_PASSIVE_WHIP_SACRED_DMG.asset"
+                                      },
+                       "0x97473439":  {
+                                          "name":  "MEM_201_SCORING_WAVE_UPGRADE_WHIPFALL_SPIRAL_UPGRADE",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM_201_SCORING_WAVE_UPGRADE_WHIPFALL_SPIRAL_UPGRADE.asset"
+                                      },
+                       "0x0B68B8EA":  {
+                                          "name":  "MEM_201_SCOURING_WAVE",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM_201_SCOURING_WAVE.asset"
+                                      },
+                       "0x0FC0BE19":  {
+                                          "name":  "MEM_201_WHIPFALL_SPIRAL",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM_201_WHIPFALL_SPIRAL.asset"
+                                      },
+                       "0x7BC6F5AB":  {
+                                          "name":  "MEM01_AIR_IGNITION",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_AIR_IGNITION.asset"
+                                      },
+                       "0xBD0B9330":  {
+                                          "name":  "MEM01_CHARGE1",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_CHARGE1.asset"
+                                      },
+                       "0xBD0B9333":  {
+                                          "name":  "MEM01_CHARGE2",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_CHARGE2.asset"
+                                      },
+                       "0xD8261709":  {
+                                          "name":  "MEM01_CHARGED_HAMMER_UPG",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_CHARGED_HAMMER_UPG.asset"
+                                      },
+                       "0xF2E7C686":  {
+                                          "name":  "MEM01_CHARGED_WHIRLWIND",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_CHARGED_WHIRLWIND.asset"
+                                      },
+                       "0x5355DC45":  {
+                                          "name":  "MEM01_CORE_CHARGE",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_CORE_CHARGE.asset"
+                                      },
+                       "0x2C20D090":  {
+                                          "name":  "MEM01_CORE_IGNITION",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_CORE_IGNITION.asset"
+                                      },
+                       "0xEBA89757":  {
+                                          "name":  "MEM01_IGNITION1",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_IGNITION1.asset"
+                                      },
+                       "0xEBA89758":  {
+                                          "name":  "MEM01_IGNITION2",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_IGNITION2.asset"
+                                      },
+                       "0xEBA89759":  {
+                                          "name":  "MEM01_IGNITION3",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_IGNITION3.asset"
+                                      },
+                       "0x0A3FF8E9":  {
+                                          "name":  "MEM01_IGNITIONSTRIKE1",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_IGNITIONSTRIKE1.asset"
+                                      },
+                       "0x0A3FF8E6":  {
+                                          "name":  "MEM01_IGNITIONSTRIKE2",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_IGNITIONSTRIKE2.asset"
+                                      },
+                       "0xA0AF988F":  {
+                                          "name":  "MEM01_PASSIVE_CENSER_DMG1",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_PASSIVE_CENSER_DMG1.asset"
+                                      },
+                       "0xA0AF9892":  {
+                                          "name":  "MEM01_PASSIVE_CENSER_DMG2",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_PASSIVE_CENSER_DMG2.asset"
+                                      },
+                       "0x97F4F9FB":  {
+                                          "name":  "MEM01_PASSIVE_CENSER_FERVORGAIN",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_PASSIVE_CENSER_FERVORGAIN.asset"
+                                      },
+                       "0xBA1AC6EE":  {
+                                          "name":  "MEM01_PASSIVE_DEF",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_PASSIVE_DEF.asset"
+                                      },
+                       "0xF859FBE4":  {
+                                          "name":  "MEM01_PASSIVE_FIRE_DMG",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_PASSIVE_FIRE_DMG.asset"
+                                      },
+                       "0x98CDD8E4":  {
+                                          "name":  "MEM01_PASSIVE_MIASMA_DMG",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM01_PASSIVE_MIASMA_DMG.asset"
+                                      },
+                       "0xF6EC0CB1":  {
+                                          "name":  "MEM02_AIRCROSS1",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_AIRCROSS1.asset"
+                                      },
+                       "0xF6EC0CB4":  {
+                                          "name":  "MEM02_AIRCROSS2",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_AIRCROSS2.asset"
+                                      },
+                       "0x6BF8DE75":  {
+                                          "name":  "MEM02_CORE_LUNGE",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_CORE_LUNGE.asset"
+                                      },
+                       "0x409C2680":  {
+                                          "name":  "MEM02_CORE_PARRY",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_CORE_PARRY.asset"
+                                      },
+                       "0xDB16A172":  {
+                                          "name":  "MEM02_FINISHER",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_FINISHER.asset"
+                                      },
+                       "0x75A910BC":  {
+                                          "name":  "MEM02_LUNGE_UPG",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_LUNGE_UPG.asset"
+                                      },
+                       "0x15482FB5":  {
+                                          "name":  "MEM02_PASSIVE_COUNTER_DMG",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_PASSIVE_COUNTER_DMG.asset"
+                                      },
+                       "0x97DA0AEF":  {
+                                          "name":  "MEM02_PASSIVE_DEF",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_PASSIVE_DEF.asset"
+                                      },
+                       "0xF1236E2D":  {
+                                          "name":  "MEM02_PASSIVE_LIGHTNING_DMG",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_PASSIVE_LIGHTNING_DMG.asset"
+                                      },
+                       "0x41B64E5D":  {
+                                          "name":  "MEM02_PASSIVE_RAPIER_DMG1",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_PASSIVE_RAPIER_DMG1.asset"
+                                      },
+                       "0x41B64E60":  {
+                                          "name":  "MEM02_PASSIVE_RAPIER_DMG2",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_PASSIVE_RAPIER_DMG2.asset"
+                                      },
+                       "0xE4CC4954":  {
+                                          "name":  "MEM02_PASSIVE_VD_GAIN",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_PASSIVE_VD_GAIN.asset"
+                                      },
+                       "0x4FF8A9AE":  {
+                                          "name":  "MEM02_PERFECT_PARRY",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_PERFECT_PARRY.asset"
+                                      },
+                       "0x665C9E9E":  {
+                                          "name":  "MEM02_STORM1",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_STORM1.asset"
+                                      },
+                       "0x7E6640CD":  {
+                                          "name":  "MEM02_STORM2",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_STORM2.asset"
+                                      },
+                       "0xBE925107":  {
+                                          "name":  "MEM02_VD1",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_VD1.asset"
+                                      },
+                       "0xBE92510A":  {
+                                          "name":  "MEM02_VD2",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_VD2.asset"
+                                      },
+                       "0xBE925109":  {
+                                          "name":  "MEM02_VD3",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM02_VD3.asset"
+                                      },
+                       "0x7D0CD14A":  {
+                                          "name":  "MEM03_BERSERK1",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_BERSERK1.asset"
+                                      },
+                       "0x1FB445E5":  {
+                                          "name":  "MEM03_BERSERK2",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_BERSERK2.asset"
+                                      },
+                       "0xC25BBA80":  {
+                                          "name":  "MEM03_BERSERK3",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_BERSERK3.asset"
+                                      },
+                       "0x477766A1":  {
+                                          "name":  "MEM03_CORE_PARRY",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_CORE_PARRY.asset"
+                                      },
+                       "0x80BD67A2":  {
+                                          "name":  "MEM03_CORE_PLUNGE",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_CORE_PLUNGE.asset"
+                                      },
+                       "0xA500AB53":  {
+                                          "name":  "MEM03_FINISHER_FWD",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_FINISHER_FWD.asset"
+                                      },
+                       "0xDE903748":  {
+                                          "name":  "MEM03_FINISHER_FWD_UPG",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_FINISHER_FWD_UPG.asset"
+                                      },
+                       "0x1855E505":  {
+                                          "name":  "MEM03_FINISHER_UPDOWN",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_FINISHER_UPDOWN.asset"
+                                      },
+                       "0xB9FCA8B7":  {
+                                          "name":  "MEM03_PASSIVE_BERSERK",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_PASSIVE_BERSERK.asset"
+                                      },
+                       "0x97694377":  {
+                                          "name":  "MEM03_PASSIVE_BLADE_DMG1",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_PASSIVE_BLADE_DMG1.asset"
+                                      },
+                       "0x7F5FA148":  {
+                                          "name":  "MEM03_PASSIVE_BLADE_DMG2",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_PASSIVE_BLADE_DMG2.asset"
+                                      },
+                       "0x7EA16FF0":  {
+                                          "name":  "MEM03_PASSIVE_DEF",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_PASSIVE_DEF.asset"
+                                      },
+                       "0xE4795EB9":  {
+                                          "name":  "MEM03_PASSIVE_MYSTIC_DMG",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_PASSIVE_MYSTIC_DMG.asset"
+                                      },
+                       "0x26F89E25":  {
+                                          "name":  "MEM03_PASSIVE_STUN",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_PASSIVE_STUN.asset"
+                                      },
+                       "0x0B49A6CD":  {
+                                          "name":  "MEM03_PERFECT_PARRY",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_PERFECT_PARRY.asset"
+                                      },
+                       "0xECDBDF7D":  {
+                                          "name":  "MEM03_PLUNGE_UPG",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_PLUNGE_UPG.asset"
+                                      },
+                       "0x7D4F0DC5":  {
+                                          "name":  "MEM03_ULTIMATE1",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_ULTIMATE1.asset"
+                                      },
+                       "0x7D4F0DC2":  {
+                                          "name":  "MEM03_ULTIMATE2",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM03_ULTIMATE2.asset"
+                                      },
+                       "0x48AA797A":  {
+                                          "name":  "MEM101_CHARGED",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM101_CHARGED.asset"
+                                      },
+                       "0x240ECC19":  {
+                                          "name":  "MEM101_CHARGED_UPG",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM101_CHARGED_UPG.asset"
+                                      },
+                       "0x9543C3CC":  {
+                                          "name":  "MEM101_CORE_PARRY",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM101_CORE_PARRY.asset"
+                                      },
+                       "0x3FAF2CCF":  {
+                                          "name":  "MEM101_CORE_PLUNGE",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM101_CORE_PLUNGE.asset"
+                                      },
+                       "0x4E4DAAC5":  {
+                                          "name":  "MEM101_CORE_PLUNGE_UPD",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM101_CORE_PLUNGE_UPD.asset"
+                                      },
+                       "0xCC1333FF":  {
+                                          "name":  "MEM101_CORE_PROJECTILE",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM101_CORE_PROJECTILE.asset"
+                                      },
+                       "0x2AA94983":  {
+                                          "name":  "MEM101_CORE_TELEPORT",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM101_CORE_TELEPORT.asset"
+                                      },
+                       "0xEE1B50A6":  {
+                                          "name":  "MEM101_FINISHER",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM101_FINISHER.asset"
+                                      },
+                       "0x4C610066":  {
+                                          "name":  "MEM101_FINISHER_UPDOWN",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM101_FINISHER_UPDOWN.asset"
+                                      },
+                       "0xD5B6E87B":  {
+                                          "name":  "MEM101_LUNGE",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM101_LUNGE.asset"
+                                      },
+                       "0xB65E668E":  {
+                                          "name":  "MEM101_PERFECT_PARRY",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM101_PERFECT_PARRY.asset"
+                                      },
+                       "0xDC30728E":  {
+                                          "name":  "MEM101_PROJECTILE_UPG_01",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM101_PROJECTILE_UPG_01.asset"
+                                      },
+                       "0xC426D05F":  {
+                                          "name":  "MEM101_PROJECTILE_UPG_02",
+                                          "category":  "weaponMemory",
+                                          "path":  "Assets/#Data/WeaponMemory/IDs/MEM101_PROJECTILE_UPG_02.asset"
+                                      },
+                       "0x3169C978":  {
+                                          "name":  "CharacterFacingDirection",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:CharacterFacingDirection"
+                                      },
+                       "0x447211B4":  {
+                                          "name":  "EtherealLeversUse",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:EtherealLeversUse"
+                                      },
+                       "0x455D484C":  {
+                                          "name":  "FlaskUse",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:FlaskUse"
+                                      },
+                       "0x8744FE9F":  {
+                                          "name":  "InteractableUse",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:InteractableUse"
+                                      },
+                       "0x096B407F":  {
+                                          "name":  "LadderClimb",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:LadderClimb"
+                                      },
+                       "0xC53FD128":  {
+                                          "name":  "LedgeWallClimb",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:LedgeWallClimb"
+                                      },
+                       "0x1DE4AC4F":  {
+                                          "name":  "HookShot",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:HookShot"
+                                      },
+                       "0x978778F4":  {
+                                          "name":  "LedgeClimb",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:LedgeClimb"
+                                      },
+                       "0x26675E80":  {
+                                          "name":  "MagicRingClimb",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:MagicRingClimb"
+                                      },
+                       "0xDADBD586":  {
+                                          "name":  "AirDash",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:AirDash"
+                                      },
+                       "0x02EA90EA":  {
+                                          "name":  "AirJump",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:AirJump"
+                                      },
+                       "0x442A2495":  {
+                                          "name":  "ApplyDirectionalImpulseAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ApplyDirectionalImpulseAbility"
+                                      },
+                       "0xB1F65B7C":  {
+                                          "name":  "BladeBerserkModeActivator",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:BladeBerserkModeActivator"
+                                      },
+                       "0x04F4F384":  {
+                                          "name":  "BladeParryAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:BladeParryAbility"
+                                      },
+                       "0xDC239C66":  {
+                                          "name":  "GroundRecovery",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:GroundRecovery"
+                                      },
+                       "0xA57048C8":  {
+                                          "name":  "HardLandingAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:HardLandingAbility"
+                                      },
+                       "0x978F6F03":  {
+                                          "name":  "HorizontalImpulseAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:HorizontalImpulseAbility"
+                                      },
+                       "0x1907F2BF":  {
+                                          "name":  "InstadeathAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:InstadeathAbility"
+                                      },
+                       "0x5AD454DA":  {
+                                          "name":  "MeaCulpaBerserkModeActivator",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:MeaCulpaBerserkModeActivator"
+                                      },
+                       "0xC9E7685A":  {
+                                          "name":  "MoveXYAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:MoveXYAbility"
+                                      },
+                       "0x44395674":  {
+                                          "name":  "PlannerAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:PlannerAbility"
+                                      },
+                       "0x708BC127":  {
+                                          "name":  "RapierParryAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:RapierParryAbility"
+                                      },
+                       "0x700B1F27":  {
+                                          "name":  "StunBlockAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:StunBlockAbility"
+                                      },
+                       "0xC2127666":  {
+                                          "name":  "StunParryAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:StunParryAbility"
+                                      },
+                       "0xE78C8566":  {
+                                          "name":  "SuperArmorAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:SuperArmorAbility"
+                                      },
+                       "0x03E7FEA9":  {
+                                          "name":  "ThrowObjectAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ThrowObjectAbility"
+                                      },
+                       "0x9264DE24":  {
+                                          "name":  "ThrowObjectDirectionAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ThrowObjectDirectionAbility"
+                                      },
+                       "0xD4B235EB":  {
+                                          "name":  "VerticalImpulseAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:VerticalImpulseAbility"
+                                      },
+                       "0x1CF60680":  {
+                                          "name":  "ZipLineSlide",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ZipLineSlide"
+                                      },
+                       "0x1CD67580":  {
+                                          "name":  "AttractorAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:AttractorAbility"
+                                      },
+                       "0x1B510203":  {
+                                          "name":  "AttractorAimAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:AttractorAimAbility"
+                                      },
+                       "0x8B7CE625":  {
+                                          "name":  "BatTransformAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:BatTransformAbility"
+                                      },
+                       "0x257D873F":  {
+                                          "name":  "BreathUnderWaterAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:BreathUnderWaterAbility"
+                                      },
+                       "0xC44CD752":  {
+                                          "name":  "DrownAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:DrownAbility"
+                                      },
+                       "0xC3094EC8":  {
+                                          "name":  "DummyAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:DummyAbility"
+                                      },
+                       "0x4552255A":  {
+                                          "name":  "FaceVelocityAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:FaceVelocityAbility"
+                                      },
+                       "0x4F347232":  {
+                                          "name":  "FlyingMovementAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:FlyingMovementAbility"
+                                      },
+                       "0x1F65A91D":  {
+                                          "name":  "MovementAreaModifierAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:MovementAreaModifierAbility"
+                                      },
+                       "0x352D61F8":  {
+                                          "name":  "SimpleDirectionalDash",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:SimpleDirectionalDash"
+                                      },
+                       "0xFF8552CA":  {
+                                          "name":  "TerrainEnduranceAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:TerrainEnduranceAbility"
+                                      },
+                       "0x8D6CD37A":  {
+                                          "name":  "WaterMovementAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:WaterMovementAbility"
+                                      },
+                       "0x6923C00A":  {
+                                          "name":  "WhipCoreIgnitionModeActivator",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:WhipCoreIgnitionModeActivator"
+                                      },
+                       "0x162CB7EA":  {
+                                          "name":  "T",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:T"
+                                      },
+                       "0x7A439E91":  {
+                                          "name":  "object",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:object"
+                                      },
+                       "0x72D0C59A":  {
+                                          "name":  "CenserChargedAttack",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:CenserChargedAttack"
+                                      },
+                       "0x576CA2BC":  {
+                                          "name":  "DashStrike",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:DashStrike"
+                                      },
+                       "0x8D93CDCE":  {
+                                          "name":  "Dash",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:Dash"
+                                      },
+                       "0xCF8D56F4":  {
+                                          "name":  "DragOnGroundAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:DragOnGroundAbility"
+                                      },
+                       "0x347FC27E":  {
+                                          "name":  "ExecutionAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ExecutionAbility"
+                                      },
+                       "0x602AE1DB":  {
+                                          "name":  "FastPrayerAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:FastPrayerAbility"
+                                      },
+                       "0xA180799E":  {
+                                          "name":  "FullPrayerAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:FullPrayerAbility"
+                                      },
+                       "0x7BD252E6":  {
+                                          "name":  "GhostClimb",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:GhostClimb"
+                                      },
+                       "0xE3466E5F":  {
+                                          "name":  "GlassWalk",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:GlassWalk"
+                                      },
+                       "0x84734265":  {
+                                          "name":  "GoldFlaskAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:GoldFlaskAbility"
+                                      },
+                       "0xB458DE3C":  {
+                                          "name":  "Gravity",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:Gravity"
+                                      },
+                       "0x5E0A3036":  {
+                                          "name":  "MeaCulpaChargedAttack",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:MeaCulpaChargedAttack"
+                                      },
+                       "0x1F00A98C":  {
+                                          "name":  "QPC04_AimAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:QPC04_AimAbility"
+                                      },
+                       "0xA30418B7":  {
+                                          "name":  "ThrowObjectToTargetAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ThrowObjectToTargetAbility"
+                                      },
+                       "0x8F64AB23":  {
+                                          "name":  "WallClimb",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:WallClimb"
+                                      },
+                       "0xE13B2908":  {
+                                          "name":  "WhipChargedAttack",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:WhipChargedAttack"
+                                      },
+                       "0x5FFFEDFD":  {
+                                          "name":  "AirRecovery",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:AirRecovery"
+                                      },
+                       "0xC879AB50":  {
+                                          "name":  "AttackAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:AttackAbility"
+                                      },
+                       "0x8790CC1E":  {
+                                          "name":  "CenserIgniter",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:CenserIgniter"
+                                      },
+                       "0x88211EE4":  {
+                                          "name":  "ChangeWeaponAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ChangeWeaponAbility"
+                                      },
+                       "0x8C6C4967":  {
+                                          "name":  "CharacterFacingDirectionOnAir",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:CharacterFacingDirectionOnAir"
+                                      },
+                       "0xEE0D905C":  {
+                                          "name":  "Crouch",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:Crouch"
+                                      },
+                       "0xDA4AECDD":  {
+                                          "name":  "HorizontalMovement",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:HorizontalMovement"
+                                      },
+                       "0x7510A056":  {
+                                          "name":  "HorizontalMovementOnAir",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:HorizontalMovementOnAir"
+                                      },
+                       "0xD6FB2436":  {
+                                          "name":  "JumpDown",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:JumpDown"
+                                      },
+                       "0x323E5DC2":  {
+                                          "name":  "Jump",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:Jump"
+                                      },
+                       "0x5E04D89E":  {
+                                          "name":  "MeaCulpaPhantomTeleportAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:MeaCulpaPhantomTeleportAbility"
+                                      },
+                       "0x92D0BF99":  {
+                                          "name":  "MeaCulpaTeleportAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:MeaCulpaTeleportAbility"
+                                      },
+                       "0x364CF836":  {
+                                          "name":  "RapierTeleportAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:RapierTeleportAbility"
+                                      },
+                       "0xAA805999":  {
+                                          "name":  "ShieldAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ShieldAbility"
+                                      },
+                       "0xAB1502EF":  {
+                                          "name":  "StaggerAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:StaggerAbility"
+                                      },
+                       "0xD256275A":  {
+                                          "name":  "WallJump",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:WallJump"
+                                      },
+                       "0xF089532F":  {
+                                          "name":  "ChangePrayer",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ChangePrayer"
+                                      },
+                       "0xEE15E8B0":  {
+                                          "name":  "PathFindingAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:PathFindingAbility"
+                                      },
+                       "0xBF943113":  {
+                                          "name":  "ChangeArmorAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ChangeArmorAbility"
+                                      },
+                       "0x5619A253":  {
+                                          "name":  "ChargeForwardAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ChargeForwardAbility"
+                                      },
+                       "0xA603BADD":  {
+                                          "name":  "ControlledPositionAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ControlledPositionAbility"
+                                      },
+                       "0x600DB763":  {
+                                          "name":  "ControlledVelocityAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ControlledVelocityAbility"
+                                      },
+                       "0x079B2019":  {
+                                          "name":  "FollowWithDampAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:FollowWithDampAbility"
+                                      },
+                       "0x59806C33":  {
+                                          "name":  "HitStunAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:HitStunAbility"
+                                      },
+                       "0x9C541044":  {
+                                          "name":  "PlayMakerFSMAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:PlayMakerFSMAbility"
+                                      },
+                       "0x70A4B36D":  {
+                                          "name":  "StepMovement",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:StepMovement"
+                                      },
+                       "0xF3CE0A86":  {
+                                          "name":  "FollowPathAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:FollowPathAbility"
+                                      },
+                       "0xFBC94B52":  {
+                                          "name":  "BehaviorTreeAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:BehaviorTreeAbility"
+                                      },
+                       "0x695B687C":  {
+                                          "name":  "CornerAlignment",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:CornerAlignment"
+                                      },
+                       "0xCDFA6B58":  {
+                                          "name":  "TurnOnAirCollision",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:TurnOnAirCollision"
+                                      },
+                       "0x8E34F909":  {
+                                          "name":  "WallAlignment",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:WallAlignment"
+                                      },
+                       "0x504DDDC7":  {
+                                          "name":  "CharacterVerticalFacing",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:CharacterVerticalFacing"
+                                      },
+                       "0x29DC7AD8":  {
+                                          "name":  "MoveHuggingPlatformsAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:MoveHuggingPlatformsAbility"
+                                      },
+                       "0xF2A614C8":  {
+                                          "name":  "MoveTowardsTPOAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:MoveTowardsTPOAbility"
+                                      },
+                       "0x8D0576D7":  {
+                                          "name":  "ReloadAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ReloadAbility"
+                                      },
+                       "0x68B50082":  {
+                                          "name":  "Charge",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:Charge"
+                                      },
+                       "0x091865F1":  {
+                                          "name":  "VerticalMovement",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:VerticalMovement"
+                                      },
+                       "0x42A153CA":  {
+                                          "name":  "ParryAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ParryAbility"
+                                      },
+                       "0xE1EBEE0F":  {
+                                          "name":  "FreeMoveAbility",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:FreeMoveAbility"
+                                      },
+                       "0x8ED4C1A9":  {
+                                          "name":  "BackStep",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:BackStep"
+                                      },
+                       "0x335AFDAC":  {
+                                          "name":  "DashStep",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:DashStep"
+                                      },
+                       "0xA9B5E6B0":  {
+                                          "name":  "JetPack",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:JetPack"
+                                      },
+                       "0x47478081":  {
+                                          "name":  "WallSlide",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:WallSlide"
+                                      },
+                       "0x6CFF97B8":  {
+                                          "name":  "ABILITY",
+                                          "category":  "ability",
+                                          "path":  "il2cpp:ABILITY"
+                                      }
+                   }
+}

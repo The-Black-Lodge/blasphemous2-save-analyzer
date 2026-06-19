@@ -6,7 +6,7 @@ import {
 import { formatElementKey, resolveTypeName } from "./catalogs"
 import {
   enrichObject,
-  extractInventorySummary,
+  extractPlayerSummary,
   type ParsedSave,
 } from "./payloadDecoders"
 
@@ -202,7 +202,7 @@ export function parseSaveBytes(bytes: Uint8Array): ReadableSaveJson {
     }
   }
 
-  const player = extractInventorySummary(parsed)
+  const player = extractPlayerSummary(parsed)
   if (player) out.player = player
 
   return out

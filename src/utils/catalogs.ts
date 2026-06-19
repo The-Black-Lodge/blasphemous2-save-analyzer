@@ -1,5 +1,6 @@
 import idCatalogJson from "../data/id-catalog.json"
 import itemCatalogJson from "../data/item-catalog.json"
+import nameCatalogJson from "../data/name-catalog.json"
 
 interface IdCatalogEntry {
   id: number
@@ -29,6 +30,16 @@ interface ItemCatalog {
   itemsById: Record<string, ItemCatalogEntry>
 }
 
+interface NameCatalogEntry {
+  name: string
+  category: string
+  path?: string
+}
+
+interface NameCatalog {
+  namesByHex: Record<string, NameCatalogEntry>
+}
+
 export interface ItemRef {
   id: number
   idHex: string
@@ -41,6 +52,57 @@ export interface ItemRef {
 
 const idCatalog = idCatalogJson as IdCatalog
 const itemCatalog = itemCatalogJson as ItemCatalog
+const nameCatalog = nameCatalogJson as NameCatalog
+
+export function humanizeIdentifier(name: string): string {
+  return name
+    .replace(/_/g, " ")
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/([A-Z]+)([A-Z][a-z])/g, "$1 $2")
+}
+
+function normalizeHashHex(hashHex: string): string {
+  const trimmed = hashHex.trim()
+  if (/^0x/i.test(trimmed)) {
+    return `0x${trimmed.slice(2).toUpperCase()}`
+  }
+  return `0x${trimmed.toUpperCase()}`
+}
+
+function parseHashHex(hashHex: string): number {
+  const normalized = normalizeHashHex(hashHex)
+  const unsigned = Number.parseInt(normalized.slice(2), 16)
+  return unsigned > 0x7fffffff ? unsigned - 0x1_0000_0000 : unsigned
+}
+
+export function resolveHashName(hashHex: string): NameCatalogEntry | null {
+  return nameCatalog.namesByHex[normalizeHashHex(hashHex)] ?? null
+}
+
+export function resolveHashDisplayName(hashHex: string): string | null {
+  const entry = resolveHashName(normalizeHashHex(hashHex))
+  if (!entry) return null
+  if (entry.category === "ability") {
+    return humanizeIdentifier(entry.name)
+  }
+  if (entry.category === "weaponMemory") {
+    return entry.name.replace(/_/g, " ")
+  }
+  return entry.name
+}
+
+/** Resolve a persistence ID to the best available human label. */
+export function resolveIdLabel(hashHex: string): string {
+  const normalized = normalizeHashHex(hashHex)
+  const fromNameCatalog = resolveHashDisplayName(normalized)
+  if (fromNameCatalog) return fromNameCatalog
+
+  const item = formatItemRef(parseHashHex(normalized))
+  const itemLabel = item.displayName ?? item.caption ?? item.name
+  if (itemLabel) return itemLabel
+
+  return normalized
+}
 
 export function resolveManagerName(key: number): string | null {
   const entry = idCatalog.managersById[String(key)]
