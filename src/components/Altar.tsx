@@ -1,4 +1,5 @@
 import b2data from "../data/b2data.json"
+import { FigureSprite } from "./FigureSprite"
 import { useSave } from "./SaveContext"
 import {
   FIGURE_KIND_LABELS,
@@ -26,6 +27,20 @@ const maidenChain = getMaidenChain()
 const figureBySource = new Map(
   b2data.figures.map((figure) => [figure.source, figure]),
 )
+
+function getFigureSpriteSource(
+  source: string,
+  acquired: Set<string>,
+): string {
+  if (source === maidenChain.displaySource) {
+    const chainIndex = getHighestAcquiredChainIndex(maidenChain, acquired)
+    if (chainIndex !== null) {
+      return maidenChain.sources[chainIndex]
+    }
+  }
+
+  return source
+}
 
 function MaidenLabel({ chainIndex }: { chainIndex: number | null }) {
   if (chainIndex === maidenChain.sources.length - 1) {
@@ -68,15 +83,23 @@ function FigureRow({
     const chainIndex = getHighestAcquiredChainIndex(maidenChain, acquired)
 
     return (
-      <li key={source}>
-        <i
-          className={
-            isChainAcquired(maidenChain, acquired)
-              ? "fa-regular fa-square-check"
-              : "fa-regular fa-square"
-          }
-        ></i>{" "}
-        <MaidenLabel chainIndex={chainIndex} />
+      <li key={source} className="altar-figure-row">
+        <span className="altar-figure-label">
+          <i
+            className={
+              isChainAcquired(maidenChain, acquired)
+                ? "fa-regular fa-square-check"
+                : "fa-regular fa-square"
+            }
+          ></i>{" "}
+          <MaidenLabel chainIndex={chainIndex} />
+        </span>
+        <span className="altar-figure-sprite-slot">
+          <FigureSprite
+            source={getFigureSpriteSource(source, acquired)}
+            acquired={acquired}
+          />
+        </span>
       </li>
     )
   }
@@ -87,35 +110,46 @@ function FigureRow({
     const isBurnt = acquired.has(burntSource)
 
     return (
-      <li key={source}>
-        <i
-          className={
-            isChainAcquired(envoyChain, acquired)
-              ? "fa-regular fa-square-check"
-              : "fa-regular fa-square"
-          }
-        ></i>{" "}
-        {figure.caption.en}
-        {isBurnt ? (
-          <>
-            {" "}
-            <i className="fa-solid fa-fire"></i>
-          </>
-        ) : null}
+      <li key={source} className="altar-figure-row">
+        <span className="altar-figure-label">
+          <i
+            className={
+              isChainAcquired(envoyChain, acquired)
+                ? "fa-regular fa-square-check"
+                : "fa-regular fa-square"
+            }
+          ></i>{" "}
+          {isBurnt ? `Burnt Figure (${figure.caption.en})` : figure.caption.en}
+        </span>
+        <span className="altar-figure-sprite-slot">
+          <FigureSprite
+            source={getFigureSpriteSource(source, acquired)}
+            acquired={acquired}
+            burnt={isBurnt}
+          />
+        </span>
       </li>
     )
   }
 
   return (
-    <li key={source}>
-      <i
-        className={
-          acquired.has(source)
-            ? "fa-regular fa-square-check"
-            : "fa-regular fa-square"
-        }
-      ></i>{" "}
-      {figure.caption.en}
+    <li key={source} className="altar-figure-row">
+      <span className="altar-figure-label">
+        <i
+          className={
+            acquired.has(source)
+              ? "fa-regular fa-square-check"
+              : "fa-regular fa-square"
+          }
+        ></i>{" "}
+        {figure.caption.en}
+      </span>
+      <span className="altar-figure-sprite-slot">
+        <FigureSprite
+          source={getFigureSpriteSource(source, acquired)}
+          acquired={acquired}
+        />
+      </span>
     </li>
   )
 }

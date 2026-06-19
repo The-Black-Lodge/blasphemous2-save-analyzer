@@ -1,0 +1,1055 @@
+{
+  "atlas": {
+    "argent-board-figures": {
+      "w": 512,
+      "h": 512
+    },
+    "argent-board-figures-2": {
+      "w": 512,
+      "h": 512
+    },
+    "burn-board-figures": {
+      "w": 128,
+      "h": 256
+    }
+  },
+  "sprites": {
+    "FG01": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 0,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 0,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG02": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 38,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 38,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG03": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 76,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 76,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG04": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 114,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 114,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG05": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 152,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 152,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG06": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 190,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 190,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG07": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 228,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 228,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG08": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 266,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 266,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG09": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 304,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 304,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG10": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 342,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 342,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG101": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 152,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 152,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG102": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 190,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 190,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG103": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 228,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 228,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG104": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 266,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 266,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG105": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 304,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 304,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG106": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 342,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 342,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG107": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 380,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 380,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG108": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 418,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 418,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG109": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 456,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 456,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG11": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 380,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 380,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG110": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 0,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 0,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG111": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 38,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 38,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG112": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 76,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 76,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG113": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 114,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 114,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG12": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 418,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 418,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG13": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 456,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 456,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG14": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 0,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 0,
+        "y": 112,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG15": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 38,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 38,
+        "y": 112,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG16": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 76,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 76,
+        "y": 112,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG17": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 114,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 114,
+        "y": 112,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG18": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 152,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 152,
+        "y": 112,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG19": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 190,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 190,
+        "y": 112,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG20": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 228,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 228,
+        "y": 112,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG201": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 152,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 0,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG202": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 190,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 38,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG203": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 228,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 76,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG204": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 266,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 114,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG205": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 304,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 152,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG206": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 342,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 190,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG207": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 380,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 228,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG208": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 418,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 266,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG209": {
+      "empty": {
+        "sheet": "argent-board-figures-2",
+        "x": 456,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "full": {
+        "sheet": "argent-board-figures-2",
+        "x": 304,
+        "y": 192,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG21": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 266,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 266,
+        "y": 112,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG22": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 418,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 418,
+        "y": 32,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG23": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 342,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 342,
+        "y": 112,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG24": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 152,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 152,
+        "y": 32,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG25": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 380,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 380,
+        "y": 112,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG26": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 304,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 304,
+        "y": 112,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG27": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 456,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 456,
+        "y": 32,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG28": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 418,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 418,
+        "y": 112,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG29": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 456,
+        "y": 352,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 456,
+        "y": 112,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG30": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 0,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 0,
+        "y": 32,
+        "w": 38,
+        "h": 80
+      },
+      "burn": {
+        "sheet": "burn-board-figures",
+        "x": 0,
+        "y": 176,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG31": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 38,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 38,
+        "y": 32,
+        "w": 38,
+        "h": 80
+      },
+      "burn": {
+        "sheet": "burn-board-figures",
+        "x": 0,
+        "y": 94,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG32": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 76,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 76,
+        "y": 32,
+        "w": 38,
+        "h": 80
+      },
+      "burn": {
+        "sheet": "burn-board-figures",
+        "x": 40,
+        "y": 176,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG33": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 114,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 114,
+        "y": 32,
+        "w": 38,
+        "h": 80
+      },
+      "burn": {
+        "sheet": "burn-board-figures",
+        "x": 40,
+        "y": 94,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG34": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 190,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 190,
+        "y": 32,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG35": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 228,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 228,
+        "y": 32,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG36": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 266,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 266,
+        "y": 32,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG37": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 304,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 304,
+        "y": 32,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG38": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 342,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 342,
+        "y": 32,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG39": {
+      "base": {
+        "sheet": "argent-board-figures",
+        "x": 380,
+        "y": 272,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures",
+        "x": 380,
+        "y": 32,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG44": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 0,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 38,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      }
+    },
+    "FG45": {
+      "base": {
+        "sheet": "argent-board-figures-2",
+        "x": 76,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      },
+      "resonance": {
+        "sheet": "argent-board-figures-2",
+        "x": 114,
+        "y": 432,
+        "w": 38,
+        "h": 80
+      }
+    }
+  },
+  "scale": 2
+}
