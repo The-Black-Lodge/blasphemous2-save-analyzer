@@ -1,0 +1,758 @@
+{
+  "extractedAt": "2026-06-20T23:11:09.437654+00:00",
+  "sources": {
+    "inventoryBundle": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Blasphemous 2\\Blasphemous 2_Data\\StreamingAssets\\aa\\StandaloneWindows64\\inventoryobjects_assets_all.bundle",
+    "addressablesCatalog": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Blasphemous 2\\Blasphemous 2_Data\\StreamingAssets\\aa\\catalog.json",
+    "itemCatalog": "C:\\Users\\jen\\blasphemous-save\\blasphemous2-save-analyzer\\src\\data\\item-catalog.json"
+  },
+  "summary": {
+    "resonanceCount": 27,
+    "pairResonanceCount": 25,
+    "unpairedResonanceCount": 2
+  },
+  "resonances": [
+    {
+      "source": "RE01",
+      "id": -1052256420,
+      "idHex": "0xC147D75C",
+      "description": {
+        "en": "Boosts some of Veredicto's hits, creating bursts of Fire when activated.Y"
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG01",
+          "FG04"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG01",
+          "caption": {
+            "en": "The Anointed One"
+          }
+        },
+        {
+          "source": "FG04",
+          "caption": {
+            "en": "The Purified One"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE02",
+      "id": 513827521,
+      "idHex": "0x1EA062C1",
+      "description": {
+        "en": "Replaces Veredicto's embers with toxic incense, causing its blows to create clouds of Miasma."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG01",
+          "FG06"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG01",
+          "caption": {
+            "en": "The Anointed One"
+          }
+        },
+        {
+          "source": "FG06",
+          "caption": {
+            "en": "The Alchemist"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE03",
+      "id": 2079911462,
+      "idHex": "0x7BF8EE26",
+      "description": {
+        "en": "Inflames Veredicto with dark fire born of Guilt itself. Increases damage depending on accumulated Guilt.�"
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG01",
+          "FG19"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG01",
+          "caption": {
+            "en": "The Anointed One"
+          }
+        },
+        {
+          "source": "FG19",
+          "caption": {
+            "en": "The Confessor"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE04",
+      "id": -648971893,
+      "idHex": "0xD951798B",
+      "description": {
+        "en": "Sarmiento & Centella's strikes can create chain lightning bolts that damage nearby enemies."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG02",
+          "FG05"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG02",
+          "caption": {
+            "en": "The Veteran One"
+          }
+        },
+        {
+          "source": "FG05",
+          "caption": {
+            "en": "The Tempest"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE05",
+      "id": 917112048,
+      "idHex": "0x36AA04F0",
+      "description": {
+        "en": "Verdadera Destreza charges Sarmiento & Centella's blades with currents of Mystical damage. In addition, Sacred Lunge casts a shadow that strikes after a short moment."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG02",
+          "FG07"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG02",
+          "caption": {
+            "en": "The Veteran One"
+          }
+        },
+        {
+          "source": "FG07",
+          "caption": {
+            "en": "The Guide"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE06",
+      "id": -1811771307,
+      "idHex": "0x94029055",
+      "description": {
+        "en": "A dark storm born of Guilt itself sweeps across the silver. Increases the damage of Sarmiento & Centella's lightning bolts depending on the amount of Guilt accumulated.�"
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG02",
+          "FG19"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG02",
+          "caption": {
+            "en": "The Veteran One"
+          }
+        },
+        {
+          "source": "FG19",
+          "caption": {
+            "en": "The Confessor"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE07",
+      "id": -245687366,
+      "idHex": "0xF15B1BBA",
+      "description": {
+        "en": "Reaper Rosary launches a cutting wave that causes Mystical damage."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG03",
+          "FG07"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG03",
+          "caption": {
+            "en": "The Punished One"
+          }
+        },
+        {
+          "source": "FG07",
+          "caption": {
+            "en": "The Guide"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE08",
+      "id": 1320396575,
+      "idHex": "0x4EB3A71F",
+      "description": {
+        "en": "Blood Pact imbues the blade of Ruego Al Alba with lightning.I"
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG03",
+          "FG05"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG03",
+          "caption": {
+            "en": "The Punished One"
+          }
+        },
+        {
+          "source": "FG05",
+          "caption": {
+            "en": "The Tempest"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE09",
+      "id": -1408486780,
+      "idHex": "0xAC0C3284",
+      "description": {
+        "en": "A dark force born of one's own Guilt runs through Ruego Al Alba. Increases the Mystical damage of Blood Pact depending on the Guilt accumulated.�"
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG03",
+          "FG19"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG03",
+          "caption": {
+            "en": "The Punished One"
+          }
+        },
+        {
+          "source": "FG19",
+          "caption": {
+            "en": "The Confessor"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE10",
+      "id": 1676626934,
+      "idHex": "0x63EF4BF6",
+      "description": {
+        "en": "Reduces Fervour consumption to zero by keeping Veredicto in an Active state.E"
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG10",
+          "FG11"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG10",
+          "caption": {
+            "en": "The Selfless Father"
+          }
+        },
+        {
+          "source": "FG11",
+          "caption": {
+            "en": "The Thurifer"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE11",
+      "id": -1052256421,
+      "idHex": "0xC147D75B",
+      "description": {
+        "en": "Killing an enemy during Blood Pact renews its duration."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG12",
+          "FG15"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG12",
+          "caption": {
+            "en": "The Demented One"
+          }
+        },
+        {
+          "source": "FG15",
+          "caption": {
+            "en": "The Partisan"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE12",
+      "id": 513827520,
+      "idHex": "0x1EA062C0",
+      "description": {
+        "en": "Dodge creates lightning bolts, which damage nearby enemies."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG05",
+          "FG14"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG05",
+          "caption": {
+            "en": "The Tempest"
+          }
+        },
+        {
+          "source": "FG14",
+          "caption": {
+            "en": "The Pillager"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE13",
+      "id": 2079911461,
+      "idHex": "0x7BF8EE25",
+      "description": {
+        "en": "Drinking a Bile Flask regenerates a good amount of Fervour."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG21",
+          "FG22"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG21",
+          "caption": {
+            "en": "Nacimiento"
+          }
+        },
+        {
+          "source": "FG22",
+          "caption": {
+            "en": "The Scribe"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE14",
+      "id": -648971894,
+      "idHex": "0xD951798A",
+      "description": {
+        "en": "Creates a barrier of thorns when struck, inflicting Miasma damage."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG06",
+          "FG23"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG06",
+          "caption": {
+            "en": "The Alchemist"
+          }
+        },
+        {
+          "source": "FG23",
+          "caption": {
+            "en": "Trifón"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE15",
+      "id": 917112047,
+      "idHex": "0x36AA04EF",
+      "description": {
+        "en": "Blocking an attack creates a whirlpool of Miasma that damages nearby enemies."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG06",
+          "FG15"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG06",
+          "caption": {
+            "en": "The Alchemist"
+          }
+        },
+        {
+          "source": "FG15",
+          "caption": {
+            "en": "The Partisan"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE16",
+      "id": -1811771308,
+      "idHex": "0x94029054",
+      "description": {
+        "en": "Generates a Fervour shield that means that damage received is subtracted from the Fervour bar first. Damage received to the Fervour bar is multiplied."
+      },
+      "requirement": null
+    },
+    {
+      "source": "RE17",
+      "id": -245687367,
+      "idHex": "0xF15B1BB9",
+      "description": {
+        "en": "Intones occult versions of certain prayers, which should never again be uttered._"
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG09",
+          "FG18"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG09",
+          "caption": {
+            "en": "The Woman of the Stolen Face"
+          }
+        },
+        {
+          "source": "FG18",
+          "caption": {
+            "en": "The Flagellant"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE18",
+      "id": 1320396574,
+      "idHex": "0x4EB3A71E",
+      "description": {
+        "en": "If the accumulated guilt is 0, a hit that would result in death will leave TPO with 1 life point and fill the Guilt gauge by half."
+      },
+      "requirement": null
+    },
+    {
+      "source": "RE19",
+      "id": -1408486781,
+      "idHex": "0xAC0C3283",
+      "description": {
+        "en": "Executing an enemy halts the passage of time for a few seconds."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG16",
+          "FG17"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG16",
+          "caption": {
+            "en": "The Ecstatic Novice"
+          }
+        },
+        {
+          "source": "FG17",
+          "caption": {
+            "en": "Viridiana"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE20",
+      "id": 1676626933,
+      "idHex": "0x63EF4BF5",
+      "description": {
+        "en": "Drinking a Bile Flask regenerates all Verdadera Destreza markers."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG13",
+          "FG21"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG13",
+          "caption": {
+            "en": "The Pilgrim"
+          }
+        },
+        {
+          "source": "FG21",
+          "caption": {
+            "en": "Nacimiento"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE21",
+      "id": -1052256422,
+      "idHex": "0xC147D75A",
+      "description": {
+        "en": "When dodging, a barrier of thorns is invoked, damaging and piercing through enemies.\\"
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG06",
+          "FG14"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG06",
+          "caption": {
+            "en": "The Alchemist"
+          }
+        },
+        {
+          "source": "FG14",
+          "caption": {
+            "en": "The Pillager"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE22",
+      "id": 513827519,
+      "idHex": "0x1EA062BF",
+      "description": {
+        "en": "Drinking a Bile Flask halts the passage of time for a few seconds."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG16",
+          "FG21"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG16",
+          "caption": {
+            "en": "The Ecstatic Novice"
+          }
+        },
+        {
+          "source": "FG21",
+          "caption": {
+            "en": "Nacimiento"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE101",
+      "id": 1864231079,
+      "idHex": "0x6F1DE8A7",
+      "description": {
+        "en": "Each successful blow with any weapon progressively increases damage inflicted for a limited period of time."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG102",
+          "FG27"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG102",
+          "caption": {
+            "en": "The Mercy"
+          }
+        },
+        {
+          "source": "FG27",
+          "caption": {
+            "en": "Tirso"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE102",
+      "id": 1864231076,
+      "idHex": "0x6F1DE8A4",
+      "description": {
+        "en": "After receiving several blows, emanate a powerful wave, inflicting damage on all enemies in sight."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG107",
+          "FG42"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG107",
+          "caption": {
+            "en": "The Family"
+          }
+        },
+        {
+          "source": "FG42",
+          "caption": {
+            "en": "Burnt Figure"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE103",
+      "id": 1864231077,
+      "idHex": "0x6F1DE8A5",
+      "description": {
+        "en": "If Guilt is at zero, the Penitent One will survive a fatal blow, restoring Health and Bile Flasks to maximum. However, Guilt will also fill up completely."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG20",
+          "FG23"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG20",
+          "caption": {
+            "en": "Cástula"
+          }
+        },
+        {
+          "source": "FG23",
+          "caption": {
+            "en": "Trifón"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE201",
+      "id": 1864231108,
+      "idHex": "0x6F1DE8C4",
+      "description": {
+        "en": "Increases the power of the damage areas generated by Mercy of the Wind and Passage of Ash."
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG202",
+          "FG44"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG202",
+          "caption": {
+            "en": "The Ascension"
+          }
+        },
+        {
+          "source": "FG44",
+          "caption": {
+            "en": "Crisanta"
+          }
+        }
+      ]
+    },
+    {
+      "source": "RE202",
+      "id": 1864231111,
+      "idHex": "0x6F1DE8C7",
+      "description": {
+        "en": "With Wail of the Flame active, the Penitent One regains vitality equal to half the damage inflicted.�"
+      },
+      "requirement": {
+        "type": "figurePair",
+        "figures": [
+          "FG04",
+          "FG208"
+        ]
+      },
+      "figures": [
+        {
+          "source": "FG04",
+          "caption": {
+            "en": "The Purified One"
+          }
+        },
+        {
+          "source": "FG208",
+          "caption": {
+            "en": "Inner Voice"
+          }
+        }
+      ]
+    }
+  ]
+}
