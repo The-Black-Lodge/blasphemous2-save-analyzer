@@ -7,11 +7,7 @@ function useTab() {
   return tab
 }
 import { findStat } from "../utils/playerDecoders"
-import {
-  formatHashKey,
-  resolveIdLabel,
-  type ItemRef,
-} from "../utils/catalogs"
+import { formatHashKey, resolveIdLabel, type ItemRef } from "../utils/catalogs"
 
 interface StatEntry {
   stat: number
@@ -39,13 +35,7 @@ function formatPlayTime(seconds: number): string {
   return `${h}h ${m}m`
 }
 
-function StatList({
-  title,
-  items,
-}: {
-  title: string
-  items: StatEntry[]
-}) {
+function StatList({ title, items }: { title: string; items: StatEntry[] }) {
   if (items.length === 0) return null
   return (
     <>
@@ -54,7 +44,9 @@ function StatList({
         {items.map((entry) => (
           <li key={`${entry.statHex}-${entry.value}`}>
             {entry.statName ?? resolveIdLabel(entry.statHex)}: {entry.value}
-            {entry.upgrades !== undefined ? ` (upgrades: ${entry.upgrades})` : ""}
+            {entry.upgrades !== undefined
+              ? ` (upgrades: ${entry.upgrades})`
+              : ""}
           </li>
         ))}
       </ul>
@@ -134,74 +126,45 @@ export default function Player() {
 
       {saveMeta && (
         <>
-          <h3>Save</h3>
-          <ul>
-            {saveMeta.PlayedTime !== undefined && (
-              <li>Play time: {formatPlayTime(saveMeta.PlayedTime)}</li>
-            )}
-            {saveMeta.LastPlayed && (
-              <li>Last played: {new Date(saveMeta.LastPlayed).toLocaleString()}</li>
-            )}
-          </ul>
+          {saveMeta.PlayedTime !== undefined && (
+            <>
+              <span
+                className="hud-sprite hud-sprite--menu-arrow float-left"
+                aria-hidden="true"
+              />
+              <p className="leading-icon-wide">
+                Play time: {formatPlayTime(saveMeta.PlayedTime)}
+              </p>
+            </>
+          )}
+          {saveMeta.LastPlayed && (
+            <>
+              <span
+                className="hud-sprite hud-sprite--menu-arrow float-left"
+                aria-hidden="true"
+              />
+              <p className="leading-icon-wide">
+                Last played: {new Date(saveMeta.LastPlayed).toLocaleString()}
+              </p>
+            </>
+          )}
         </>
       )}
 
       {completion?.completion !== undefined && (
         <>
-          <h3>Completion</h3>
-          <p>Map completion: {completion.completion}%</p>
-        </>
-      )}
-
-      {spawn && (
-        <>
-          <h3>Spawn</h3>
-          <ul>
-            <li>Spawn room: {spawn.spawnRoom}</li>
-            <li>Spawn entry: {spawn.spawnEntryId}</li>
-            <li>Spawn type: {spawn.spawnType}</li>
-            <li>Prie-Dieu room: {spawn.prieuDieuRoom}</li>
-            <li>Prie-Dieu id: {spawn.prieuDieuId}</li>
-          </ul>
-        </>
-      )}
-
-      {equipment && (
-        <>
-          <h3>Equipment</h3>
-          <ul>
-            <li>Current weapon: {formatItem(equipment.currentWeapon)}</li>
-            <li>Current armor: {formatItem(equipment.currentArmor)}</li>
-          </ul>
-          {equipment.weaponSlots && equipment.weaponSlots.length > 0 && (
-            <>
-              <h4>Weapon slots</h4>
-              <ul>
-                {equipment.weaponSlots.map((weapon, index) => (
-                  <li key={`slot-${index}`}>
-                    Slot {index + 1}: {formatItem(weapon)}
-                  </li>
-                ))}
-              </ul>
-            </>
-          )}
-          {equipment.unlockedWeapons &&
-            equipment.unlockedWeapons.length > 0 && (
-              <>
-                <h4>Arsenal of Penitence</h4>
-                <ul>
-                  {equipment.unlockedWeapons.map((weapon) => (
-                    <li key={weapon.idHex}>{formatItem(weapon)}</li>
-                  ))}
-                </ul>
-              </>
-            )}
+          <span
+            className="hud-sprite hud-sprite--menu-arrow float-left"
+            aria-hidden="true"
+          />
+          <p className="leading-icon-wide">
+            Map completion: {completion.completion}%
+          </p>
         </>
       )}
 
       {stats && (
         <>
-          <h3>Stats</h3>
           {(health ||
             fervour ||
             guiltStat ||
@@ -209,7 +172,6 @@ export default function Player() {
             orbExperience ||
             tears) && (
             <>
-              <h4>Highlights</h4>
               <ul>
                 {health && (
                   <li>
@@ -251,6 +213,52 @@ export default function Player() {
               <p>{stats.notNewValues.join(", ")}</p>
             </>
           )}
+        </>
+      )}
+
+      {/* {spawn && (
+        <>
+          <h3>Spawn</h3>
+          <ul>
+            <li>Spawn room: {spawn.spawnRoom}</li>
+            <li>Spawn entry: {spawn.spawnEntryId}</li>
+            <li>Spawn type: {spawn.spawnType}</li>
+            <li>Prie-Dieu room: {spawn.prieuDieuRoom}</li>
+            <li>Prie-Dieu id: {spawn.prieuDieuId}</li>
+          </ul>
+        </>
+      )} */}
+
+      {equipment && (
+        <>
+          <h3>Equipment</h3>
+          <ul>
+            <li>Current weapon: {formatItem(equipment.currentWeapon)}</li>
+            <li>Current armor: {formatItem(equipment.currentArmor)}</li>
+          </ul>
+          {equipment.weaponSlots && equipment.weaponSlots.length > 0 && (
+            <>
+              <h4>Weapon slots</h4>
+              <ul>
+                {equipment.weaponSlots.map((weapon, index) => (
+                  <li key={`slot-${index}`}>
+                    Slot {index + 1}: {formatItem(weapon)}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+          {equipment.unlockedWeapons &&
+            equipment.unlockedWeapons.length > 0 && (
+              <>
+                <h4>Arsenal of Penitence</h4>
+                <ul>
+                  {equipment.unlockedWeapons.map((weapon) => (
+                    <li key={weapon.idHex}>{formatItem(weapon)}</li>
+                  ))}
+                </ul>
+              </>
+            )}
         </>
       )}
 

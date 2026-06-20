@@ -82,7 +82,7 @@ h3 {
   color: var(--text-h);
 }
 p {
-  margin: 0;
+  margin: 0 0 0.5rem 0;
 }
 
 code,
@@ -102,6 +102,10 @@ code {
 
 .leading-icon {
   margin-left: 2.5rem;
+}
+
+.leading-icon-wide {
+  margin-left: 3rem;
 }
 
 .altar-layout {

@@ -77,6 +77,22 @@
       "y": 451,
       "w": 16,
       "h": 24
+    },
+    "popup-bg": {
+      "name": "popup-bg",
+      "sheet": "player-HUD-spritesheet",
+      "x": 1,
+      "y": 117,
+      "w": 368,
+      "h": 42
+    },
+    "menu-arrow": {
+      "name": "service-menu-arrow",
+      "sheet": "player-HUD-spritesheet",
+      "x": 1,
+      "y": 85,
+      "w": 22,
+      "h": 16
     }
   },
   "scale": 2

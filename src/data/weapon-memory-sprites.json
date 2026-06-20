@@ -1,0 +1,51 @@
+{
+  "atlas": {
+    "weapon-memories-spritesheet": {
+      "w": 512,
+      "h": 512
+    }
+  },
+  "sprites": {
+    "censer": {
+      "name": "weapon-memories-censer-image-big",
+      "sheet": "weapon-memories-spritesheet",
+      "x": 24,
+      "y": 18,
+      "w": 116,
+      "h": 200
+    },
+    "meaculpa": {
+      "name": "weapon-memories-meaculpa-image-big",
+      "sheet": "weapon-memories-spritesheet",
+      "x": 376,
+      "y": 30,
+      "w": 60,
+      "h": 198
+    },
+    "rapier": {
+      "name": "weapon-memories-rapier-image-big",
+      "sheet": "weapon-memories-spritesheet",
+      "x": 297,
+      "y": 19,
+      "w": 64,
+      "h": 210
+    },
+    "sword": {
+      "name": "weapon-memories-sword-image-big",
+      "sheet": "weapon-memories-spritesheet",
+      "x": 187,
+      "y": 25,
+      "w": 66,
+      "h": 196
+    },
+    "whip": {
+      "name": "weapon-memories-whip-image-big",
+      "sheet": "weapon-memories-spritesheet",
+      "x": 392,
+      "y": 266,
+      "w": 112,
+      "h": 182
+    }
+  },
+  "scale": 1
+}
