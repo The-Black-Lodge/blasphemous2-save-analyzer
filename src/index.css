@@ -347,6 +347,41 @@ code {
   margin-top: 1.5rem;
 }
 
+.quest-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 1rem 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.quest-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.quest-item .qi-sprite {
+  transform: scale(var(--qi-sprite-scale));
+  transform-origin: center center;
+  margin: calc((var(--qi-sprite-size) - var(--qi-sprite-native-size)) / 2);
+}
+
+.quest-label {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.quest-item--missing .qi-sprite {
+  filter: url(#altar-figure-missing-tint);
+}
+
 .rosary-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
