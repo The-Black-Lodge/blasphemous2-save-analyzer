@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { useSave } from "./SaveContext"
 import { TabContext } from "../App"
+import relicsData from "../data/relics.json"
 
 function useTab() {
   const tab = useContext(TabContext)
@@ -147,6 +148,95 @@ export default function Player() {
         </>
       )}
 
+      {stats && (() => {
+        const flaskRange = stats.ranges?.find((s) => s.statName === "Flask")
+        const healthRange = stats.ranges?.find((s) => s.statName === "Health")
+        const healingFlaskFactor = stats.modifiables?.find(
+          (s) => s.statName === "Healing Flasks Factor",
+        )
+        const goldFlaskAbility = abilities?.abilities?.find(
+          (a) => a.hashHex === formatHashKey(0x84734265),
+        )
+        return (flaskRange || healthRange || healingFlaskFactor || goldFlaskAbility) ? (
+          <>
+            <h3>Health</h3>
+            <ul>
+              {health && (
+                <li>
+                  Health: {health.value}
+                  {"upgrades" in health && health.upgrades !== undefined
+                    ? ` / ${health.upgrades}`
+                    : ""}
+                </li>
+              )}
+              {healthRange && (
+                <li>
+                  Health: {healthRange.value}
+                  {healthRange.upgrades !== undefined
+                    ? ` / ${healthRange.upgrades}`
+                    : ""}
+                </li>
+              )}
+              {flaskRange && (
+                <li>
+                  Flask: {flaskRange.value}
+                  {flaskRange.upgrades !== undefined
+                    ? ` / ${flaskRange.upgrades}`
+                    : ""}
+                </li>
+              )}
+              {healingFlaskFactor && (
+                <li>
+                  Healing Flasks Factor: {healingFlaskFactor.value}
+                  {healingFlaskFactor.upgrades !== undefined
+                    ? ` / ${healingFlaskFactor.upgrades}`
+                    : ""}
+                </li>
+              )}
+              {goldFlaskAbility && (
+                <li>
+                  {resolveIdLabel(goldFlaskAbility.hashHex)}
+                  {goldFlaskAbility.active ? " (active)" : " (inactive)"}
+                </li>
+              )}
+            </ul>
+          </>
+        ) : null
+      })()}
+
+      {(() => {
+        const relicAbilities = relicsData
+          .map((r) => ({
+            ...r,
+            ability: abilities?.abilities?.find(
+              (a) => a.hashHex === r.hash,
+            ),
+          }))
+          .filter((r) => r.ability)
+
+        return relicAbilities.length > 0 ? (
+          <>
+            <h3>Relics of Contrition</h3>
+            <ul>
+              {relicAbilities.map((r) => (
+                <li key={r.hash}>
+                  {r.name || resolveIdLabel(r.hash)}
+                  {r.ability?.active ? " (active)" : " (inactive)"}
+                  {r.url && (
+                    <>
+                      {" "}
+                      <a href={r.url} target="_blank" rel="noopener noreferrer">
+                        <i className="fa-solid fa-link" />
+                      </a>
+                    </>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </>
+        ) : null
+      })()}
+
       {stats && (
         <>
           {(health ||
@@ -157,14 +247,6 @@ export default function Player() {
             tears) && (
             <>
               <ul>
-                {health && (
-                  <li>
-                    Health: {health.value}
-                    {"upgrades" in health && health.upgrades !== undefined
-                      ? ` / ${health.upgrades}`
-                      : ""}
-                  </li>
-                )}
                 {fervour && (
                   <li>
                     Fervour: {fervour.value}
@@ -173,8 +255,14 @@ export default function Player() {
                       : ""}
                   </li>
                 )}
-                {guiltStat && <li>Guilt: {guiltStat.value}</li>}
-                {flasks && <li>Flasks: {flasks.value}</li>}
+                {guiltStat && (
+                  <>
+                    <li>Guilt: {guiltStat.value}</li>
+                    {guilt?.dropCount !== undefined && (
+                      <li>Guilt drops: {guilt.dropCount}</li>
+                    )}
+                  </>
+                )}
                 {orbExperience && (
                   <li>Orb experience: {orbExperience.value}</li>
                 )}
@@ -182,9 +270,9 @@ export default function Player() {
               </ul>
             </>
           )}
-          <StatList title="Ranges" items={stats.ranges ?? []} />
+          <StatList title="Ranges" items={(stats.ranges ?? []).filter((s) => s.statName !== "Flask" && s.statName !== "Health")} />
           <StatList title="Values" items={stats.values ?? []} />
-          <StatList title="Modifiables" items={stats.modifiables ?? []} />
+          <StatList title="Modifiables" items={(stats.modifiables ?? []).filter((s) => s.statName !== "Healing Flasks Factor")} />
           {stats.knowValues && stats.knowValues.length > 0 && (
             <>
               <h4>Known values</h4>
@@ -250,20 +338,19 @@ export default function Player() {
         <>
           <h3>Abilities / Relics</h3>
           <ul>
-            {abilities.abilities.map((ability) => (
+            {abilities.abilities
+              .filter(
+                (a) =>
+                  a.hashHex !== formatHashKey(0x84734265) &&
+                  !relicsData.some((r) => r.hash === a.hashHex),
+              )
+              .map((ability) => (
               <li key={ability.hashHex}>
                 {resolveIdLabel(ability.hashHex)}
                 {ability.active ? " (active)" : " (inactive)"}
               </li>
             ))}
           </ul>
-        </>
-      )}
-
-      {guilt?.dropCount !== undefined && (
-        <>
-          <h3>Guilt drops on map</h3>
-          <p>{guilt.dropCount} drop(s)</p>
         </>
       )}
 
