@@ -8,7 +8,7 @@ interface InventoryItem {
   }
 }
 
-function PrayerList({
+function PrayerGrid({
   label,
   sources,
   acquired,
@@ -24,25 +24,26 @@ function PrayerList({
   return (
     <div className="prayer-column">
       <h3>{label}</h3>
-      <ul>
+      <div className="prayer-grid">
         {sources.map((source) => {
           const prayer = prayersBySource.get(source)
           if (!prayer) return null
 
+          const isAcquired = acquired.has(source)
           return (
-            <li key={source}>
-              <i
-                className={
-                  acquired.has(source)
-                    ? "fa-regular fa-square-check"
-                    : "fa-regular fa-square"
-                }
-              ></i>{" "}
-              {prayer.caption.en}
-            </li>
+            <div
+              key={source}
+              className={`prayer-item${isAcquired ? "" : " prayer-item--missing"}`}
+            >
+              <span
+                className={`pr-sprite pr-sprite--${source}`}
+                aria-hidden="true"
+              />
+              <div className="prayer-label">{prayer.caption.en}</div>
+            </div>
           )
         })}
-      </ul>
+      </div>
     </div>
   )
 }
@@ -85,11 +86,17 @@ export default function Prayer() {
     <section className="prayer">
       <h2>Prayers</h2>
       <div className="prayer-columns">
-        <PrayerList label="Chants" sources={chants} acquired={acquired} />
-        <PrayerList label="Verses" sources={verses} acquired={acquired} />
+        <PrayerGrid label="Chants" sources={chants} acquired={acquired} />
+        <PrayerGrid label="Verses" sources={verses} acquired={acquired} />
       </div>
       {unclassified.length > 0 ? (
-        <PrayerList label="Other" sources={unclassified} acquired={acquired} />
+        <div className="prayer-section-other">
+          <PrayerGrid
+            label="Other"
+            sources={unclassified}
+            acquired={acquired}
+          />
+        </div>
       ) : null}
     </section>
   )

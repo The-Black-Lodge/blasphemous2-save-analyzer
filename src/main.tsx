@@ -5,6 +5,7 @@ import './styles/fonts.css'
 import './styles/figure-sprites.css'
 import './styles/figure-category-sprites.css'
 import './styles/item-sprites.css'
+import './styles/prayer-sprites.css'
 import './index.css'
 import App from './App.tsx'
 

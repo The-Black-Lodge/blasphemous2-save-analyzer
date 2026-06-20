@@ -308,9 +308,43 @@ code {
   letter-spacing: 0.02em;
 }
 
-.prayer-column ul {
+.prayer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+.prayer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.prayer-item .pr-sprite {
+  transform: scale(var(--pr-sprite-scale));
+  transform-origin: center center;
+  margin: calc((var(--pr-sprite-size) - var(--pr-sprite-native-size)) / 2);
+}
+
+.prayer-label {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.prayer-item--missing .pr-sprite {
+  filter: url(#altar-figure-missing-tint);
+}
+
+.prayer-section-other {
+  margin-top: 1.5rem;
 }
 
 .rosary-grid {
@@ -346,10 +380,6 @@ code {
 
 .rosary-bead--missing .rb-sprite {
   filter: url(#altar-figure-missing-tint);
-}
-
-.prayer-column li {
-  margin-bottom: 4px;
 }
 
 .app-tabs {
