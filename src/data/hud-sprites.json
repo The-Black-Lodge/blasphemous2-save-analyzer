@@ -1,0 +1,83 @@
+{
+  "atlas": {
+    "player-HUD-spritesheet": {
+      "w": 512,
+      "h": 512
+    }
+  },
+  "sprites": {
+    "cherub": {
+      "name": "cherub-counter-pop-up-icon",
+      "sheet": "player-HUD-spritesheet",
+      "x": 50,
+      "y": 170,
+      "w": 18,
+      "h": 28
+    },
+    "flask-0-full": {
+      "name": "player-HUD-flask-0-full",
+      "sheet": "player-HUD-spritesheet",
+      "x": 135,
+      "y": 484,
+      "w": 10,
+      "h": 12
+    },
+    "flask-1-full": {
+      "name": "player-HUD-flask-1-full",
+      "sheet": "player-HUD-spritesheet",
+      "x": 146,
+      "y": 481,
+      "w": 10,
+      "h": 18
+    },
+    "flask-2-full": {
+      "name": "player-HUD-flask-2-full",
+      "sheet": "player-HUD-spritesheet",
+      "x": 158,
+      "y": 480,
+      "w": 10,
+      "h": 20
+    },
+    "flask-3-full": {
+      "name": "player-HUD-flask-3-full",
+      "sheet": "player-HUD-spritesheet",
+      "x": 171,
+      "y": 481,
+      "w": 14,
+      "h": 22
+    },
+    "flask-golden-0-full": {
+      "name": "player-HUD-flask-golden-0-full",
+      "sheet": "player-HUD-spritesheet",
+      "x": 197,
+      "y": 455,
+      "w": 10,
+      "h": 14
+    },
+    "flask-golden-1-full": {
+      "name": "player-HUD-flask-golden-1-full",
+      "sheet": "player-HUD-spritesheet",
+      "x": 210,
+      "y": 454,
+      "w": 10,
+      "h": 18
+    },
+    "flask-golden-2-full": {
+      "name": "player-HUD-flask-golden-2-full",
+      "sheet": "player-HUD-spritesheet",
+      "x": 223,
+      "y": 452,
+      "w": 12,
+      "h": 22
+    },
+    "flask-golden-3-full": {
+      "name": "player-HUD-flask-golden-3-full",
+      "sheet": "player-HUD-spritesheet",
+      "x": 238,
+      "y": 451,
+      "w": 16,
+      "h": 24
+    }
+  },
+  "scale": 2
+}

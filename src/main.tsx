@@ -7,6 +7,7 @@ import './styles/figure-category-sprites.css'
 import './styles/item-sprites.css'
 import './styles/prayer-sprites.css'
 import './styles/quest-sprites.css'
+import './styles/hud-sprites.css'
 import './index.css'
 import App from './App.tsx'
 
