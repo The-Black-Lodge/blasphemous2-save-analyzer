@@ -1,6 +1,7 @@
 :root {
   --text: rgb(241, 229, 208);
   --text-h: rgb(242, 209, 141);
+  --text-lo: rgb(100, 100, 100);
   --bg: rgb(21, 12, 10);
   --border: #4a3428;
   --code-bg: #2a1814;
@@ -97,6 +98,10 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+.leading-icon {
+  margin-left: 2.5rem;
 }
 
 .altar-layout {
@@ -462,34 +467,46 @@ code {
 }
 
 .cherub-grid {
+  background: rgb(21, 24, 34);
+  border: 2px solid rgb(142, 126, 91);
+  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  gap: 0.5rem;
+  grid-template-columns: repeat(11, auto);
+  gap: 1rem;
 }
 
 .cherub-cell {
   display: flex;
+  height: 1.5rem;
   align-items: center;
-  gap: 4px;
-  padding: 4px 8px;
+  padding: 4px;
   border: 1px solid var(--border);
-  border-radius: 4px;
   background: var(--code-bg);
+  white-space: nowrap;
+  position: relative;
 }
 
 .cherub-cell.collected {
-  background: rgba(170, 59, 255, 0.15);
-  border-color: var(--accent-border);
+  text-decoration: line-through;
+  color: var(--text-lo);
 }
 
 .cherub-cell span {
-  font-family: var(--mono);
-  font-size: 14px;
+  font-family: var(--sans);
+  font-size: 1.5rem;
 }
 
 .cherub-cell a {
   color: var(--text);
   text-decoration: none;
+  position: absolute;
+  bottom: 2px;
+  right: 8px;
+  font-size: 1rem;
+}
+
+.cherub-cell a:hover {
+  color: var(--text-h);
 }
 
 .cherub-cell a:hover {

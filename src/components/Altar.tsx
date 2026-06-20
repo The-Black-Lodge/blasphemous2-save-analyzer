@@ -246,6 +246,7 @@ export default function Altar() {
 
   return (
     <section className="altar">
+      <h2>Altarpiece of Favours</h2>
       <div className="altar-layout">
         <div className="altar-board">
           <nav className="altar-tabs" aria-label="Figure categories">

@@ -4,9 +4,7 @@ import cherubsData from "../data/cherubs.json"
 export default function CollectibleChildren() {
   const { save } = useSave()
   const player = save?.player as Record<string, unknown> | undefined
-  const cherubs = player?.cherubs as
-    | { tokenHex?: string[] }
-    | undefined
+  const cherubs = player?.cherubs as { tokenHex?: string[] } | undefined
 
   const collected = new Set(
     cherubs?.tokenHex?.map((h) => parseInt(h, 16)) ?? [],
@@ -14,7 +12,8 @@ export default function CollectibleChildren() {
 
   return (
     <section className="collectible-children">
-      <h3>Children of Moonlight</h3>
+      <span className="hud-sprite hud-sprite--cherub" aria-hidden="true" />
+      <h3 className="leading-icon">Children of Moonlight</h3>
       <div className="cherub-grid">
         {cherubsData.map((entry) => (
           <div
