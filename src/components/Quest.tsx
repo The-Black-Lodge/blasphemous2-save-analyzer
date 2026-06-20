@@ -29,9 +29,9 @@ export default function Quest() {
   const acquiredPrayers = getAcquiredPrayerSources(save)
 
   // Primary source: decoded inventory list (quest items).
-  const inventoryQuestItems = (save?.player?.inventory as
-    | { quests?: { items?: QuestItem[] } }
-    | undefined)?.quests?.items
+  const inventoryQuestItems = (
+    save?.player?.inventory as { quests?: { items?: QuestItem[] } } | undefined
+  )?.quests?.items
 
   for (const entry of inventoryQuestItems ?? []) {
     const name = entry?.item?.name
@@ -39,9 +39,9 @@ export default function Quest() {
   }
 
   const acquiredFigures = new Set<string>()
-  const inventoryFigures = (save?.player?.inventory as
-    | { figures?: { items?: QuestItem[] } }
-    | undefined)?.figures?.items
+  const inventoryFigures = (
+    save?.player?.inventory as { figures?: { items?: QuestItem[] } } | undefined
+  )?.figures?.items
 
   for (const entry of inventoryFigures ?? []) {
     const name = entry?.item?.name
@@ -50,9 +50,11 @@ export default function Quest() {
 
   // Fallback: inventorySummary stores quest item persistence IDs (numbers or idHex).
   // This helps when some decoded entries don't include `item.name` even though they exist.
-  const ownQuestItems = (save?.player as
-    | { inventorySummary?: { ownQuestItems?: Array<string | number> } }
-    | undefined)?.inventorySummary?.ownQuestItems
+  const ownQuestItems = (
+    save?.player as
+      | { inventorySummary?: { ownQuestItems?: Array<string | number> } }
+      | undefined
+  )?.inventorySummary?.ownQuestItems
 
   if (Array.isArray(ownQuestItems)) {
     for (const code of ownQuestItems) {
@@ -84,9 +86,21 @@ export default function Quest() {
       // are no longer present in inventory, each stage hides everything before it.
       { type: "rewardPresent", completed: "QI107", hide: ["QI106"] },
       { type: "rewardPresent", completed: "QI108", hide: ["QI106", "QI107"] },
-      { type: "rewardPresent", completed: "QI109", hide: ["QI106", "QI107", "QI108"] },
-      { type: "rewardPresent", completed: "QI110", hide: ["QI106", "QI107", "QI108", "QI109"] }, // -> Plenus
-      { type: "rewardPresent", completed: "QI111", hide: ["QI106", "QI107", "QI108", "QI109", "QI110"] }, // -> Beatus
+      {
+        type: "rewardPresent",
+        completed: "QI109",
+        hide: ["QI106", "QI107", "QI108"],
+      },
+      {
+        type: "rewardPresent",
+        completed: "QI110",
+        hide: ["QI106", "QI107", "QI108", "QI109"],
+      }, // -> Plenus
+      {
+        type: "rewardPresent",
+        completed: "QI111",
+        hide: ["QI106", "QI107", "QI108", "QI109", "QI110"],
+      }, // -> Beatus
 
       // Wax Seeds -> Remembrance of Cesáreo
       {
@@ -107,7 +121,11 @@ export default function Quest() {
       { type: "rewardPresent", completed: "QI103", hide: ["QI101", "QI102"] },
 
       // Lullaby of the White Shore
-      { type: "rewardPresent", completed: "QI27", hide: ["QI23", "QI24", "QI25", "QI26"] },
+      {
+        type: "rewardPresent",
+        completed: "QI27",
+        hide: ["QI23", "QI24", "QI25", "QI26"],
+      },
 
       // Sealed Envelope -> Cursed Letter (envelope consumed on read; letter stays)
       { type: "rewardPresent", completed: "QI14", hide: ["QI13"] },
@@ -138,7 +156,8 @@ export default function Quest() {
     // they have completed the Lullaby of the White Shore quest line.
     // Hide the entire lullaby chain (including the reward key).
     if (acquiredPrayers.has("PR16")) {
-      for (const src of ["QI23", "QI24", "QI25", "QI26", "QI27"]) hidden.add(src)
+      for (const src of ["QI23", "QI24", "QI25", "QI26", "QI27"])
+        hidden.add(src)
     }
 
     // Lump of Gold: 10 turn-ins -> Traitor's Gaze (RB103); 20 -> The Liberated (FG112).
@@ -153,7 +172,9 @@ export default function Quest() {
           for (const src of rule.hide) hidden.add(src)
         }
       } else if (rule.type === "allInputsConsumed") {
-        const allAreMissing = rule.inputItems.every((item) => !acquired.has(item))
+        const allAreMissing = rule.inputItems.every(
+          (item) => !acquired.has(item),
+        )
         if (allAreMissing) {
           for (const src of rule.inputItems) hidden.add(src)
         }
@@ -229,8 +250,8 @@ export default function Quest() {
 
   return (
     <section className="quest">
+      <h2>Quest Items</h2>
       <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-        <h2 style={{ margin: 0 }}>Quest Items</h2>
         <button
           type="button"
           className="app-tab"

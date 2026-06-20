@@ -22,7 +22,7 @@ export default function Rosary() {
 
   return (
     <>
-      <h2>Rosary</h2>
+      <h2>Rosary Beads</h2>
       <div className="rosary-grid">
         {b2data.beads.map((bead) => {
           const isAcquired = acquired.has(bead.source)
