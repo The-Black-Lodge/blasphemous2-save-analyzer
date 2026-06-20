@@ -222,6 +222,46 @@ code {
   font-size: 16px;
 }
 
+.altar-equipped-heading {
+  margin: 1rem 0 0.5rem;
+  font-size: 14px;
+  font-family: var(--heading);
+  color: var(--text-h);
+}
+
+.altar-equipped-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.altar-equipped-item {
+  display: grid;
+  grid-template-columns: 1.5rem var(--figure-sprite-width) 1fr;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.altar-equipped-slot {
+  font-size: 14px;
+  color: var(--text-h);
+  text-align: center;
+}
+
+.altar-equipped-label {
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.altar-equipped-empty {
+  margin: 0.75rem 0 0;
+  color: var(--text-lo);
+  font-size: 14px;
+}
+
 .altar-panel-heading {
   display: flex;
   align-items: center;
@@ -361,6 +401,25 @@ code {
 
 .prayer-section-other {
   margin-top: 1.5rem;
+}
+
+.prayer-equipped,
+.rosary-equipped {
+  margin-bottom: 1.5rem;
+}
+
+.prayer-equipped h3,
+.rosary-equipped h3 {
+  margin: 0 0 0.75rem;
+}
+
+.prayer-equipped-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: rgb(21, 24, 34);
+  border: 2px solid rgb(142, 126, 91);
+  padding: 1rem;
 }
 
 .quest-grid {
@@ -523,4 +582,18 @@ code {
 
 .float-left {
   float: left;
+}
+.alter-preset-list {
+  margin-top: 0.75rem;
+}
+
+.alter-preset-slot {
+  margin: 0.25rem 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.alter-preset-label {
+  font-weight: 600;
+  color: var(--text-h);
 }

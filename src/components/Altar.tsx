@@ -10,6 +10,7 @@ function useTab() {
   const tab = useContext(TabContext)
   return tab
 }
+import { getEquippedFigures } from "../utils/inventoryEquipped"
 import {
   FIGURE_KIND_LABELS,
   FIGURE_KIND_ORDER,
@@ -50,6 +51,38 @@ function getFigureSpriteSource(source: string, acquired: Set<string>): string {
   }
 
   return source
+}
+
+function EquippedBoardFigure({
+  slot,
+  source,
+  acquired,
+}: {
+  slot: number
+  source: string
+  acquired: Set<string>
+}) {
+  const figure = figureBySource.get(source)
+  if (!figure) return null
+
+  const envoyChain = getEnvoyChain(source)
+  const isBurnt = envoyChain ? acquired.has(envoyChain.sources[1]) : false
+
+  return (
+    <li className="altar-equipped-item">
+      <span className="altar-equipped-slot">{slot}</span>
+      <span className="altar-figure-sprite-slot">
+        <FigureSprite
+          source={getFigureSpriteSource(source, acquired)}
+          acquired={acquired}
+          burnt={isBurnt}
+        />
+      </span>
+      <span className="altar-equipped-label">
+        {isBurnt ? `Burnt Figure (${figure.caption.en})` : figure.caption.en}
+      </span>
+    </li>
+  )
 }
 
 function MaidenLabel({ chainIndex }: { chainIndex: number | null }) {
@@ -211,6 +244,8 @@ export default function Altar() {
       .filter((name): name is string => typeof name === "string") ?? [],
   )
 
+  const equippedFigures = getEquippedFigures(save)
+
   const byKind = new Map(
     FIGURE_KIND_ORDER.map((kind) => [
       kind,
@@ -319,6 +354,23 @@ export default function Altar() {
                 ? ` / ${altarPieceUpgrade.upgrades}`
                 : ""}
             </p>
+          )}
+          {equippedFigures.length > 0 ? (
+            <>
+              <h4 className="altar-equipped-heading">Equipped Figures</h4>
+              <ul className="altar-equipped-list">
+                {equippedFigures.map(({ slot, source }) => (
+                  <EquippedBoardFigure
+                    key={`${slot}-${source}`}
+                    slot={slot}
+                    source={source}
+                    acquired={acquired}
+                  />
+                ))}
+              </ul>
+            </>
+          ) : (
+            <p className="altar-equipped-empty">No figures equipped on the board.</p>
           )}
         </aside>
       </div>

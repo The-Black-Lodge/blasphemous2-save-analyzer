@@ -56,26 +56,71 @@ function decodeItemFields(
   const itemId = r.readInt32()
   const result: Record<string, unknown> = { item: formatItemRef(itemId) }
 
-  if (typeName?.includes("StackableItemData") && r.getRemaining() >= 4) {
+  const isStackable = typeName?.includes("StackableItemData") ?? false
+  const isEquippable = typeName?.includes("EquippablesItemData") ?? false
+  const hasV2Fields =
+    typeName?.match(/_v2|_v3|_v4/) !== null ||
+    (!typeName && (payload.length === 9 || payload.length === 13))
+  const hasV3Fields =
+    typeName?.match(/_v3|_v4/) !== null ||
+    (!typeName && (payload.length === 9 || payload.length === 13))
+  const hasV4Fields =
+    typeName?.includes("_v4") ?? (!typeName && payload.length === 17)
+
+  if (isStackable && r.getRemaining() >= 4) {
     result.stack = r.readInt32()
-  } else if (
-    typeName?.includes("EquippablesItemData") &&
-    r.getRemaining() >= 4
-  ) {
+  } else if (isEquippable && r.getRemaining() >= 4) {
     result.slot = r.readInt32()
   }
 
-  if (typeName?.match(/_v2|_v3|_v4/) && r.getRemaining() >= 4) {
+  if (hasV2Fields && r.getRemaining() >= 4) {
     result.internalValue = r.readInt32()
   }
-  if (typeName?.match(/_v3|_v4/) && r.getRemaining() >= 1) {
+  if (hasV3Fields && r.getRemaining() >= 1) {
     result.markAsNew = r.readBoolean()
   }
-  if (typeName?.includes("_v4") && r.getRemaining() >= 4) {
+  if (hasV4Fields && r.getRemaining() >= 4) {
     result.level = r.readInt32()
   }
 
   return result
+}
+
+function readInt32List(reader: B2BinaryReader): number[] {
+  if (reader.getRemaining() < 4) return []
+  const count = reader.readInt32()
+  const values: number[] = []
+  for (let i = 0; i < count; i++) {
+    if (reader.getRemaining() < 4) break
+    values.push(reader.readInt32())
+  }
+  return values
+}
+
+function decodeAltarPiecePresetFields(
+  payload: Uint8Array,
+): Record<string, unknown> | null {
+  if (payload.length < 8) return null
+  const reader = new B2BinaryReader(payload)
+  return {
+    slot: reader.readInt32(),
+    equippedFigures: readInt32List(reader),
+    activeResonances: readInt32List(reader),
+    pairs: readInt32List(reader),
+  }
+}
+
+function decodeAltarPiecePresetListSection(
+  reader: B2BinaryReader,
+): Record<string, unknown> {
+  const objects = getPersistentObjectList(reader)
+  const entries: Record<string, unknown>[] = []
+  for (const obj of objects) {
+    const entry =
+      decodeAltarPiecePresetFields(obj.payload) ?? { rawTypeId: obj.typeId }
+    entries.push(entry)
+  }
+  return { label: "altarPiecePresets", count: objects.length, items: entries }
 }
 
 function decodeInventoryListSection(
@@ -110,9 +155,14 @@ export function decodeInventoryPersistentPayload(
   ] as const
 
   const out: Record<string, unknown> = { type: "InventoryPersistentData" }
-  for (const label of sections) {
+  for (let i = 0; i < sections.length; i++) {
+    const label = sections[i]
     if (r.getRemaining() < 4) break
-    out[label] = decodeInventoryListSection(label, r)
+    if (label === "altarPiecePresets") {
+      out[label] = decodeAltarPiecePresetListSection(r)
+    } else {
+      out[label] = decodeInventoryListSection(label, r)
+    }
   }
   return out
 }

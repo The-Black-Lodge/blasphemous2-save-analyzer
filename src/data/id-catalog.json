@@ -252,6 +252,16 @@
                                         "idHex":  "0xFB569ABB",
                                         "name":  "TGK.Game.Components.Inventory.PlayerInventoryPersistenceComponent+InventoryPersistentData+AltarPiecePresetData"
                                     },
+                      "-2037672326":  {
+                                          "id":  -2037672326,
+                                          "idHex":  "0x868B967A",
+                                          "name":  "TGK.Game.Components.Inventory.PlayerInventoryPersistenceComponent+InventoryPersistentData+EquippablesItemData_v3"
+                                      },
+                      "-115358025":  {
+                                         "id":  -115358025,
+                                         "idHex":  "0xF91FC6B7",
+                                         "name":  "TGK.Game.Components.Inventory.PlayerInventoryPersistenceComponent+InventoryPersistentData+ItemData_v3"
+                                     },
                       "-1051881499":  {
                                           "id":  -1051881499,
                                           "idHex":  "0xC14D8FE5",
