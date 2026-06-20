@@ -72,15 +72,6 @@ export default function Player() {
     | { PlayedTime?: number; LastPlayed?: string }
     | undefined
   const completion = player.completion as { completion?: number } | undefined
-  const spawn = player.spawn as
-    | {
-        spawnRoom?: number
-        spawnEntryId?: number
-        spawnType?: number
-        prieuDieuRoom?: number
-        prieuDieuId?: number
-      }
-    | undefined
   const equipment = player.equipment as
     | {
         currentWeapon?: ItemRef
@@ -104,13 +95,6 @@ export default function Player() {
   const guilt = player.guilt as { dropCount?: number } | undefined
   const abilityLock = player.abilityLock as
     | { showedAbilities?: number[] }
-    | undefined
-  const weaponMemory = player.weaponMemory as
-    | {
-        unlockedWeaponMemories?: number[]
-        unlockedWeaponMemoryHex?: string[]
-        weaponTiers?: Record<string, number>
-      }
     | undefined
 
   const health = findStat(stats, ["Health"])
@@ -294,38 +278,6 @@ export default function Player() {
             </p>
           </>
         )}
-
-      {weaponMemory && (
-        <>
-          <h3>Weapon memories</h3>
-          {weaponMemory.unlockedWeaponMemoryHex &&
-            weaponMemory.unlockedWeaponMemoryHex.length > 0 && (
-              <>
-                <h4>Unlocked</h4>
-                <ul>
-                  {weaponMemory.unlockedWeaponMemoryHex.map((id) => (
-                    <li key={id}>{resolveIdLabel(id)}</li>
-                  ))}
-                </ul>
-              </>
-            )}
-          {weaponMemory.weaponTiers &&
-            Object.keys(weaponMemory.weaponTiers).length > 0 && (
-              <>
-                <h4>Tiers</h4>
-                <ul>
-                  {Object.entries(weaponMemory.weaponTiers).map(
-                    ([weaponId, tier]) => (
-                      <li key={weaponId}>
-                        {resolveIdLabel(weaponId)}: tier {tier}
-                      </li>
-                    ),
-                  )}
-                </ul>
-              </>
-            )}
-        </>
-      )}
     </section>
   )
 }
