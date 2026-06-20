@@ -1,12 +1,7 @@
 import b2data from "../data/b2data.json"
 import { useSave } from "./SaveContext"
+import { getAcquiredPrayerSources } from "../utils/inventoryPrayers"
 import { getPrayerKind } from "../utils/prayerKinds"
-
-interface InventoryItem {
-  item?: {
-    name?: string
-  }
-}
 
 function PrayerGrid({
   label,
@@ -50,22 +45,7 @@ function PrayerGrid({
 
 export default function Prayer() {
   const { save } = useSave()
-  const acquired = new Set<string>()
-  const inventory = save?.player?.inventory as
-    | {
-        prayers?: { items?: InventoryItem[] }
-        collectibles?: { items?: InventoryItem[] }
-      }
-    | undefined
-
-  for (const section of ["prayers", "collectibles"] as const) {
-    for (const entry of inventory?.[section]?.items ?? []) {
-      const name = entry.item?.name
-      if (typeof name === "string" && name.startsWith("PR")) {
-        acquired.add(name)
-      }
-    }
-  }
+  const acquired = getAcquiredPrayerSources(save)
 
   const chants: string[] = []
   const verses: string[] = []
