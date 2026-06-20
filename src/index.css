@@ -100,6 +100,10 @@ code {
   background: var(--code-bg);
 }
 
+.leading-icon-sm {
+  margin-left: 2rem;
+}
+
 .leading-icon {
   margin-left: 2.5rem;
 }

@@ -101,8 +101,6 @@ export default function Player() {
   const health = findStat(stats, ["Health"])
   const fervour = findStat(stats, ["Fervour"])
   const guiltStat = findStat(stats, ["Guilt"])
-  const flasks = findStat(stats, ["Flask"])
-  const orbExperience = findStat(stats, ["Orb Experience"])
   const tears = findStat(stats, ["Tears"])
 
   return (
@@ -114,10 +112,10 @@ export default function Player() {
           {saveMeta.PlayedTime !== undefined && (
             <>
               <span
-                className="hud-sprite hud-sprite--menu-arrow float-left"
+                className="hud-sprite hud-sprite--menu-arrow-sm float-left"
                 aria-hidden="true"
               />
-              <p className="leading-icon-wide">
+              <p className="leading-icon-sm">
                 Play time: {formatPlayTime(saveMeta.PlayedTime)}
               </p>
             </>
@@ -125,10 +123,10 @@ export default function Player() {
           {saveMeta.LastPlayed && (
             <>
               <span
-                className="hud-sprite hud-sprite--menu-arrow float-left"
+                className="hud-sprite hud-sprite--menu-arrow-sm float-left"
                 aria-hidden="true"
               />
-              <p className="leading-icon-wide">
+              <p className="leading-icon-sm">
                 Last played: {new Date(saveMeta.LastPlayed).toLocaleString()}
               </p>
             </>
@@ -139,78 +137,100 @@ export default function Player() {
       {completion?.completion !== undefined && (
         <>
           <span
-            className="hud-sprite hud-sprite--menu-arrow float-left"
+            className="hud-sprite hud-sprite--menu-arrow-sm float-left"
             aria-hidden="true"
           />
-          <p className="leading-icon-wide">
+          <p className="leading-icon-sm">
             Map completion: {completion.completion}%
           </p>
         </>
       )}
 
-      {stats && (() => {
-        const flaskRange = stats.ranges?.find((s) => s.statName === "Flask")
-        const healthRange = stats.ranges?.find((s) => s.statName === "Health")
-        const healingFlaskFactor = stats.modifiables?.find(
-          (s) => s.statName === "Healing Flasks Factor",
-        )
-        const goldFlaskAbility = abilities?.abilities?.find(
-          (a) => a.hashHex === formatHashKey(0x84734265),
-        )
-        return (flaskRange || healthRange || healingFlaskFactor || goldFlaskAbility) ? (
-          <>
-            <h3>Health</h3>
-            <ul>
-              {health && (
-                <li>
-                  Health: {health.value}
-                  {"upgrades" in health && health.upgrades !== undefined
-                    ? ` / ${health.upgrades}`
-                    : ""}
-                </li>
-              )}
-              {healthRange && (
-                <li>
-                  Health: {healthRange.value}
-                  {healthRange.upgrades !== undefined
-                    ? ` / ${healthRange.upgrades}`
-                    : ""}
-                </li>
-              )}
-              {flaskRange && (
-                <li>
-                  Flask: {flaskRange.value}
-                  {flaskRange.upgrades !== undefined
-                    ? ` / ${flaskRange.upgrades}`
-                    : ""}
-                </li>
-              )}
-              {healingFlaskFactor && (
-                <li>
-                  Healing Flasks Factor: {healingFlaskFactor.value}
-                  {healingFlaskFactor.upgrades !== undefined
-                    ? ` / ${healingFlaskFactor.upgrades}`
-                    : ""}
-                </li>
-              )}
-              {goldFlaskAbility && (
-                <li>
-                  {resolveIdLabel(goldFlaskAbility.hashHex)}
-                  {goldFlaskAbility.active ? " (active)" : " (inactive)"}
-                </li>
-              )}
-            </ul>
-          </>
-        ) : null
-      })()}
+      {stats &&
+        (() => {
+          const flaskRange = stats.ranges?.find((s) => s.statName === "Flask")
+          const healthRange = stats.ranges?.find((s) => s.statName === "Health")
+          const healingFlaskFactor = stats.modifiables?.find(
+            (s) => s.statName === "Healing Flasks Factor",
+          )
+          const goldFlaskAbility = abilities?.abilities?.find(
+            (a) => a.hashHex === formatHashKey(0x84734265),
+          )
+          return flaskRange ||
+            healthRange ||
+            healingFlaskFactor ||
+            goldFlaskAbility ||
+            fervour ||
+            guiltStat ||
+            tears ? (
+            <>
+              <h3>Stats</h3>
+              <ul>
+                {health && (
+                  <li>
+                    Health: {health.value}
+                    {"upgrades" in health && health.upgrades !== undefined
+                      ? ` / ${health.upgrades}`
+                      : ""}
+                  </li>
+                )}
+                {healthRange && (
+                  <li>
+                    Health: {healthRange.value}
+                    {healthRange.upgrades !== undefined
+                      ? ` / ${healthRange.upgrades}`
+                      : ""}
+                  </li>
+                )}
+                {flaskRange && (
+                  <li>
+                    Flask: {flaskRange.value}
+                    {flaskRange.upgrades !== undefined
+                      ? ` / ${flaskRange.upgrades}`
+                      : ""}
+                  </li>
+                )}
+                {healingFlaskFactor && (
+                  <li>
+                    Healing Flasks Factor: {healingFlaskFactor.value}
+                    {healingFlaskFactor.upgrades !== undefined
+                      ? ` / ${healingFlaskFactor.upgrades}`
+                      : ""}
+                  </li>
+                )}
+                {goldFlaskAbility && (
+                  <li>
+                    {resolveIdLabel(goldFlaskAbility.hashHex)}
+                    {goldFlaskAbility.active ? " (active)" : " (inactive)"}
+                  </li>
+                )}
+                {fervour && (
+                  <li>
+                    Fervour: {fervour.value}
+                    {"upgrades" in fervour && fervour.upgrades !== undefined
+                      ? ` / ${fervour.upgrades}`
+                      : ""}
+                  </li>
+                )}
+                {guiltStat && (
+                  <>
+                    <li>Guilt: {guiltStat.value}</li>
+                    {guilt?.dropCount !== undefined && (
+                      <li>Guilt drops: {guilt.dropCount}</li>
+                    )}
+                  </>
+                )}
+                {tears && <li>Tears: {tears.value}</li>}
+              </ul>
+            </>
+          ) : null
+        })()}
 
       {(() => {
         const relicAbilities = relicsData
           .map((r) => ({
             ...r,
-            ability: abilities?.abilities?.find(
-              (a) => a.hashHex === r.hash,
-            ),
+            ability: abilities?.abilities?.find((a) => a.hashHex === r.hash),
           }))
           .filter((r) => r.ability)
 
@@ -237,48 +257,21 @@ export default function Player() {
         ) : null
       })()}
 
-      {stats && (
-        <>
-          {(health ||
-            fervour ||
-            guiltStat ||
-            flasks ||
-            orbExperience ||
-            tears) && (
-            <>
-              <ul>
-                {fervour && (
-                  <li>
-                    Fervour: {fervour.value}
-                    {"upgrades" in fervour && fervour.upgrades !== undefined
-                      ? ` / ${fervour.upgrades}`
-                      : ""}
-                  </li>
-                )}
-                {guiltStat && (
-                  <>
-                    <li>Guilt: {guiltStat.value}</li>
-                    {guilt?.dropCount !== undefined && (
-                      <li>Guilt drops: {guilt.dropCount}</li>
-                    )}
-                  </>
-                )}
-                {orbExperience && (
-                  <li>Orb experience: {orbExperience.value}</li>
-                )}
-                {tears && <li>Tears: {tears.value}</li>}
-              </ul>
-            </>
-          )}
-          <StatList title="Ranges" items={(stats.ranges ?? []).filter((s) => s.statName !== "Flask" && s.statName !== "Health")} />
-          <StatList title="Values" items={stats.values ?? []} />
-          <StatList title="Modifiables" items={(stats.modifiables ?? []).filter((s) => s.statName !== "Healing Flasks Factor")} />
-          {stats.knowValues && stats.knowValues.length > 0 && (
+        {stats && (
+         <>
+          <StatList title="Values" items={(stats.values ?? []).filter((s) => s.statHex !== "0x14575494" && s.statHex !== "0x2702E13E")} />
+          {/* <StatList
+            title="Modifiables"
+            items={(stats.modifiables ?? []).filter(
+              (s) => s.statName !== "Healing Flasks Factor",
+            )}
+          /> */}
+          {/* {stats.knowValues && stats.knowValues.length > 0 && (
             <>
               <h4>Known values</h4>
               <p>{stats.knowValues.join(", ")}</p>
             </>
-          )}
+          )} */}
           {stats.notNewValues && stats.notNewValues.length > 0 && (
             <>
               <h4>Not-new values</h4>
@@ -334,7 +327,7 @@ export default function Player() {
         </>
       )}
 
-      {abilities?.abilities && abilities.abilities.length > 0 && (
+      {/* {abilities?.abilities && abilities.abilities.length > 0 && (
         <>
           <h3>Abilities / Relics</h3>
           <ul>
@@ -345,14 +338,14 @@ export default function Player() {
                   !relicsData.some((r) => r.hash === a.hashHex),
               )
               .map((ability) => (
-              <li key={ability.hashHex}>
-                {resolveIdLabel(ability.hashHex)}
-                {ability.active ? " (active)" : " (inactive)"}
-              </li>
-            ))}
+                <li key={ability.hashHex}>
+                  {resolveIdLabel(ability.hashHex)}
+                  {ability.active ? " (active)" : " (inactive)"}
+                </li>
+              ))}
           </ul>
         </>
-      )}
+      )} */}
 
       {abilityLock?.showedAbilities &&
         abilityLock.showedAbilities.length > 0 && (

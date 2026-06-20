@@ -4,6 +4,7 @@ import { FigureCategorySprite } from "./FigureCategorySprite"
 import { FigureSprite } from "./FigureSprite"
 import { useSave } from "./SaveContext"
 import { TabContext } from "../App"
+import { findStat } from "../utils/playerDecoders"
 
 function useTab() {
   const tab = useContext(TabContext)
@@ -195,6 +196,11 @@ export default function Altar() {
   const appTab = useTab()
   const [tab, setTab] = useState<AltarTab>("all")
 
+  const altarPieceUpgrade = findStat(
+    (save?.player?.stats as Record<string, unknown> | undefined) ?? undefined,
+    ["AltarPieceUpgrade"],
+  )
+
   const acquired = new Set(
     (
       save?.player?.inventory as
@@ -306,6 +312,14 @@ export default function Altar() {
         </div>
         <aside className="altar-resonances">
           <h3>Resonances</h3>
+          {altarPieceUpgrade && (
+            <p>
+              Altar Piece Upgrade: {altarPieceUpgrade.value}
+              {"upgrades" in altarPieceUpgrade && altarPieceUpgrade.upgrades !== undefined
+                ? ` / ${altarPieceUpgrade.upgrades}`
+                : ""}
+            </p>
+          )}
         </aside>
       </div>
     </section>

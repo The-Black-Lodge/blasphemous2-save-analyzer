@@ -84,6 +84,16 @@
   background-position: -1px -411px;
 }
 
+.hud-sprite--menu-arrow-sm {
+  width: 22px;
+  height: 16px;
+  background-image: url('/blasphemous2-save-analyzer/sprites/player-HUD-spritesheet.png');
+  background-position: -1px -411px;
+  transform: scale(1.0);
+  transform-origin: top center;
+  margin-top: 4px;
+}
+
 .hud-sprite--popup-bg {
   width: 368px;
   height: 42px;
