@@ -7,8 +7,9 @@ import Quest from "./components/Quest"
 import Rosary from "./components/Rosary"
 import SaveProvider from "./components/SaveProvider"
 import Weapon from "./components/Weapon"
+import Collectibles from "./components/Collectibles"
 
-type SectionTab = "player" | "rosary" | "quest" | "prayers" | "altar" | "weapon"
+type SectionTab = "player" | "rosary" | "quest" | "prayers" | "altar" | "weapon" | "collectibles"
 type Tab = "all" | SectionTab
 
 const SECTIONS: { id: SectionTab; label: string; Component: ComponentType }[] =
@@ -19,6 +20,7 @@ const SECTIONS: { id: SectionTab; label: string; Component: ComponentType }[] =
     { id: "prayers", label: "Prayers", Component: Prayer },
     { id: "altar", label: "Altarpiece of Favours", Component: Altar },
     { id: "weapon", label: "Weapon Memories", Component: Weapon },
+    { id: "collectibles", label: "Collectibles", Component: Collectibles },
   ]
 
 const TABS: { id: Tab; label: string }[] = [

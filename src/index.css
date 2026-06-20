@@ -460,3 +460,38 @@ code {
 .app-content > * + * {
   margin-top: 2rem;
 }
+
+.cherub-grid {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 0.5rem;
+}
+
+.cherub-cell {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--code-bg);
+}
+
+.cherub-cell.collected {
+  background: rgba(170, 59, 255, 0.15);
+  border-color: var(--accent-border);
+}
+
+.cherub-cell span {
+  font-family: var(--mono);
+  font-size: 14px;
+}
+
+.cherub-cell a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.cherub-cell a:hover {
+  color: var(--text-h);
+}

@@ -101,9 +101,6 @@ export default function Player() {
   const abilities = player.abilities as
     | { abilities?: AbilityEntry[] }
     | undefined
-  const cherubs = player.cherubs as
-    | { tokens?: number[]; tokenHex?: string[] }
-    | undefined
   const guilt = player.guilt as { dropCount?: number } | undefined
   const abilityLock = player.abilityLock as
     | { showedAbilities?: number[] }
@@ -258,17 +255,6 @@ export default function Player() {
                 {resolveIdLabel(ability.hashHex)}
                 {ability.active ? " (active)" : " (inactive)"}
               </li>
-            ))}
-          </ul>
-        </>
-      )}
-
-      {cherubs?.tokenHex && cherubs.tokenHex.length > 0 && (
-        <>
-          <h3>Cherubs</h3>
-          <ul>
-            {cherubs.tokenHex.map((token) => (
-              <li key={token}>{resolveIdLabel(token)}</li>
             ))}
           </ul>
         </>
