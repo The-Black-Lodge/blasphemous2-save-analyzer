@@ -1,5 +1,12 @@
 import b2data from "../data/b2data.json"
 import { useSave } from "./SaveContext"
+import { useContext } from "react"
+import { TabContext } from "../App"
+
+function useTab() {
+  const tab = useContext(TabContext)
+  return tab
+}
 
 interface BeadItem {
   item?: {
@@ -9,6 +16,7 @@ interface BeadItem {
 
 export default function Rosary() {
   const { save } = useSave()
+  const tab = useTab()
 
   const acquired = new Set(
     (
@@ -22,7 +30,7 @@ export default function Rosary() {
 
   return (
     <>
-      <h2>Rosary Beads</h2>
+      {tab === "all" && <h2>Rosary Beads</h2>}
       <div className="rosary-grid">
         {b2data.beads.map((bead) => {
           const isAcquired = acquired.has(bead.source)

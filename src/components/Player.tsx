@@ -1,4 +1,11 @@
+import { useContext } from "react"
 import { useSave } from "./SaveContext"
+import { TabContext } from "../App"
+
+function useTab() {
+  const tab = useContext(TabContext)
+  return tab
+}
 import { findStat } from "../utils/playerDecoders"
 import {
   formatHashKey,
@@ -57,6 +64,7 @@ function StatList({
 
 export default function Player() {
   const { save } = useSave()
+  const tab = useTab()
   const player = save?.player as Record<string, unknown> | undefined
 
   if (!player) {
@@ -122,7 +130,7 @@ export default function Player() {
 
   return (
     <section className="player">
-      <h2>The Penitent One</h2>
+      {tab === "all" && <h2>The Penitent One</h2>}
 
       {saveMeta && (
         <>

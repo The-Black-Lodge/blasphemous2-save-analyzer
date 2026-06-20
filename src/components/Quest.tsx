@@ -1,8 +1,14 @@
 import b2data from "../data/b2data.json"
 import { useSave } from "./SaveContext"
-import { useState } from "react"
+import { useState, useContext } from "react"
 import { formatItemRef } from "../utils/catalogs"
 import { getAcquiredPrayerSources } from "../utils/inventoryPrayers"
+import { TabContext } from "../App"
+
+function useTab() {
+  const tab = useContext(TabContext)
+  return tab
+}
 
 interface QuestItem {
   item?: {
@@ -13,6 +19,7 @@ interface QuestItem {
 
 export default function Quest() {
   const { save } = useSave()
+  const tab = useTab()
   const [showAll, setShowAll] = useState(false)
 
   const parseSignedInt32FromIdHex = (idHex: string): number | null => {
@@ -250,7 +257,7 @@ export default function Quest() {
 
   return (
     <section className="quest">
-      <h2>Quest Items</h2>
+      {tab === "all" && <h2>Quest Items</h2>}
       <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
         <button
           type="button"

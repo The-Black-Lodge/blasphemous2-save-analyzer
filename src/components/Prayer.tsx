@@ -2,6 +2,13 @@ import b2data from "../data/b2data.json"
 import { useSave } from "./SaveContext"
 import { getAcquiredPrayerSources } from "../utils/inventoryPrayers"
 import { getPrayerKind } from "../utils/prayerKinds"
+import { useContext } from "react"
+import { TabContext } from "../App"
+
+function useTab() {
+  const tab = useContext(TabContext)
+  return tab
+}
 
 function PrayerGrid({
   label,
@@ -45,6 +52,7 @@ function PrayerGrid({
 
 export default function Prayer() {
   const { save } = useSave()
+  const tab = useTab()
   const acquired = getAcquiredPrayerSources(save)
 
   const chants: string[] = []
@@ -64,7 +72,7 @@ export default function Prayer() {
 
   return (
     <section className="prayer">
-      <h2>Prayers</h2>
+      {tab === "all" && <h2>Prayers</h2>}
       <div className="prayer-columns">
         <PrayerGrid label="Chants" sources={chants} acquired={acquired} />
         <PrayerGrid label="Verses" sources={verses} acquired={acquired} />

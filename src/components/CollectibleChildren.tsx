@@ -12,7 +12,10 @@ export default function CollectibleChildren() {
 
   return (
     <section className="collectible-children">
-      <span className="hud-sprite hud-sprite--cherub" aria-hidden="true" />
+      <span
+        className="hud-sprite hud-sprite--cherub float-left"
+        aria-hidden="true"
+      />
       <h3 className="leading-icon">Children of Moonlight</h3>
       <div className="cherub-grid">
         {cherubsData.map((entry) => (

@@ -512,3 +512,7 @@ code {
 .cherub-cell a:hover {
   color: var(--text-h);
 }
+
+.float-left {
+  float: left;
+}

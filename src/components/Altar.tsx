@@ -1,8 +1,14 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
 import b2data from "../data/b2data.json"
 import { FigureCategorySprite } from "./FigureCategorySprite"
 import { FigureSprite } from "./FigureSprite"
 import { useSave } from "./SaveContext"
+import { TabContext } from "../App"
+
+function useTab() {
+  const tab = useContext(TabContext)
+  return tab
+}
 import {
   FIGURE_KIND_LABELS,
   FIGURE_KIND_ORDER,
@@ -186,6 +192,7 @@ function FigurePanel({
 
 export default function Altar() {
   const { save } = useSave()
+  const appTab = useTab()
   const [tab, setTab] = useState<AltarTab>("all")
 
   const acquired = new Set(
@@ -246,7 +253,7 @@ export default function Altar() {
 
   return (
     <section className="altar">
-      <h2>Altarpiece of Favours</h2>
+      {appTab === "all" && <h2>Altarpiece of Favours</h2>}
       <div className="altar-layout">
         <div className="altar-board">
           <nav className="altar-tabs" aria-label="Figure categories">

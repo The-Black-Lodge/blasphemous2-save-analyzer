@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { createContext, useState } from "react"
 import type { ComponentType } from "react"
 import Altar from "./components/Altar"
 import Player from "./components/Player"
@@ -11,6 +11,8 @@ import Collectibles from "./components/Collectibles"
 
 type SectionTab = "player" | "rosary" | "quest" | "prayers" | "altar" | "weapon" | "collectibles"
 type Tab = "all" | SectionTab
+
+const TabContext = createContext<Tab>("all")
 
 const SECTIONS: { id: SectionTab; label: string; Component: ComponentType }[] =
   [
@@ -35,27 +37,29 @@ function AppContent() {
     tab === "all" ? SECTIONS : SECTIONS.filter((section) => section.id === tab)
 
   return (
-    <>
-      <nav className="app-tabs" aria-label="Inventory sections">
-        {TABS.map(({ id, label }) => (
-          <button
-            key={id}
-            type="button"
-            className="app-tab"
-            role="tab"
-            aria-selected={tab === id}
-            onClick={() => setTab(id)}
-          >
-            {label}
-          </button>
-        ))}
-      </nav>
-      <main className="app-content">
-        {visibleSections.map(({ id, Component }) => (
-          <Component key={id} />
-        ))}
-      </main>
-    </>
+    <TabContext.Provider value={tab}>
+      <>
+        <nav className="app-tabs" aria-label="Inventory sections">
+          {TABS.map(({ id, label }) => (
+            <button
+              key={id}
+              type="button"
+              className="app-tab"
+              role="tab"
+              aria-selected={tab === id}
+              onClick={() => setTab(id)}
+            >
+              {label}
+            </button>
+          ))}
+        </nav>
+        <main className="app-content">
+          {visibleSections.map(({ id, Component }) => (
+            <Component key={id} />
+          ))}
+        </main>
+      </>
+    </TabContext.Provider>
   )
 }
 
@@ -68,3 +72,4 @@ function App() {
 }
 
 export default App
+export { TabContext }
