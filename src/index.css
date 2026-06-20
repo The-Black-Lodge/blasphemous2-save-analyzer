@@ -300,6 +300,9 @@ code {
 .prayer-column {
   flex: 1 1 0;
   min-width: 0;
+  background: rgb(21, 24, 34);
+  border: 2px solid rgb(142, 126, 91);
+  padding: 4px;
 }
 
 .prayer-column h3 {
@@ -348,6 +351,8 @@ code {
 }
 
 .quest-grid {
+  background: rgb(21, 24, 34);
+  border: 2px solid rgb(142, 126, 91);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
@@ -383,6 +388,9 @@ code {
 }
 
 .rosary-grid {
+  background: rgb(21, 24, 34);
+  border: 2px solid rgb(142, 126, 91);
+  padding: 4px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 1rem;

@@ -169,9 +169,6 @@ export default function Quest() {
 
   // Simple sequential grouping for easier mental parsing (no headings yet).
   const questOrderGroups: string[][] = [
-    // Imperfectus Lacrimatorio -> Plenus -> Beatus
-    ["QI106", "QI107", "QI108", "QI109", "QI110", "QI111"],
-
     // Wax Seeds -> Remembrance of Cesáreo
     ["QI56", "QI57", "QI58", "QI59", "QI60", "QI61", "QI62"],
 
@@ -206,6 +203,9 @@ export default function Quest() {
     ["QI210", "QI211", "QI212"], // Old Piece of Gold -> Gold Offering -> Consecrated Gold Offering
     ["QI204", "QI205", "QI206"], // Cracked ceramic -> Ceramic Offering -> Offering of Consecrated Pottery
     ["QI207", "QI208", "QI209"], // Rusted silver -> Silver Offering -> Consecrated Silver Offering
+
+    // Imperfectus Lacrimatorio -> Plenus -> Beatus
+    ["QI106", "QI107", "QI108", "QI109", "QI110", "QI111"],
   ]
 
   const questOrderIndex = new Map<string, number>()
