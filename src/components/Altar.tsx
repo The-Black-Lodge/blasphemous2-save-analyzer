@@ -4,13 +4,7 @@ import { FigureCategorySprite } from "./FigureCategorySprite"
 import { FigureSprite } from "./FigureSprite"
 import { useSave } from "./SaveContext"
 import { TabContext } from "../App"
-import { findStat } from "../utils/playerDecoders"
-
-function useTab() {
-  const tab = useContext(TabContext)
-  return tab
-}
-import { getEquippedFigures } from "../utils/inventoryEquipped"
+import AltarResonance from "./AltarResonance"
 import {
   FIGURE_KIND_LABELS,
   FIGURE_KIND_ORDER,
@@ -26,6 +20,11 @@ import {
   getMaidenChainRepairLevel,
   isChainAcquired,
 } from "../utils/figureChains"
+
+function useTab() {
+  const tab = useContext(TabContext)
+  return tab
+}
 
 interface FigureItem {
   item?: {
@@ -51,38 +50,6 @@ function getFigureSpriteSource(source: string, acquired: Set<string>): string {
   }
 
   return source
-}
-
-function EquippedBoardFigure({
-  slot,
-  source,
-  acquired,
-}: {
-  slot: number
-  source: string
-  acquired: Set<string>
-}) {
-  const figure = figureBySource.get(source)
-  if (!figure) return null
-
-  const envoyChain = getEnvoyChain(source)
-  const isBurnt = envoyChain ? acquired.has(envoyChain.sources[1]) : false
-
-  return (
-    <li className="altar-equipped-item">
-      <span className="altar-equipped-slot">{slot}</span>
-      <span className="altar-figure-sprite-slot">
-        <FigureSprite
-          source={getFigureSpriteSource(source, acquired)}
-          acquired={acquired}
-          burnt={isBurnt}
-        />
-      </span>
-      <span className="altar-equipped-label">
-        {isBurnt ? `Burnt Figure (${figure.caption.en})` : figure.caption.en}
-      </span>
-    </li>
-  )
 }
 
 function MaidenLabel({ chainIndex }: { chainIndex: number | null }) {
@@ -229,11 +196,6 @@ export default function Altar() {
   const appTab = useTab()
   const [tab, setTab] = useState<AltarTab>("all")
 
-  const altarPieceUpgrade = findStat(
-    (save?.player?.stats as Record<string, unknown> | undefined) ?? undefined,
-    ["AltarPieceUpgrade"],
-  )
-
   const acquired = new Set(
     (
       save?.player?.inventory as
@@ -243,8 +205,6 @@ export default function Altar() {
       ?.map((entry) => entry.item?.name)
       .filter((name): name is string => typeof name === "string") ?? [],
   )
-
-  const equippedFigures = getEquippedFigures(save)
 
   const byKind = new Map(
     FIGURE_KIND_ORDER.map((kind) => [
@@ -345,34 +305,7 @@ export default function Altar() {
             ))}
           </div>
         </div>
-        <aside className="altar-resonances">
-          <h3>Resonances</h3>
-          {altarPieceUpgrade && (
-            <p>
-              Altar Piece Upgrade: {altarPieceUpgrade.value}
-              {"upgrades" in altarPieceUpgrade && altarPieceUpgrade.upgrades !== undefined
-                ? ` / ${altarPieceUpgrade.upgrades}`
-                : ""}
-            </p>
-          )}
-          {equippedFigures.length > 0 ? (
-            <>
-              <h4 className="altar-equipped-heading">Equipped Figures</h4>
-              <ul className="altar-equipped-list">
-                {equippedFigures.map(({ slot, source }) => (
-                  <EquippedBoardFigure
-                    key={`${slot}-${source}`}
-                    slot={slot}
-                    source={source}
-                    acquired={acquired}
-                  />
-                ))}
-              </ul>
-            </>
-          ) : (
-            <p className="altar-equipped-empty">No figures equipped on the board.</p>
-          )}
-        </aside>
+        <AltarResonance />
       </div>
     </section>
   )
