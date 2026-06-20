@@ -4,6 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 import './styles/fonts.css'
 import './styles/figure-sprites.css'
 import './styles/figure-category-sprites.css'
+import './styles/item-sprites.css'
 import './index.css'
 import App from './App.tsx'
 

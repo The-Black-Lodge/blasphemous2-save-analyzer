@@ -311,9 +311,41 @@ code {
 .prayer-column ul {
   margin: 0;
   padding: 0;
-  list-style: none;
+}
+
+.rosary-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 1rem 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rosary-bead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.rosary-bead .rb-sprite {
+  transform: scale(var(--rb-sprite-scale));
+  transform-origin: center center;
+  margin: calc((var(--rb-sprite-size) - var(--rb-sprite-native-size)) / 2);
+}
+
+.bead-label {
   font-size: 14px;
-  line-height: 135%;
+  line-height: 1.2;
+}
+
+.rosary-bead--missing .rb-sprite {
+  filter: url(#altar-figure-missing-tint);
 }
 
 .prayer-column li {

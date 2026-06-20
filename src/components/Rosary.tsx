@@ -9,6 +9,7 @@ interface BeadItem {
 
 export default function Rosary() {
   const { save } = useSave()
+
   const acquired = new Set(
     (
       save?.player?.inventory as
@@ -22,20 +23,23 @@ export default function Rosary() {
   return (
     <>
       <h2>Rosary</h2>
-      <ul>
-        {b2data.beads.map((bead) => (
-          <li key={bead.source}>
-            <i
-              className={
-                acquired.has(bead.source)
-                  ? "fa-regular fa-square-check"
-                  : "fa-regular fa-square"
-              }
-            ></i>{" "}
-            {bead.caption.en}
-          </li>
-        ))}
-      </ul>
+      <div className="rosary-grid">
+        {b2data.beads.map((bead) => {
+          const isAcquired = acquired.has(bead.source)
+          return (
+            <div
+              key={bead.source}
+              className={`rosary-bead${isAcquired ? "" : " rosary-bead--missing"}`}
+            >
+              <span
+                className={`rb-sprite rb-sprite--${bead.source}`}
+                aria-hidden="true"
+              />{" "}
+              <div className="bead-label">{bead.caption.en}</div>
+            </div>
+          )
+        })}
+      </div>
     </>
   )
 }
