@@ -218,7 +218,7 @@ code {
 }
 
 .altar-resonance-panel {
-  width: 100%;
+  width: 368px;
   background: rgb(21, 24, 34);
   border: 2px solid rgb(142, 126, 91);
   padding: 4px;
@@ -235,11 +235,32 @@ code {
 }
 
 .resonance-row {
+  position: relative;
   display: grid;
-  grid-template-columns: 80px 80px;
+  grid-template-columns: 77px 77px;
   grid-template-rows: auto auto;
-  gap: 4px 4px;
+  gap: 1rem;
   justify-items: center;
+  padding-bottom: 1rem;
+}
+
+.resonance-row::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 368px;
+  height: 21px;
+  background-image: url('/blasphemous2-save-analyzer/sprites/player-HUD-spritesheet.png');
+  background-position: -1px -374px;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.resonance-row > * {
+  position: relative;
+  z-index: 1;
 }
 
 .resonance-row .resonance-figure {
@@ -253,35 +274,41 @@ code {
 .resonance-row .resonance-effect {
   grid-column: 1 / -1;
   grid-row: 2;
-  font-size: 10px;
+  font-size: 0.8rem;
   line-height: 1.3;
   text-align: center;
   color: var(--text);
-  width: 160px;
+  width: 368px;
   white-space: normal;
 }
 
 .resonance-figure {
   display: grid;
-  grid-template-rows: 80px auto;
+  grid-template-rows: 120px auto;
   grid-template-columns: 1fr;
-  width: 80px;
+  width: 77px;
   justify-items: center;
 }
 
 .resonance-figure-sprite {
-  width: 38px;
-  height: 80px;
+  width: 57px;
+  height: 120px;
   grid-row: 1;
+  position: relative;
 }
 
 .resonance-figure-sprite .fg-sprite {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(1.5);
+  transform-origin: bottom center;
   width: 38px;
   height: 80px;
 }
 
 .resonance-figure-label {
-  font-size: 11px;
+  font-size: 10px;
   line-height: 1.2;
   text-align: center;
   color: var(--text);

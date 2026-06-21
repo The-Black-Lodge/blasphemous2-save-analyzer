@@ -32,7 +32,7 @@ const figureBySource = new Map(
 const figureSpriteData = figureSprites as Record<string, Record<string, unknown>>
 
 function hasResonanceSprite(source: string): boolean {
-  const entry = figureSpriteData[source]
+  const entry = (figureSpriteData as any).sprites?.[source]
   return entry && typeof entry.resonance === "object"
 }
 
