@@ -428,6 +428,11 @@
   background-position: -380px -400px;
 }
 
+.fg-sprite--FG42--burn {
+  background-image: url('/blasphemous2-save-analyzer/sprites/burn-board-figures.png');
+  background-position: -40px 0px;
+}
+
 .fg-sprite--FG44--base {
   background-image: url('/blasphemous2-save-analyzer/sprites/argent-board-figures-2.png');
   background-position: 0px 0px;

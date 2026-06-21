@@ -1,6 +1,7 @@
 import { useState } from "react"
 import b2data from "../data/b2data.json"
 import resonancesData from "../data/resonances.json"
+import figureSprites from "../data/figure-sprites.json"
 import { FigureSprite } from "./FigureSprite"
 import { useSave } from "./SaveContext"
 import { getEquippedFigures } from "../utils/inventoryEquipped"
@@ -10,6 +11,12 @@ import {
   getMaidenChain,
   isChainAcquired,
 } from "../utils/figureChains"
+import figureChainsJson from "../data/figure-chains.json"
+
+interface FigureChain {
+  displaySource: string
+  sources: string[]
+}
 
 interface FigureItem {
   item?: {
@@ -21,6 +28,29 @@ const maidenChain = getMaidenChain()
 const figureBySource = new Map(
   b2data.figures.map((figure) => [figure.source, figure]),
 )
+
+const figureSpriteData = figureSprites as Record<string, Record<string, unknown>>
+
+function hasResonanceSprite(source: string): boolean {
+  const entry = figureSpriteData[source]
+  return entry && typeof entry.resonance === "object"
+}
+
+const envoyDisplaySources = new Map(
+  figureChainsJson.envoys.map((chain) => [chain.displaySource, chain]),
+)
+
+function getEnvoyChainFor(source: string): FigureChain | null {
+  if (envoyDisplaySources.has(source)) {
+    return envoyDisplaySources.get(source) ?? null
+  }
+  for (const chain of figureChainsJson.envoys) {
+    if (chain.sources.includes(source)) {
+      return chain
+    }
+  }
+  return null
+}
 
 function getFigureSpriteSource(source: string, acquired: Set<string>): string {
   if (source === maidenChain.displaySource) {
@@ -46,8 +76,9 @@ function ResonanceFigure({
   const figure = figureBySource.get(source)
   if (!figure) return null
 
-  const envoyChain = getEnvoyChain(source)
+  const envoyChain = getEnvoyChainFor(source)
   const isBurnt = envoyChain ? acquired.has(envoyChain.sources[1]) : false
+  const displayFigure = isBurnt ? figureBySource.get(envoyChain.displaySource) : figure
 
   return (
     <div className="resonance-figure">
@@ -60,7 +91,7 @@ function ResonanceFigure({
         />
       </span>
       <span className="resonance-figure-label">
-        {isBurnt ? `Burnt Figure (${figure.caption.en})` : figure.caption.en}
+        {isBurnt ? `Burnt Figure (${displayFigure.caption.en})` : displayFigure.caption.en}
       </span>
     </div>
   )
@@ -75,6 +106,23 @@ interface ResonancePair {
 const resonancePairs = resonancesData.resonances.filter(
   (r) => r.requirement?.type === "figurePair",
 ) as ResonancePair[]
+
+function isResonanceAvailable(
+  resonance: ResonancePair,
+  acquired: Set<string>,
+): boolean {
+  const figA = resonance.requirement.figures[0]
+  const figB = resonance.requirement.figures[1]
+  const isAcquiredA =
+    figA === maidenChain.displaySource
+      ? isChainAcquired(maidenChain, acquired)
+      : acquired.has(figA)
+  const isAcquiredB =
+    figB === maidenChain.displaySource
+      ? isChainAcquired(maidenChain, acquired)
+      : acquired.has(figB)
+  return isAcquiredA && isAcquiredB
+}
 
 function findResonancePair(figA: string, figB: string): ResonancePair | null {
   return (
@@ -101,6 +149,10 @@ export default function AltarResonance() {
   )
 
   const equippedFigures = getEquippedFigures(save)
+
+  const availableResonances = resonancePairs.filter((r) =>
+    isResonanceAvailable(r, acquired),
+  )
 
   return (
     <aside className="altar-resonances">
@@ -178,6 +230,56 @@ export default function AltarResonance() {
                 </p>
               )}
             </>
+          )}
+          {tab === "available" && (
+            <>
+              {availableResonances.length > 0 ? (
+                <ul className="resonance-grid">
+                  {availableResonances.map((resonance) => (
+                    <li key={resonance.source} className="resonance-row">
+                      <ResonanceFigure
+                        source={resonance.requirement.figures[0]}
+                        acquired={acquired}
+                        variant={hasResonanceSprite(resonance.requirement.figures[0]) ? "resonance" : undefined}
+                      />
+                      <ResonanceFigure
+                        source={resonance.requirement.figures[1]}
+                        acquired={acquired}
+                        variant={hasResonanceSprite(resonance.requirement.figures[1]) ? "resonance" : undefined}
+                      />
+                      <div className="resonance-effect">
+                        {resonance.description.en}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="altar-equipped-empty">
+                  No available resonances.
+                </p>
+              )}
+            </>
+          )}
+          {tab === "all" && (
+            <ul className="resonance-grid">
+              {resonancePairs.map((resonance) => (
+                <li key={resonance.source} className="resonance-row">
+                  <ResonanceFigure
+                    source={resonance.requirement.figures[0]}
+                    acquired={acquired}
+                    variant={hasResonanceSprite(resonance.requirement.figures[0]) ? "resonance" : undefined}
+                  />
+                  <ResonanceFigure
+                    source={resonance.requirement.figures[1]}
+                    acquired={acquired}
+                    variant={hasResonanceSprite(resonance.requirement.figures[1]) ? "resonance" : undefined}
+                  />
+                  <div className="resonance-effect">
+                    {resonance.description.en}
+                  </div>
+                </li>
+              ))}
+            </ul>
           )}
         </div>
       </div>
