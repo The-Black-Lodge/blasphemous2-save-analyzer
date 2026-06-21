@@ -1,8 +1,8 @@
+import { useState } from "react"
 import b2data from "../data/b2data.json"
 import { FigureSprite } from "./FigureSprite"
 import { useSave } from "./SaveContext"
 import { getEquippedFigures } from "../utils/inventoryEquipped"
-import { findStat } from "../utils/playerDecoders"
 import {
   getEnvoyChain,
   getHighestAcquiredChainIndex,
@@ -31,12 +31,12 @@ function getFigureSpriteSource(source: string, acquired: Set<string>): string {
   return source
 }
 
-function EquippedBoardFigure({
-  slot,
+type ResonanceTab = "equipped" | "available" | "all"
+
+function ResonanceFigure({
   source,
   acquired,
 }: {
-  slot: number
   source: string
   acquired: Set<string>
 }) {
@@ -47,29 +47,24 @@ function EquippedBoardFigure({
   const isBurnt = envoyChain ? acquired.has(envoyChain.sources[1]) : false
 
   return (
-    <li className="altar-equipped-item">
-      <span className="altar-equipped-slot">{slot}</span>
-      <span className="altar-figure-sprite-slot">
+    <div className="resonance-figure">
+      <span className="resonance-figure-sprite">
         <FigureSprite
           source={getFigureSpriteSource(source, acquired)}
           acquired={acquired}
           burnt={isBurnt}
         />
       </span>
-      <span className="altar-equipped-label">
+      <span className="resonance-figure-label">
         {isBurnt ? `Burnt Figure (${figure.caption.en})` : figure.caption.en}
       </span>
-    </li>
+    </div>
   )
 }
 
 export default function AltarResonance() {
   const { save } = useSave()
-
-  const altarPieceUpgrade = findStat(
-    (save?.player?.stats as Record<string, unknown> | undefined) ?? undefined,
-    ["AltarPieceUpgrade"],
-  )
+  const [tab, setTab] = useState<ResonanceTab>("equipped")
 
   const acquired = new Set(
     (
@@ -85,32 +80,71 @@ export default function AltarResonance() {
 
   return (
     <aside className="altar-resonances">
-      <h3>Resonances</h3>
-      {altarPieceUpgrade && (
-        <p>
-          Altar Piece Upgrade: {altarPieceUpgrade.value}
-          {"upgrades" in altarPieceUpgrade && altarPieceUpgrade.upgrades !== undefined
-            ? ` / ${altarPieceUpgrade.upgrades}`
-            : ""}
-        </p>
-      )}
-      {equippedFigures.length > 0 ? (
-        <>
-          <h4 className="altar-equipped-heading">Equipped Figures</h4>
-          <ul className="altar-equipped-list">
-            {equippedFigures.map(({ slot, source }) => (
-              <EquippedBoardFigure
-                key={`${slot}-${source}`}
-                slot={slot}
-                source={source}
-                acquired={acquired}
-              />
-            ))}
-          </ul>
-        </>
-      ) : (
-        <p className="altar-equipped-empty">No figures equipped on the board.</p>
-      )}
+      <nav className="altar-tabs" aria-label="Resonance categories">
+        <button
+          type="button"
+          className="altar-tab"
+          role="tab"
+          aria-selected={tab === "equipped"}
+          onClick={() => setTab("equipped")}
+        >
+          Equipped
+        </button>
+        <button
+          type="button"
+          className="altar-tab"
+          role="tab"
+          aria-selected={tab === "available"}
+          onClick={() => setTab("available")}
+        >
+          Available
+        </button>
+        <button
+          type="button"
+          className="altar-tab"
+          role="tab"
+          aria-selected={tab === "all"}
+          onClick={() => setTab("all")}
+        >
+          All
+        </button>
+      </nav>
+      <div className="altar-resonance-content">
+        <div className="altar-resonance-panel">
+          {tab === "equipped" && (
+            <>
+              {equippedFigures.length > 0 ? (
+                <ul className="resonance-grid">
+                  {Array.from({ length: 4 }, (_, rowIdx) => {
+                    const slotA = equippedFigures[rowIdx * 2]
+                    const slotB = equippedFigures[rowIdx * 2 + 1]
+                    return (
+                      <li key={rowIdx} className="resonance-row">
+                        {slotA && (
+                          <ResonanceFigure
+                            source={slotA.source}
+                            acquired={acquired}
+                          />
+                        )}
+                        {slotB && (
+                          <ResonanceFigure
+                            source={slotB.source}
+                            acquired={acquired}
+                          />
+                        )}
+                      </li>
+                    )
+                  })}
+                </ul>
+              ) : (
+                <p className="altar-equipped-empty">
+                  No figures equipped on the board.
+                </p>
+              )}
+            </>
+          )}
+        </div>
+      </div>
     </aside>
   )
 }

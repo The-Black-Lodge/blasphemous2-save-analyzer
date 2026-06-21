@@ -213,47 +213,58 @@ code {
   flex: 1 1 auto;
   min-width: 0;
   min-height: 12rem;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
 }
 
-.altar-resonances h3 {
-  margin: 0;
-  font-size: 16px;
+.altar-resonance-panel {
+  width: 100%;
+  background: rgb(21, 24, 34);
+  border: 2px solid rgb(142, 126, 91);
+  padding: 4px;
 }
 
-.altar-equipped-heading {
-  margin: 1rem 0 0.5rem;
-  font-size: 14px;
-  font-family: var(--heading);
-  color: var(--text-h);
-}
-
-.altar-equipped-list {
+.resonance-grid {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-}
-
-.altar-equipped-item {
-  display: grid;
-  grid-template-columns: 1.5rem var(--figure-sprite-width) 1fr;
   gap: 0.5rem;
-  align-items: center;
 }
 
-.altar-equipped-slot {
-  font-size: 14px;
-  color: var(--text-h);
+.resonance-row {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.resonance-figure {
+  display: grid;
+  grid-template-rows: 80px auto;
+  grid-template-columns: 1fr;
+  width: 80px;
+  justify-items: center;
+}
+
+.resonance-figure-sprite {
+  width: 38px;
+  height: 80px;
+  grid-row: 1;
+}
+
+.resonance-figure-sprite .fg-sprite {
+  width: 38px;
+  height: 80px;
+}
+
+.resonance-figure-label {
+  font-size: 11px;
+  line-height: 1.2;
   text-align: center;
-}
-
-.altar-equipped-label {
-  font-size: 13px;
-  line-height: 1.25;
+  color: var(--text);
+  grid-row: 2;
+  padding-bottom: 2px;
 }
 
 .altar-equipped-empty {
