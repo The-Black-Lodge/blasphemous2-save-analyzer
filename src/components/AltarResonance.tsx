@@ -6,7 +6,6 @@ import { FigureSprite } from "./FigureSprite"
 import { useSave } from "./SaveContext"
 import { getEquippedFigures } from "../utils/inventoryEquipped"
 import {
-  getEnvoyChain,
   getHighestAcquiredChainIndex,
   getMaidenChain,
   isChainAcquired,
@@ -29,8 +28,12 @@ const figureBySource = new Map(
   b2data.figures.map((figure) => [figure.source, figure]),
 )
 
-const figureSpriteData = figureSprites as Record<string, Record<string, unknown>>
+interface FigureSpriteData {
+  atlas: Record<string, { w: number; h: number }>
+  sprites: Record<string, Record<string, { sheet: string; x: number; y: number; w: number; h: number }>>
+}
 
+const figureSpriteData = figureSprites as FigureSpriteData
 function hasResonanceSprite(source: string): boolean {
   const entry = (figureSpriteData as any).sprites?.[source]
   return entry && typeof entry.resonance === "object"
@@ -78,7 +81,8 @@ function ResonanceFigure({
 
   const envoyChain = getEnvoyChainFor(source)
   const isBurnt = envoyChain ? acquired.has(envoyChain.sources[1]) : false
-  const displayFigure = isBurnt ? figureBySource.get(envoyChain.displaySource) : figure
+  const displayFigure = isBurnt ? figureBySource.get(envoyChain!.displaySource) : figure
+  if (!displayFigure) return null
 
   return (
     <div className="resonance-figure">
@@ -105,8 +109,8 @@ interface ResonancePair {
 }
 
 const resonancePairs = resonancesData.resonances.filter(
-  (r) => r.requirement?.type === "figurePair",
-) as ResonancePair[]
+  (r) => r.requirement && typeof r.requirement === "object" && r.requirement.type === "figurePair",
+) as unknown as ResonancePair[]
 
 function isResonanceAvailable(
   resonance: ResonancePair,
