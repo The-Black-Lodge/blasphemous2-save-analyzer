@@ -255,6 +255,12 @@ export default function Quest() {
     return ai - bi
   })
 
+  // Quest persistence data (QuestManager).
+  const questPersistence = save?.player?.questPersistence as
+    | { quests?: { questID: number; questName: string; questCategory: string; status: number; varCount: number; variables: Record<number, number> }[] }
+    | undefined
+  const questList = questPersistence?.quests ?? []
+
   return (
     <section className="quest">
       {tab === "all" && <h2>Quest Items</h2>}
@@ -288,6 +294,22 @@ export default function Quest() {
           )
         })}
       </div>
+
+      {questList.length > 0 && (
+        <>
+          <h3>Quest Progress</h3>
+          <ul>
+            {questList.map((q) => (
+              <li key={q.questID}>
+                {q.questName}{" "}
+                <span className="quest-status">
+                  [{q.questCategory}] status: {q.status}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
     </section>
   )
 }
