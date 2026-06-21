@@ -99,6 +99,7 @@ function ResonanceFigure({
 
 interface ResonancePair {
   source: string
+  name?: string
   description: { en: string }
   requirement: { figures: [string, string] }
 }
@@ -217,6 +218,9 @@ export default function AltarResonance() {
                         )}
                         {resonance && (
                           <div className="resonance-effect">
+                            {resonance.name && (
+                              <span className="resonance-name">{resonance.name}</span>
+                            )}
                             {resonance.description.en}
                           </div>
                         )}
@@ -248,6 +252,9 @@ export default function AltarResonance() {
                         variant={hasResonanceSprite(resonance.requirement.figures[1]) ? "resonance" : undefined}
                       />
                       <div className="resonance-effect">
+                        {resonance.name && (
+                          <span className="resonance-name">{resonance.name}</span>
+                        )}
                         {resonance.description.en}
                       </div>
                     </li>
@@ -275,6 +282,9 @@ export default function AltarResonance() {
                     variant={hasResonanceSprite(resonance.requirement.figures[1]) ? "resonance" : undefined}
                   />
                   <div className="resonance-effect">
+                    {resonance.name && (
+                      <span className="resonance-name">{resonance.name}</span>
+                    )}
                     {resonance.description.en}
                   </div>
                 </li>

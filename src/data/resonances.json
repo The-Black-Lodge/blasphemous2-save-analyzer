@@ -16,7 +16,7 @@
       "id": -1052256420,
       "idHex": "0xC147D75C",
       "description": {
-        "en": "Boosts some of Veredicto's hits, creating bursts of Fire when activated.Y"
+        "en": "Boosts some of Veredicto's hits, creating bursts of Fire when activated."
       },
       "requirement": {
         "type": "figurePair",
@@ -38,7 +38,8 @@
             "en": "The Purified One"
           }
         }
-      ]
+      ],
+      "name": "Deflagration"
     },
     {
       "source": "RE02",
@@ -67,14 +68,15 @@
             "en": "The Alchemist"
           }
         }
-      ]
+      ],
+      "name": "Venomous Resin"
     },
     {
       "source": "RE03",
       "id": 2079911462,
       "idHex": "0x7BF8EE26",
       "description": {
-        "en": "Inflames Veredicto with dark fire born of Guilt itself. Increases damage depending on accumulated Guilt.�"
+        "en": "Inflames Veredicto with dark fire born of Guilt itself. Increases damage depending on accumulated Guilt."
       },
       "requirement": {
         "type": "figurePair",
@@ -96,7 +98,8 @@
             "en": "The Confessor"
           }
         }
-      ]
+      ],
+      "name": "Purging Bronze"
     },
     {
       "source": "RE04",
@@ -125,7 +128,8 @@
             "en": "The Tempest"
           }
         }
-      ]
+      ],
+      "name": "Stormrage"
     },
     {
       "source": "RE05",
@@ -154,14 +158,15 @@
             "en": "The Guide"
           }
         }
-      ]
+      ],
+      "name": "Spellblade"
     },
     {
       "source": "RE06",
       "id": -1811771307,
       "idHex": "0x94029055",
       "description": {
-        "en": "A dark storm born of Guilt itself sweeps across the silver. Increases the damage of Sarmiento & Centella's lightning bolts depending on the amount of Guilt accumulated.�"
+        "en": "A dark storm born of Guilt itself sweeps across the silver. Increases the damage of Sarmiento & Centella's lightning bolts depending on the amount of Guilt accumulated."
       },
       "requirement": {
         "type": "figurePair",
@@ -183,7 +188,8 @@
             "en": "The Confessor"
           }
         }
-      ]
+      ],
+      "name": "Purging Silver"
     },
     {
       "source": "RE07",
@@ -212,14 +218,15 @@
             "en": "The Guide"
           }
         }
-      ]
+      ],
+      "name": "Rosary of Torment"
     },
     {
       "source": "RE08",
       "id": 1320396575,
       "idHex": "0x4EB3A71F",
       "description": {
-        "en": "Blood Pact imbues the blade of Ruego Al Alba with lightning.I"
+        "en": "Blood Pact imbues the blade of Ruego Al Alba with lightning."
       },
       "requirement": {
         "type": "figurePair",
@@ -241,14 +248,15 @@
             "en": "The Tempest"
           }
         }
-      ]
+      ],
+      "name": "Galvanic Plead"
     },
     {
       "source": "RE09",
       "id": -1408486780,
       "idHex": "0xAC0C3284",
       "description": {
-        "en": "A dark force born of one's own Guilt runs through Ruego Al Alba. Increases the Mystical damage of Blood Pact depending on the Guilt accumulated.�"
+        "en": "A dark force born of one's own Guilt runs through Ruego Al Alba. Increases the Mystical damage of Blood Pact depending on the Guilt accumulated."
       },
       "requirement": {
         "type": "figurePair",
@@ -270,14 +278,15 @@
             "en": "The Confessor"
           }
         }
-      ]
+      ],
+      "name": "Purging Steel"
     },
     {
       "source": "RE10",
       "id": 1676626934,
       "idHex": "0x63EF4BF6",
       "description": {
-        "en": "Reduces Fervour consumption to zero by keeping Veredicto in an Active state.E"
+        "en": "Reduces Fervour consumption to zero by keeping Veredicto in an Active state."
       },
       "requirement": {
         "type": "figurePair",
@@ -299,7 +308,8 @@
             "en": "The Thurifer"
           }
         }
-      ]
+      ],
+      "name": "Burning Faith"
     },
     {
       "source": "RE11",
@@ -328,7 +338,8 @@
             "en": "The Partisan"
           }
         }
-      ]
+      ],
+      "name": "Endless Wrath"
     },
     {
       "source": "RE12",
@@ -357,7 +368,8 @@
             "en": "The Pillager"
           }
         }
-      ]
+      ],
+      "name": "Storm Steps"
     },
     {
       "source": "RE13",
@@ -386,7 +398,8 @@
             "en": "The Scribe"
           }
         }
-      ]
+      ],
+      "name": "Liquid Faith"
     },
     {
       "source": "RE14",
@@ -415,7 +428,8 @@
             "en": "Trifón"
           }
         }
-      ]
+      ],
+      "name": "Thorned Retort"
     },
     {
       "source": "RE15",
@@ -444,7 +458,8 @@
             "en": "The Partisan"
           }
         }
-      ]
+      ],
+      "name": "Contagion"
     },
     {
       "source": "RE16",
@@ -460,7 +475,7 @@
       "id": -245687367,
       "idHex": "0xF15B1BB9",
       "description": {
-        "en": "Intones occult versions of certain prayers, which should never again be uttered._"
+        "en": "Intones occult versions of certain prayers, which should never again be uttered."
       },
       "requirement": {
         "type": "figurePair",
@@ -482,7 +497,8 @@
             "en": "The Flagellant"
           }
         }
-      ]
+      ],
+      "name": "Orison Apocrypha"
     },
     {
       "source": "RE18",
@@ -520,7 +536,8 @@
             "en": "Viridiana"
           }
         }
-      ]
+      ],
+      "name": "Slaughter"
     },
     {
       "source": "RE20",
@@ -549,14 +566,15 @@
             "en": "Nacimiento"
           }
         }
-      ]
+      ],
+      "name": "Second Wind"
     },
     {
       "source": "RE21",
       "id": -1052256422,
       "idHex": "0xC147D75A",
       "description": {
-        "en": "When dodging, a barrier of thorns is invoked, damaging and piercing through enemies.\\"
+        "en": "When dodging, a barrier of thorns is invoked, damaging and piercing through enemies."
       },
       "requirement": {
         "type": "figurePair",
@@ -578,7 +596,8 @@
             "en": "The Pillager"
           }
         }
-      ]
+      ],
+      "name": "Briar and Thorn"
     },
     {
       "source": "RE22",
@@ -607,7 +626,8 @@
             "en": "Nacimiento"
           }
         }
-      ]
+      ],
+      "name": "Alchemical Time"
     },
     {
       "source": "RE101",
@@ -636,7 +656,8 @@
             "en": "Tirso"
           }
         }
-      ]
+      ],
+      "name": "Ascending Wrath"
     },
     {
       "source": "RE102",
@@ -665,7 +686,8 @@
             "en": "Burnt Figure"
           }
         }
-      ]
+      ],
+      "name": "Sacred Shelter"
     },
     {
       "source": "RE103",
@@ -694,7 +716,8 @@
             "en": "Trifón"
           }
         }
-      ]
+      ],
+      "name": "The Path of the Believer"
     },
     {
       "source": "RE201",
@@ -723,14 +746,15 @@
             "en": "Crisanta"
           }
         }
-      ]
+      ],
+      "name": "Crimson Flight"
     },
     {
       "source": "RE202",
       "id": 1864231111,
       "idHex": "0x6F1DE8C7",
       "description": {
-        "en": "With Wail of the Flame active, the Penitent One regains vitality equal to half the damage inflicted.�"
+        "en": "With Wail of the Flame active, the Penitent One regains vitality equal to half the damage inflicted."
       },
       "requirement": {
         "type": "figurePair",
@@ -752,7 +776,8 @@
             "en": "Inner Voice"
           }
         }
-      ]
+      ],
+      "name": "Holy Burns"
     }
   ]
 }

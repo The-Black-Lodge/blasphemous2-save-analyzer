@@ -60,9 +60,7 @@ export default function Rosary() {
                     className={`rb-sprite rb-sprite--${source}`}
                     aria-hidden="true"
                   />
-                  <div className="bead-label">
-                    {slot}: {bead?.caption.en ?? source}
-                  </div>
+                  <div className="bead-label">{bead?.caption.en ?? source}</div>
                 </div>
               )
             })}
