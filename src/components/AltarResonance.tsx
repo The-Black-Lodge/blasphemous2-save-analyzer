@@ -1,5 +1,6 @@
 import { useState } from "react"
 import b2data from "../data/b2data.json"
+import resonancesData from "../data/resonances.json"
 import { FigureSprite } from "./FigureSprite"
 import { useSave } from "./SaveContext"
 import { getEquippedFigures } from "../utils/inventoryEquipped"
@@ -36,9 +37,11 @@ type ResonanceTab = "equipped" | "available" | "all"
 function ResonanceFigure({
   source,
   acquired,
+  variant,
 }: {
   source: string
   acquired: Set<string>
+  variant?: "resonance"
 }) {
   const figure = figureBySource.get(source)
   if (!figure) return null
@@ -53,12 +56,33 @@ function ResonanceFigure({
           source={getFigureSpriteSource(source, acquired)}
           acquired={acquired}
           burnt={isBurnt}
+          variant={variant}
         />
       </span>
       <span className="resonance-figure-label">
         {isBurnt ? `Burnt Figure (${figure.caption.en})` : figure.caption.en}
       </span>
     </div>
+  )
+}
+
+interface ResonancePair {
+  source: string
+  description: { en: string }
+  requirement: { figures: [string, string] }
+}
+
+const resonancePairs = resonancesData.resonances.filter(
+  (r) => r.requirement?.type === "figurePair",
+) as ResonancePair[]
+
+function findResonancePair(figA: string, figB: string): ResonancePair | null {
+  return (
+    resonancePairs.find(
+      (r) =>
+        (r.requirement.figures[0] === figA && r.requirement.figures[1] === figB) ||
+        (r.requirement.figures[0] === figB && r.requirement.figures[1] === figA),
+    ) ?? null
   )
 }
 
@@ -118,19 +142,31 @@ export default function AltarResonance() {
                   {Array.from({ length: 4 }, (_, rowIdx) => {
                     const slotA = equippedFigures[rowIdx * 2]
                     const slotB = equippedFigures[rowIdx * 2 + 1]
+                    const figA = slotA?.source ?? null
+                    const figB = slotB?.source ?? null
+                    const resonance =
+                      figA && figB ? findResonancePair(figA, figB) : null
+
                     return (
                       <li key={rowIdx} className="resonance-row">
                         {slotA && (
                           <ResonanceFigure
                             source={slotA.source}
                             acquired={acquired}
+                            variant={resonance ? "resonance" : undefined}
                           />
                         )}
                         {slotB && (
                           <ResonanceFigure
                             source={slotB.source}
                             acquired={acquired}
+                            variant={resonance ? "resonance" : undefined}
                           />
+                        )}
+                        {resonance && (
+                          <div className="resonance-effect">
+                            {resonance.description.en}
+                          </div>
                         )}
                       </li>
                     )
