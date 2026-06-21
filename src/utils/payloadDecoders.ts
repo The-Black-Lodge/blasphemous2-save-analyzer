@@ -23,6 +23,86 @@ import {
 const INVENTORY_COMPONENT_ID = 51037994
 const STATS_COMPONENT_ID = -911447619
 const ABILITIES_COMPONENT_ID = -749611200
+const QUEST_MANAGER_ID = -596494782
+const QUEST_MANAGER_TYPE_ID = 0xc7ee3d13
+
+const QUEST_ID_MAP: Record<number, { name: string; category: string; description: string }> = Object.fromEntries([
+  // Bosses quest (tracks boss defeats)
+  [-1159116381, { name: "Bosses", category: "bosses", description: "Boss defeat tracking" }],
+  // Main story quests
+  [-1643499381, { name: "Main Path", category: "main_story", description: "ST00 - Main path, weapon choice, sorrows" }],
+  // Mid-game NPC quests
+  [-1455898277, { name: "Gold Delivery", category: "main_story", description: "ST103 - Tree quest, gold delivery to Mud Girl" }],
+  [-836930327, { name: "Doves Discovered", category: "main_story", description: "ST06 - Itinerant quest, doves discovery" }],
+  [-1999729741, { name: "Doves Flag", category: "main_story", description: "Bosses Doves Discovered Fix" }],
+  [1891953028, { name: "Company", category: "main_story", description: "ST07 - Company quest, coins delivery" }],
+  [1891953026, { name: "Company Progress", category: "main_story", description: "ST07 - Company quest progress" }],
+  // Shop conditional quests
+  [1085383974, { name: "Shop Conditional", category: "shop", description: "SHOPMISSABLES - conditional shop items" }],
+  [1085383975, { name: "Blood Lady", category: "main_story", description: "ST11 - Blood Lady quest, chalice upgrades" }],
+  [1085383972, { name: "Shop Conditional 2", category: "shop", description: "SHOPMISSABLES - additional shop items" }],
+  [1085383973, { name: "Shop Conditional 3", category: "shop", description: "SHOPMISSABLES - additional shop items" }],
+  // Arena/progression quests
+  [1488668501, { name: "Arena Progress", category: "arena", description: "Arena quest progress" }],
+  [1488668502, { name: "Arena Conditional", category: "arena", description: "Arena quest conditional" }],
+  [1488668499, { name: "Arena Conditional 2", category: "arena", description: "Arena quest conditional 2" }],
+  // Location access quests
+  [-1643499380, { name: "Location Access", category: "location", description: "Location access quests" }],
+  [-1643499383, { name: "Location Access 2", category: "location", description: "Location access quest 2" }],
+  // Z36 Castle Entrance
+  [1670614045, { name: "Castle Entrance", category: "main_story", description: "Z36 Castle Entrance quest" }],
+  [1670614044, { name: "Castle Entrance 2", category: "main_story", description: "Z36 Castle Entrance quest 2" }],
+  [1670614043, { name: "Castle Entrance 3", category: "main_story", description: "Z36 Castle Entrance quest 3" }],
+  [1670614039, { name: "Castle Entrance 4", category: "main_story", description: "Z36 Castle Entrance quest 4" }],
+  // Symbol quests
+  [-1240214854, { name: "Symbols Progress", category: "main_story", description: "Crystallbell symbols quest progress" }],
+  [-836930326, { name: "Symbols Progress 2", category: "main_story", description: "Crystallbell symbols quest progress 2" }],
+  [-1240214853, { name: "Symbols Progress 3", category: "main_story", description: "Crystallbell symbols quest progress 3" }],
+  [-1240214856, { name: "Symbols Progress 4", category: "main_story", description: "Crystallbell symbols quest progress 4" }],
+  // Additional tracked quests
+  [-1999729740, { name: "Doves Tracking", category: "main_story", description: "Doves tracking quest" }],
+  [-1455898278, { name: "Gold Progress", category: "main_story", description: "Gold delivery progress" }],
+  [-1455898279, { name: "Gold Progress 2", category: "main_story", description: "Gold delivery progress 2" }],
+  [-1455898280, { name: "Gold Progress 3", category: "main_story", description: "Gold delivery progress 3" }],
+  [-1455898281, { name: "Gold Progress 4", category: "main_story", description: "Gold delivery progress 4" }],
+  [-1455898310, { name: "Gold Progress 5", category: "main_story", description: "Gold delivery progress 5" }],
+  [-1455898309, { name: "Gold Progress 6", category: "main_story", description: "Gold delivery progress 6" }],
+  [-1455898314, { name: "Gold Progress 7", category: "main_story", description: "Gold delivery progress 7" }],
+  // Conditional quests
+  [-513524378, { name: "Conditional Quest", category: "conditional", description: "Conditional quest trigger" }],
+  [-725627380, { name: "Conditional Quest 2", category: "conditional", description: "Conditional quest trigger 2" }],
+  [-1058269311, { name: "Conditional Quest 3", category: "conditional", description: "Conditional quest trigger 3" }],
+  [-1058269313, { name: "Conditional Quest 4", category: "conditional", description: "Conditional quest trigger 4" }],
+  [-1058269317, { name: "Conditional Quest 5", category: "conditional", description: "Conditional quest trigger 5" }],
+  [-1058269318, { name: "Conditional Quest 6", category: "conditional", description: "Conditional quest trigger 6" }],
+  [-1058269319, { name: "Conditional Quest 7", category: "conditional", description: "Conditional quest trigger 7" }],
+  [-1752002532, { name: "Conditional Quest 8", category: "conditional", description: "Conditional quest trigger 8" }],
+  [-398251897, { name: "Conditional Quest 9", category: "conditional", description: "Conditional quest trigger 9" }],
+  [729153612, { name: "Conditional Quest 10", category: "conditional", description: "Conditional quest trigger 10" }],
+])
+
+// Boss quest variable mapping from GameModeManagerConfig.varsOfDeadBossesList
+const BOSS_QUEST_ID = -1159116381
+
+const BOSS_VARS = [
+  { id: 0, varID: 931769267, name: "Radames", code: "BS01" },
+  { id: 1, varID: 972433550, name: "Orospina", code: "BS02" },
+  { id: 2, varID: 1093909737, name: "Lesmes", code: "BS03" },
+  { id: 3, varID: 486012140, name: "Afilaor", code: "BS04" },
+  { id: 4, varID: 607488327, name: "Benedicta", code: "BS05" },
+  { id: 5, varID: 648152610, name: "Tercios", code: "BS06" },
+  { id: 6, varID: 769628797, name: "Susona", code: "BS07" },
+  { id: 7, varID: -577512320, name: "Orgaz", code: "BS08" },
+  { id: 8, varID: 810398647, name: "Eviterno", code: "BS10" },
+  { id: 9, varID: 931874834, name: "Tutorial Boss", code: "BS11" },
+]
+
+const DLC_BOSS_VARS = [
+  { id: 10, varID: -1364307071, name: "Mater Priora", code: "BS101" },
+  { id: 11, varID: -1713357321, name: "Penitent Rogue A", code: "BS102A" },
+  { id: 12, varID: 97115205, name: "Penitent Rogue B", code: "BS102B" },
+  { id: 13, varID: -1393746147, name: "Crescencia", code: "BS201" },
+]
 const STATS_TYPE_IDS = new Set([0x5ce1f99b, 0xefa6f720])
 const ABILITIES_TYPE_ID = 0x533635a5
 const WEAPON_MEMORY_TYPE_IDS = new Set([0x82e037ab, 0x9b2e8fbc])
@@ -306,6 +386,105 @@ function decodeSavePersistencePayload(
   return null
 }
 
+function decodeQuestPersistencePayload(
+  payload: Uint8Array,
+): Record<string, unknown> | null {
+  if (payload.length < 4) return null
+
+  const r = new B2BinaryReader(payload)
+  const questCount = r.readInt32()
+  const quests: Record<string, unknown>[] = []
+  const allVariables: Record<number, number> = {}
+
+  for (let q = 0; q < Math.min(questCount, 200); q++) {
+    if (r.getRemaining() < 20) break
+
+    const headerAt = r.position
+    const qTypeId = r.readUInt32()
+    const qRelA = r.readInt64()
+    const qRelB = r.readInt64()
+    const afterHeader = r.position
+    const qPayloadStart = afterHeader + Number(qRelA)
+    const qPayloadEnd = qPayloadStart + Number(qRelB)
+
+    if (qRelB < 0n || qPayloadStart < 0 || qPayloadEnd > payload.length) break
+
+    r.position = qPayloadStart
+    const qPayload = r.readBytes(Number(qRelB))
+    r.position = qPayloadEnd
+
+    if (qPayload.length < 12) break
+
+    const qView = new DataView(qPayload.buffer, qPayload.byteOffset)
+    const questId = qView.getInt32(0, true)
+    const currentStatus = qView.getFloat32(4, true)
+    const varCount = qView.getInt32(8, true)
+
+    const questVars: Record<number, number> = {}
+    for (let j = 0; j < varCount; j++) {
+      const varOffset = 12 + j * 28
+      if (varOffset + 28 > qPayload.length) break
+
+      const vView = new DataView(qPayload.buffer, qPayload.byteOffset + varOffset)
+      const vRelA = Number(vView.getBigInt64(4, true))
+      const vRelB = Number(vView.getBigInt64(12, true))
+      const vPayloadStart = varOffset + 20 + vRelA
+      const vPayloadLen = vRelB
+      if (vPayloadStart + vPayloadLen > qPayload.length) break
+
+      const vDataView = new DataView(qPayload.buffer, qPayload.byteOffset + vPayloadStart)
+      const vId = vDataView.getInt32(0, true)
+      const vValue = vDataView.getFloat32(4, true)
+      questVars[vId] = vValue
+      allVariables[vId] = vValue
+    }
+
+    const qInfo = QUEST_ID_MAP[questId]
+    quests.push({
+      questID: questId,
+      questName: qInfo?.name ?? `Quest_${questId}`,
+      questCategory: qInfo?.category ?? "unknown",
+      status: currentStatus,
+      varCount,
+      variables: questVars,
+    })
+  }
+
+  return {
+    type: "QuestPersistenceData",
+    questCount,
+    quests,
+    variables: allVariables,
+  }
+}
+
+function decodeBossKillStatus(
+  questVariables: Record<number, number>,
+): Record<string, unknown> {
+  const allBosses = [...BOSS_VARS, ...DLC_BOSS_VARS]
+  const bosses: Record<string, unknown>[] = []
+
+  for (const boss of allBosses) {
+    const varValue = questVariables[boss.varID] ?? 0.0
+    const defeated = varValue === 1.0
+    bosses.push({
+      id: boss.id,
+      code: boss.code,
+      name: boss.name,
+      defeated,
+    })
+  }
+
+  const defeatedCount = bosses.filter((b) => b.defeated).length
+
+  return {
+    type: "BossKillStatus",
+    bosses,
+    bossesDefeated: defeatedCount,
+    bossesRemaining: allBosses.length - defeatedCount,
+  }
+}
+
 export function decodePersistentPayload(
   typeId: number,
   payload: Uint8Array,
@@ -315,6 +494,14 @@ export function decodePersistentPayload(
 
   const typeIdHex = `0x${typeId.toString(16).padStart(8, "0").toUpperCase()}`
   const typeName = resolveTypeName(typeIdHex)
+
+  if (
+    typeId === QUEST_MANAGER_TYPE_ID ||
+    typeNameMatch(typeName, "QuestManager")
+  ) {
+    const quest = decodeQuestPersistencePayload(payload)
+    if (quest) return quest
+  }
 
   if (
     typeId === 0x294aeb63 ||
@@ -605,6 +792,18 @@ export function extractPlayerSummary(
 
   const abilityLock = getCommonManagerData(parsed, "ID_ABILITYLOCK_MANAGER")
   if (abilityLock) summary.abilityLock = abilityLock
+
+  // QuestManager: extract quest persistence data
+  for (const [key, entry] of Object.entries(common)) {
+    if (Number(key) !== QUEST_MANAGER_ID) continue
+    const questData = entry.object.decoded as Record<string, unknown> | null
+    if (questData && questData.type === "QuestPersistenceData") {
+      summary.questPersistence = questData
+      const questVariables = (questData.variables as Record<number, number>) ?? {}
+      summary.bossKillStatus = decodeBossKillStatus(questVariables)
+    }
+    break
+  }
 
   return Object.keys(summary).length > 0 ? summary : null
 }

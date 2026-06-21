@@ -1,0 +1,16 @@
+[
+    { "id": 0, "code": "BS01", "name": "Radames", "caption": "The Anointed One" },
+    { "id": 1, "code": "BS02", "name": "Orospina", "caption": "The Veteran One" },
+    { "id": 2, "code": "BS03", "name": "Lesmes", "caption": "The Punished One" },
+    { "id": 3, "code": "BS04", "name": "Afilaor", "caption": "The Purified One" },
+    { "id": 4, "code": "BS05", "name": "Benedicta", "caption": "The Merciful One" },
+    { "id": 5, "code": "BS06", "name": "Tercios", "caption": "The Last of the Council" },
+    { "id": 6, "code": "BS07", "name": "Susona", "caption": "The Weeper" },
+    { "id": 7, "code": "BS08", "name": "Orgaz", "caption": "The Fat" },
+    { "id": 8, "code": "BS10", "name": "Eviterno", "caption": "The Everlasting" },
+    { "id": 9, "code": "BS11", "name": "Tutorial Boss", "caption": "The Hounds of Hell" },
+    { "id": 10, "code": "BS101", "name": "Mater Priora", "caption": "The First Mother" },
+    { "id": 11, "code": "BS102A", "name": "Penitent Rogue A", "caption": "Penitent Rogue (First Form)" },
+    { "id": 12, "code": "BS102B", "name": "Penitent Rogue B", "caption": "Penitent Rogue (Second Form)" },
+    { "id": 13, "code": "BS201", "name": "Crescencia", "caption": "The Cursed" }
+]

@@ -1,6 +1,7 @@
 import { createContext, useState } from "react"
 import type { ComponentType } from "react"
 import Altar from "./components/Altar"
+import Bosses from "./components/Bosses"
 import Player from "./components/Player"
 import Prayer from "./components/Prayer"
 import Quest from "./components/Quest"
@@ -9,7 +10,15 @@ import SaveProvider from "./components/SaveProvider"
 import Weapon from "./components/Weapon"
 import Collectibles from "./components/Collectibles"
 
-type SectionTab = "player" | "rosary" | "quest" | "prayers" | "altar" | "weapon" | "collectibles"
+type SectionTab =
+  | "bosses"
+  | "player"
+  | "rosary"
+  | "quest"
+  | "prayers"
+  | "altar"
+  | "weapon"
+  | "collectibles"
 type Tab = "all" | SectionTab
 
 const TabContext = createContext<Tab>("all")
@@ -23,6 +32,7 @@ const SECTIONS: { id: SectionTab; label: string; Component: ComponentType }[] =
     { id: "altar", label: "Altarpiece of Favours", Component: Altar },
     { id: "weapon", label: "Weapon Memories", Component: Weapon },
     { id: "collectibles", label: "Collectibles", Component: Collectibles },
+    { id: "bosses", label: "Bosses", Component: Bosses },
   ]
 
 const TABS: { id: Tab; label: string }[] = [

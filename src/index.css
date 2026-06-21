@@ -665,3 +665,23 @@ code {
   font-weight: 600;
   color: var(--text-h);
 }
+
+.boss-defeated {
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+.boss-undead {
+  color: var(--text);
+}
+
+.boss-code {
+  font-family: var(--mono);
+  color: var(--text-h);
+}
+
+.boss-summary {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: var(--text-h);
+}
