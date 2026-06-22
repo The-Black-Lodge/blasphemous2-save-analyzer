@@ -1,0 +1,378 @@
+{
+  "generatedBy": "build_quest_collections.py",
+  "collectionCount": 7,
+  "collections": [
+    {
+      "id": "ornate-chalice",
+      "title": "Ornate Chalice",
+      "sprite": "QI42",
+      "summary": [
+        {
+          "type": "text",
+          "value": "Increase max Health. Deliver to "
+        },
+        {
+          "type": "link",
+          "text": "Our Lady of the Chalices",
+          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=509170"
+        },
+        {
+          "type": "text",
+          "value": " in the "
+        },
+        {
+          "type": "em",
+          "value": "City of the Blessed Name."
+        }
+      ],
+      "items": [
+        {
+          "id": 1,
+          "itemName": "QI42",
+          "caption": "Ornate Chalice",
+          "url": null
+        },
+        {
+          "id": 2,
+          "itemName": "QI43",
+          "caption": "Ornate Chalice",
+          "url": null
+        },
+        {
+          "id": 3,
+          "itemName": "QI44",
+          "caption": "Ornate Chalice",
+          "url": null
+        },
+        {
+          "id": 4,
+          "itemName": "QI45",
+          "caption": "Ornate Chalice",
+          "url": null
+        },
+        {
+          "id": 5,
+          "itemName": "QI46",
+          "caption": "Ornate Chalice",
+          "url": null
+        }
+      ]
+    },
+    {
+      "id": "empty-receptacle",
+      "title": "Empty Receptacle",
+      "sprite": "QI47",
+      "summary": [
+        {
+          "type": "text",
+          "value": "Increase max Bile Flasks. Deliver to "
+        },
+        {
+          "type": "link",
+          "text": "Our Lady of the Chalices",
+          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=509170"
+        },
+        {
+          "type": "text",
+          "value": " in the "
+        },
+        {
+          "type": "em",
+          "value": "City of the Blessed Name."
+        }
+      ],
+      "items": [
+        {
+          "id": 1,
+          "itemName": "QI47",
+          "caption": "Empty Receptacle",
+          "url": null
+        },
+        {
+          "id": 2,
+          "itemName": "QI48",
+          "caption": "Empty Receptacle",
+          "url": null
+        },
+        {
+          "id": 3,
+          "itemName": "QI49",
+          "caption": "Empty Receptacle",
+          "url": null
+        },
+        {
+          "id": 4,
+          "itemName": "QI50",
+          "caption": "Empty Receptacle",
+          "url": null
+        }
+      ]
+    },
+    {
+      "id": "silver-clad-shard",
+      "title": "Silver-Clad Crystal Shard",
+      "sprite": "QI51",
+      "summary": [
+        {
+          "type": "text",
+          "value": "Increase Bile Flask effectiveness. Deliver to "
+        },
+        {
+          "type": "link",
+          "text": "Our Lady of the Chalices",
+          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=509170"
+        },
+        {
+          "type": "text",
+          "value": " in the "
+        },
+        {
+          "type": "em",
+          "value": "City of the Blessed Name."
+        }
+      ],
+      "items": [
+        {
+          "id": 1,
+          "itemName": "QI51",
+          "caption": "Silver-Clad Crystal Shard",
+          "url": null
+        },
+        {
+          "id": 2,
+          "itemName": "QI52",
+          "caption": "Silver-Clad Crystal Shard",
+          "url": null
+        },
+        {
+          "id": 3,
+          "itemName": "QI53",
+          "caption": "Silver-Clad Crystal Shard",
+          "url": null
+        }
+      ]
+    },
+    {
+      "id": "fervent-kiss",
+      "title": "Fervent Kiss",
+      "sprite": "QI37",
+      "summary": [
+        {
+          "type": "text",
+          "value": "Increase max Fervour. Deliver to "
+        },
+        {
+          "type": "link",
+          "text": "Besamanos",
+          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520870"
+        },
+        {
+          "type": "text",
+          "value": " in the "
+        },
+        {
+          "type": "em",
+          "value": "Streets of Wakes."
+        }
+      ],
+      "items": [
+        {
+          "id": 1,
+          "itemName": "QI37",
+          "caption": "Fervent Kiss",
+          "url": null
+        },
+        {
+          "id": 2,
+          "itemName": "QI38",
+          "caption": "Fervent Kiss",
+          "url": null
+        },
+        {
+          "id": 3,
+          "itemName": "QI39",
+          "caption": "Fervent Kiss",
+          "url": null
+        },
+        {
+          "id": 4,
+          "itemName": "QI40",
+          "caption": "Fervent Kiss",
+          "url": null
+        },
+        {
+          "id": 5,
+          "itemName": "QI41",
+          "caption": "Fervent Kiss",
+          "url": null
+        }
+      ]
+    },
+    {
+      "id": "abandoned-rosary-knot",
+      "title": "Abandoned Rosary Knot",
+      "sprite": "QI32",
+      "summary": [
+        {
+          "type": "text",
+          "value": "Increase max Rosary Beads. Deliver to "
+        },
+        {
+          "type": "link",
+          "text": "Sagrario",
+          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520866"
+        },
+        {
+          "type": "text",
+          "value": " in the "
+        },
+        {
+          "type": "em",
+          "value": "Streets of Wakes."
+        }
+      ],
+      "items": [
+        {
+          "id": 1,
+          "itemName": "QI32",
+          "caption": "Abandoned Rosary Knot",
+          "url": null
+        },
+        {
+          "id": 2,
+          "itemName": "QI33",
+          "caption": "Abandoned Rosary Knot",
+          "url": null
+        },
+        {
+          "id": 3,
+          "itemName": "QI34",
+          "caption": "Abandoned Rosary Knot",
+          "url": null
+        },
+        {
+          "id": 4,
+          "itemName": "QI35",
+          "caption": "Abandoned Rosary Knot",
+          "url": null
+        }
+      ]
+    },
+    {
+      "id": "forgotten-tribute",
+      "title": "Forgotten Tribute",
+      "sprite": "QI29",
+      "summary": [
+        {
+          "type": "text",
+          "value": "Deliver to the Procession of Shadows at the following locations: "
+        },
+        {
+          "type": "link",
+          "text": "#1",
+          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520930"
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "link",
+          "text": "#2",
+          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520932"
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "link",
+          "text": "#3",
+          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520935"
+        }
+      ],
+      "items": [
+        {
+          "id": 1,
+          "itemName": "QI29",
+          "caption": "Forgotten Tribute",
+          "url": null
+        },
+        {
+          "id": 2,
+          "itemName": "QI30",
+          "caption": "Forgotten Tribute",
+          "url": null
+        },
+        {
+          "id": 3,
+          "itemName": "QI31",
+          "caption": "Forgotten Tribute",
+          "url": null
+        }
+      ]
+    },
+    {
+      "id": "wax-seed",
+      "title": "Wax Seed",
+      "sprite": "QI56",
+      "summary": [
+        {
+          "type": "text",
+          "value": "Deliver to "
+        },
+        {
+          "type": "link",
+          "text": "Cesareo",
+          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522609"
+        },
+        {
+          "type": "text",
+          "value": " in "
+        },
+        {
+          "type": "em",
+          "value": "The Severed Tower."
+        }
+      ],
+      "items": [
+        {
+          "id": 1,
+          "itemName": "QI56",
+          "caption": "Wax Seed",
+          "url": null
+        },
+        {
+          "id": 2,
+          "itemName": "QI57",
+          "caption": "Wax Seed",
+          "url": null
+        },
+        {
+          "id": 3,
+          "itemName": "QI58",
+          "caption": "Wax Seed",
+          "url": null
+        },
+        {
+          "id": 4,
+          "itemName": "QI59",
+          "caption": "Wax Seed",
+          "url": null
+        },
+        {
+          "id": 5,
+          "itemName": "QI60",
+          "caption": "Wax Seed",
+          "url": null
+        },
+        {
+          "id": 6,
+          "itemName": "QI61",
+          "caption": "Wax Seed",
+          "url": null
+        }
+      ]
+    }
+  ]
+}

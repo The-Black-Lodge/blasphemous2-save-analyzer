@@ -1,0 +1,1556 @@
+{
+  "generatedBy": "build_quest_loot_lookup.py",
+  "questItemGuidCount": 104,
+  "pickupCount": 92,
+  "pickups": [
+    {
+      "elementKey": -2114767525,
+      "itemName": "QI01",
+      "lootType": 4,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "4bf25fae-eb8a-40d0-ac3a-c3b5facaac95",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI210",
+      "sceneFile": "#Scenes/World/Z30-Library/Z3016/Z3016_LOGIC.unity"
+    },
+    {
+      "elementKey": -2039655233,
+      "itemName": "QI01",
+      "lootType": 3,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "9293decf-2080-43e2-826b-97c83e1b5528",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z19-ThePit/Z1913/Z1913_LOGIC.unity"
+    },
+    {
+      "elementKey": -2021016511,
+      "itemName": "QI01",
+      "lootType": 3,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "1b38fb19-f3a8-4aca-a0f7-24187f7ac11e",
+      "gameObject": "INT_QUEST_ITEM_PICKUP (1)",
+      "sceneFile": "#Scenes/World/Z02-StoneForest/Z0204/Z0204_LOGIC.unity"
+    },
+    {
+      "elementKey": -1922032643,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "cf3ec0d5-94bd-454d-8882-086df046d3a4",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z19-ThePit/Z1903/Z1903_LOGIC.unity"
+    },
+    {
+      "elementKey": -1699757112,
+      "itemName": "QI01",
+      "lootType": 4,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "db10ee1a-b3d6-42c4-8379-57834f33c271",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI207",
+      "sceneFile": "#Scenes/World/Z30-Library/Z3007/Z3007_LOGIC.unity"
+    },
+    {
+      "elementKey": -1186921089,
+      "itemName": "QI01",
+      "lootType": 4,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "44891489-1328-48ec-a8ec-dea9658577a5",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI204",
+      "sceneFile": "#Scenes/World/Z30-Library/Z3024/Z3024_LOGIC.unity"
+    },
+    {
+      "elementKey": -766400168,
+      "itemName": "QI01",
+      "lootType": 4,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "e28fb893-c1ab-4aac-9f8d-ca9d9e41edbc",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI210",
+      "sceneFile": "#Scenes/World/Z30-Library/Z3004/Z3004_LOGIC.unity"
+    },
+    {
+      "elementKey": -538971255,
+      "itemName": "QI01",
+      "lootType": 3,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "423c2962-8bf0-4772-9575-734f6044812c",
+      "gameObject": "INT_QUEST_ITEM_PICKUP (3)",
+      "sceneFile": "#Scenes/World/Z21-TheCaves/Z2123/Z2123_LOGIC.unity"
+    },
+    {
+      "elementKey": -534332984,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "7f4da464-27fa-4f4b-9869-1fe72d254c89",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z06-Alleys/Z0615/Z0615_LOGIC.unity"
+    },
+    {
+      "elementKey": -372857769,
+      "itemName": "QI01",
+      "lootType": 3,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "e1b512a3-165c-4a81-b4cb-f01a6151e1a7",
+      "gameObject": "INT_QUEST_ITEM_PICKUP (2)",
+      "sceneFile": "#Scenes/World/Z14-AncientFoundations/Z1422/Z1422_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z05-HUB/Z05BZ02/Z05BZ02_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 2,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z10-SacredCity/Z1045/Z1045_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 6,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z10-SacredCity/Z1050/Z1050_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 6,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z13-MirroredAlhambra/Z1302/Z1302_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 2,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z14-AncientFoundations/Z1404/Z1404_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z17-StreetofWakes/Z1709/Z1709_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 2,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_TEARSLUXURY3",
+      "sceneFile": "#Scenes/World/Z18-TheFinalAscension/Z1801/Z1801_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_ORB",
+      "sceneFile": "#Scenes/World/Z18-TheFinalAscension/Z1802/Z1802_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_ORB",
+      "sceneFile": "#Scenes/World/Z18-TheFinalAscension/Z1803/Z1803_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 2,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_TEARSLUXURY3",
+      "sceneFile": "#Scenes/World/Z18-TheFinalAscension/Z1804/Z1804_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z23-TheDepths/Z2301/Z2301_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 4,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI204",
+      "sceneFile": "#Scenes/World/Z30-Library/Z3002/Z3002_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 4,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI204",
+      "sceneFile": "#Scenes/World/Z31-Crypts/Z3101/Z3101_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 4,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI207",
+      "sceneFile": "#Scenes/World/Z31-Crypts/Z3107/Z3107_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 4,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI207",
+      "sceneFile": "#Scenes/World/Z31-Crypts/Z3122/Z3122_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 4,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI204",
+      "sceneFile": "#Scenes/World/Z31-Crypts/Z3123/Z3123_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI01",
+      "lootType": 4,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI207",
+      "sceneFile": "#Scenes/World/Z32-Towers/Z3211/Z3211_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z01-InitialZone/Z0105/Z0105_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z02-StoneForest/Z0203/Z0203_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z03-Aqueducts/Z0301/Z0301_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z03-Aqueducts/Z0305/Z0305_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z03-Aqueducts/Z0308/Z0308_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z04-SandRuins/Z0412/Z0412_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z04-SandRuins/Z0415/Z0415_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z05-HUB/Z0503/Z0503_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z06-Alleys/Z0605/Z0605_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z09-CrownTowers/Z0901/Z0901_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z09-CrownTowers/Z0927/Z0927_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z12-SeaCathedral/Z1210/Z1210_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z13-MirroredAlhambra/Z1307/Z1307_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z13-MirroredAlhambra/Z1330/Z1330_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z14-AncientFoundations/Z1405/Z1405_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z14-AncientFoundations/Z1418/Z1418_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z14-AncientFoundations/Z1419/Z1419_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z16-SeveredTower/Z1619/Z1619_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z18-TheFinalAscension/Z1802/Z1802_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z18-TheFinalAscension/Z1803/Z1803_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z19-ThePit/Z1909/Z1909_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z21-TheCaves/Z2106/Z2106_LOGIC.unity"
+    },
+    {
+      "elementKey": 166251007,
+      "itemName": "QI01",
+      "lootType": 1,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "94a93b4d-518d-47ee-8746-c1bceb8e9072",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z23-TheDepths/Z2301/Z2301_LOGIC.unity"
+    },
+    {
+      "elementKey": 332831868,
+      "itemName": "QI01",
+      "lootType": 4,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "d6f6770c-b3af-44b6-b04e-636ddc77dc3d",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI210",
+      "sceneFile": "#Scenes/World/Z31-Crypts/Z3118/Z3118_LOGIC.unity"
+    },
+    {
+      "elementKey": 370846765,
+      "itemName": "QI01",
+      "lootType": 3,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "f5b79dee-8481-4112-9f2e-078e716e0f6b",
+      "gameObject": "INT_QUEST_ITEM_PICKUP (4)",
+      "sceneFile": "#Scenes/World/Z03-Aqueducts/Z0301/Z0301_LOGIC.unity"
+    },
+    {
+      "elementKey": 739650365,
+      "itemName": "QI01",
+      "lootType": 4,
+      "itemGUID": "d89e96012259c50439cc6ecb9516ed26",
+      "uniqueId": "7f12d451-73eb-402a-8971-a40c906d254f",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI210",
+      "sceneFile": "#Scenes/World/Z32-Towers/Z3210/Z3210_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI07",
+      "lootType": 0,
+      "itemGUID": "1d29ebb955a318a49a48c573b4c48b65",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z09-CrownTowers/Z0903/Z0903_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI08",
+      "lootType": 0,
+      "itemGUID": "1c0e49a7186cf0947a1b3134ab8ab4f8",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z04-SandRuins/Z0402/Z0402_LOGIC.unity"
+    },
+    {
+      "elementKey": -549671167,
+      "itemName": "QI13",
+      "lootType": 0,
+      "itemGUID": "9f0a1630ca5ee424ebeace40c589d065",
+      "uniqueId": "2573df2d-138b-468a-ad58-d6395c652363",
+      "gameObject": "INT_QUEST_ITEM_MIDHEIGHT_PICKUP",
+      "sceneFile": "#Scenes/World/Z17-StreetofWakes/Z1715/Z1715_LOGIC.unity"
+    },
+    {
+      "elementKey": -57151123,
+      "itemName": "QI19",
+      "lootType": 0,
+      "itemGUID": "034d9f490119519418425d20fe56ec8f",
+      "uniqueId": "601d6a2c-fc6c-4c1c-ad34-3fb9f9db78af",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z14-AncientFoundations/Z1427/Z1427_LOGIC.unity"
+    },
+    {
+      "elementKey": 889239452,
+      "itemName": "QI202",
+      "lootType": 0,
+      "itemGUID": "a8df46218332530459825139744baa5b",
+      "uniqueId": "2799f57f-e1e9-4a14-949e-29eb5ca428f1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_QI202",
+      "sceneFile": "#Scenes/World/Z32-Towers/Z3204/Z3204_LOGIC.unity"
+    },
+    {
+      "elementKey": 141814958,
+      "itemName": "QI213",
+      "lootType": 0,
+      "itemGUID": "08d36f85e52c30b4a8ad5057d32d1333",
+      "uniqueId": "e2986d71-9ebf-4d13-b209-f72508a41da8",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z30-Library/Z3012/Z3012_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI216",
+      "lootType": 0,
+      "itemGUID": "f3ae3b3555d23b940be6ce6dce5e5476",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z31-Crypts/Z3105/Z3105_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI217",
+      "lootType": 0,
+      "itemGUID": "41e401310f2959d4cb5f0fef809f4203",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z32-Towers/Z3229/Z3229_LOGIC.unity"
+    },
+    {
+      "elementKey": -1259316490,
+      "itemName": "QI23",
+      "lootType": 3,
+      "itemGUID": "02b086ca3a7be444b8d58f3cbc6e0076",
+      "uniqueId": "41c97219-d909-44ce-a853-8ac55b76939e",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z09-CrownTowers/Z0908/Z0908_LOGIC.unity"
+    },
+    {
+      "elementKey": -1194883477,
+      "itemName": "QI23",
+      "lootType": 3,
+      "itemGUID": "02b086ca3a7be444b8d58f3cbc6e0076",
+      "uniqueId": "946adb8c-31a6-4690-8885-5e8708191fa6",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z04-SandRuins/Z0413/Z0413_LOGIC.unity"
+    },
+    {
+      "elementKey": -681628847,
+      "itemName": "QI23",
+      "lootType": 3,
+      "itemGUID": "02b086ca3a7be444b8d58f3cbc6e0076",
+      "uniqueId": "c69c6292-94ff-44e8-8b40-881cd63cf89d",
+      "gameObject": "INT_QUEST_ITEM_PICKUP (2)",
+      "sceneFile": "#Scenes/World/Z09-CrownTowers/Z0901/Z0901_LOGIC.unity"
+    },
+    {
+      "elementKey": 1185606270,
+      "itemName": "QI23",
+      "lootType": 3,
+      "itemGUID": "02b086ca3a7be444b8d58f3cbc6e0076",
+      "uniqueId": "4889b4b4-9d70-4b17-8320-9530a4c6cc07",
+      "gameObject": "INT_QUEST_ITEM_PICKUP (2)",
+      "sceneFile": "#Scenes/World/Z11-GhostBasilica/Z1109/Z1109_LOGIC.unity"
+    },
+    {
+      "elementKey": 1375077435,
+      "itemName": "QI23",
+      "lootType": 3,
+      "itemGUID": "02b086ca3a7be444b8d58f3cbc6e0076",
+      "uniqueId": "6544cf77-f88f-4f8a-8c83-178f4c166d26",
+      "gameObject": "INT_QUEST_ITEM_PICKUP (3)",
+      "sceneFile": "#Scenes/World/Z16-SeveredTower/Z1610/Z1610_LOGIC.unity"
+    },
+    {
+      "elementKey": -1600089707,
+      "itemName": "QI29",
+      "lootType": 0,
+      "itemGUID": "2aa33f5d89a950d48ab1a6186bdce4c9",
+      "uniqueId": "28e64f91-c971-4044-9ffe-ab730fc29971",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z20-TheBridge/Z2001/Z2001_LOGIC.unity"
+    },
+    {
+      "elementKey": -1339652785,
+      "itemName": "QI30",
+      "lootType": 0,
+      "itemGUID": "beada88ad3507904fb99ccbe95983799",
+      "uniqueId": "046a9dc8-8e97-496a-9c3f-a8bd958b1f4f",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z04-SandRuins/Z0402/Z0402_LOGIC.unity"
+    },
+    {
+      "elementKey": -1228092525,
+      "itemName": "QI31",
+      "lootType": 0,
+      "itemGUID": "8c6284656b2090d4cb7348ec5f9cacb5",
+      "uniqueId": "62dcd5c4-3240-4e6a-b02e-3d94af5c1d02",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z21-TheCaves/Z2117/Z2117_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI32",
+      "lootType": 0,
+      "itemGUID": "ae7d5a4b0f5897d45b1cfd039696b4da",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z19-ThePit/Z1910/Z1910_LOGIC.unity"
+    },
+    {
+      "elementKey": 531660277,
+      "itemName": "QI33",
+      "lootType": 0,
+      "itemGUID": "2162abf8a40fccc4f9cc8998a065d122",
+      "uniqueId": "ad3c444e-bdf5-4fbf-9914-e5472996f03e",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z10-SacredCity/Z1004/Z1004_LOGIC.unity"
+    },
+    {
+      "elementKey": -994908031,
+      "itemName": "QI34",
+      "lootType": 0,
+      "itemGUID": "2323e1da1bd7f10488e2d09be6118476",
+      "uniqueId": "bffa9ff9-af4c-495c-8c39-98415d96adb5",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z04-SandRuins/Z0409/Z0409_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI37",
+      "lootType": 0,
+      "itemGUID": "95ba476de0868e044aa81946be31e01c",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_BACKUP",
+      "sceneFile": "#Scenes/World/Z07-PalatialHouse/Z0707/Z0707_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI38",
+      "lootType": 0,
+      "itemGUID": "675b61b8b4a394c4389312554264e7c5",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z10-SacredCity/Z1007/Z1007_LOGIC.unity"
+    },
+    {
+      "elementKey": 51687609,
+      "itemName": "QI39",
+      "lootType": 0,
+      "itemGUID": "0ea20a99f17232f47b7bc77e9858ba16",
+      "uniqueId": "43bd4b18-ecaa-48a2-a1ce-fc4f1aee472f",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z01-InitialZone/Z0108/Z0108_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI40",
+      "lootType": 0,
+      "itemGUID": "bc9733f9dbaf2784483976f603601a60",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z17-StreetofWakes/Z1719/Z1719_LOGIC.unity"
+    },
+    {
+      "elementKey": 1668844890,
+      "itemName": "QI41",
+      "lootType": 0,
+      "itemGUID": "6ae5d316076f8864ba3d1aa4d0a7b8a7",
+      "uniqueId": "c6e97df3-6aab-49b0-9ce0-9df13513f465",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z13-MirroredAlhambra/Z1308/Z1308_LOGIC.unity"
+    },
+    {
+      "elementKey": -1296951338,
+      "itemName": "QI42",
+      "lootType": 0,
+      "itemGUID": "7fc87a84ec5f71149ba31cf306bfb5f4",
+      "uniqueId": "620be91d-5185-4565-999c-d92f5e343f14",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z04-SandRuins/Z0406/Z0406_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI43",
+      "lootType": 0,
+      "itemGUID": "539ef3806cb49834492cb7bb37c5f05c",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_BACKUP",
+      "sceneFile": "#Scenes/World/Z07-PalatialHouse/Z0725/Z0725_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI45",
+      "lootType": 0,
+      "itemGUID": "7f32a268534ac874583e433b7aca9375",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_BACKUP",
+      "sceneFile": "#Scenes/World/Z12-SeaCathedral/Z1203/Z1203_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI47",
+      "lootType": 0,
+      "itemGUID": "7ccd663ad247cc246a1c1aaa6cadccea",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_BACKUP",
+      "sceneFile": "#Scenes/World/Z19-ThePit/Z1914/Z1914_LOGIC.unity"
+    },
+    {
+      "elementKey": 1991295925,
+      "itemName": "QI48",
+      "lootType": 0,
+      "itemGUID": "0a3490d27ad20644cae1a1f6f506e09d",
+      "uniqueId": "f51ef0a4-b353-4fd2-a342-b52859e9fbf5",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z10-SacredCity/Z1011/Z1011_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI50",
+      "lootType": 0,
+      "itemGUID": "93a34eb29c2beae43a9b2876406d4db9",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_BACKUP",
+      "sceneFile": "#Scenes/World/Z16-SeveredTower/Z1625/Z1625_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI51",
+      "lootType": 0,
+      "itemGUID": "c754b308600351545bc60dead9a38e87",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_BACKUP",
+      "sceneFile": "#Scenes/World/Z07-PalatialHouse/Z0721/Z0721_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI52",
+      "lootType": 0,
+      "itemGUID": "02d1216dc22f80e4ebfb888f0c323634",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z05-HUB/Z05BZ05/Z05BZ05_LOGIC.unity"
+    },
+    {
+      "elementKey": -255216051,
+      "itemName": "QI53",
+      "lootType": 0,
+      "itemGUID": "b6e39e1fb47df0d4a9490bba8d8ad1a2",
+      "uniqueId": "9121ff10-98b6-4189-9863-c62eecc0716e",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z10-SacredCity/Z1023/Z1023_LOGIC.unity"
+    },
+    {
+      "elementKey": -1590599174,
+      "itemName": "QI54",
+      "lootType": 0,
+      "itemGUID": "0baaf7cb4ed755244b20af688ee27207",
+      "uniqueId": "efedc621-fcbc-4e41-8b5f-ee907b013229",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z24-JardinDeLosAltosCoros/Z2402/Z2402_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI58",
+      "lootType": 0,
+      "itemGUID": "4ea389bc1baa70849bf44876d95248b1",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z13-MirroredAlhambra/Z1314/Z1314_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI59",
+      "lootType": 0,
+      "itemGUID": "e23b27b62144ea844b053a0207b7eabf",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z21-TheCaves/Z2116/Z2116_LOGIC.unity"
+    },
+    {
+      "elementKey": -41400469,
+      "itemName": "QI60",
+      "lootType": 0,
+      "itemGUID": "25ea3ddc09a6e404eb32eef80ee819ab",
+      "uniqueId": "f10eedf7-36bc-4c2e-bd11-e735e106f7a1",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z06-Alleys/Z0614/Z0614_LOGIC.unity"
+    },
+    {
+      "elementKey": -614898469,
+      "itemName": "QI61",
+      "lootType": 0,
+      "itemGUID": "12ad7e2dbfe387d4ea23f7adf905ef8b",
+      "uniqueId": "e6ed0880-9447-4292-824c-49e12929394d",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z03-Aqueducts/Z0306/Z0306_LOGIC.unity"
+    },
+    {
+      "elementKey": -269563217,
+      "itemName": "QI68",
+      "lootType": 0,
+      "itemGUID": "a8c5c8e4414dc314dae336463b2f6bea",
+      "uniqueId": "811a8f7a-b3ed-4c4b-a848-02ac442d57fd",
+      "gameObject": "INT_QUEST_ITEM_PICKUP",
+      "sceneFile": "#Scenes/World/Z10-SacredCity/Z1018/Z1018_LOGIC.unity"
+    }
+  ],
+  "byItemName": {
+    "QI01": [
+      {
+        "elementKey": -2114767525,
+        "sceneFile": "#Scenes/World/Z30-Library/Z3016/Z3016_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI210"
+      },
+      {
+        "elementKey": -2039655233,
+        "sceneFile": "#Scenes/World/Z19-ThePit/Z1913/Z1913_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": -2021016511,
+        "sceneFile": "#Scenes/World/Z02-StoneForest/Z0204/Z0204_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP (1)"
+      },
+      {
+        "elementKey": -1922032643,
+        "sceneFile": "#Scenes/World/Z19-ThePit/Z1903/Z1903_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": -1699757112,
+        "sceneFile": "#Scenes/World/Z30-Library/Z3007/Z3007_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI207"
+      },
+      {
+        "elementKey": -1186921089,
+        "sceneFile": "#Scenes/World/Z30-Library/Z3024/Z3024_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI204"
+      },
+      {
+        "elementKey": -766400168,
+        "sceneFile": "#Scenes/World/Z30-Library/Z3004/Z3004_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI210"
+      },
+      {
+        "elementKey": -538971255,
+        "sceneFile": "#Scenes/World/Z21-TheCaves/Z2123/Z2123_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP (3)"
+      },
+      {
+        "elementKey": -534332984,
+        "sceneFile": "#Scenes/World/Z06-Alleys/Z0615/Z0615_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": -372857769,
+        "sceneFile": "#Scenes/World/Z14-AncientFoundations/Z1422/Z1422_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP (2)"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z05-HUB/Z05BZ02/Z05BZ02_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z10-SacredCity/Z1045/Z1045_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z10-SacredCity/Z1050/Z1050_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z13-MirroredAlhambra/Z1302/Z1302_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z14-AncientFoundations/Z1404/Z1404_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z17-StreetofWakes/Z1709/Z1709_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z18-TheFinalAscension/Z1801/Z1801_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_TEARSLUXURY3"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z18-TheFinalAscension/Z1802/Z1802_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_ORB"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z18-TheFinalAscension/Z1803/Z1803_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_ORB"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z18-TheFinalAscension/Z1804/Z1804_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_TEARSLUXURY3"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z23-TheDepths/Z2301/Z2301_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z30-Library/Z3002/Z3002_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI204"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z31-Crypts/Z3101/Z3101_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI204"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z31-Crypts/Z3107/Z3107_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI207"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z31-Crypts/Z3122/Z3122_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI207"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z31-Crypts/Z3123/Z3123_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI204"
+      },
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z32-Towers/Z3211/Z3211_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI207"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z01-InitialZone/Z0105/Z0105_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z02-StoneForest/Z0203/Z0203_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z03-Aqueducts/Z0301/Z0301_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z03-Aqueducts/Z0305/Z0305_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z03-Aqueducts/Z0308/Z0308_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z04-SandRuins/Z0412/Z0412_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z04-SandRuins/Z0415/Z0415_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z05-HUB/Z0503/Z0503_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z06-Alleys/Z0605/Z0605_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z09-CrownTowers/Z0901/Z0901_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z09-CrownTowers/Z0927/Z0927_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z12-SeaCathedral/Z1210/Z1210_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z13-MirroredAlhambra/Z1307/Z1307_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z13-MirroredAlhambra/Z1330/Z1330_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z14-AncientFoundations/Z1405/Z1405_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z14-AncientFoundations/Z1418/Z1418_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z14-AncientFoundations/Z1419/Z1419_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z16-SeveredTower/Z1619/Z1619_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z18-TheFinalAscension/Z1802/Z1802_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z18-TheFinalAscension/Z1803/Z1803_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z19-ThePit/Z1909/Z1909_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z21-TheCaves/Z2106/Z2106_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 166251007,
+        "sceneFile": "#Scenes/World/Z23-TheDepths/Z2301/Z2301_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": 332831868,
+        "sceneFile": "#Scenes/World/Z31-Crypts/Z3118/Z3118_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI210"
+      },
+      {
+        "elementKey": 370846765,
+        "sceneFile": "#Scenes/World/Z03-Aqueducts/Z0301/Z0301_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP (4)"
+      },
+      {
+        "elementKey": 739650365,
+        "sceneFile": "#Scenes/World/Z32-Towers/Z3210/Z3210_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI210"
+      }
+    ],
+    "QI07": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z09-CrownTowers/Z0903/Z0903_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI08": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z04-SandRuins/Z0402/Z0402_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI13": [
+      {
+        "elementKey": -549671167,
+        "sceneFile": "#Scenes/World/Z17-StreetofWakes/Z1715/Z1715_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_MIDHEIGHT_PICKUP"
+      }
+    ],
+    "QI19": [
+      {
+        "elementKey": -57151123,
+        "sceneFile": "#Scenes/World/Z14-AncientFoundations/Z1427/Z1427_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI202": [
+      {
+        "elementKey": 889239452,
+        "sceneFile": "#Scenes/World/Z32-Towers/Z3204/Z3204_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_QI202"
+      }
+    ],
+    "QI213": [
+      {
+        "elementKey": 141814958,
+        "sceneFile": "#Scenes/World/Z30-Library/Z3012/Z3012_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI216": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z31-Crypts/Z3105/Z3105_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI217": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z32-Towers/Z3229/Z3229_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI23": [
+      {
+        "elementKey": -1259316490,
+        "sceneFile": "#Scenes/World/Z09-CrownTowers/Z0908/Z0908_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": -1194883477,
+        "sceneFile": "#Scenes/World/Z04-SandRuins/Z0413/Z0413_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      },
+      {
+        "elementKey": -681628847,
+        "sceneFile": "#Scenes/World/Z09-CrownTowers/Z0901/Z0901_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP (2)"
+      },
+      {
+        "elementKey": 1185606270,
+        "sceneFile": "#Scenes/World/Z11-GhostBasilica/Z1109/Z1109_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP (2)"
+      },
+      {
+        "elementKey": 1375077435,
+        "sceneFile": "#Scenes/World/Z16-SeveredTower/Z1610/Z1610_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP (3)"
+      }
+    ],
+    "QI29": [
+      {
+        "elementKey": -1600089707,
+        "sceneFile": "#Scenes/World/Z20-TheBridge/Z2001/Z2001_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI30": [
+      {
+        "elementKey": -1339652785,
+        "sceneFile": "#Scenes/World/Z04-SandRuins/Z0402/Z0402_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI31": [
+      {
+        "elementKey": -1228092525,
+        "sceneFile": "#Scenes/World/Z21-TheCaves/Z2117/Z2117_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI32": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z19-ThePit/Z1910/Z1910_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI33": [
+      {
+        "elementKey": 531660277,
+        "sceneFile": "#Scenes/World/Z10-SacredCity/Z1004/Z1004_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI34": [
+      {
+        "elementKey": -994908031,
+        "sceneFile": "#Scenes/World/Z04-SandRuins/Z0409/Z0409_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI37": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z07-PalatialHouse/Z0707/Z0707_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_BACKUP"
+      }
+    ],
+    "QI38": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z10-SacredCity/Z1007/Z1007_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI39": [
+      {
+        "elementKey": 51687609,
+        "sceneFile": "#Scenes/World/Z01-InitialZone/Z0108/Z0108_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI40": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z17-StreetofWakes/Z1719/Z1719_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI41": [
+      {
+        "elementKey": 1668844890,
+        "sceneFile": "#Scenes/World/Z13-MirroredAlhambra/Z1308/Z1308_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI42": [
+      {
+        "elementKey": -1296951338,
+        "sceneFile": "#Scenes/World/Z04-SandRuins/Z0406/Z0406_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI43": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z07-PalatialHouse/Z0725/Z0725_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_BACKUP"
+      }
+    ],
+    "QI45": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z12-SeaCathedral/Z1203/Z1203_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_BACKUP"
+      }
+    ],
+    "QI47": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z19-ThePit/Z1914/Z1914_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_BACKUP"
+      }
+    ],
+    "QI48": [
+      {
+        "elementKey": 1991295925,
+        "sceneFile": "#Scenes/World/Z10-SacredCity/Z1011/Z1011_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI50": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z16-SeveredTower/Z1625/Z1625_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_BACKUP"
+      }
+    ],
+    "QI51": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z07-PalatialHouse/Z0721/Z0721_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP_BACKUP"
+      }
+    ],
+    "QI52": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z05-HUB/Z05BZ05/Z05BZ05_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI53": [
+      {
+        "elementKey": -255216051,
+        "sceneFile": "#Scenes/World/Z10-SacredCity/Z1023/Z1023_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI54": [
+      {
+        "elementKey": -1590599174,
+        "sceneFile": "#Scenes/World/Z24-JardinDeLosAltosCoros/Z2402/Z2402_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI58": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z13-MirroredAlhambra/Z1314/Z1314_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI59": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z21-TheCaves/Z2116/Z2116_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI60": [
+      {
+        "elementKey": -41400469,
+        "sceneFile": "#Scenes/World/Z06-Alleys/Z0614/Z0614_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI61": [
+      {
+        "elementKey": -614898469,
+        "sceneFile": "#Scenes/World/Z03-Aqueducts/Z0306/Z0306_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ],
+    "QI68": [
+      {
+        "elementKey": -269563217,
+        "sceneFile": "#Scenes/World/Z10-SacredCity/Z1018/Z1018_LOGIC.unity",
+        "gameObject": "INT_QUEST_ITEM_PICKUP"
+      }
+    ]
+  },
+  "byElementKey": {
+    "-2114767525": {
+      "itemName": "QI01",
+      "sceneFile": "#Scenes/World/Z30-Library/Z3016/Z3016_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI210"
+    },
+    "-2039655233": {
+      "itemName": "QI01",
+      "sceneFile": "#Scenes/World/Z19-ThePit/Z1913/Z1913_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "-2021016511": {
+      "itemName": "QI01",
+      "sceneFile": "#Scenes/World/Z02-StoneForest/Z0204/Z0204_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP (1)"
+    },
+    "-1922032643": {
+      "itemName": "QI01",
+      "sceneFile": "#Scenes/World/Z19-ThePit/Z1903/Z1903_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "-1699757112": {
+      "itemName": "QI01",
+      "sceneFile": "#Scenes/World/Z30-Library/Z3007/Z3007_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI207"
+    },
+    "-1186921089": {
+      "itemName": "QI01",
+      "sceneFile": "#Scenes/World/Z30-Library/Z3024/Z3024_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI204"
+    },
+    "-766400168": {
+      "itemName": "QI01",
+      "sceneFile": "#Scenes/World/Z30-Library/Z3004/Z3004_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI210"
+    },
+    "-538971255": {
+      "itemName": "QI01",
+      "sceneFile": "#Scenes/World/Z21-TheCaves/Z2123/Z2123_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP (3)"
+    },
+    "-534332984": {
+      "itemName": "QI01",
+      "sceneFile": "#Scenes/World/Z06-Alleys/Z0615/Z0615_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "-372857769": {
+      "itemName": "QI01",
+      "sceneFile": "#Scenes/World/Z14-AncientFoundations/Z1422/Z1422_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP (2)"
+    },
+    "-41400469": {
+      "itemName": "QI60",
+      "sceneFile": "#Scenes/World/Z06-Alleys/Z0614/Z0614_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "166251007": {
+      "itemName": "QI01",
+      "sceneFile": "#Scenes/World/Z23-TheDepths/Z2301/Z2301_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "332831868": {
+      "itemName": "QI01",
+      "sceneFile": "#Scenes/World/Z31-Crypts/Z3118/Z3118_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI210"
+    },
+    "370846765": {
+      "itemName": "QI01",
+      "sceneFile": "#Scenes/World/Z03-Aqueducts/Z0301/Z0301_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP (4)"
+    },
+    "739650365": {
+      "itemName": "QI01",
+      "sceneFile": "#Scenes/World/Z32-Towers/Z3210/Z3210_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_STACKABLE_QI210"
+    },
+    "-549671167": {
+      "itemName": "QI13",
+      "sceneFile": "#Scenes/World/Z17-StreetofWakes/Z1715/Z1715_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_MIDHEIGHT_PICKUP"
+    },
+    "-57151123": {
+      "itemName": "QI19",
+      "sceneFile": "#Scenes/World/Z14-AncientFoundations/Z1427/Z1427_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "889239452": {
+      "itemName": "QI202",
+      "sceneFile": "#Scenes/World/Z32-Towers/Z3204/Z3204_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP_QI202"
+    },
+    "141814958": {
+      "itemName": "QI213",
+      "sceneFile": "#Scenes/World/Z30-Library/Z3012/Z3012_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "-1259316490": {
+      "itemName": "QI23",
+      "sceneFile": "#Scenes/World/Z09-CrownTowers/Z0908/Z0908_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "-1194883477": {
+      "itemName": "QI23",
+      "sceneFile": "#Scenes/World/Z04-SandRuins/Z0413/Z0413_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "-681628847": {
+      "itemName": "QI23",
+      "sceneFile": "#Scenes/World/Z09-CrownTowers/Z0901/Z0901_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP (2)"
+    },
+    "1185606270": {
+      "itemName": "QI23",
+      "sceneFile": "#Scenes/World/Z11-GhostBasilica/Z1109/Z1109_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP (2)"
+    },
+    "1375077435": {
+      "itemName": "QI23",
+      "sceneFile": "#Scenes/World/Z16-SeveredTower/Z1610/Z1610_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP (3)"
+    },
+    "-1600089707": {
+      "itemName": "QI29",
+      "sceneFile": "#Scenes/World/Z20-TheBridge/Z2001/Z2001_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "-1339652785": {
+      "itemName": "QI30",
+      "sceneFile": "#Scenes/World/Z04-SandRuins/Z0402/Z0402_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "-1228092525": {
+      "itemName": "QI31",
+      "sceneFile": "#Scenes/World/Z21-TheCaves/Z2117/Z2117_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "531660277": {
+      "itemName": "QI33",
+      "sceneFile": "#Scenes/World/Z10-SacredCity/Z1004/Z1004_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "-994908031": {
+      "itemName": "QI34",
+      "sceneFile": "#Scenes/World/Z04-SandRuins/Z0409/Z0409_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "51687609": {
+      "itemName": "QI39",
+      "sceneFile": "#Scenes/World/Z01-InitialZone/Z0108/Z0108_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "1668844890": {
+      "itemName": "QI41",
+      "sceneFile": "#Scenes/World/Z13-MirroredAlhambra/Z1308/Z1308_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "-1296951338": {
+      "itemName": "QI42",
+      "sceneFile": "#Scenes/World/Z04-SandRuins/Z0406/Z0406_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "1991295925": {
+      "itemName": "QI48",
+      "sceneFile": "#Scenes/World/Z10-SacredCity/Z1011/Z1011_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "-255216051": {
+      "itemName": "QI53",
+      "sceneFile": "#Scenes/World/Z10-SacredCity/Z1023/Z1023_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "-1590599174": {
+      "itemName": "QI54",
+      "sceneFile": "#Scenes/World/Z24-JardinDeLosAltosCoros/Z2402/Z2402_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "-614898469": {
+      "itemName": "QI61",
+      "sceneFile": "#Scenes/World/Z03-Aqueducts/Z0306/Z0306_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    },
+    "-269563217": {
+      "itemName": "QI68",
+      "sceneFile": "#Scenes/World/Z10-SacredCity/Z1018/Z1018_LOGIC.unity",
+      "gameObject": "INT_QUEST_ITEM_PICKUP"
+    }
+  }
+}

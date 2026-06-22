@@ -16,6 +16,13 @@
   --heading: var(--sans);
   --mono: ui-monospace, Consolas, monospace;
 
+  /* Collectible grid cells (Children of Moonlight + quest collections) */
+  --collectible-cell-width: 3.5rem;
+
+  /* Quest collection header sprites — nudge left/down (cherub HUD sprite unchanged) */
+  --qi-header-offset-x: -7px;
+  --qi-header-offset-y: 2px;
+
   color-scheme: dark;
 }
 
@@ -546,6 +553,55 @@ code {
   filter: url(#altar-figure-missing-tint);
 }
 
+.quest-item--picked-up .qi-sprite {
+  opacity: 0.85;
+  outline: 2px solid rgb(142, 126, 91);
+  outline-offset: 2px;
+}
+
+.quest-item--handed-in .qi-sprite {
+  opacity: 0.65;
+  filter: saturate(0.55);
+}
+
+.quest-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 13px;
+  color: var(--text-lo);
+}
+
+.quest-legend__item::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 0.35rem;
+  border: 1px solid rgb(142, 126, 91);
+  vertical-align: middle;
+}
+
+.quest-legend__item--owned::before {
+  background: transparent;
+}
+
+.quest-legend__item--picked-up::before {
+  background: transparent;
+  outline: 2px solid rgb(142, 126, 91);
+  outline-offset: 1px;
+}
+
+.quest-legend__item--handed-in::before {
+  background: rgb(80, 70, 60);
+  opacity: 0.65;
+}
+
+.quest-legend__note {
+  font-style: italic;
+}
+
 .rosary-grid {
   background: rgb(21, 24, 34);
   border: 2px solid rgb(142, 126, 91);
@@ -620,17 +676,20 @@ code {
   margin-top: 2rem;
 }
 
-.cherub-grid {
+.collectible-grid {
   background: rgb(21, 24, 34);
   border: 2px solid rgb(142, 126, 91);
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(11, auto);
   gap: 1rem;
+  grid-template-columns: repeat(auto-fill, var(--collectible-cell-width));
 }
 
-.cherub-cell {
+.collectible-cell {
   display: flex;
+  box-sizing: border-box;
+  width: var(--collectible-cell-width);
+  min-width: var(--collectible-cell-width);
   height: 1.5rem;
   align-items: center;
   padding: 4px;
@@ -640,17 +699,17 @@ code {
   position: relative;
 }
 
-.cherub-cell.collected {
+.collectible-cell.collected {
   text-decoration: line-through;
   color: var(--text-lo);
 }
 
-.cherub-cell span {
+.collectible-cell span {
   font-family: var(--sans);
   font-size: 1.5rem;
 }
 
-.cherub-cell a {
+.collectible-cell a {
   color: var(--text);
   text-decoration: none;
   position: absolute;
@@ -659,12 +718,43 @@ code {
   font-size: 1rem;
 }
 
-.cherub-cell a:hover {
+.collectible-cell a:hover {
   color: var(--text-h);
 }
 
-.cherub-cell a:hover {
+.collectible-quest-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.collectible-quest-group .qi-sprite {
+  transform: scale(var(--qi-sprite-scale))
+    translate(var(--qi-header-offset-x), var(--qi-header-offset-y));
+  transform-origin: top left;
+}
+
+.collectible-quest-group h4.collectible-quest-summary {
+  clear: both;
+  margin: 0 0 0.75rem;
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 145%;
+}
+
+.collectible-quest-summary a {
   color: var(--text-h);
+}
+
+.collectible-quest-summary a:hover {
+  color: var(--accent);
+}
+
+.collectible-quest-summary em {
+  font-style: italic;
 }
 
 .float-left {

@@ -1,0 +1,630 @@
+{
+  "generatedBy": "build_quest_item_registry.py",
+  "itemCount": 104,
+  "items": {
+    "QI01": {
+      "itemName": "QI01",
+      "caption": "Tears of Sap",
+      "group": "Tears of Sap",
+      "url": null
+    },
+    "QI02": {
+      "itemName": "QI02",
+      "caption": "Immaculate Mother-of-Pearl Gouge",
+      "group": "Immaculate Mother-of-Pearl Gouge",
+      "url": null
+    },
+    "QI03": {
+      "itemName": "QI03",
+      "caption": "Oils of the Blessed Mixture",
+      "group": "Oils of the Blessed Mixture",
+      "url": null
+    },
+    "QI04": {
+      "itemName": "QI04",
+      "caption": "Remembrance of the Confessor",
+      "group": "Remembrance of the Confessor",
+      "url": null
+    },
+    "QI05": {
+      "itemName": "QI05",
+      "caption": "Regula's Cloth",
+      "group": "Regula's Cloth",
+      "url": null
+    },
+    "QI06": {
+      "itemName": "QI06",
+      "caption": "Remembrance of R\u00e9gula",
+      "group": "Remembrance of R\u00e9gula",
+      "url": null
+    },
+    "QI07": {
+      "itemName": "QI07",
+      "caption": "Scroll of the Elder",
+      "group": "Scroll of the Elder",
+      "url": null
+    },
+    "QI08": {
+      "itemName": "QI08",
+      "caption": "Cloth of the Old Woman",
+      "group": "Cloth of the Old Woman",
+      "url": null
+    },
+    "QI09": {
+      "itemName": "QI09",
+      "caption": "Remembrance of Trif\u00f3n",
+      "group": "Remembrance of Trif\u00f3n",
+      "url": null
+    },
+    "QI10": {
+      "itemName": "QI10",
+      "caption": "Remembrance of C\u00e1stula",
+      "group": "Remembrance of C\u00e1stula",
+      "url": null
+    },
+    "QI101": {
+      "itemName": "QI101",
+      "caption": "Mud Key",
+      "group": "Mud Key",
+      "url": null
+    },
+    "QI102": {
+      "itemName": "QI102",
+      "caption": "Broken Mud Key",
+      "group": "Broken Mud Key",
+      "url": null
+    },
+    "QI103": {
+      "itemName": "QI103",
+      "caption": "Ceramic Key",
+      "group": "Ceramic Key",
+      "url": null
+    },
+    "QI104": {
+      "itemName": "QI104",
+      "caption": "Mea Culpa Hilt",
+      "group": "Mea Culpa Hilt",
+      "url": null
+    },
+    "QI105": {
+      "itemName": "QI105",
+      "caption": "Lump of Gold",
+      "group": "Lump of Gold",
+      "url": null
+    },
+    "QI106": {
+      "itemName": "QI106",
+      "caption": "Imperfectus Lacrimatorio",
+      "group": "Imperfectus Lacrimatorio",
+      "url": null
+    },
+    "QI107": {
+      "itemName": "QI107",
+      "caption": "Imperfectus Lacrimatorio",
+      "group": "Imperfectus Lacrimatorio",
+      "url": null
+    },
+    "QI108": {
+      "itemName": "QI108",
+      "caption": "Imperfectus Lacrimatorio",
+      "group": "Imperfectus Lacrimatorio",
+      "url": null
+    },
+    "QI109": {
+      "itemName": "QI109",
+      "caption": "Imperfectus Lacrimatorio",
+      "group": "Imperfectus Lacrimatorio",
+      "url": null
+    },
+    "QI11": {
+      "itemName": "QI11",
+      "caption": "Silver Shell File",
+      "group": "Silver Shell File",
+      "url": null
+    },
+    "QI110": {
+      "itemName": "QI110",
+      "caption": "Plenus Lacrimatorio",
+      "group": "Plenus Lacrimatorio",
+      "url": null
+    },
+    "QI111": {
+      "itemName": "QI111",
+      "caption": "Beatus Lacrimatorio",
+      "group": "Beatus Lacrimatorio",
+      "url": null
+    },
+    "QI112": {
+      "itemName": "QI112",
+      "caption": "Camafeo of Sister Captive",
+      "group": "Camafeo of Sister Captive",
+      "url": null
+    },
+    "QI113": {
+      "itemName": "QI113",
+      "caption": "Brother Asterion's Mask",
+      "group": "Brother Asterion's Mask",
+      "url": null
+    },
+    "QI12": {
+      "itemName": "QI12",
+      "caption": "Sculptor's Resonant Gavel",
+      "group": "Sculptor's Resonant Gavel",
+      "url": null
+    },
+    "QI13": {
+      "itemName": "QI13",
+      "caption": "Sealed Envelope",
+      "group": "Sealed Envelope",
+      "url": null
+    },
+    "QI14": {
+      "itemName": "QI14",
+      "caption": "Cursed Letter, Page One",
+      "group": "Cursed Letter, Page One",
+      "url": null
+    },
+    "QI15": {
+      "itemName": "QI15",
+      "caption": "Sealed Envelope",
+      "group": "Sealed Envelope",
+      "url": null
+    },
+    "QI16": {
+      "itemName": "QI16",
+      "caption": "Cursed Letter, Page Two",
+      "group": "Cursed Letter, Page Two",
+      "url": null
+    },
+    "QI17": {
+      "itemName": "QI17",
+      "caption": "Sealed Envelope",
+      "group": "Sealed Envelope",
+      "url": null
+    },
+    "QI18": {
+      "itemName": "QI18",
+      "caption": "Cursed Letter, Page Three",
+      "group": "Cursed Letter, Page Three",
+      "url": null
+    },
+    "QI19": {
+      "itemName": "QI19",
+      "caption": "Sealed Envelope",
+      "group": "Sealed Envelope",
+      "url": null
+    },
+    "QI199": {
+      "itemName": "QI199",
+      "caption": "Mark of the Preceptor",
+      "group": "Mark of the Preceptor",
+      "url": null
+    },
+    "QI20": {
+      "itemName": "QI20",
+      "caption": "Cursed Letter, Page Four",
+      "group": "Cursed Letter, Page Four",
+      "url": null
+    },
+    "QI201": {
+      "itemName": "QI201",
+      "caption": "Lamp of the Whisper of the Mist",
+      "group": "Lamp of the Whisper of the Mist",
+      "url": null
+    },
+    "QI202": {
+      "itemName": "QI202",
+      "caption": "Broken Ring of Sealed Eyes",
+      "group": "Broken Ring of Sealed Eyes",
+      "url": null
+    },
+    "QI203": {
+      "itemName": "QI203",
+      "caption": "Broken Ring of Sealed Lips",
+      "group": "Broken Ring of Sealed Lips",
+      "url": null
+    },
+    "QI204": {
+      "itemName": "QI204",
+      "caption": "Piece of cracked ceramic",
+      "group": "Piece of cracked ceramic",
+      "url": null
+    },
+    "QI205": {
+      "itemName": "QI205",
+      "caption": "Ceramic Offering",
+      "group": "Ceramic Offering",
+      "url": null
+    },
+    "QI206": {
+      "itemName": "QI206",
+      "caption": "Offering of Consecrated Pottery",
+      "group": "Offering of Consecrated Pottery",
+      "url": null
+    },
+    "QI207": {
+      "itemName": "QI207",
+      "caption": "Piece of rusted silver",
+      "group": "Piece of rusted silver",
+      "url": null
+    },
+    "QI208": {
+      "itemName": "QI208",
+      "caption": "Silver Offering",
+      "group": "Silver Offering",
+      "url": null
+    },
+    "QI209": {
+      "itemName": "QI209",
+      "caption": "Consecrated Silver Offering",
+      "group": "Consecrated Silver Offering",
+      "url": null
+    },
+    "QI21": {
+      "itemName": "QI21",
+      "caption": "Sealed Envelope",
+      "group": "Sealed Envelope",
+      "url": null
+    },
+    "QI210": {
+      "itemName": "QI210",
+      "caption": "Old Piece of Gold",
+      "group": "Old Piece of Gold",
+      "url": null
+    },
+    "QI211": {
+      "itemName": "QI211",
+      "caption": "Gold Offering",
+      "group": "Gold Offering",
+      "url": null
+    },
+    "QI212": {
+      "itemName": "QI212",
+      "caption": "Consecrated Gold Offering",
+      "group": "Consecrated Gold Offering",
+      "url": null
+    },
+    "QI213": {
+      "itemName": "QI213",
+      "caption": "Fragment of Leg of Virtue",
+      "group": "Fragment of Leg of Virtue",
+      "url": null
+    },
+    "QI214": {
+      "itemName": "QI214",
+      "caption": "Urn of the Penitent of Virtue",
+      "group": "Urn of the Penitent of Virtue",
+      "url": null
+    },
+    "QI215": {
+      "itemName": "QI215",
+      "caption": "Complete Ring of the Perfidy",
+      "group": "Complete Ring of the Perfidy",
+      "url": null
+    },
+    "QI216": {
+      "itemName": "QI216",
+      "caption": "Fragment of Helm of Virtue",
+      "group": "Fragment of Helm of Virtue",
+      "url": null
+    },
+    "QI217": {
+      "itemName": "QI217",
+      "caption": "Fragment of Breastplate of Virtue",
+      "group": "Fragment of Breastplate of Virtue",
+      "url": null
+    },
+    "QI218": {
+      "itemName": "QI218",
+      "caption": "Crescencia\u2019s Veil",
+      "group": "Crescencia\u2019s Veil",
+      "url": null
+    },
+    "QI22": {
+      "itemName": "QI22",
+      "caption": "Cursed Letter, Last Page",
+      "group": "Cursed Letter, Last Page",
+      "url": null
+    },
+    "QI23": {
+      "itemName": "QI23",
+      "caption": "Unfinished Lullaby",
+      "group": "Unfinished Lullaby",
+      "url": null
+    },
+    "QI24": {
+      "itemName": "QI24",
+      "caption": "Unfinished Lullaby",
+      "group": "Unfinished Lullaby",
+      "url": null
+    },
+    "QI25": {
+      "itemName": "QI25",
+      "caption": "Unfinished Lullaby",
+      "group": "Unfinished Lullaby",
+      "url": null
+    },
+    "QI26": {
+      "itemName": "QI26",
+      "caption": "Unfinished Lullaby",
+      "group": "Unfinished Lullaby",
+      "url": null
+    },
+    "QI27": {
+      "itemName": "QI27",
+      "caption": "Lullaby of the White Shore",
+      "group": "Lullaby of the White Shore",
+      "url": null
+    },
+    "QI28": {
+      "itemName": "QI28",
+      "caption": "Broken Key",
+      "group": "Broken Key",
+      "url": null
+    },
+    "QI29": {
+      "itemName": "QI29",
+      "caption": "Forgotten Tribute",
+      "group": "Forgotten Tribute",
+      "url": null
+    },
+    "QI30": {
+      "itemName": "QI30",
+      "caption": "Forgotten Tribute",
+      "group": "Forgotten Tribute",
+      "url": null
+    },
+    "QI31": {
+      "itemName": "QI31",
+      "caption": "Forgotten Tribute",
+      "group": "Forgotten Tribute",
+      "url": null
+    },
+    "QI32": {
+      "itemName": "QI32",
+      "caption": "Abandoned Rosary Knot",
+      "group": "Abandoned Rosary Knot",
+      "url": null
+    },
+    "QI33": {
+      "itemName": "QI33",
+      "caption": "Abandoned Rosary Knot",
+      "group": "Abandoned Rosary Knot",
+      "url": null
+    },
+    "QI34": {
+      "itemName": "QI34",
+      "caption": "Abandoned Rosary Knot",
+      "group": "Abandoned Rosary Knot",
+      "url": null
+    },
+    "QI35": {
+      "itemName": "QI35",
+      "caption": "Abandoned Rosary Knot",
+      "group": "Abandoned Rosary Knot",
+      "url": null
+    },
+    "QI36": {
+      "itemName": "QI36",
+      "caption": "Stolen Pendant of Solitude",
+      "group": "Stolen Pendant of Solitude",
+      "url": null
+    },
+    "QI37": {
+      "itemName": "QI37",
+      "caption": "Fervent Kiss",
+      "group": "Fervent Kiss",
+      "url": null
+    },
+    "QI38": {
+      "itemName": "QI38",
+      "caption": "Fervent Kiss",
+      "group": "Fervent Kiss",
+      "url": null
+    },
+    "QI39": {
+      "itemName": "QI39",
+      "caption": "Fervent Kiss",
+      "group": "Fervent Kiss",
+      "url": null
+    },
+    "QI40": {
+      "itemName": "QI40",
+      "caption": "Fervent Kiss",
+      "group": "Fervent Kiss",
+      "url": null
+    },
+    "QI41": {
+      "itemName": "QI41",
+      "caption": "Fervent Kiss",
+      "group": "Fervent Kiss",
+      "url": null
+    },
+    "QI42": {
+      "itemName": "QI42",
+      "caption": "Ornate Chalice",
+      "group": "Ornate Chalice",
+      "url": null
+    },
+    "QI43": {
+      "itemName": "QI43",
+      "caption": "Ornate Chalice",
+      "group": "Ornate Chalice",
+      "url": null
+    },
+    "QI44": {
+      "itemName": "QI44",
+      "caption": "Ornate Chalice",
+      "group": "Ornate Chalice",
+      "url": null
+    },
+    "QI45": {
+      "itemName": "QI45",
+      "caption": "Ornate Chalice",
+      "group": "Ornate Chalice",
+      "url": null
+    },
+    "QI46": {
+      "itemName": "QI46",
+      "caption": "Ornate Chalice",
+      "group": "Ornate Chalice",
+      "url": null
+    },
+    "QI47": {
+      "itemName": "QI47",
+      "caption": "Empty Receptacle",
+      "group": "Empty Receptacle",
+      "url": null
+    },
+    "QI48": {
+      "itemName": "QI48",
+      "caption": "Empty Receptacle",
+      "group": "Empty Receptacle",
+      "url": null
+    },
+    "QI49": {
+      "itemName": "QI49",
+      "caption": "Empty Receptacle",
+      "group": "Empty Receptacle",
+      "url": null
+    },
+    "QI50": {
+      "itemName": "QI50",
+      "caption": "Empty Receptacle",
+      "group": "Empty Receptacle",
+      "url": null
+    },
+    "QI51": {
+      "itemName": "QI51",
+      "caption": "Silver-Clad Crystal Shard",
+      "group": "Silver-Clad Crystal Shard",
+      "url": null
+    },
+    "QI52": {
+      "itemName": "QI52",
+      "caption": "Silver-Clad Crystal Shard",
+      "group": "Silver-Clad Crystal Shard",
+      "url": null
+    },
+    "QI53": {
+      "itemName": "QI53",
+      "caption": "Silver-Clad Crystal Shard",
+      "group": "Silver-Clad Crystal Shard",
+      "url": null
+    },
+    "QI54": {
+      "itemName": "QI54",
+      "caption": "Giant Rattle",
+      "group": "Giant Rattle",
+      "url": null
+    },
+    "QI55": {
+      "itemName": "QI55",
+      "caption": "Remembrance of Pr\u00f3ximo",
+      "group": "Remembrance of Pr\u00f3ximo",
+      "url": null
+    },
+    "QI56": {
+      "itemName": "QI56",
+      "caption": "Wax Seed",
+      "group": "Wax Seed",
+      "url": null
+    },
+    "QI57": {
+      "itemName": "QI57",
+      "caption": "Wax Seed",
+      "group": "Wax Seed",
+      "url": null
+    },
+    "QI58": {
+      "itemName": "QI58",
+      "caption": "Wax Seed",
+      "group": "Wax Seed",
+      "url": null
+    },
+    "QI59": {
+      "itemName": "QI59",
+      "caption": "Wax Seed",
+      "group": "Wax Seed",
+      "url": null
+    },
+    "QI60": {
+      "itemName": "QI60",
+      "caption": "Wax Seed",
+      "group": "Wax Seed",
+      "url": null
+    },
+    "QI61": {
+      "itemName": "QI61",
+      "caption": "Wax Seed",
+      "group": "Wax Seed",
+      "url": null
+    },
+    "QI62": {
+      "itemName": "QI62",
+      "caption": "Remembrance of Ces\u00e1reo",
+      "group": "Remembrance of Ces\u00e1reo",
+      "url": null
+    },
+    "QI63": {
+      "itemName": "QI63",
+      "caption": "Key of the Pilgrim",
+      "group": "Key of the Pilgrim",
+      "url": null
+    },
+    "QI64": {
+      "itemName": "QI64",
+      "caption": "Key of Endless Orison",
+      "group": "Key of Endless Orison",
+      "url": null
+    },
+    "QI65": {
+      "itemName": "QI65",
+      "caption": "Key of Salt",
+      "group": "Key of Salt",
+      "url": null
+    },
+    "QI66": {
+      "itemName": "QI66",
+      "caption": "Key of the Council",
+      "group": "Key of the Council",
+      "url": null
+    },
+    "QI67": {
+      "itemName": "QI67",
+      "caption": "Mirrored Key",
+      "group": "Mirrored Key",
+      "url": null
+    },
+    "QI68": {
+      "itemName": "QI68",
+      "caption": "Holy Oil of Everlasting Anointment",
+      "group": "Holy Oil of Everlasting Anointment",
+      "url": null
+    },
+    "QI69": {
+      "itemName": "QI69",
+      "caption": "Incense of the Envoys",
+      "group": "Incense of the Envoys",
+      "url": null
+    },
+    "QI70": {
+      "itemName": "QI70",
+      "caption": "Steely Battle Lance",
+      "group": "Steely Battle Lance",
+      "url": null
+    },
+    "QI71": {
+      "itemName": "QI71",
+      "caption": "Remembrance of Crisanta",
+      "group": "Remembrance of Crisanta",
+      "url": null
+    },
+    "QI99": {
+      "itemName": "QI99",
+      "caption": "Mark of Martyrdom",
+      "group": "Mark of Martyrdom",
+      "url": null
+    }
+  }
+}

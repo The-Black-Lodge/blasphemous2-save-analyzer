@@ -78,7 +78,7 @@ const QUEST_ID_MAP: Record<number, { name: string; category: string; description
   [-1058269319, { name: "Conditional Quest 7", category: "conditional", description: "Conditional quest trigger 7" }],
   [-1752002532, { name: "Conditional Quest 8", category: "conditional", description: "Conditional quest trigger 8" }],
   [-398251897, { name: "Conditional Quest 9", category: "conditional", description: "Conditional quest trigger 9" }],
-  [729153612, { name: "Conditional Quest 10", category: "conditional", description: "Conditional quest trigger 10" }],
+  [729153612, { name: "Cesareo (Wax Seeds)", category: "main_story", description: "ST29 - Wax seed planting at Severed Tower" }],
 ])
 
 // Boss quest variable mapping from GameModeManagerConfig.varsOfDeadBossesList
@@ -106,6 +106,14 @@ const DLC_BOSS_VARS = [
 const STATS_TYPE_IDS = new Set([0x5ce1f99b, 0xefa6f720])
 const ABILITIES_TYPE_ID = 0x533635a5
 const WEAPON_MEMORY_TYPE_IDS = new Set([0x82e037ab, 0x9b2e8fbc])
+const TRIGGER_TYPE_ID = 0x02a7c4f7
+
+function decodeTriggerData(
+  payload: Uint8Array,
+): { type: "TriggerData"; isActive: boolean } | null {
+  if (payload.length < 1) return null
+  return { type: "TriggerData", isActive: payload[0] !== 0 }
+}
 
 function dateTimeFromBinary(value: bigint): Date | null {
   if (value === 0n) return null
@@ -599,6 +607,14 @@ export function decodePersistentPayload(
   ) {
     const item = decodeItemFields(payload, typeName)
     if (item) return { ...item, type: "ItemFields" }
+  }
+
+  if (
+    typeId === TRIGGER_TYPE_ID ||
+    typeNameMatch(typeName, "TriggerData")
+  ) {
+    const trigger = decodeTriggerData(payload)
+    if (trigger) return trigger
   }
 
   if (payload.length === 4) {

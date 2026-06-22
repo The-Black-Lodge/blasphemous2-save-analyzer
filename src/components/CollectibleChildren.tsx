@@ -17,11 +17,11 @@ export default function CollectibleChildren() {
         aria-hidden="true"
       />
       <h3 className="leading-icon">Children of Moonlight</h3>
-      <div className="cherub-grid">
+      <div className="collectible-grid">
         {cherubsData.map((entry) => (
           <div
             key={entry.hex}
-            className={`cherub-cell ${collected.has(parseInt(entry.hex, 16)) ? "collected" : ""}`}
+            className={`collectible-cell${collected.has(parseInt(entry.hex, 16)) ? " collected" : ""}`}
           >
             <span>#{entry.id}</span>
             {entry.url && (
