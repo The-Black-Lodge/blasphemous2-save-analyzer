@@ -6,25 +6,6 @@
       "id": "ornate-chalice",
       "title": "Ornate Chalice",
       "sprite": "QI42",
-      "summary": [
-        {
-          "type": "text",
-          "value": "Increase max Health. Deliver to "
-        },
-        {
-          "type": "link",
-          "text": "Our Lady of the Chalices",
-          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=509170"
-        },
-        {
-          "type": "text",
-          "value": " in the "
-        },
-        {
-          "type": "em",
-          "value": "City of the Blessed Name."
-        }
-      ],
       "items": [
         {
           "id": 1,
@@ -62,25 +43,6 @@
       "id": "empty-receptacle",
       "title": "Empty Receptacle",
       "sprite": "QI47",
-      "summary": [
-        {
-          "type": "text",
-          "value": "Increase max Bile Flasks. Deliver to "
-        },
-        {
-          "type": "link",
-          "text": "Our Lady of the Chalices",
-          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=509170"
-        },
-        {
-          "type": "text",
-          "value": " in the "
-        },
-        {
-          "type": "em",
-          "value": "City of the Blessed Name."
-        }
-      ],
       "items": [
         {
           "id": 1,
@@ -112,25 +74,6 @@
       "id": "silver-clad-shard",
       "title": "Silver-Clad Crystal Shard",
       "sprite": "QI51",
-      "summary": [
-        {
-          "type": "text",
-          "value": "Increase Bile Flask effectiveness. Deliver to "
-        },
-        {
-          "type": "link",
-          "text": "Our Lady of the Chalices",
-          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=509170"
-        },
-        {
-          "type": "text",
-          "value": " in the "
-        },
-        {
-          "type": "em",
-          "value": "City of the Blessed Name."
-        }
-      ],
       "items": [
         {
           "id": 1,
@@ -156,25 +99,6 @@
       "id": "fervent-kiss",
       "title": "Fervent Kiss",
       "sprite": "QI37",
-      "summary": [
-        {
-          "type": "text",
-          "value": "Increase max Fervour. Deliver to "
-        },
-        {
-          "type": "link",
-          "text": "Besamanos",
-          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520870"
-        },
-        {
-          "type": "text",
-          "value": " in the "
-        },
-        {
-          "type": "em",
-          "value": "Streets of Wakes."
-        }
-      ],
       "items": [
         {
           "id": 1,
@@ -212,25 +136,6 @@
       "id": "abandoned-rosary-knot",
       "title": "Abandoned Rosary Knot",
       "sprite": "QI32",
-      "summary": [
-        {
-          "type": "text",
-          "value": "Increase max Rosary Beads. Deliver to "
-        },
-        {
-          "type": "link",
-          "text": "Sagrario",
-          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520866"
-        },
-        {
-          "type": "text",
-          "value": " in the "
-        },
-        {
-          "type": "em",
-          "value": "Streets of Wakes."
-        }
-      ],
       "items": [
         {
           "id": 1,
@@ -262,35 +167,6 @@
       "id": "forgotten-tribute",
       "title": "Forgotten Tribute",
       "sprite": "QI29",
-      "summary": [
-        {
-          "type": "text",
-          "value": "Deliver to the Procession of Shadows at the following locations: "
-        },
-        {
-          "type": "link",
-          "text": "#1",
-          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520930"
-        },
-        {
-          "type": "text",
-          "value": ", "
-        },
-        {
-          "type": "link",
-          "text": "#2",
-          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520932"
-        },
-        {
-          "type": "text",
-          "value": ", "
-        },
-        {
-          "type": "link",
-          "text": "#3",
-          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520935"
-        }
-      ],
       "items": [
         {
           "id": 1,
@@ -316,25 +192,6 @@
       "id": "wax-seed",
       "title": "Wax Seed",
       "sprite": "QI56",
-      "summary": [
-        {
-          "type": "text",
-          "value": "Deliver to "
-        },
-        {
-          "type": "link",
-          "text": "Cesareo",
-          "href": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522609"
-        },
-        {
-          "type": "text",
-          "value": " in "
-        },
-        {
-          "type": "em",
-          "value": "The Severed Tower."
-        }
-      ],
       "items": [
         {
           "id": 1,

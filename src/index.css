@@ -735,7 +735,8 @@ code {
   transform-origin: top left;
 }
 
-.collectible-quest-group h4.collectible-quest-summary {
+.collectible-children h4.collectible-summary,
+.collectible-quest-group h4.collectible-summary {
   clear: both;
   margin: 0 0 0.75rem;
   font-family: var(--sans);
@@ -745,16 +746,52 @@ code {
   line-height: 145%;
 }
 
-.collectible-quest-summary a {
+.collectible-summary a,
+.collectible-reward-list a {
   color: var(--text-h);
 }
 
-.collectible-quest-summary a:hover {
+.collectible-summary a:hover,
+.collectible-reward-list a:hover {
   color: var(--accent);
 }
 
-.collectible-quest-summary em {
+.collectible-summary em {
   font-style: italic;
+}
+
+.collectible-reward-list {
+  clear: both;
+  margin: 0 0 1rem;
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 145%;
+  color: var(--text);
+}
+
+.collectible-reward-entry {
+  display: flex;
+  gap: 0.35rem;
+  margin: 0 0 0.35rem;
+}
+
+.collectible-reward-entry dt {
+  flex: 0 0 auto;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.collectible-reward-entry dd {
+  margin: 0;
+}
+
+.collectible-reward-sublist {
+  margin: 0.25rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.collectible-reward-sublist li {
+  margin: 0.15rem 0;
 }
 
 .float-left {
