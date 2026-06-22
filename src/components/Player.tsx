@@ -131,7 +131,6 @@ export default function Player() {
     | { showedAbilities?: number[] }
     | undefined
 
-  const health = findStat(stats, ["Health"])
   const fervour = findStat(stats, ["Fervour"])
   const guiltStat = findStat(stats, ["Guilt"])
   const tears = findStat(stats, ["Tears"])
@@ -199,14 +198,6 @@ export default function Player() {
             <>
               <h3>Stats</h3>
               <ul>
-                {health && (
-                  <li>
-                    Health: {health.value}
-                    {"upgrades" in health && health.upgrades !== undefined
-                      ? ` / ${health.upgrades}`
-                      : ""}
-                  </li>
-                )}
                 {healthRange && (
                   <li>
                     Health: {healthRange.value}
@@ -215,13 +206,6 @@ export default function Player() {
                       : ""}
                   </li>
                 )}
-              {flaskRange && (
-                  <FlaskDisplay
-                    count={flaskRange.value}
-                    factor={healingFlaskFactor?.value ?? 0}
-                    goldActive={!!goldFlaskAbility?.active}
-                  />
-                )}
                 {fervour && (
                   <li>
                     Fervour: {fervour.value}
@@ -229,6 +213,13 @@ export default function Player() {
                       ? ` / ${fervour.upgrades}`
                       : ""}
                   </li>
+                )}
+                {flaskRange && (
+                  <FlaskDisplay
+                    count={flaskRange.value}
+                    factor={healingFlaskFactor?.value ?? 0}
+                    goldActive={!!goldFlaskAbility?.active}
+                  />
                 )}
                 {guiltStat && (
                   <>
