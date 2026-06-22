@@ -55,6 +55,39 @@ function StatList({ title, items }: { title: string; items: StatEntry[] }) {
   )
 }
 
+function FlaskDisplay({
+  count,
+  factor,
+  goldActive,
+}: {
+  count: number
+  factor: number
+  goldActive: boolean
+}) {
+  if (count <= 0) return null
+
+  const spriteKey = (i: number) => {
+    const isGold = goldActive && i === count - 1
+    const suffix = isGold ? "golden" : ""
+    return `flask${suffix ? "-" + suffix : ""}-${factor}-full`
+  }
+
+  const flaskCount = Math.max(count, 0)
+
+  return (
+    <li className="flask-display">
+      {Array.from({ length: flaskCount }, (_, i) => (
+        <span
+          key={i}
+          className={`hud-sprite hud-sprite--${spriteKey(i)}`}
+          style={{ marginRight: "24px" }}
+          aria-hidden="true"
+        />
+      ))}
+    </li>
+  )
+}
+
 export default function Player() {
   const { save } = useSave()
   const tab = useTab()
@@ -182,27 +215,12 @@ export default function Player() {
                       : ""}
                   </li>
                 )}
-                {flaskRange && (
-                  <li>
-                    Flask: {flaskRange.value}
-                    {flaskRange.upgrades !== undefined
-                      ? ` / ${flaskRange.upgrades}`
-                      : ""}
-                  </li>
-                )}
-                {healingFlaskFactor && (
-                  <li>
-                    Healing Flasks Factor: {healingFlaskFactor.value}
-                    {healingFlaskFactor.upgrades !== undefined
-                      ? ` / ${healingFlaskFactor.upgrades}`
-                      : ""}
-                  </li>
-                )}
-                {goldFlaskAbility && (
-                  <li>
-                    {resolveIdLabel(goldFlaskAbility.hashHex)}
-                    {goldFlaskAbility.active ? " (active)" : " (inactive)"}
-                  </li>
+              {flaskRange && (
+                  <FlaskDisplay
+                    count={flaskRange.value}
+                    factor={healingFlaskFactor?.value ?? 0}
+                    goldActive={!!goldFlaskAbility?.active}
+                  />
                 )}
                 {fervour && (
                   <li>
