@@ -21,7 +21,7 @@ export default function Bosses() {
 
   const bossList: BossEntry[] = []
   const bossKillStatus = save?.player?.bossKillStatus as
-    | { bosses?: BossEntry[] }
+    | { bosses?: BossEntry[]; bossesDefeated?: number }
     | undefined
 
   if (bossKillStatus?.bosses) {
@@ -48,7 +48,8 @@ export default function Bosses() {
         ))}
       </ul>
 
-      {bossKillStatus?.bossesDefeated !== undefined && (
+      {bossKillStatus?.bossesDefeated !== undefined &&
+        bossKillStatus.bosses !== undefined && (
         <p className="boss-summary">
           {bossKillStatus.bossesDefeated} / {bossKillStatus.bosses.length}{" "}
           defeated

@@ -82,8 +82,6 @@ const QUEST_ID_MAP: Record<number, { name: string; category: string; description
 ])
 
 // Boss quest variable mapping from GameModeManagerConfig.varsOfDeadBossesList
-const BOSS_QUEST_ID = -1159116381
-
 const BOSS_VARS = [
   { id: 0, varID: 931769267, name: "Radames", code: "BS01" },
   { id: 1, varID: 972433550, name: "Orospina", code: "BS02" },
@@ -407,8 +405,7 @@ function decodeQuestPersistencePayload(
   for (let q = 0; q < Math.min(questCount, 200); q++) {
     if (r.getRemaining() < 20) break
 
-    const headerAt = r.position
-    const qTypeId = r.readUInt32()
+    r.readUInt32()
     const qRelA = r.readInt64()
     const qRelB = r.readInt64()
     const afterHeader = r.position
