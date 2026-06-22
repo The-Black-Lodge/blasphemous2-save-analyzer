@@ -275,41 +275,43 @@ export default function Quest() {
           {showAll ? "Hide completed" : "Show all"}
         </button>
       </div>
-      <div className="quest-grid">
-        {orderedQuestItems.map((item) => {
-          if (!shouldShowItem(item.source)) return null
+      <div style={{ display: "flex", alignItems: "flex-start", gap: 16, marginTop: 8 }}>
+        <div className="quest-grid">
+          {orderedQuestItems.map((item) => {
+            if (!shouldShowItem(item.source)) return null
 
-          const isAcquired = acquired.has(item.source)
-          return (
-            <div
-              key={item.source}
-              className={`quest-item${isAcquired ? "" : " quest-item--missing"}`}
-            >
-              <span
-                className={`qi-sprite qi-sprite--${item.source}`}
-                aria-hidden="true"
-              />
-              <div className="quest-label">{item.caption.en}</div>
-            </div>
-          )
-        })}
+            const isAcquired = acquired.has(item.source)
+            return (
+              <div
+                key={item.source}
+                className={`quest-item${isAcquired ? "" : " quest-item--missing"}`}
+              >
+                <span
+                  className={`qi-sprite qi-sprite--${item.source}`}
+                  aria-hidden="true"
+                />
+                <div className="quest-label">{item.caption.en}</div>
+              </div>
+            )
+          })}
+        </div>
+
+        {questList.length > 0 && (
+          <div className="quest-progress">
+            <h3>Quest Progress</h3>
+            <ul>
+              {questList.map((q) => (
+                <li key={q.questID}>
+                  {q.questName}{" "}
+                  <span className="quest-status">
+                    [{q.questCategory}] status: {q.status}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
-
-      {questList.length > 0 && (
-        <>
-          <h3>Quest Progress</h3>
-          <ul>
-            {questList.map((q) => (
-              <li key={q.questID}>
-                {q.questName}{" "}
-                <span className="quest-status">
-                  [{q.questCategory}] status: {q.status}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
     </section>
   )
 }

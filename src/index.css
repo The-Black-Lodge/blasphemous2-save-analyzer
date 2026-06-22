@@ -494,22 +494,39 @@ code {
   background: rgb(21, 24, 34);
   border: 2px solid rgb(142, 126, 91);
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-  width: 100%;
-  max-width: 100%;
+  grid-template-columns: repeat(5, auto);
+  gap: 0.5rem;
+  width: 30rem;
   margin: 1rem 0;
-  padding: 0;
+  padding: 0.5rem;
   box-sizing: border-box;
+}
+
+.quest-progress {
+  display: inline-block;
+  margin-left: 1rem;
+  vertical-align: top;
+  min-width: 200px;
+}
+
+.quest-progress h3 {
+  margin: 0 0 0.5rem;
+}
+
+.quest-progress ul {
+  margin: 0;
+  padding-left: 1rem;
 }
 
 .quest-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem;
+  gap: 0.25rem;
+  padding: 0.25rem;
   text-align: center;
+  min-width: 0;
+  white-space: nowrap;
 }
 
 .quest-item .qi-sprite {
@@ -521,6 +538,8 @@ code {
 .quest-label {
   font-size: 14px;
   line-height: 1.2;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .quest-item--missing .qi-sprite {
