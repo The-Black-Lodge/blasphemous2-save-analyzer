@@ -1,5 +1,4 @@
 import { useContext } from "react"
-import CollectibleChildren from "./CollectibleChildren"
 import CollectibleQuestItems from "./CollectibleQuestItems"
 import { TabContext } from "../App"
 
@@ -13,7 +12,6 @@ export default function Collectibles() {
   return (
     <section className="collectibles">
       {tab === "all" && <h2>Collectibles</h2>}
-      <CollectibleChildren />
       <CollectibleQuestItems />
     </section>
   )
