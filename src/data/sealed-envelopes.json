@@ -1,0 +1,47 @@
+{
+  "generatedBy": "build_collectible_json.py",
+  "title": "Sealed Envelope",
+  "sprite": "QI13",
+  "locations": [
+    {
+      "id": 1,
+      "sceneFile": "Z1715",
+      "roomHash": -133013386,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523336",
+      "itemName": "QI13",
+      "caption": "Sealed Envelope"
+    },
+    {
+      "id": 2,
+      "sceneFile": "Z1326",
+      "roomHash": 1433070680,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523536",
+      "itemName": "QI15",
+      "caption": "Sealed Envelope"
+    },
+    {
+      "id": 3,
+      "sceneFile": "Z0502",
+      "roomHash": 1291908113,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523537",
+      "itemName": "QI17",
+      "caption": "Sealed Envelope"
+    },
+    {
+      "id": 4,
+      "sceneFile": "Z1427",
+      "roomHash": 1433070714,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523538",
+      "itemName": "QI19",
+      "caption": "Sealed Envelope"
+    },
+    {
+      "id": 5,
+      "sceneFile": "Z0503",
+      "roomHash": 1291908114,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523539",
+      "itemName": "QI21",
+      "caption": "Sealed Envelope"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "generatedBy": "build_collectible_json.py",
+  "title": "Mementos",
+  "sprite": "QI04",
+  "locations": [
+    {
+      "id": 1,
+      "sceneFile": "Z05BZ01",
+      "roomHash": -2116507164,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523633",
+      "itemName": "QI04",
+      "caption": "Remembrance of the Confessor"
+    },
+    {
+      "id": 2,
+      "sceneFile": "Z2119",
+      "roomHash": 8149301,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522668",
+      "itemName": "QI06",
+      "caption": "Remembrance of Régula"
+    },
+    {
+      "id": 3,
+      "sceneFile": "Z0722",
+      "roomHash": 129108637,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=519417",
+      "itemName": "QI09",
+      "caption": "Remembrance of Trifón"
+    },
+    {
+      "id": 4,
+      "sceneFile": "Z0722",
+      "roomHash": 129108637,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=519418",
+      "itemName": "QI10",
+      "caption": "Remembrance of Cástula"
+    },
+    {
+      "id": 5,
+      "sceneFile": "Z2401",
+      "roomHash": 1574233213,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523702",
+      "itemName": "QI55",
+      "caption": "Remembrance of Próximo"
+    },
+    {
+      "id": 6,
+      "sceneFile": "Z1616",
+      "roomHash": -133013288,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523589",
+      "itemName": "QI62",
+      "caption": "Remembrance of Cesáreo"
+    },
+    {
+      "id": 7,
+      "sceneFile": "Z1808",
+      "roomHash": -1699097293,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523726",
+      "itemName": "QI71",
+      "caption": "Remembrance of Crisanta"
+    }
+  ]
+}

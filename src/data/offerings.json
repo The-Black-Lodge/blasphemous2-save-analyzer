@@ -1,0 +1,115 @@
+{
+  "generatedBy": "build_collectible_json.py",
+  "title": "Offerings",
+  "sprite": "QI204",
+  "locations": [
+    {
+      "id": 1,
+      "sceneFile": "Z3002",
+      "roomHash": -1416772037,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597896",
+      "itemName": "QI204",
+      "caption": "Piece of cracked ceramic",
+      "elementKey": -41400469
+    },
+    {
+      "id": 2,
+      "sceneFile": "Z3024",
+      "roomHash": -253972625,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597816",
+      "itemName": "QI204",
+      "caption": "Piece of cracked ceramic",
+      "elementKey": -1186921089
+    },
+    {
+      "id": 3,
+      "sceneFile": "Z3101",
+      "roomHash": -1416772131,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597763",
+      "itemName": "QI204",
+      "caption": "Piece of cracked ceramic",
+      "elementKey": -41400469
+    },
+    {
+      "id": 4,
+      "sceneFile": "Z3123",
+      "roomHash": -253972719,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597705",
+      "itemName": "QI204",
+      "caption": "Piece of cracked ceramic",
+      "elementKey": -41400469
+    },
+    {
+      "id": 5,
+      "sceneFile": "Z3007",
+      "roomHash": -1416772042,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597744",
+      "itemName": "QI207",
+      "caption": "Piece of rusted silver",
+      "elementKey": -1699757112
+    },
+    {
+      "id": 6,
+      "sceneFile": "Z3107",
+      "roomHash": -1416772137,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597803",
+      "itemName": "QI207",
+      "caption": "Piece of rusted silver",
+      "elementKey": -41400469
+    },
+    {
+      "id": 7,
+      "sceneFile": "Z3122",
+      "roomHash": -253972720,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597811",
+      "itemName": "QI207",
+      "caption": "Piece of rusted silver",
+      "elementKey": -41400469
+    },
+    {
+      "id": 8,
+      "sceneFile": "Z3211",
+      "roomHash": 149311839,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597858",
+      "itemName": "QI207",
+      "caption": "Piece of rusted silver",
+      "elementKey": -41400469
+    },
+    {
+      "id": 9,
+      "sceneFile": "Z3004",
+      "roomHash": -1416772039,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597822",
+      "itemName": "QI210",
+      "caption": "Old Piece of Gold",
+      "elementKey": -766400168
+    },
+    {
+      "id": 10,
+      "sceneFile": "Z3016",
+      "roomHash": 149311900,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597752",
+      "itemName": "QI210",
+      "caption": "Old Piece of Gold",
+      "elementKey": -2114767525
+    },
+    {
+      "id": 11,
+      "sceneFile": "Z3118",
+      "roomHash": 149311801,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597771",
+      "itemName": "QI210",
+      "caption": "Old Piece of Gold",
+      "elementKey": 332831868
+    },
+    {
+      "id": 12,
+      "sceneFile": "Z3210",
+      "roomHash": 149311840,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597831",
+      "itemName": "QI210",
+      "caption": "Old Piece of Gold",
+      "elementKey": 739650365
+    }
+  ]
+}
