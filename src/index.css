@@ -747,6 +747,12 @@ code {
   --npc-sprite-scale: 0.35;
 }
 
+.symbol-sprite-slot--hidden-symbol {
+  width: calc(8px * var(--symbol-sprite-scale));
+  height: calc(13px * var(--symbol-sprite-scale));
+  overflow: hidden;
+}
+
 .collectible-placeholder h3 {
   margin: 0;
   clear: both;

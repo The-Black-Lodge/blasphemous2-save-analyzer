@@ -2,11 +2,13 @@ import { Fragment } from "react"
 import collectiblePlaceholdersData from "../data/collectible-placeholders.json"
 import cobijadasData from "../data/cobijadas.json"
 import goldenLumpsData from "../data/golden-lumps.json"
+import hiddenSymbolsData from "../data/hidden-symbols.json"
 import questCollectionsData from "../data/quest-collections.json"
 import sculptorToolsData from "../data/sculptor-tools.json"
 import CollectibleChildren from "./CollectibleChildren"
 import CollectibleCobijadas from "./CollectibleCobijadas"
 import CollectibleGoldenLumps from "./CollectibleGoldenLumps"
+import CollectibleHiddenSymbols from "./CollectibleHiddenSymbols"
 import CollectiblePlaceholder from "./CollectiblePlaceholder"
 import CollectibleQuestGroup, {
   type QuestCollection,
@@ -39,6 +41,11 @@ const collectibleSections = [
     key: "golden-lumps",
     title: goldenLumpsData.title,
     element: <CollectibleGoldenLumps />,
+  },
+  {
+    key: "hidden-symbols",
+    title: hiddenSymbolsData.title,
+    element: <CollectibleHiddenSymbols />,
   },
   {
     key: "sculptor-tools",
