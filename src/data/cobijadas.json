@@ -1,59 +1,76 @@
 {
   "title": "Cobijadas",
-  "elementKey": -796323052,
   "locations": [
     {
       "id": 1,
       "sceneFile": "Z0109",
       "roomHash": 1291908240,
+      "elementKey": -796323052,
+      "sisterIndex": 4,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522343"
     },
     {
       "id": 2,
       "sceneFile": "Z0409",
       "roomHash": 1291908203,
+      "elementKey": -796323052,
+      "sisterIndex": 5,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522384"
     },
     {
       "id": 3,
       "sceneFile": "Z0425",
       "roomHash": 129108801,
+      "elementKey": -502889252,
+      "sisterIndex": 0,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520351"
     },
     {
       "id": 4,
       "sceneFile": "Z0609",
       "roomHash": 1291908137,
+      "elementKey": -796323052,
+      "sisterIndex": 1,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520725"
     },
     {
       "id": 5,
       "sceneFile": "Z0714",
       "roomHash": -274175888,
+      "elementKey": -796323052,
+      "sisterIndex": 7,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=519406"
     },
     {
       "id": 6,
       "sceneFile": "Z0803",
       "roomHash": 1291908077,
+      "elementKey": -796323052,
+      "sisterIndex": 3,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522364"
     },
     {
       "id": 7,
       "sceneFile": "Z0814",
       "roomHash": -274175865,
+      "elementKey": -1280585641,
+      "sisterIndex": 8,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522492"
     },
     {
       "id": 8,
       "sceneFile": "Z1403",
       "roomHash": -1699097172,
+      "elementKey": -796323052,
+      "sisterIndex": 2,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520944"
     },
     {
       "id": 9,
       "sceneFile": "Z1620",
       "roomHash": 1433070647,
+      "elementKey": -796323052,
+      "sisterIndex": 6,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523418"
     }
   ]
