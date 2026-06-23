@@ -8,6 +8,7 @@ import sculptorToolsData from "../data/sculptor-tools.json"
 import CollectibleChildren from "./CollectibleChildren"
 import CollectibleCobijadas from "./CollectibleCobijadas"
 import CollectibleGoldenLumps from "./CollectibleGoldenLumps"
+import CollectibleMarkOfTheEmbrujo from "./CollectibleMarkOfTheEmbrujo"
 import CollectibleHiddenSymbols from "./CollectibleHiddenSymbols"
 import CollectiblePlaceholder from "./CollectiblePlaceholder"
 import CollectibleQuestGroup, {
@@ -51,6 +52,11 @@ const collectibleSections = [
     key: "sculptor-tools",
     title: sculptorToolsData.title,
     element: <CollectibleSculptorTools />,
+  },
+  {
+    key: "mark-of-the-embrujo",
+    title: "Mark of the Embrujo",
+    element: <CollectibleMarkOfTheEmbrujo />,
   },
   ...collections.map((collection) => ({
     key: collection.id,

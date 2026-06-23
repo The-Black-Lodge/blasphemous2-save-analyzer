@@ -1,0 +1,120 @@
+{
+  "generatedBy": "build_collectible_json.py",
+  "title": "Mark of the Embrujo",
+  "locations": [
+    {
+      "id": 1,
+      "sceneFile": "Z3605",
+      "roomHash": -1416772230,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597941"
+    },
+    {
+      "id": 2,
+      "sceneFile": "Z3225",
+      "roomHash": -253972692,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597860"
+    },
+    {
+      "id": 3,
+      "sceneFile": "Z3207",
+      "roomHash": -1416772104,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597860"
+    },
+    {
+      "id": 4,
+      "sceneFile": "Z3213",
+      "roomHash": 149311841,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597938"
+    },
+    {
+      "id": 5,
+      "sceneFile": "Z3201",
+      "roomHash": -1416772102,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597939"
+    },
+    {
+      "id": 6,
+      "sceneFile": "Z3124",
+      "roomHash": -253972722,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597800"
+    },
+    {
+      "id": 7,
+      "sceneFile": "Z3002",
+      "roomHash": -1416772037,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597936"
+    },
+    {
+      "id": 8,
+      "sceneFile": "Z3215",
+      "roomHash": 149311835,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597913"
+    },
+    {
+      "id": 9,
+      "sceneFile": "Z3116",
+      "roomHash": 149311803,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597794"
+    },
+    {
+      "id": 10,
+      "sceneFile": "Z3127",
+      "roomHash": -253972723,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597801"
+    },
+    {
+      "id": 11,
+      "sceneFile": "Z3107",
+      "roomHash": -1416772137,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597792"
+    },
+    {
+      "id": 12,
+      "sceneFile": "Z3114",
+      "roomHash": 149311805,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597781"
+    },
+    {
+      "id": 13,
+      "sceneFile": "Z3120",
+      "roomHash": -253972718,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597928"
+    },
+    {
+      "id": 14,
+      "sceneFile": "Z3018",
+      "roomHash": 149311898,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597934"
+    },
+    {
+      "id": 15,
+      "sceneFile": "Z3020",
+      "roomHash": -253972621,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597935"
+    },
+    {
+      "id": 16,
+      "sceneFile": "Z3603",
+      "roomHash": -1416772232,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597889"
+    },
+    {
+      "id": 17,
+      "sceneFile": "Z3008",
+      "roomHash": -1416772043,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597741"
+    },
+    {
+      "id": 18,
+      "sceneFile": "Z3219",
+      "roomHash": 149311831,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597844"
+    },
+    {
+      "id": 19,
+      "sceneFile": "Z3230",
+      "roomHash": 1312111254,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597881"
+    }
+  ]
+}
