@@ -706,7 +706,8 @@ code {
 
 .collectible-cell span {
   font-family: var(--sans);
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
 }
 
 .collectible-cell a {
