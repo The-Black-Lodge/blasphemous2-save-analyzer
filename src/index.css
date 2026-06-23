@@ -736,6 +736,17 @@ code {
   transform-origin: top left;
 }
 
+/* Cobijada frame is tall; clip slot keeps header row compact (68×161 native). */
+.npc-sprite-slot--cobijada {
+  width: 24px;
+  height: 56px;
+  overflow: hidden;
+}
+
+.collectible-quest-group .npc-sprite-slot--cobijada .npc-sprite--cobijada {
+  --npc-sprite-scale: 0.35;
+}
+
 .collectible-children h4.collectible-summary,
 .collectible-quest-group h4.collectible-summary {
   clear: both;

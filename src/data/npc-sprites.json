@@ -1,0 +1,19 @@
+{
+  "atlas": {
+    "NPCCobijada-act": {
+      "w": 512,
+      "h": 1024
+    }
+  },
+  "sprites": {
+    "cobijada": {
+      "name": "NPCCobijada-act_0",
+      "sheet": "NPCCobijada-act",
+      "x": 136,
+      "y": 221,
+      "w": 68,
+      "h": 161
+    }
+  },
+  "scale": 2
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Cobijadas",
+  "elementKey": -796323052,
+  "locations": [
+    {
+      "id": 1,
+      "sceneFile": "Z0109",
+      "roomHash": 1291908240,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522343"
+    },
+    {
+      "id": 2,
+      "sceneFile": "Z0409",
+      "roomHash": 1291908203,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522384"
+    },
+    {
+      "id": 3,
+      "sceneFile": "Z0425",
+      "roomHash": 129108801,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520351"
+    },
+    {
+      "id": 4,
+      "sceneFile": "Z0609",
+      "roomHash": 1291908137,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520725"
+    },
+    {
+      "id": 5,
+      "sceneFile": "Z0714",
+      "roomHash": -274175888,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=519406"
+    },
+    {
+      "id": 6,
+      "sceneFile": "Z0803",
+      "roomHash": 1291908077,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522364"
+    },
+    {
+      "id": 7,
+      "sceneFile": "Z0814",
+      "roomHash": -274175865,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522492"
+    },
+    {
+      "id": 8,
+      "sceneFile": "Z1403",
+      "roomHash": -1699097172,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520944"
+    },
+    {
+      "id": 9,
+      "sceneFile": "Z1620",
+      "roomHash": 1433070647,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523418"
+    }
+  ]
+}
