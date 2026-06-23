@@ -35,6 +35,7 @@ export default function Bosses() {
   return (
     <section className="bosses">
       {tab === "all" && <h2>Bosses</h2>}
+      <h3>WIP</h3>
 
       <ul>
         {bossList.map((boss) => (

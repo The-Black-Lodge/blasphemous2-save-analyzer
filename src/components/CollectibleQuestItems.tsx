@@ -1,4 +1,5 @@
 import { Fragment } from "react"
+import collectiblePlaceholdersData from "../data/collectible-placeholders.json"
 import cobijadasData from "../data/cobijadas.json"
 import goldenLumpsData from "../data/golden-lumps.json"
 import questCollectionsData from "../data/quest-collections.json"
@@ -6,6 +7,7 @@ import sculptorToolsData from "../data/sculptor-tools.json"
 import CollectibleChildren from "./CollectibleChildren"
 import CollectibleCobijadas from "./CollectibleCobijadas"
 import CollectibleGoldenLumps from "./CollectibleGoldenLumps"
+import CollectiblePlaceholder from "./CollectiblePlaceholder"
 import CollectibleQuestGroup, {
   type QuestCollection,
 } from "./CollectibleQuestGroup"
@@ -13,6 +15,14 @@ import CollectibleSculptorTools from "./CollectibleSculptorTools"
 import { questCollectionSummaries } from "./questCollectionSummaries"
 
 const collections = questCollectionsData.collections as QuestCollection[]
+
+const placeholderSections = collectiblePlaceholdersData.placeholders.map(
+  (entry) => ({
+    key: entry.id,
+    title: entry.title,
+    element: <CollectiblePlaceholder title={entry.title} />,
+  }),
+)
 
 const collectibleSections = [
   {
@@ -45,6 +55,7 @@ const collectibleSections = [
       />
     ),
   })),
+  ...placeholderSections,
 ].sort((a, b) => a.title.localeCompare(b.title, undefined, { sensitivity: "base" }))
 
 export default function CollectibleQuestItems() {

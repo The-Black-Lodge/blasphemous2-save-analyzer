@@ -747,6 +747,18 @@ code {
   --npc-sprite-scale: 0.35;
 }
 
+.collectible-placeholder h3 {
+  margin: 0;
+  clear: both;
+}
+
+.collectible-nyi {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-lo);
+}
+
 .collectible-children h4.collectible-summary,
 .collectible-quest-group h4.collectible-summary {
   clear: both;

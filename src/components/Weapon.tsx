@@ -23,6 +23,7 @@ export default function Weapon() {
   return (
     <section className="weapon">
       {tab === "all" && <h2>Weapon Memories</h2>}
+      <h3>WIP</h3>
 
       {weaponMemory && (
         <>
