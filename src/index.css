@@ -795,6 +795,72 @@ code {
   margin: 0.15rem 0;
 }
 
+.collectible-sculptor-tools .sculptor-tool-progression {
+  grid-column: 1 / -1;
+  margin-top: 0.25rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--border);
+}
+
+.sculptor-tool-progression-row {
+  display: flex;
+  align-items: flex-start;
+  width: fit-content;
+  max-width: 100%;
+  gap: 0.1rem;
+}
+
+.sculptor-tool-progression-step {
+  flex: 0 0 auto;
+  width: 3.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.sculptor-tool-progression-icon-slot {
+  flex: 0 0 auto;
+  height: calc(var(--qi-sprite-size) / 2);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sculptor-tool-progression-step .qi-sprite {
+  transform: scale(calc(var(--qi-sprite-scale) / 2));
+  transform-origin: top center;
+  margin: 0;
+}
+
+.sculptor-tool-progression-step--missing .qi-sprite {
+  filter: url(#altar-figure-missing-tint);
+}
+
+.sculptor-tool-progression-step--missing .sculptor-tool-progression-label {
+  color: var(--text-lo);
+}
+
+.sculptor-tool-progression-label {
+  font-size: 0.65rem;
+  line-height: 1.15;
+  color: var(--text-h);
+}
+
+.sculptor-tool-progression-arrow {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  height: calc(var(--qi-sprite-size) / 2);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: var(--text-lo);
+}
+
 .float-left {
   float: left;
 }

@@ -1,0 +1,37 @@
+{
+  "title": "Sculptor's Tools",
+  "sprite": "QI12",
+  "progression": ["QI12", "QI02", "QI11", "QI03", "QI01"],
+  "pickups": [
+    {
+      "id": 1,
+      "elementKey": -2021016511,
+      "sceneFile": "Z0204",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522347"
+    },
+    {
+      "id": 2,
+      "elementKey": 370846765,
+      "sceneFile": "Z0301",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520735"
+    },
+    {
+      "id": 3,
+      "elementKey": -372857769,
+      "sceneFile": "Z1422",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520973"
+    },
+    {
+      "id": 4,
+      "elementKey": -2039655233,
+      "sceneFile": "Z1913",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=509149"
+    },
+    {
+      "id": 5,
+      "elementKey": -538971255,
+      "sceneFile": "Z2123",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522533"
+    }
+  ]
+}
