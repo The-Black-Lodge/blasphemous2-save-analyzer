@@ -22,3 +22,7 @@ export function getQuestItemCaption(itemName: string): string {
 export function getQuestItemGroup(itemName: string): string {
   return items[itemName]?.group ?? itemName
 }
+
+export function getQuestItemUrl(itemName: string): string | null {
+  return items[itemName]?.url ?? null
+}

@@ -710,7 +710,7 @@ code {
 }
 
 .collectible-cell a {
-  color: var(--text);
+  color: var(--text-h);
   text-decoration: none;
   position: absolute;
   bottom: -2px;
@@ -719,7 +719,7 @@ code {
 }
 
 .collectible-cell a:hover {
-  color: var(--text-h);
+  color: var(--accent);
 }
 
 .collectible-quest-items {
