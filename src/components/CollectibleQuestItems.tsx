@@ -1,9 +1,11 @@
 import { Fragment } from "react"
 import cobijadasData from "../data/cobijadas.json"
+import goldenLumpsData from "../data/golden-lumps.json"
 import questCollectionsData from "../data/quest-collections.json"
 import sculptorToolsData from "../data/sculptor-tools.json"
 import CollectibleChildren from "./CollectibleChildren"
 import CollectibleCobijadas from "./CollectibleCobijadas"
+import CollectibleGoldenLumps from "./CollectibleGoldenLumps"
 import CollectibleQuestGroup, {
   type QuestCollection,
 } from "./CollectibleQuestGroup"
@@ -22,6 +24,11 @@ const collectibleSections = [
     key: "cobijadas",
     title: cobijadasData.title,
     element: <CollectibleCobijadas />,
+  },
+  {
+    key: "golden-lumps",
+    title: goldenLumpsData.title,
+    element: <CollectibleGoldenLumps />,
   },
   {
     key: "sculptor-tools",

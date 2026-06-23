@@ -813,6 +813,28 @@ code {
   border-top: 1px solid var(--border);
 }
 
+.collectible-grid-divider {
+  grid-column: 1 / -1;
+  margin: 0.25rem 0 0;
+  padding: 0;
+  border: none;
+  border-top: 1px solid var(--border);
+  height: 0;
+}
+
+.collectible-grid-section-label {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.collectible-grid-divider + .collectible-grid-section-label {
+  margin-top: 0.35rem;
+}
+
 .sculptor-tool-progression-row {
   display: flex;
   align-items: flex-start;

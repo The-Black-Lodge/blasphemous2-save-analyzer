@@ -1,0 +1,148 @@
+{
+  "title": "Lump of Gold",
+  "sprite": "QI105",
+  "base": [
+    {
+      "id": 1,
+      "sceneFile": "Z0616",
+      "roomHash": -274175789,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520731"
+    },
+    {
+      "id": 2,
+      "sceneFile": "Z2149",
+      "roomHash": -395135226,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=521025"
+    },
+    {
+      "id": 3,
+      "sceneFile": "Z0842",
+      "roomHash": -677460390,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522358"
+    },
+    {
+      "id": 4,
+      "sceneFile": "Z1429",
+      "roomHash": 1433070704,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523346"
+    },
+    {
+      "id": 5,
+      "sceneFile": "Z1219",
+      "roomHash": -133013171,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522508"
+    },
+    {
+      "id": 6,
+      "sceneFile": "Z0829",
+      "roomHash": 129108673,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523903"
+    },
+    {
+      "id": 7,
+      "sceneFile": "Z2136",
+      "roomHash": 1170948716,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522731"
+    },
+    {
+      "id": 8,
+      "sceneFile": "Z1067",
+      "roomHash": -536297630,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523453"
+    },
+    {
+      "id": 9,
+      "sceneFile": "Z2317",
+      "roomHash": 8149241,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522759"
+    },
+    {
+      "id": 10,
+      "sceneFile": "Z0843",
+      "roomHash": -677460391,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523693"
+    }
+  ],
+  "dlc": [
+    {
+      "id": 1,
+      "sceneFile": "Z2712",
+      "roomHash": 8149112,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523928"
+    },
+    {
+      "id": 2,
+      "sceneFile": "Z2703",
+      "roomHash": 1574233054,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523930"
+    },
+    {
+      "id": 3,
+      "sceneFile": "Z2708",
+      "roomHash": 1574233043,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=524361"
+    },
+    {
+      "id": 4,
+      "sceneFile": "Z0835",
+      "roomHash": -1436975280,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=524123"
+    },
+    {
+      "id": 5,
+      "sceneFile": "Z2704",
+      "roomHash": 1574233055,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523942"
+    },
+    {
+      "id": 6,
+      "sceneFile": "Z2828",
+      "roomHash": -1557934792,
+      "elementKey": -689937518,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=524139"
+    },
+    {
+      "id": 7,
+      "sceneFile": "Z2801",
+      "roomHash": 1574233081,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=524159"
+    },
+    {
+      "id": 8,
+      "sceneFile": "Z2140",
+      "roomHash": -395135219,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=524148"
+    },
+    {
+      "id": 9,
+      "sceneFile": "Z2823",
+      "roomHash": -1557934803,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=524310"
+    },
+    {
+      "id": 10,
+      "sceneFile": "Z2828",
+      "roomHash": -1557934792,
+      "elementKey": 646432564,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=524347"
+    }
+  ]
+}
