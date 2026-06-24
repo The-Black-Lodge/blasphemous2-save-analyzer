@@ -6,62 +6,71 @@
       "id": 1,
       "sceneFile": "Z0101",
       "roomHash": 1291908248,
+      "questVarID": 30247655,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522341"
     },
     {
       "id": 2,
       "sceneFile": "Z0304",
       "roomHash": 1291908177,
+      "questVarID": -1179605926,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522409"
     },
     {
       "id": 3,
       "sceneFile": "Z0502",
       "roomHash": 1291908113,
+      "questVarID": 386478015,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523361"
     },
     {
       "id": 4,
       "sceneFile": "Z0717",
       "roomHash": -274175885,
+      "questVarID": -1939120813,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523911"
     },
     {
       "id": 5,
       "sceneFile": "Z0803",
       "roomHash": 1291908077,
+      "questVarID": 1596331596,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522370"
     },
     {
       "id": 6,
       "sceneFile": "Z0901",
       "roomHash": 1291907984,
+      "questVarID": -373036872,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522371"
     },
     {
       "id": 7,
       "sceneFile": "Z1043",
       "roomHash": 626501788,
+      "questVarID": -1535836285,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523444"
     },
     {
       "id": 8,
       "sceneFile": "Z1324",
       "roomHash": 1433070678,
+      "questVarID": 1193047069,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523573"
     },
     {
       "id": 9,
       "sceneFile": "Z1409",
       "roomHash": -1699097178,
+      "questVarID": 789762542,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523353"
     },
     {
       "id": 10,
       "sceneFile": "Z2004",
       "roomHash": 1574233342,
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522496",
-      "elementKey": -1093376588
+      "questVarID": -1132551759,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522496"
     }
   ]
 }

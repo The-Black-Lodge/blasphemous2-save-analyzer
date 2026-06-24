@@ -1,39 +1,43 @@
 {
   "generatedBy": "build_collectible_json.py",
-  "title": "Lacrimatorio",
-  "sprite": "QI106",
-  "locations": [
+  "title": "Imperfectus Lacrimatorio (Golden Flask)",
+  "sprite": "QI111",
+  "shrines": [
     {
       "id": 1,
       "sceneFile": "Z2702",
       "roomHash": 1574233053,
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523933",
+      "elementKey": -130804785,
       "itemName": "QI106",
-      "caption": "Imperfectus Lacrimatorio"
+      "caption": "Imperfectus Lacrimatorio",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523933"
     },
     {
       "id": 2,
       "sceneFile": "Z2705",
       "roomHash": 1574233056,
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523945",
+      "elementKey": -686435315,
       "itemName": "QI107",
-      "caption": "Imperfectus Lacrimatorio"
+      "caption": "Imperfectus Lacrimatorio",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523945"
     },
     {
       "id": 3,
       "sceneFile": "Z2816",
       "roomHash": 8149135,
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=524284",
+      "elementKey": 1027629592,
       "itemName": "QI108",
-      "caption": "Imperfectus Lacrimatorio"
+      "caption": "Imperfectus Lacrimatorio",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=524284"
     },
     {
       "id": 4,
       "sceneFile": "Z2828",
       "roomHash": -1557934792,
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=524350",
+      "elementKey": -1352005700,
       "itemName": "QI109",
-      "caption": "Imperfectus Lacrimatorio"
+      "caption": "Imperfectus Lacrimatorio",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=524350"
     }
   ]
 }

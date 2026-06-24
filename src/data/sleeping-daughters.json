@@ -1,36 +1,44 @@
 {
   "generatedBy": "build_collectible_json.py",
   "title": "Sleeping Daughter",
+  "tracking": {
+    "type": "roomTriggerCleared"
+  },
   "locations": [
     {
       "id": 1,
       "sceneFile": "Z0613",
       "roomHash": -274175794,
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522352"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522352",
+      "elementKey": -985984186
     },
     {
       "id": 2,
       "sceneFile": "Z0930",
       "roomHash": -1436975372,
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522382"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522382",
+      "elementKey": -127828815
     },
     {
       "id": 3,
       "sceneFile": "Z1043",
       "roomHash": 626501788,
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523443"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523443",
+      "elementKey": 1400134226
     },
     {
       "id": 4,
       "sceneFile": "Z1111",
       "roomHash": -133013192,
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523408"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523408",
+      "elementKey": 463350469
     },
     {
       "id": 5,
       "sceneFile": "Z1215",
       "roomHash": -133013167,
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523395"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523395",
+      "elementKey": 463350469
     }
   ]
 }

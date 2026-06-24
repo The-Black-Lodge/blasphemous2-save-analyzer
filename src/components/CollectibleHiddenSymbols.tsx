@@ -1,5 +1,9 @@
 import hiddenSymbolsData from "../data/hidden-symbols.json"
-import { HIDDEN_SYMBOL_LOCATIONS } from "../utils/hiddenSymbols"
+import { useSave } from "./SaveContext"
+import {
+  HIDDEN_SYMBOL_LOCATIONS,
+  isHiddenSymbolCollected,
+} from "../utils/hiddenSymbols"
 
 const REWARDS: { count: number; tears: number }[] = [
   { count: 1, tears: 500 },
@@ -15,6 +19,8 @@ const REWARDS: { count: number; tears: number }[] = [
 ]
 
 export default function CollectibleHiddenSymbols() {
+  const { save } = useSave()
+
   return (
     <section className="collectible-quest-group">
       <span
@@ -47,16 +53,23 @@ export default function CollectibleHiddenSymbols() {
       </dl>
 
       <div className="collectible-grid">
-        {HIDDEN_SYMBOL_LOCATIONS.map((location) => (
-          <div key={location.id} className="collectible-cell">
-            <span>#{location.id}</span>
-            {location.url ? (
-              <a href={location.url} target="_blank" rel="noopener noreferrer">
-                <i className="fa-solid fa-link" />
-              </a>
-            ) : null}
-          </div>
-        ))}
+        {HIDDEN_SYMBOL_LOCATIONS.map((location) => {
+          const collected = isHiddenSymbolCollected(save, location)
+          return (
+            <div
+              key={location.id}
+              className={`collectible-cell${collected ? " collected" : ""}`}
+              title={collected ? "Collected" : "Not yet collected"}
+            >
+              <span>#{location.id}</span>
+              {location.url ? (
+                <a href={location.url} target="_blank" rel="noopener noreferrer">
+                  <i className="fa-solid fa-link" />
+                </a>
+              ) : null}
+            </div>
+          )
+        })}
       </div>
     </section>
   )

@@ -723,6 +723,97 @@ code {
   color: var(--accent);
 }
 
+.collectible-remembrances .collectible-grid {
+  --remembrance-cell-width: 10.5rem;
+  grid-template-columns: repeat(auto-fill, var(--remembrance-cell-width));
+}
+
+.collectible-remembrances .collectible-cell {
+  width: var(--remembrance-cell-width);
+  min-width: var(--remembrance-cell-width);
+  max-width: var(--remembrance-cell-width);
+  height: auto;
+  min-height: calc(var(--qi-sprite-size) + 0.5rem);
+  align-items: flex-start;
+  gap: 0.25rem;
+  white-space: normal;
+  padding: 0.35rem 1.25rem 1.1rem 0.35rem;
+}
+
+.collectible-remembrances .collectible-cell-icon-slot {
+  flex: 0 0 var(--qi-sprite-size);
+  width: var(--qi-sprite-size);
+  height: var(--qi-sprite-size);
+  overflow: hidden;
+}
+
+.collectible-remembrances .collectible-cell-icon-slot .qi-sprite {
+  transform: scale(var(--qi-sprite-scale));
+  transform-origin: top left;
+  margin: 0;
+}
+
+.collectible-remembrances .collectible-cell-label {
+  font-size: 0.7rem;
+  line-height: 1.25;
+  flex: 1;
+  min-width: 0;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.collectible-remembrances .collectible-cell.collected {
+  text-decoration: none;
+}
+
+.collectible-remembrances .collectible-cell.collected .collectible-cell-label {
+  text-decoration: line-through;
+  color: var(--text-lo);
+}
+
+.collectible-offerings-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: rgb(21, 24, 34);
+  border: 2px solid rgb(142, 126, 91);
+  padding: 1rem;
+}
+
+.collectible-offerings-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.collectible-offerings-row-icon {
+  width: calc(var(--qi-sprite-size) + 0.5rem);
+  min-width: calc(var(--qi-sprite-size) + 0.5rem);
+  height: calc(var(--qi-sprite-size) + 0.5rem);
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+  text-decoration: none;
+}
+
+.collectible-offerings-row-icon .collectible-cell-icon-slot {
+  flex: 0 0 var(--qi-sprite-size);
+  width: var(--qi-sprite-size);
+  height: var(--qi-sprite-size);
+  overflow: hidden;
+}
+
+.collectible-offerings-row-icon .collectible-cell-icon-slot .qi-sprite {
+  transform: scale(var(--qi-sprite-scale));
+  transform-origin: top left;
+  margin: 0;
+}
+
+.collectible-offerings-row-icon.collected {
+  opacity: 0.65;
+}
+
 .collectible-quest-items {
   display: flex;
   flex-direction: column;

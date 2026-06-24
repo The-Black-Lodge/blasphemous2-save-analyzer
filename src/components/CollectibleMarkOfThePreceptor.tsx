@@ -16,8 +16,7 @@ export default function CollectibleMarkOfThePreceptor() {
       />
       <h3 className="leading-icon">{markOfThePreceptorData.title}</h3>
       <h4 className="collectible-summary">
-        Mea Culpa DLC marks for <em>Weapon Memories</em> on the Mea Culpa
-        weapon.
+        Use <em>Marks</em> to unlock Mea Culpa's <em>Weapon Memories</em>.
       </h4>
 
       <div className="collectible-grid">

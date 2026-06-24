@@ -9,7 +9,8 @@
       "roomHash": -133013386,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523336",
       "itemName": "QI13",
-      "caption": "Sealed Envelope"
+      "caption": "Sealed Envelope",
+      "elementKey": -549671167
     },
     {
       "id": 2,
@@ -25,7 +26,8 @@
       "roomHash": 1291908113,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523537",
       "itemName": "QI17",
-      "caption": "Sealed Envelope"
+      "caption": "Sealed Envelope",
+      "elementKey": -58250268
     },
     {
       "id": 4,
@@ -33,7 +35,8 @@
       "roomHash": 1433070714,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523538",
       "itemName": "QI19",
-      "caption": "Sealed Envelope"
+      "caption": "Sealed Envelope",
+      "elementKey": -57151123
     },
     {
       "id": 5,
@@ -41,7 +44,8 @@
       "roomHash": 1291908114,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523539",
       "itemName": "QI21",
-      "caption": "Sealed Envelope"
+      "caption": "Sealed Envelope",
+      "elementKey": -746934463
     }
   ]
 }

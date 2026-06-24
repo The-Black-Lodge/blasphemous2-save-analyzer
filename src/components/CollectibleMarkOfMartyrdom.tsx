@@ -23,7 +23,7 @@ export default function CollectibleMarkOfMartyrdom() {
       />
       <h3 className="leading-icon">{markOfMartyrdomData.title}</h3>
       <h4 className="collectible-summary">
-        Use <em>Marks</em> to unlock <em>Weapon Memories</em> and unlock slots in the {" "}
+        Use <em>Marks</em> to unlock <em>Weapon Memories</em> and slots in the {" "}
         <em>Altarpiece of Favours</em>.
       </h4>
 
