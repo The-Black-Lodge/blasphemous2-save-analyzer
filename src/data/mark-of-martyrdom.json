@@ -136,7 +136,7 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523398"
     },
     {
       "id": 16,
@@ -145,7 +145,7 @@
       "elementKey": -1441524550,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523488"
     },
     {
       "id": 17,
@@ -154,7 +154,7 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523578"
     },
     {
       "id": 18,
@@ -163,7 +163,7 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520960"
     },
     {
       "id": 19,
@@ -172,7 +172,7 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523349"
     },
     {
       "id": 20,
@@ -181,7 +181,7 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522336"
     },
     {
       "id": 21,
@@ -190,7 +190,7 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523421"
     },
     {
       "id": 22,
@@ -199,7 +199,7 @@
       "elementKey": -41400469,
       "source": "quest",
       "label": "INT_QUEST_ITEM_PICKUP",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523627"
     },
     {
       "id": 23,
@@ -217,7 +217,7 @@
       "elementKey": -41400469,
       "source": "quest",
       "label": "INT_QUEST_ITEM_PICKUP_ORB",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523713"
     },
     {
       "id": 25,
@@ -226,7 +226,7 @@
       "elementKey": -41400469,
       "source": "quest",
       "label": "INT_QUEST_ITEM_PICKUP_ORB",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523718"
     },
     {
       "id": 26,
@@ -235,7 +235,7 @@
       "elementKey": -41400469,
       "source": "quest",
       "label": "INT_QUEST_ITEM_PICKUP_TEARSLUXURY3",
-      "url": null
+      "url": ""
     },
     {
       "id": 27,
@@ -244,7 +244,7 @@
       "elementKey": 1758578496,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522350"
     },
     {
       "id": 28,
@@ -253,7 +253,7 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520934"
     },
     {
       "id": 29,
@@ -271,7 +271,7 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522562"
     },
     {
       "id": 31,
@@ -289,7 +289,7 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES (10 Cherubs)",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522644"
     },
     {
       "id": 33,
@@ -298,7 +298,7 @@
       "elementKey": -394447120,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES (29 Cherubs)",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523440"
     },
     {
       "id": 34,
@@ -307,7 +307,7 @@
       "elementKey": 1460786171,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES (17 Cherubs)",
-      "url": null
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522645"
     },
     {
       "id": 35,
@@ -316,7 +316,7 @@
       "elementKey": 1769684405,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES (33 Cherubs)",
-      "url": null,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523699",
       "tracking": { "type": "roomTrigger" }
     },
     {
@@ -406,7 +406,7 @@
       "source": "shop",
       "label": "Regina (Holy Hand) — mark 1",
       "markCount": 1,
-      "url": null,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520428",
       "tracking": { "type": "shopOrb", "shopId": 1033931609, "orbIndex": 0 }
     },
     {
@@ -415,7 +415,7 @@
       "source": "shop",
       "label": "Regina (Holy Hand) — mark 2",
       "markCount": 1,
-      "url": null,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520429",
       "tracking": { "type": "shopOrb", "shopId": 1033931609, "orbIndex": 1 }
     },
     {
@@ -424,7 +424,7 @@
       "source": "shop",
       "label": "Medardo Escolástico",
       "markCount": 1,
-      "url": null,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522495",
       "tracking": { "type": "shopItem", "shopId": 637619968, "itemId": 997923798 }
     }
   ],
