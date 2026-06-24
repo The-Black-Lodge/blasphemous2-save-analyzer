@@ -829,8 +829,13 @@ code {
   color: var(--text-lo);
 }
 
+.rosary {
+  --rb-sprite-scale: 1.5;
+  --rb-sprite-size: calc(var(--rb-sprite-native-size) * 1.5);
+  --rosary-bead-cell-width: 9rem;
+}
+
 .rosary .collectible-grid {
-  --rosary-bead-cell-width: 10.25rem;
   grid-template-columns: repeat(auto-fill, var(--rosary-bead-cell-width));
   gap: 0.5rem;
   padding: 0.5rem;
