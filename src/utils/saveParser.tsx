@@ -10,32 +10,27 @@ import {
   type ParsedSave,
 } from "./payloadDecoders"
 
-const KNOWN_FORMATS: Record<string, { version: number; magic: number[] }> = {
-  "slot-save": {
-    version: 25,
-    magic: [0xb3, 0xc3, 0xd3, 0xdb, 0x07, 0xf9, 0xf6, 0x9d],
-  },
-  "global-data": {
-    version: 19,
-    magic: [0x11, 0xbd, 0x9b, 0x13, 0xab, 0x9f, 0xb1, 0x8d],
-  },
+const SLOT_SAVE_MAGIC = [
+  0xb3, 0xc3, 0xd3, 0xdb, 0x07, 0xf9, 0xf6, 0x9d,
+] as const
+const GLOBAL_DATA_MAGIC = [
+  0x11, 0xbd, 0x9b, 0x13, 0xab, 0x9f, 0xb1, 0x8d,
+] as const
+
+function magicMatches(
+  bytes: Uint8Array,
+  magic: readonly number[],
+): boolean {
+  if (bytes.length < 12) return false
+  for (let i = 0; i < magic.length; i++) {
+    if (bytes[4 + i] !== magic[i]) return false
+  }
+  return true
 }
 
 function getFormatKind(bytes: Uint8Array): string {
-  if (bytes.length < 12) return "unknown"
-  const view = new DataView(bytes.buffer, bytes.byteOffset, 12)
-  const ver = view.getUint32(0, true)
-  for (const [kind, entry] of Object.entries(KNOWN_FORMATS)) {
-    if (entry.version !== ver) continue
-    let match = true
-    for (let i = 0; i < 8; i++) {
-      if (bytes[4 + i] !== entry.magic[i]) {
-        match = false
-        break
-      }
-    }
-    if (match) return kind
-  }
+  if (magicMatches(bytes, SLOT_SAVE_MAGIC)) return "slot-save"
+  if (magicMatches(bytes, GLOBAL_DATA_MAGIC)) return "global-data"
   return "unknown"
 }
 
