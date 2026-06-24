@@ -15,6 +15,7 @@ import {
   decodeAbilityLockPersistencePayload,
   decodeCherubsPersistencePayload,
   decodeCompletionPersistencePayload,
+  decodeEnemySpawnPersistencePayload,
   decodeGuiltPersistencePayload,
   decodeStatsPersistentPayload,
   decodeWeaponMemoryPersistencePayload,
@@ -104,6 +105,7 @@ const DLC_BOSS_VARS = [
 const STATS_TYPE_IDS = new Set([0x5ce1f99b, 0xefa6f720])
 const ABILITIES_TYPE_ID = 0x533635a5
 const WEAPON_MEMORY_TYPE_IDS = new Set([0x82e037ab, 0x9b2e8fbc])
+const ENEMY_SPAWN_TYPE_ID = 0x10adb1ff
 const TRIGGER_TYPE_ID = 0x02a7c4f7
 
 function decodeTriggerData(
@@ -598,6 +600,14 @@ export function decodePersistentPayload(
   }
 
   if (
+    typeId === ENEMY_SPAWN_TYPE_ID ||
+    typeNameMatch(typeName, "EnemySpawnManagerPersistenceData")
+  ) {
+    const enemySpawn = decodeEnemySpawnPersistencePayload(payload)
+    if (enemySpawn) return enemySpawn
+  }
+
+  if (
     typeNameMatch(typeName, "ItemData") ||
     typeNameMatch(typeName, "StackableItemData") ||
     typeNameMatch(typeName, "EquippablesItemData")
@@ -799,6 +809,9 @@ export function extractPlayerSummary(
 
   const weaponMemory = getCommonManagerData(parsed, "ID_WeaponMemory_MANAGER")
   if (weaponMemory) summary.weaponMemory = weaponMemory
+
+  const enemySpawn = getCommonManagerData(parsed, "ID_ENEMYSPAWN_MANAGER")
+  if (enemySpawn) summary.enemySpawn = enemySpawn
 
   const guilt = getCommonManagerData(parsed, "ID_GUILT_MANAGER")
   if (guilt) summary.guilt = guilt

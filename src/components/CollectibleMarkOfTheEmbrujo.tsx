@@ -1,7 +1,13 @@
 import markOfTheEmbrujoData from "../data/mark-of-the-embrujo.json"
-import { EMBRUJO_LOCATIONS } from "../utils/markOfTheEmbrujo"
+import { useSave } from "./SaveContext"
+import {
+  EMBRUJO_LOCATIONS,
+  isEmbrujoMarkCollected,
+} from "../utils/markOfTheEmbrujo"
 
 export default function CollectibleMarkOfTheEmbrujo() {
+  const { save } = useSave()
+
   return (
     <section className="collectible-quest-group">
       <span
@@ -14,16 +20,23 @@ export default function CollectibleMarkOfTheEmbrujo() {
       </h4>
 
       <div className="collectible-grid">
-        {EMBRUJO_LOCATIONS.map((location) => (
-          <div key={location.id} className="collectible-cell">
-            <span>#{location.id}</span>
-            {location.url ? (
-              <a href={location.url} target="_blank" rel="noopener noreferrer">
-                <i className="fa-solid fa-link" />
-              </a>
-            ) : null}
-          </div>
-        ))}
+        {EMBRUJO_LOCATIONS.map((location) => {
+          const collected = isEmbrujoMarkCollected(save, location)
+          return (
+            <div
+              key={location.id}
+              className={`collectible-cell${collected ? " collected" : ""}`}
+              title={collected ? "Collected" : "Not yet collected"}
+            >
+              <span>#{location.id}</span>
+              {location.url ? (
+                <a href={location.url} target="_blank" rel="noopener noreferrer">
+                  <i className="fa-solid fa-link" />
+                </a>
+              ) : null}
+            </div>
+          )
+        })}
       </div>
     </section>
   )

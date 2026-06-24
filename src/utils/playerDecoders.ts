@@ -1,6 +1,7 @@
 import {
   B2BinaryReader,
   getPersistentObjectList,
+  readNestedPersistentObject,
 } from "./binaryReader"
 import { formatHashKey, resolveHashDisplayName, resolveHashName } from "./catalogs"
 
@@ -169,6 +170,37 @@ export function decodeGuiltPersistencePayload(
   return {
     type: "GuiltPersistenceData",
     dropCount: objects.length,
+  }
+}
+
+/** CH06 / arena rooms record completion keys in this flat list (often the scene room hash). */
+export function decodeEnemySpawnPersistencePayload(
+  payload: Uint8Array,
+): Record<string, unknown> | null {
+  if (payload.length < 24) return null
+
+  const reader = new B2BinaryReader(payload)
+  const outer = readNestedPersistentObject(reader)
+  const innerReader = new B2BinaryReader(outer.payload)
+  if (innerReader.getRemaining() < 20) return null
+
+  const entriesWrapper = readNestedPersistentObject(innerReader)
+  const dataReader = new B2BinaryReader(entriesWrapper.payload)
+  if (dataReader.getRemaining() < 4) return null
+
+  const count = dataReader.readInt32()
+  const recordedKeys: number[] = []
+
+  for (let i = 0; i < count; i++) {
+    if (dataReader.getRemaining() < 16) break
+    dataReader.readBytes(8)
+    recordedKeys.push(dataReader.readInt32())
+    dataReader.readInt32()
+  }
+
+  return {
+    type: "EnemySpawnManagerPersistenceData",
+    recordedKeys,
   }
 }
 
