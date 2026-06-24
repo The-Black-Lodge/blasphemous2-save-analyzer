@@ -106,7 +106,7 @@ export default function Prayer() {
       )}
       <div className="prayer-columns">
         <PrayerGrid label="Chants" sources={chants} acquired={acquired} />
-        <PrayerGrid label="Verses" sources={verses} acquired={acquired} />
+        <PrayerGrid label="Quick Verses" sources={verses} acquired={acquired} />
       </div>
       {unclassified.length > 0 ? (
         <div className="prayer-section-other">

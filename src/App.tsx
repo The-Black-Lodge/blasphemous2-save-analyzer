@@ -1,4 +1,11 @@
-import { createContext, useState } from "react"
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react"
 import type { ComponentType } from "react"
 import Altar from "./components/Altar"
 import Bosses from "./components/Bosses"
@@ -23,6 +30,20 @@ type Tab = "all" | SectionTab
 
 const TabContext = createContext<Tab>("all")
 
+interface AppNavigation {
+  scrollToCollectible: (sectionKey: string) => void
+}
+
+const AppNavigationContext = createContext<AppNavigation | null>(null)
+
+export function useAppNavigation(): AppNavigation {
+  const navigation = useContext(AppNavigationContext)
+  if (!navigation) {
+    throw new Error("useAppNavigation must be used within AppNavigationContext")
+  }
+  return navigation
+}
+
 const SECTIONS: { id: SectionTab; label: string; Component: ComponentType }[] =
   [
     { id: "player", label: "The Penitent One", Component: Player },
@@ -42,12 +63,36 @@ const TABS: { id: Tab; label: string }[] = [
 
 function AppContent() {
   const [tab, setTab] = useState<Tab>("all")
+  const collectibleScrollTarget = useRef<string | null>(null)
+
+  const scrollToCollectible = useCallback((sectionKey: string) => {
+    collectibleScrollTarget.current = sectionKey
+    setTab((current) =>
+      current === "all" || current === "collectibles" ? current : "collectibles",
+    )
+  }, [])
+
+  useEffect(() => {
+    const sectionKey = collectibleScrollTarget.current
+    if (!sectionKey) return
+    if (tab !== "collectibles" && tab !== "all") return
+
+    collectibleScrollTarget.current = null
+    const timeoutId = window.setTimeout(() => {
+      document
+        .getElementById(`collectible-${sectionKey}`)
+        ?.scrollIntoView({ behavior: "smooth", block: "start" })
+    }, 0)
+
+    return () => window.clearTimeout(timeoutId)
+  }, [tab])
 
   const visibleSections =
     tab === "all" ? SECTIONS : SECTIONS.filter((section) => section.id === tab)
 
   return (
     <TabContext.Provider value={tab}>
+      <AppNavigationContext.Provider value={{ scrollToCollectible }}>
       <>
         <nav className="app-tabs" aria-label="Inventory sections">
           {TABS.map(({ id, label }) => (
@@ -69,6 +114,7 @@ function AppContent() {
           ))}
         </main>
       </>
+      </AppNavigationContext.Provider>
     </TabContext.Provider>
   )
 }

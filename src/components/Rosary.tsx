@@ -1,8 +1,8 @@
 import b2data from "../data/b2data.json"
 import rosaryBeadUrls from "../data/rosary-beads.json"
+import { TabContext, useAppNavigation } from "../App"
 import { useSave } from "./SaveContext"
 import { useContext } from "react"
-import { TabContext } from "../App"
 import { findStat } from "../utils/playerDecoders"
 import { getEquippedRosaryBeads } from "../utils/inventoryEquipped"
 
@@ -18,6 +18,9 @@ interface BeadItem {
 }
 
 const beadUrls = rosaryBeadUrls.urls as Record<string, string>
+const MAX_ROSARY_SLOTS = 5
+const DEFAULT_UNLOCKED_SLOTS = 1
+const ROSARY_KNOT_COLLECTION_ID = "abandoned-rosary-knot"
 
 function RosaryBeadCell({
   source,
@@ -48,13 +51,27 @@ function RosaryBeadCell({
   )
 }
 
+function getUnlockedRosarySlotCount(
+  stat: ReturnType<typeof findStat>,
+): number {
+  if (!stat) return DEFAULT_UNLOCKED_SLOTS
+  const value = Math.round(stat.value)
+  return Math.min(
+    MAX_ROSARY_SLOTS,
+    Math.max(DEFAULT_UNLOCKED_SLOTS, Number.isFinite(value) ? value : 1),
+  )
+}
+
 export default function Rosary() {
   const { save } = useSave()
   const tab = useTab()
+  const { scrollToCollectible } = useAppNavigation()
 
-  const rosaryBeadUnlockedSlots = findStat(
-    (save?.player?.stats as Record<string, unknown> | undefined) ?? undefined,
-    ["RosaryBeadUnlockedSlots"],
+  const unlockedSlotCount = getUnlockedRosarySlotCount(
+    findStat(
+      (save?.player?.stats as Record<string, unknown> | undefined) ?? undefined,
+      ["RosaryBeadUnlockedSlots"],
+    ),
   )
 
   const acquired = new Set(
@@ -67,34 +84,65 @@ export default function Rosary() {
       .filter((name): name is string => typeof name === "string") ?? [],
   )
 
-  const equipped = getEquippedRosaryBeads(save)
+  const equippedBySlot = new Map(
+    getEquippedRosaryBeads(save).map(({ slot, source }) => [slot, source]),
+  )
   const beadsBySource = new Map(b2data.beads.map((bead) => [bead.source, bead]))
 
   return (
     <section className="rosary">
       {tab === "all" && <h2>Rosary Beads</h2>}
-      {rosaryBeadUnlockedSlots && (
-        <p>Rosary Bead Unlocked Slots: {rosaryBeadUnlockedSlots.value}</p>
-      )}
-      {equipped.length > 0 && (
-        <div className="rosary-equipped">
-          <h3>Equipped</h3>
-          <div className="collectible-grid">
-            {equipped.map(({ slot, source }) => {
-              const bead = beadsBySource.get(source)
-              return (
-                <RosaryBeadCell
-                  key={`equipped-${slot}-${source}`}
-                  source={source}
-                  caption={bead?.caption.en ?? source}
-                  acquired
-                />
-              )
-            })}
-          </div>
-        </div>
-      )}
       <div className="collectible-grid">
+        <h3 className="rosary-equipped-heading collectible-grid-section-label">
+          Equipped
+          <span className="rosary-equipped-note">
+            (For slot locations, see the{" "}
+            <button
+              type="button"
+              className="rosary-collectible-link"
+              onClick={() => scrollToCollectible(ROSARY_KNOT_COLLECTION_ID)}
+            >
+              <em>Abandoned Rosary Knot</em> Collection
+            </button>
+            )
+          </span>
+        </h3>
+        <div className="rosary-equipped-slots">
+          {Array.from({ length: MAX_ROSARY_SLOTS }, (_, slot) => {
+            const unlocked = slot < unlockedSlotCount
+            const source = equippedBySlot.get(slot)
+            const bead = source ? beadsBySource.get(source) : undefined
+
+            return (
+              <div
+                key={`equipped-slot-${slot}`}
+                className={`rosary-equipped-slot${unlocked ? " rosary-equipped-slot--unlocked" : " rosary-equipped-slot--locked"}`}
+              >
+                {source && bead ? (
+                  <RosaryBeadCell
+                    source={source}
+                    caption={bead.caption.en}
+                    acquired
+                  />
+                ) : (
+                  <div
+                    className="rosary-equipped-slot-empty"
+                    title={
+                      unlocked
+                        ? `Empty equipped slot ${slot + 1}`
+                        : `Locked slot ${slot + 1}`
+                    }
+                  >
+                    <span>{slot + 1}</span>
+                  </div>
+                )}
+              </div>
+            )
+          })}
+        </div>
+
+        <hr className="collectible-grid-divider" aria-hidden="true" />
+
         {b2data.beads.map((bead) => (
           <RosaryBeadCell
             key={bead.source}

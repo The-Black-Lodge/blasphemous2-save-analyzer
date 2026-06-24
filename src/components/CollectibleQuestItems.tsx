@@ -1,4 +1,4 @@
-import { Fragment, type ReactElement } from "react"
+import { type ReactElement } from "react"
 import collectiblePlaceholdersData from "../data/collectible-placeholders.json"
 import cobijadasData from "../data/cobijadas.json"
 import goldenLumpsData from "../data/golden-lumps.json"
@@ -152,7 +152,9 @@ export default function CollectibleQuestItems() {
   return (
     <div className="collectible-quest-items">
       {collectibleSections.map((section) => (
-        <Fragment key={section.key}>{section.element}</Fragment>
+        <div key={section.key} id={`collectible-${section.key}`}>
+          {section.element}
+        </div>
       ))}
     </div>
   )
