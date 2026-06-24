@@ -10,7 +10,10 @@
       "elementKey": 1860906432,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522634"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522634",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 2,
@@ -19,7 +22,10 @@
       "elementKey": 1241953459,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522340"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522340",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 3,
@@ -28,7 +34,10 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520250"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520250",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 4,
@@ -37,7 +46,10 @@
       "elementKey": -694925091,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522641"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522641",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 5,
@@ -46,7 +58,10 @@
       "elementKey": 1702345488,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522649"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522649",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 6,
@@ -55,7 +70,10 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520324"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520324",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 7,
@@ -64,7 +82,10 @@
       "elementKey": -838890837,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520876"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520876",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 8,
@@ -73,7 +94,10 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523379"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523379",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 9,
@@ -82,7 +106,10 @@
       "elementKey": -41400469,
       "source": "quest",
       "label": "INT_QUEST_ITEM_PICKUP",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523324"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523324",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 10,
@@ -91,7 +118,10 @@
       "elementKey": -616671249,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523329"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523329",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 11,
@@ -100,7 +130,10 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520941"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520941",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 12,
@@ -109,7 +142,10 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523415"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523415",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 13,
@@ -118,7 +154,10 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=519389"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=519389",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 14,
@@ -127,7 +166,10 @@
       "elementKey": -530634492,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520857"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520857",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 15,
@@ -136,7 +178,10 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523398"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523398",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 16,
@@ -145,7 +190,10 @@
       "elementKey": -1441524550,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523488"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523488",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 17,
@@ -154,7 +202,10 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523578"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523578",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 18,
@@ -163,7 +214,10 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520960"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520960",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 19,
@@ -172,7 +226,10 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523349"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523349",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 20,
@@ -181,7 +238,10 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522336"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522336",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 21,
@@ -190,7 +250,10 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523421"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523421",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 22,
@@ -199,16 +262,20 @@
       "elementKey": -41400469,
       "source": "quest",
       "label": "INT_QUEST_ITEM_PICKUP",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523627"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523627",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 23,
-      "sceneFile": "Z1801",
-      "roomHash": -1699097302,
-      "elementKey": -41400469,
-      "source": "quest",
-      "label": "INT_QUEST_ITEM_PICKUP_TEARSLUXURY3",
-      "url": null
+      "sceneFile": "Z0106",
+      "roomHash": 1291908241,
+      "elementKey": -1848233026,
+      "source": "boss",
+      "label": "Tutorial Boss (Faceless One)",
+      "markCount": 1,
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=509062"
     },
     {
       "id": 24,
@@ -217,7 +284,10 @@
       "elementKey": -41400469,
       "source": "quest",
       "label": "INT_QUEST_ITEM_PICKUP_ORB",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523713"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523713",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 25,
@@ -226,16 +296,22 @@
       "elementKey": -41400469,
       "source": "quest",
       "label": "INT_QUEST_ITEM_PICKUP_ORB",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523718"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523718",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 26,
-      "sceneFile": "Z1804",
-      "roomHash": -1699097305,
-      "elementKey": -41400469,
+      "sceneFile": "Z0615",
+      "roomHash": -274175792,
+      "elementKey": 1831297541,
       "source": "quest",
-      "label": "INT_QUEST_ITEM_PICKUP_TEARSLUXURY3",
-      "url": ""
+      "label": "Enemy wave ambush",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520711",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 27,
@@ -244,7 +320,10 @@
       "elementKey": 1758578496,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522350"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522350",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 28,
@@ -253,7 +332,10 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520934"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520934",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 29,
@@ -262,7 +344,10 @@
       "elementKey": 1989242165,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520938"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520938",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 30,
@@ -271,7 +356,10 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522562"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522562",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 31,
@@ -280,7 +368,10 @@
       "elementKey": -41400469,
       "source": "quest",
       "label": "INT_QUEST_ITEM_PICKUP",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=521012"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=521012",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 32,
@@ -289,7 +380,10 @@
       "elementKey": -746934463,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES (10 Cherubs)",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522644"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522644",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 33,
@@ -298,7 +392,10 @@
       "elementKey": -394447120,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES (29 Cherubs)",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523440"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523440",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 34,
@@ -307,7 +404,10 @@
       "elementKey": 1460786171,
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES (17 Cherubs)",
-      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522645"
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522645",
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 35,
@@ -317,7 +417,9 @@
       "source": "chest",
       "label": "INT_CHEST_CURRENCIES (33 Cherubs)",
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523699",
-      "tracking": { "type": "roomTrigger" }
+      "tracking": {
+        "type": "roomTrigger"
+      }
     },
     {
       "id": 36,
@@ -326,7 +428,11 @@
       "label": "Radames",
       "markCount": 1,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520343",
-      "tracking": { "type": "bossKill", "bossVarID": 931769267, "bossCode": "BS01" }
+      "tracking": {
+        "type": "bossKill",
+        "bossVarID": 931769267,
+        "bossCode": "BS01"
+      }
     },
     {
       "id": 37,
@@ -335,7 +441,11 @@
       "label": "Orospina",
       "markCount": 1,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=519430",
-      "tracking": { "type": "bossKill", "bossVarID": 972433550, "bossCode": "BS02" }
+      "tracking": {
+        "type": "bossKill",
+        "bossVarID": 972433550,
+        "bossCode": "BS02"
+      }
     },
     {
       "id": 38,
@@ -344,7 +454,11 @@
       "label": "Lesmes",
       "markCount": 1,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=519391",
-      "tracking": { "type": "bossKill", "bossVarID": 1093909737, "bossCode": "BS03" }
+      "tracking": {
+        "type": "bossKill",
+        "bossVarID": 1093909737,
+        "bossCode": "BS03"
+      }
     },
     {
       "id": 39,
@@ -353,7 +467,11 @@
       "label": "Afilaor",
       "markCount": 1,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=509115",
-      "tracking": { "type": "bossKill", "bossVarID": 486012140, "bossCode": "BS04" }
+      "tracking": {
+        "type": "bossKill",
+        "bossVarID": 486012140,
+        "bossCode": "BS04"
+      }
     },
     {
       "id": 40,
@@ -362,7 +480,11 @@
       "label": "Benedicta",
       "markCount": 3,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522453",
-      "tracking": { "type": "bossKill", "bossVarID": 607488327, "bossCode": "BS05" }
+      "tracking": {
+        "type": "bossKill",
+        "bossVarID": 607488327,
+        "bossCode": "BS05"
+      }
     },
     {
       "id": 41,
@@ -371,7 +493,11 @@
       "label": "Tercios",
       "markCount": 3,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522523",
-      "tracking": { "type": "bossKill", "bossVarID": 648152610, "bossCode": "BS06" }
+      "tracking": {
+        "type": "bossKill",
+        "bossVarID": 648152610,
+        "bossCode": "BS06"
+      }
     },
     {
       "id": 42,
@@ -380,7 +506,11 @@
       "label": "Susona",
       "markCount": 1,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523605",
-      "tracking": { "type": "bossKill", "bossVarID": 769628797, "bossCode": "BS07" }
+      "tracking": {
+        "type": "bossKill",
+        "bossVarID": 769628797,
+        "bossCode": "BS07"
+      }
     },
     {
       "id": 43,
@@ -389,7 +519,11 @@
       "label": "Orgaz",
       "markCount": 4,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522627",
-      "tracking": { "type": "bossKill", "bossVarID": -577512320, "bossCode": "BS08" }
+      "tracking": {
+        "type": "bossKill",
+        "bossVarID": -577512320,
+        "bossCode": "BS08"
+      }
     },
     {
       "id": 44,
@@ -398,7 +532,11 @@
       "label": "Eviterno",
       "markCount": 5,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523725",
-      "tracking": { "type": "bossKill", "bossVarID": 810398647, "bossCode": "BS10" }
+      "tracking": {
+        "type": "bossKill",
+        "bossVarID": 810398647,
+        "bossCode": "BS10"
+      }
     },
     {
       "id": 45,
@@ -407,7 +545,11 @@
       "label": "Regina (Holy Hand) — mark 1",
       "markCount": 1,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520428",
-      "tracking": { "type": "shopOrb", "shopId": 1033931609, "orbIndex": 0 }
+      "tracking": {
+        "type": "shopOrb",
+        "shopId": 1033931609,
+        "orbIndex": 0
+      }
     },
     {
       "id": 46,
@@ -416,7 +558,11 @@
       "label": "Regina (Holy Hand) — mark 2",
       "markCount": 1,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520429",
-      "tracking": { "type": "shopOrb", "shopId": 1033931609, "orbIndex": 1 }
+      "tracking": {
+        "type": "shopOrb",
+        "shopId": 1033931609,
+        "orbIndex": 1
+      }
     },
     {
       "id": 47,
@@ -425,7 +571,11 @@
       "label": "Medardo Escolástico",
       "markCount": 1,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522495",
-      "tracking": { "type": "shopItem", "shopId": 637619968, "itemId": 997923798 }
+      "tracking": {
+        "type": "shopItem",
+        "shopId": 637619968,
+        "itemId": 997923798
+      }
     }
   ],
   "killBar": {
