@@ -92,6 +92,7 @@
   transform: scale(1.0);
   transform-origin: top center;
   margin-top: 4px;
+  margin-right: 4px;
 }
 
 .hud-sprite--popup-bg {

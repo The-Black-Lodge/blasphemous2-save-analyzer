@@ -926,6 +926,205 @@ code {
   margin-top: 2rem;
 }
 
+.app-footer {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 1rem 2rem;
+}
+
+.app-github-link {
+  color: var(--text-lo);
+  font-size: 1.35rem;
+  line-height: 1;
+  text-decoration: none;
+  transition: color 0.12s ease;
+}
+
+.app-github-link:hover {
+  color: var(--text-h);
+}
+
+.player-panel {
+  background: rgb(21, 24, 34);
+  border: 2px solid rgb(142, 126, 91);
+  padding: 1rem;
+}
+
+.player-panel-section h3 {
+  margin: 0 0 0.5rem;
+}
+
+.player-panel-section h4 {
+  margin: 0.75rem 0 0.35rem;
+}
+
+.player-panel-section h4:first-of-type {
+  margin-top: 0;
+}
+
+.player-panel-section ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.player-panel-section p {
+  margin: 0;
+}
+
+.player-panel-divider {
+  margin: 1rem 0;
+  padding: 0;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+.player .arsenal-of-penitence {
+  --wm-sprite-scale: 0.3;
+  --arsenal-group-width: 6.5rem;
+  --arsenal-slot-height: 4.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.player .arsenal-group {
+  box-sizing: border-box;
+  width: var(--arsenal-group-width);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+}
+
+.player .arsenal-group-divider {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-top: 1px solid var(--border);
+  height: 0;
+}
+
+.player .arsenal-weapon-slot {
+  box-sizing: border-box;
+  flex: 1 1 var(--arsenal-slot-height);
+  min-height: var(--arsenal-slot-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.25rem 0.2rem 0.3rem;
+}
+
+.player .arsenal-group--single {
+  height: var(--arsenal-slot-height);
+}
+
+.player .arsenal-group--single .arsenal-weapon-slot {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 100%;
+}
+
+.player .arsenal-weapon-slot--equipped {
+  outline: 2px solid rgb(142, 126, 91);
+  outline-offset: -2px;
+}
+
+.player .arsenal-weapon-slot--locked .wm-sprite {
+  filter: url(#altar-figure-missing-tint);
+}
+
+.player .arsenal-weapon-slot--locked .arsenal-weapon-label {
+  color: var(--text-lo);
+}
+
+.player .arsenal-weapon-icon-slot {
+  position: relative;
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.player .arsenal-weapon-icon-slot .wm-sprite {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin: 0;
+  transform: translateX(-50%) scale(var(--wm-sprite-scale));
+  transform-origin: bottom center;
+}
+
+.player .arsenal-group--single .arsenal-weapon-icon-slot .wm-sprite {
+  top: 0;
+  bottom: auto;
+  transform: translateX(-50%) scale(var(--wm-sprite-scale));
+  transform-origin: top center;
+}
+
+.player .arsenal-weapon-label {
+  flex: 0 0 auto;
+  max-width: 100%;
+  font-size: 0.65rem;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--text-h);
+}
+
+.player .relic-cards {
+  --relic-card-width: 10.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.player .relic-card {
+  position: relative;
+  box-sizing: border-box;
+  width: var(--relic-card-width);
+  min-width: var(--relic-card-width);
+  max-width: var(--relic-card-width);
+  min-height: 3.75rem;
+  padding: 0.4rem 0.5rem 1.5rem;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+}
+
+.player .relic-card--acquired {
+  outline: 2px solid rgb(142, 126, 91);
+  outline-offset: -1px;
+}
+
+.player .relic-card-name {
+  margin: 0 0 0.25rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-h);
+}
+
+.player .relic-card-description {
+  margin: 0;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+.player .relic-card-link {
+  position: absolute;
+  right: 0.35rem;
+  bottom: 0.3rem;
+  color: var(--text-h);
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+.player .relic-card-link:hover {
+  color: var(--accent);
+}
+
 .collectible-grid {
   background: rgb(21, 24, 34);
   border: 2px solid rgb(142, 126, 91);
@@ -1206,6 +1405,11 @@ code {
   padding: 0.35rem;
   text-decoration: none;
   box-sizing: border-box;
+}
+
+.bosses .collectible-cell.boss-cell--defeated {
+  outline: 2px solid rgb(142, 126, 91);
+  outline-offset: -1px;
 }
 
 .bosses .boss-sprite {

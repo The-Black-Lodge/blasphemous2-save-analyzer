@@ -57,3 +57,27 @@ export function isLacrimatorioShrineCollected(
 
   return isRoomTriggerCleared(save, shrine.roomHash, shrine.elementKey)
 }
+
+export type GoldenFlaskProgress = "completed" | "in-progress" | "not-started"
+
+export function getGoldenFlaskProgress(
+  save: ReadableSaveJson | null,
+  goldFlaskActive: boolean,
+): GoldenFlaskProgress {
+  if (goldFlaskActive) return "completed"
+  const placed = LACRIMATORIO_SHRINES.filter((shrine) =>
+    isLacrimatorioShrineCollected(save, shrine),
+  ).length
+  if (placed > 0) return "in-progress"
+  return "not-started"
+}
+
+const GOLDEN_FLASK_PROGRESS_LABEL: Record<GoldenFlaskProgress, string> = {
+  completed: "Completed",
+  "in-progress": "In progress",
+  "not-started": "Not started",
+}
+
+export function formatGoldenFlaskProgress(progress: GoldenFlaskProgress): string {
+  return GOLDEN_FLASK_PROGRESS_LABEL[progress]
+}

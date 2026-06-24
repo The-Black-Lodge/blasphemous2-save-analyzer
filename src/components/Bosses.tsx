@@ -24,13 +24,18 @@ function BossCell({
   code,
   caption,
   url,
+  defeated,
 }: {
   code: string
   caption: string
   url: string | null
+  defeated: boolean
 }) {
   return (
-    <div className="collectible-cell boss-cell" title={caption}>
+    <div
+      className={`collectible-cell boss-cell${defeated ? " boss-cell--defeated" : ""}`}
+      title={caption}
+    >
       <img
         className="boss-sprite"
         src={`${spriteBase}${code}.jpg`}
@@ -62,11 +67,6 @@ export default function Bosses() {
     }
     return map
   }, [save])
-
-  const displayedCodes = sections.flat()
-  const defeatedCount = displayedCodes.filter(
-    (code) => defeatedByCode.get(code) === true,
-  ).length
 
   return (
     <section className="bosses">
@@ -101,18 +101,13 @@ export default function Bosses() {
                   displayNameOverrides[code] ?? bossNameByCode.get(code) ?? code
                 }
                 url={bossUrls[code] ?? null}
+                defeated={defeatedByCode.get(code) === true}
               />,
             )
           }
           return items
         })}
       </div>
-
-      {save?.player?.bossKillStatus ? (
-        <p className="boss-summary">
-          {defeatedCount} / {displayedCodes.length} defeated
-        </p>
-      ) : null}
     </section>
   )
 }

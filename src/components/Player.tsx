@@ -1,14 +1,18 @@
-import { useContext } from "react"
-import { useSave } from "./SaveContext"
+import { Fragment, useContext, type ReactNode } from "react"
 import { TabContext } from "../App"
 import relicsData from "../data/relics.json"
+import { findStat } from "../utils/playerDecoders"
+import { formatHashKey, resolveIdLabel, type ItemRef } from "../utils/catalogs"
+import type { ReadableSaveJson } from "../utils/saveParser"
+import { useSave } from "./SaveContext"
+import ArsenalOfPenitence from "./ArsenalOfPenitence"
+import PlayerStatsSection from "./PlayerStatsSection"
+import RelicsOfContrition from "./RelicsOfContrition"
 
 function useTab() {
   const tab = useContext(TabContext)
   return tab
 }
-import { findStat } from "../utils/playerDecoders"
-import { formatHashKey, resolveIdLabel, type ItemRef } from "../utils/catalogs"
 
 interface StatEntry {
   stat: number
@@ -25,66 +29,26 @@ interface AbilityEntry {
   active: boolean
 }
 
-function formatItem(item: ItemRef | undefined): string {
-  if (!item) return "—"
-  return item.displayName ?? item.caption ?? item.name ?? item.idHex
-}
-
 function formatPlayTime(seconds: number): string {
   const h = Math.floor(seconds / 3600)
   const m = Math.floor((seconds % 3600) / 60)
   return `${h}h ${m}m`
 }
 
-function StatList({ title, items }: { title: string; items: StatEntry[] }) {
-  if (items.length === 0) return null
-  return (
-    <>
-      <h4>{title}</h4>
-      <ul>
-        {items.map((entry) => (
-          <li key={`${entry.statHex}-${entry.value}`}>
-            {entry.statName ?? resolveIdLabel(entry.statHex)}: {entry.value}
-            {entry.upgrades !== undefined
-              ? ` (upgrades: ${entry.upgrades})`
-              : ""}
-          </li>
-        ))}
-      </ul>
-    </>
-  )
-}
-
-function FlaskDisplay({
-  count,
-  factor,
-  goldActive,
-}: {
-  count: number
-  factor: number
-  goldActive: boolean
-}) {
-  if (count <= 0) return null
-
-  const spriteKey = (i: number) => {
-    const isGold = goldActive && i === count - 1
-    const suffix = isGold ? "golden" : ""
-    return `flask${suffix ? "-" + suffix : ""}-${factor}-full`
-  }
-
-  const flaskCount = Math.max(count, 0)
+function PlayerPanel({ sections }: { sections: ReactNode[] }) {
+  if (sections.length === 0) return null
 
   return (
-    <li className="flask-display">
-      {Array.from({ length: flaskCount }, (_, i) => (
-        <span
-          key={i}
-          className={`hud-sprite hud-sprite--${spriteKey(i)}`}
-          style={{ marginRight: "24px" }}
-          aria-hidden="true"
-        />
+    <div className="player-panel">
+      {sections.map((section, index) => (
+        <Fragment key={index}>
+          {index > 0 ? (
+            <hr className="player-panel-divider" aria-hidden="true" />
+          ) : null}
+          {section}
+        </Fragment>
       ))}
-    </li>
+    </div>
   )
 }
 
@@ -108,8 +72,6 @@ export default function Player() {
   const completion = player.completion as { completion?: number } | undefined
   const equipment = player.equipment as
     | {
-        currentWeapon?: ItemRef
-        currentArmor?: ItemRef
         weaponSlots?: ItemRef[]
         unlockedWeapons?: ItemRef[]
       }
@@ -117,10 +79,7 @@ export default function Player() {
   const stats = player.stats as
     | {
         ranges?: StatEntry[]
-        values?: StatEntry[]
         modifiables?: StatEntry[]
-        knowValues?: number[]
-        notNewValues?: number[]
       }
     | undefined
   const abilities = player.abilities as
@@ -135,238 +94,126 @@ export default function Player() {
   const guiltStat = findStat(stats, ["Guilt"])
   const tears = findStat(stats, ["Tears"])
 
-  return (
-    <section className="player">
-      {tab === "all" && <h2>The Penitent One</h2>}
+  const flaskRange = stats?.ranges?.find((s) => s.statName === "Flask")
+  const healthRange = stats?.ranges?.find((s) => s.statName === "Health")
+  const healingFlaskFactor = stats?.modifiables?.find(
+    (s) => s.statName === "Healing Flasks Factor",
+  )
+  const goldFlaskAbility = abilities?.abilities?.find(
+    (a) => a.hashHex === formatHashKey(0x84734265),
+  )
+  const goldFlaskActive = !!goldFlaskAbility?.active
 
-      {saveMeta && (
-        <>
-          {saveMeta.PlayedTime !== undefined && (
-            <>
-              <span
-                className="hud-sprite hud-sprite--menu-arrow-sm float-left"
-                aria-hidden="true"
-              />
-              <p className="leading-icon-sm">
-                Play time: {formatPlayTime(saveMeta.PlayedTime)}
-              </p>
-            </>
-          )}
-          {saveMeta.LastPlayed && (
-            <>
-              <span
-                className="hud-sprite hud-sprite--menu-arrow-sm float-left"
-                aria-hidden="true"
-              />
-              <p className="leading-icon-sm">
-                Last played: {new Date(saveMeta.LastPlayed).toLocaleString()}
-              </p>
-            </>
-          )}
-        </>
-      )}
+  const hasOverview =
+    saveMeta?.PlayedTime !== undefined ||
+    !!saveMeta?.LastPlayed ||
+    completion?.completion !== undefined
 
-      {completion?.completion !== undefined && (
-        <>
-          <span
-            className="hud-sprite hud-sprite--menu-arrow-sm float-left"
-            aria-hidden="true"
-          />
-          <p className="leading-icon-sm">
-            Map completion: {completion.completion}%
-          </p>
-        </>
-      )}
+  const relicEntries = relicsData.map((r) => ({
+    ...r,
+    ability: abilities?.abilities?.find((a) => a.hashHex === r.hash),
+  }))
 
-      {stats &&
-        (() => {
-          const flaskRange = stats.ranges?.find((s) => s.statName === "Flask")
-          const healthRange = stats.ranges?.find((s) => s.statName === "Health")
-          const healingFlaskFactor = stats.modifiables?.find(
-            (s) => s.statName === "Healing Flasks Factor",
-          )
-          const goldFlaskAbility = abilities?.abilities?.find(
-            (a) => a.hashHex === formatHashKey(0x84734265),
-          )
-          return flaskRange ||
-            healthRange ||
-            healingFlaskFactor ||
-            goldFlaskAbility ||
-            fervour ||
-            guiltStat ||
-            tears ? (
-            <>
-              <h3>Stats</h3>
-              <ul>
-                {healthRange && (
-                  <li>
-                    Health: {healthRange.value}
-                    {healthRange.upgrades !== undefined
-                      ? ` / ${healthRange.upgrades}`
-                      : ""}
-                  </li>
-                )}
-                {fervour && (
-                  <li>
-                    Fervour: {fervour.value}
-                    {"upgrades" in fervour && fervour.upgrades !== undefined
-                      ? ` / ${fervour.upgrades}`
-                      : ""}
-                  </li>
-                )}
-                {flaskRange && (
-                  <FlaskDisplay
-                    count={flaskRange.value}
-                    factor={healingFlaskFactor?.value ?? 0}
-                    goldActive={!!goldFlaskAbility?.active}
-                  />
-                )}
-                {guiltStat && (
-                  <>
-                    <li>Guilt: {guiltStat.value}</li>
-                    {guilt?.dropCount !== undefined && (
-                      <li>Guilt drops: {guilt.dropCount}</li>
-                    )}
-                  </>
-                )}
-                {tears && <li>Tears: {tears.value}</li>}
-              </ul>
-            </>
-          ) : null
-        })()}
+  const hasEquipment = !!equipment
 
-      {(() => {
-        const relicAbilities = relicsData
-          .map((r) => ({
-            ...r,
-            ability: abilities?.abilities?.find((a) => a.hashHex === r.hash),
-          }))
-          .filter((r) => r.ability)
+  const hasAbilityUnlocks =
+    (abilityLock?.showedAbilities?.length ?? 0) > 0
 
-        return relicAbilities.length > 0 ? (
+  const sections: ReactNode[] = []
+
+  if (hasOverview) {
+    sections.push(
+      <div key="overview" className="player-panel-section">
+        {saveMeta?.PlayedTime !== undefined && (
           <>
-            <h3>Relics of Contrition</h3>
-            <ul>
-              {relicAbilities.map((r) => (
-                <li key={r.hash}>
-                  {r.name || resolveIdLabel(r.hash)}
-                  {r.ability?.active ? " (active)" : " (inactive)"}
-                  {r.url && (
-                    <>
-                      {" "}
-                      <a href={r.url} target="_blank" rel="noopener noreferrer">
-                        <i className="fa-solid fa-link" />
-                      </a>
-                    </>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </>
-        ) : null
-      })()}
-
-        {stats && (
-         <>
-          <StatList title="Values" items={(stats.values ?? []).filter((s) => s.statHex !== "0x14575494" && s.statHex !== "0x2702E13E")} />
-          {/* <StatList
-            title="Modifiables"
-            items={(stats.modifiables ?? []).filter(
-              (s) => s.statName !== "Healing Flasks Factor",
-            )}
-          /> */}
-          {/* {stats.knowValues && stats.knowValues.length > 0 && (
-            <>
-              <h4>Known values</h4>
-              <p>{stats.knowValues.join(", ")}</p>
-            </>
-          )} */}
-          {stats.notNewValues && stats.notNewValues.length > 0 && (
-            <>
-              <h4>Not-new values</h4>
-              <p>{stats.notNewValues.join(", ")}</p>
-            </>
-          )}
-        </>
-      )}
-
-      {/* {spawn && (
-        <>
-          <h3>Spawn</h3>
-          <ul>
-            <li>Spawn room: {spawn.spawnRoom}</li>
-            <li>Spawn entry: {spawn.spawnEntryId}</li>
-            <li>Spawn type: {spawn.spawnType}</li>
-            <li>Prie-Dieu room: {spawn.prieuDieuRoom}</li>
-            <li>Prie-Dieu id: {spawn.prieuDieuId}</li>
-          </ul>
-        </>
-      )} */}
-
-      {equipment && (
-        <>
-          <h3>Equipment</h3>
-          <ul>
-            <li>Current weapon: {formatItem(equipment.currentWeapon)}</li>
-            <li>Current armor: {formatItem(equipment.currentArmor)}</li>
-          </ul>
-          {equipment.weaponSlots && equipment.weaponSlots.length > 0 && (
-            <>
-              <h4>Weapon slots</h4>
-              <ul>
-                {equipment.weaponSlots.map((weapon, index) => (
-                  <li key={`slot-${index}`}>
-                    Slot {index + 1}: {formatItem(weapon)}
-                  </li>
-                ))}
-              </ul>
-            </>
-          )}
-          {equipment.unlockedWeapons &&
-            equipment.unlockedWeapons.length > 0 && (
-              <>
-                <h4>Arsenal of Penitence</h4>
-                <ul>
-                  {equipment.unlockedWeapons.map((weapon) => (
-                    <li key={weapon.idHex}>{formatItem(weapon)}</li>
-                  ))}
-                </ul>
-              </>
-            )}
-        </>
-      )}
-
-      {/* {abilities?.abilities && abilities.abilities.length > 0 && (
-        <>
-          <h3>Abilities / Relics</h3>
-          <ul>
-            {abilities.abilities
-              .filter(
-                (a) =>
-                  a.hashHex !== formatHashKey(0x84734265) &&
-                  !relicsData.some((r) => r.hash === a.hashHex),
-              )
-              .map((ability) => (
-                <li key={ability.hashHex}>
-                  {resolveIdLabel(ability.hashHex)}
-                  {ability.active ? " (active)" : " (inactive)"}
-                </li>
-              ))}
-          </ul>
-        </>
-      )} */}
-
-      {abilityLock?.showedAbilities &&
-        abilityLock.showedAbilities.length > 0 && (
-          <>
-            <h3>Shown ability unlocks</h3>
-            <p>
-              {abilityLock.showedAbilities
-                .map((id) => resolveIdLabel(formatHashKey(id)))
-                .join(", ")}
+            <span
+              className="hud-sprite hud-sprite--menu-arrow-sm float-left"
+              aria-hidden="true"
+            />
+            <p className="leading-icon-sm">
+              Play time: {formatPlayTime(saveMeta.PlayedTime)}
             </p>
           </>
         )}
+        {saveMeta?.LastPlayed && (
+          <>
+            <span
+              className="hud-sprite hud-sprite--menu-arrow-sm float-left"
+              aria-hidden="true"
+            />
+            <p className="leading-icon-sm">
+              Last played: {new Date(saveMeta.LastPlayed).toLocaleString()}
+            </p>
+          </>
+        )}
+        {completion?.completion !== undefined && (
+          <>
+            <span
+              className="hud-sprite hud-sprite--menu-arrow-sm float-left"
+              aria-hidden="true"
+            />
+            <p className="leading-icon-sm">
+              Map completion: {completion.completion}%
+            </p>
+          </>
+        )}
+      </div>,
+    )
+  }
+
+  sections.push(
+    <PlayerStatsSection
+      key="stats"
+      save={save as ReadableSaveJson}
+      healthRange={healthRange}
+      flaskRange={flaskRange}
+      healingFlaskFactor={healingFlaskFactor}
+      goldFlaskActive={goldFlaskActive}
+      fervour={fervour}
+      guiltValue={guiltStat?.value}
+      guiltDropsInWorld={guilt?.dropCount}
+      tears={tears}
+    />,
+  )
+
+  if (relicEntries.length > 0) {
+    sections.push(
+      <div key="relics" className="player-panel-section">
+        <h3>Relics of Contrition</h3>
+        <RelicsOfContrition relics={relicEntries} />
+      </div>,
+    )
+  }
+
+  if (hasEquipment) {
+    sections.push(
+      <div key="equipment" className="player-panel-section">
+        <h3>Equipment</h3>
+        <ArsenalOfPenitence
+          weaponSlots={equipment?.weaponSlots}
+          unlockedWeapons={equipment?.unlockedWeapons}
+        />
+      </div>,
+    )
+  }
+
+  if (hasAbilityUnlocks) {
+    sections.push(
+      <div key="ability-unlocks" className="player-panel-section">
+        <h3>Shown ability unlocks</h3>
+        <p>
+          {abilityLock!.showedAbilities!
+            .map((id) => resolveIdLabel(formatHashKey(id)))
+            .join(", ")}
+        </p>
+      </div>,
+    )
+  }
+
+  return (
+    <section className="player">
+      {tab === "all" && <h2>The Penitent One</h2>}
+      <PlayerPanel sections={sections} />
     </section>
   )
 }

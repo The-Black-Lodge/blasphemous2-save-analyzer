@@ -126,6 +126,17 @@ function AppContent() {
             <Component key={id} />
           ))}
         </main>
+        <footer className="app-footer">
+          <a
+            className="app-github-link"
+            href="https://github.com/The-Black-Lodge/blasphemous2-save-analyzer"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View source on GitHub"
+          >
+            <i className="fa-brands fa-github" aria-hidden="true" />
+          </a>
+        </footer>
       </>
       </AppNavigationContext.Provider>
     </TabContext.Provider>

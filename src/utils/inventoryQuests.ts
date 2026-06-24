@@ -290,3 +290,20 @@ export function getQuestItemAcquisition(
   if (status.pickedUp.has(source)) return "handed-in"
   return "missing"
 }
+
+export {
+  CHALICE_ITEMS,
+  RECEPTACLE_ITEMS,
+  SHARD_ITEMS,
+  FERVENT_KISS_ITEMS,
+}
+
+export function countCollectedQuestItems(
+  save: ReadableSaveJson | null,
+  items: readonly string[],
+): number {
+  const status = getQuestItemStatus(save)
+  return items.filter(
+    (item) => getQuestItemAcquisition(item, status) !== "missing",
+  ).length
+}

@@ -1,7 +1,37 @@
 [
-  { "id": 1, "hash": "0xDADBD586", "name": "Mercy of the Wind", "url": "" },
-  { "id": 2, "hash": "0x26675E80", "name": "Scions' Protection", "url": "" },
-  { "id": 3, "hash": "0xE3466E5F", "name": "Broken Steps", "url": "" },
-  { "id": 4, "hash": "0x8F64AB23", "name": "Ivy of Ascension", "url": "" },
-  { "id": 5, "hash": "0x02EA90EA", "name": "Passage of Ash", "url": "" }
+  {
+    "id": 1,
+    "hash": "0xDADBD586",
+    "name": "Mercy of the Wind",
+    "description": "Dash while jumping or falling",
+    "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522436"
+  },
+  {
+    "id": 2,
+    "hash": "0x26675E80",
+    "name": "Scions' Protection",
+    "description": "Makes hanging platforms appear",
+    "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522610"
+  },
+  {
+    "id": 3,
+    "hash": "0xE3466E5F",
+    "name": "Broken Step",
+    "description": "Walk on glass platforms",
+    "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520717"
+  },
+  {
+    "id": 4,
+    "hash": "0x8F64AB23",
+    "name": "Ivy of Ascension",
+    "description": "Wall jump",
+    "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=509131"
+  },
+  {
+    "id": 5,
+    "hash": "0x02EA90EA",
+    "name": "Passage of Ash",
+    "description": "Double jump",
+    "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=521023"
+  }
 ]
