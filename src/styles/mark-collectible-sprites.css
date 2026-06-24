@@ -7,7 +7,7 @@
   background-position: 0 0;
 }
 
-.collectible-quest-group .qi-sprite.qi-sprite--embrujo-brand {
+.collectible-quest-group > .qi-sprite.qi-sprite--embrujo-brand {
   transform: scale(var(--qi-sprite-scale))
     translate(calc(var(--qi-header-offset-x) - 2px), calc(var(--qi-header-offset-y) - 4px));
   transform-origin: top left;

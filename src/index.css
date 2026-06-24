@@ -22,9 +22,9 @@
   /* Sticky tab bar — used for scroll-padding / scroll-margin on in-page targets */
   --app-top-bar-offset: 3.5rem;
 
-  /* Quest collection header sprites — nudge left/down (cherub HUD sprite unchanged) */
+  /* Quest collection header sprites — nudge left/up (cherub HUD sprite unchanged) */
   --qi-header-offset-x: -7px;
-  --qi-header-offset-y: 2px;
+  --qi-header-offset-y: -6px;
 
   color-scheme: dark;
 }
@@ -1294,7 +1294,7 @@ code {
   scroll-margin-top: calc(var(--app-top-bar-offset) + 0.5rem);
 }
 
-.collectible-quest-group .qi-sprite {
+.collectible-quest-group > .qi-sprite.float-left {
   transform: scale(var(--qi-sprite-scale))
     translate(var(--qi-header-offset-x), var(--qi-header-offset-y));
   transform-origin: top left;
