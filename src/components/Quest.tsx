@@ -1,5 +1,5 @@
 import { useSave } from "./SaveContext"
-import { useState, useContext } from "react"
+import { useContext } from "react"
 import { getAcquiredPrayerSources } from "../utils/inventoryPrayers"
 import { getQuestItemStatus } from "../utils/inventoryQuests"
 import type { QuestItemAcquisition } from "../utils/inventoryQuests"
@@ -72,7 +72,6 @@ function QuestItemCell({
 export default function Quest() {
   const { save } = useSave()
   const tab = useTab()
-  const [showAll, setShowAll] = useState(false)
 
   const questStatus = getQuestItemStatus(save)
   const acquiredPrayers = getAcquiredPrayerSources(save)
@@ -97,38 +96,12 @@ export default function Quest() {
     save,
     questStatus,
     hiddenByCompleted,
-    showAll,
+    false,
   )
-
-  const hasRoomData = Boolean(save?.roomElements)
 
   return (
     <section className="quest">
       {tab === "all" && <h2>Quest Items</h2>}
-      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-        <button
-          type="button"
-          className="app-tab"
-          onClick={() => setShowAll((v) => !v)}
-          aria-pressed={showAll}
-          title={showAll ? "Hide completed quest inputs" : "Show everything"}
-        >
-          {showAll ? "Hide completed" : "Show all"}
-        </button>
-        <span className="quest-legend">
-          <span className="quest-legend__item quest-legend__item--owned">
-            In inventory
-          </span>
-          <span className="quest-legend__item quest-legend__item--picked-up">
-            Picked up
-          </span>
-          {!hasRoomData && (
-            <span className="quest-legend__note">
-              (slot save required for world pickup detection)
-            </span>
-          )}
-        </span>
-      </div>
 
       <div className="collectible-grid">
         {questItems.map((item) => (
