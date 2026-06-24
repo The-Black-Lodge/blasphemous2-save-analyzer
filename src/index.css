@@ -19,6 +19,9 @@
   /* Collectible grid cells (Children of Moonlight + quest collections) */
   --collectible-cell-width: 3.5rem;
 
+  /* Sticky tab bar — used for scroll-padding / scroll-margin on in-page targets */
+  --app-top-bar-offset: 3.5rem;
+
   /* Quest collection header sprites — nudge left/down (cherub HUD sprite unchanged) */
   --qi-header-offset-x: -7px;
   --qi-header-offset-y: 2px;
@@ -33,6 +36,7 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-padding-top: var(--app-top-bar-offset);
 
   @media (max-width: 1024px) {
     font-size: 16px;
@@ -809,14 +813,23 @@ code {
   padding: 0 0 0 1rem;
 }
 
+.app-open-save-group {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+  margin: 0.35rem 0;
+}
+
 .app-open-save {
   flex: 0 0 auto;
-  margin: 0.5rem 0;
-  padding: 0.45rem 0.75rem;
+  margin: 0;
+  padding: 0.3rem 0.55rem;
   border: 1px solid var(--border);
   background: var(--code-bg);
   font: inherit;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: var(--text);
   cursor: pointer;
   white-space: nowrap;
@@ -825,6 +838,64 @@ code {
 .app-open-save:hover {
   color: var(--text-h);
   border-color: var(--accent-border);
+}
+
+.app-save-location-hint {
+  position: relative;
+  font-size: 0.65rem;
+  line-height: 1.2;
+  color: var(--text-lo);
+  cursor: help;
+  border-bottom: 1px dotted currentColor;
+}
+
+.app-save-location-hint:hover,
+.app-save-location-hint:focus-visible {
+  color: var(--text-h);
+  outline: none;
+}
+
+.app-save-location-hint:hover .app-save-location-tooltip,
+.app-save-location-hint:focus-visible .app-save-location-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.app-save-location-tooltip {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  right: 0;
+  z-index: 30;
+  width: max-content;
+  max-width: min(26rem, 92vw);
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  box-shadow: var(--shadow);
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.12s ease;
+  pointer-events: none;
+}
+
+.app-save-location-tooltip-label {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.7rem;
+  color: var(--text-h);
+}
+
+.app-save-location-tooltip-path {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  line-height: 1.35;
+  color: var(--text);
+  white-space: normal;
+  word-break: break-all;
 }
 
 .app-tab {
@@ -1033,6 +1104,13 @@ code {
   padding: 0.5rem;
 }
 
+.quest .quest-collectibles-note {
+  grid-column: 1 / -1;
+  margin: 0 0 0.25rem;
+  font-size: 0.9rem;
+  color: var(--text-lo);
+}
+
 .quest .collectible-cell.quest-item-cell {
   width: var(--quest-item-cell-width);
   min-width: var(--quest-item-cell-width);
@@ -1210,6 +1288,10 @@ code {
   flex-direction: column;
   gap: 1.5rem;
   margin-top: 1.5rem;
+}
+
+.collectible-quest-items > [id^="collectible-"] {
+  scroll-margin-top: calc(var(--app-top-bar-offset) + 0.5rem);
 }
 
 .collectible-quest-group .qi-sprite {

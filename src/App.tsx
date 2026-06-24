@@ -30,6 +30,7 @@ const TabContext = createContext<Tab>("all")
 
 interface AppNavigation {
   scrollToCollectible: (sectionKey: string) => void
+  goToTab: (tab: SectionTab) => void
 }
 
 const AppNavigationContext = createContext<AppNavigation | null>(null)
@@ -58,6 +59,14 @@ const TABS: { id: Tab; label: string }[] = [
   ...SECTIONS,
 ]
 
+function scrollBelowStickyHeader(element: HTMLElement) {
+  const header = document.querySelector(".app-top-bar")
+  const headerHeight = header?.getBoundingClientRect().height ?? 0
+  const top =
+    element.getBoundingClientRect().top + window.scrollY - headerHeight - 8
+  window.scrollTo({ top: Math.max(0, top), behavior: "smooth" })
+}
+
 function AppContent() {
   const [tab, setTab] = useState<Tab>("all")
   const collectibleScrollTarget = useRef<string | null>(null)
@@ -69,6 +78,11 @@ function AppContent() {
     )
   }, [])
 
+  const goToTab = useCallback((sectionTab: SectionTab) => {
+    setTab(sectionTab)
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }, [])
+
   useEffect(() => {
     const sectionKey = collectibleScrollTarget.current
     if (!sectionKey) return
@@ -76,9 +90,8 @@ function AppContent() {
 
     collectibleScrollTarget.current = null
     const timeoutId = window.setTimeout(() => {
-      document
-        .getElementById(`collectible-${sectionKey}`)
-        ?.scrollIntoView({ behavior: "smooth", block: "start" })
+      const target = document.getElementById(`collectible-${sectionKey}`)
+      if (target) scrollBelowStickyHeader(target)
     }, 0)
 
     return () => window.clearTimeout(timeoutId)
@@ -89,7 +102,7 @@ function AppContent() {
 
   return (
     <TabContext.Provider value={tab}>
-      <AppNavigationContext.Provider value={{ scrollToCollectible }}>
+      <AppNavigationContext.Provider value={{ scrollToCollectible, goToTab }}>
       <>
         <div className="app-top-bar">
           <nav className="app-tabs" aria-label="Inventory sections">

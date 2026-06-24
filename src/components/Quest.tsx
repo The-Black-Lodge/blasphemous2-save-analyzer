@@ -3,7 +3,7 @@ import { useContext } from "react"
 import { getAcquiredPrayerSources } from "../utils/inventoryPrayers"
 import { getQuestItemStatus } from "../utils/inventoryQuests"
 import type { QuestItemAcquisition } from "../utils/inventoryQuests"
-import { TabContext } from "../App"
+import { TabContext, useAppNavigation } from "../App"
 import {
   buildOrderedQuestItems,
   getHiddenByCompletedQuestItems,
@@ -72,6 +72,7 @@ function QuestItemCell({
 export default function Quest() {
   const { save } = useSave()
   const tab = useTab()
+  const { goToTab } = useAppNavigation()
 
   const questStatus = getQuestItemStatus(save)
   const acquiredPrayers = getAcquiredPrayerSources(save)
@@ -104,6 +105,17 @@ export default function Quest() {
       {tab === "all" && <h2>Quest Items</h2>}
 
       <div className="collectible-grid">
+        <p className="quest-collectibles-note">
+          For details on certain quest items, check out the{" "}
+          <button
+            type="button"
+            className="rosary-collectible-link"
+            onClick={() => goToTab("collectibles")}
+          >
+            Collectibles
+          </button>{" "}
+          tab.
+        </p>
         {questItems.map((item) => (
           <QuestItemCell
             key={item.source}

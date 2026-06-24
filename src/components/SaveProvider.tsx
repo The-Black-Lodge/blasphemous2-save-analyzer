@@ -6,13 +6,29 @@ export function OpenSaveButton() {
   const { openSaveFile } = useSave()
 
   return (
-    <button
-      type="button"
-      className="app-open-save"
-      onClick={openSaveFile}
-    >
-      Open save file (.bin)
-    </button>
+    <div className="app-open-save-group">
+      <button
+        type="button"
+        className="app-open-save"
+        onClick={openSaveFile}
+      >
+        Open save file (.bin)
+      </button>
+      <span className="app-save-location-hint" tabIndex={0}>
+        Where is my save?
+        <span className="app-save-location-tooltip" role="tooltip">
+          <span className="app-save-location-tooltip-label">
+            <i className="fa-brands fa-windows" aria-hidden="true" />
+            <i className="fa-brands fa-steam" aria-hidden="true" />
+            Windows/Steam:
+          </span>
+          <code className="app-save-location-tooltip-path">
+            C:\Users\(Username)\AppData\LocalLow\The Game Kitchen\Blasphemous
+            2\SteamUser_(id)\Savegames\savegame_(0|1|2).bin
+          </code>
+        </span>
+      </span>
+    </div>
   )
 }
 
