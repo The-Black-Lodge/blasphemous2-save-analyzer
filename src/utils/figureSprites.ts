@@ -39,7 +39,7 @@ const VARIANT_FALLBACK: FigureSpriteVariant[] = [
   "empty",
 ]
 
-export const FIGURE_SPRITE_SCALE = figureSpriteData.scale ?? 2
+export const FIGURE_SPRITE_SCALE = figureSpriteData.scale ?? 1.5
 export const FIGURE_SPRITE_WIDTH = 38 * FIGURE_SPRITE_SCALE
 export const FIGURE_SPRITE_HEIGHT = 80 * FIGURE_SPRITE_SCALE
 

@@ -14,7 +14,6 @@ import Prayer from "./components/Prayer"
 import Quest from "./components/Quest"
 import Rosary from "./components/Rosary"
 import SaveProvider from "./components/SaveProvider"
-import Weapon from "./components/Weapon"
 import Collectibles from "./components/Collectibles"
 
 type SectionTab =
@@ -24,7 +23,6 @@ type SectionTab =
   | "quest"
   | "prayers"
   | "altar"
-  | "weapon"
   | "collectibles"
 type Tab = "all" | SectionTab
 
@@ -51,7 +49,6 @@ const SECTIONS: { id: SectionTab; label: string; Component: ComponentType }[] =
     { id: "quest", label: "Quest Items", Component: Quest },
     { id: "prayers", label: "Prayers", Component: Prayer },
     { id: "altar", label: "Altarpiece of Favours", Component: Altar },
-    { id: "weapon", label: "Weapon Memories", Component: Weapon },
     { id: "collectibles", label: "Collectibles", Component: Collectibles },
     { id: "bosses", label: "Bosses", Component: Bosses },
   ]

@@ -1,61 +1,118 @@
 import bossesData from "../data/bosses.json"
+import bossesDisplay from "../data/bosses-display.json"
 import { useSave } from "./SaveContext"
 import { TabContext } from "../App"
-import { useContext } from "react"
+import { useContext, useMemo, type ReactNode } from "react"
 
 function useTab() {
   const tab = useContext(TabContext)
   return tab
 }
 
-interface BossEntry {
-  id: number
+const displayNameOverrides = bossesDisplay.displayNames as Record<string, string>
+const bossUrls = bossesDisplay.urls as Record<string, string>
+const sectionLabels = bossesDisplay.sectionLabels as string[]
+const sections = bossesDisplay.sections as string[][]
+
+const bossNameByCode = new Map(
+  bossesData.map((boss) => [boss.code, boss.name] as const),
+)
+
+const spriteBase = `${import.meta.env.BASE_URL}sprites/bosses/`
+
+function BossCell({
+  code,
+  caption,
+  url,
+}: {
   code: string
-  name: string
-  defeated: boolean
+  caption: string
+  url: string | null
+}) {
+  return (
+    <div className="collectible-cell boss-cell" title={caption}>
+      <img
+        className="boss-sprite"
+        src={`${spriteBase}${code}.jpg`}
+        alt=""
+        aria-hidden="true"
+      />
+      <span className="boss-cell-label">{caption}</span>
+      {url ? (
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <i className="fa-solid fa-link" />
+        </a>
+      ) : null}
+    </div>
+  )
 }
 
 export default function Bosses() {
   const { save } = useSave()
   const tab = useTab()
 
-  const bossList: BossEntry[] = []
-  const bossKillStatus = save?.player?.bossKillStatus as
-    | { bosses?: BossEntry[]; bossesDefeated?: number }
-    | undefined
+  const defeatedByCode = useMemo(() => {
+    const map = new Map<string, boolean>()
+    const bossKillStatus = save?.player?.bossKillStatus as
+      | { bosses?: { code: string; defeated: boolean }[] }
+      | undefined
 
-  if (bossKillStatus?.bosses) {
-    bossList.push(...bossKillStatus.bosses)
-  } else {
-    for (const boss of bossesData) {
-      bossList.push({ id: boss.id, code: boss.code, name: boss.name, defeated: false })
+    for (const boss of bossKillStatus?.bosses ?? []) {
+      map.set(boss.code, boss.defeated)
     }
-  }
+    return map
+  }, [save])
+
+  const displayedCodes = sections.flat()
+  const defeatedCount = displayedCodes.filter(
+    (code) => defeatedByCode.get(code) === true,
+  ).length
 
   return (
     <section className="bosses">
       {tab === "all" && <h2>Bosses</h2>}
-      <h3>WIP</h3>
 
-      <ul>
-        {bossList.map((boss) => (
-          <li
-            key={boss.id}
-            className={boss.defeated ? "boss-defeated" : "boss-undead"}
-          >
-            {boss.defeated ? "✓" : "○"} {boss.name}{" "}
-            <span className="boss-code">[{boss.code}]</span>
-          </li>
-        ))}
-      </ul>
+      <div className="collectible-grid">
+        {sections.flatMap((section, sectionIndex) => {
+          const items: ReactNode[] = []
+          if (sectionIndex > 0) {
+            items.push(
+              <hr
+                key={`divider-${sectionIndex}`}
+                className="collectible-grid-divider"
+                aria-hidden="true"
+              />,
+            )
+          }
+          items.push(
+            <p
+              key={`label-${sectionIndex}`}
+              className="collectible-grid-section-label"
+            >
+              {sectionLabels[sectionIndex] ?? `Section ${sectionIndex + 1}`}
+            </p>,
+          )
+          for (const code of section) {
+            items.push(
+              <BossCell
+                key={code}
+                code={code}
+                caption={
+                  displayNameOverrides[code] ?? bossNameByCode.get(code) ?? code
+                }
+                url={bossUrls[code] ?? null}
+              />,
+            )
+          }
+          return items
+        })}
+      </div>
 
-      {bossKillStatus?.bossesDefeated !== undefined &&
-        bossKillStatus.bosses !== undefined && (
+      {save?.player?.bossKillStatus ? (
         <p className="boss-summary">
-          {bossKillStatus.bossesDefeated} / {bossKillStatus.bosses.length}{" "}
-          defeated
+          {defeatedCount} / {displayedCodes.length} defeated
         </p>
-      )}
+      ) : null}
     </section>
   )
 }

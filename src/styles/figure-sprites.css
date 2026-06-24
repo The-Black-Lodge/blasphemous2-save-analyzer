@@ -2,11 +2,11 @@
 /* W3Schools-style sprites: native atlas coords, no background-size. */
 
 :root {
-  --figure-sprite-scale: 2;
+  --figure-sprite-scale: 1.5;
   --figure-sprite-native-width: 38px;
   --figure-sprite-native-height: 80px;
-  --figure-sprite-width: calc(var(--figure-sprite-native-width) * 2);
-  --figure-sprite-height: calc(var(--figure-sprite-native-height) * 2);
+  --figure-sprite-width: calc(var(--figure-sprite-native-width) * 1.5);
+  --figure-sprite-height: calc(var(--figure-sprite-native-height) * 1.5);
 }
 
 .fg-sprite {

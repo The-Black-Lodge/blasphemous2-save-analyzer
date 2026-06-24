@@ -17,7 +17,6 @@ import {
   getHiddenChainSources,
   getHighestAcquiredChainIndex,
   getMaidenChain,
-  getMaidenChainRepairLevel,
   isChainAcquired,
 } from "../utils/figureChains"
 
@@ -34,7 +33,6 @@ interface FigureItem {
 
 type AltarTab = "all" | FigureKind | "other"
 
-const MAIDEN_UNWAVERING_SOURCE = "FG36"
 const hiddenChainSources = getHiddenChainSources()
 const maidenChain = getMaidenChain()
 const figureBySource = new Map(
@@ -53,29 +51,16 @@ function getFigureSpriteSource(source: string, acquired: Set<string>): string {
 }
 
 function MaidenLabel({ chainIndex }: { chainIndex: number | null }) {
-  if (chainIndex === maidenChain.sources.length - 1) {
-    return (
-      <>
-        {figureBySource.get(MAIDEN_UNWAVERING_SOURCE)?.caption.en ??
-          "The Unwavering One"}{" "}
-        <i className="fa-solid fa-star"></i>
-      </>
-    )
-  }
-
-  const repairs =
-    chainIndex === null ? 0 : getMaidenChainRepairLevel(chainIndex)
+  const labelSource =
+    chainIndex === null
+      ? maidenChain.displaySource
+      : maidenChain.sources[chainIndex]
 
   return (
-    <>
-      The Maiden{" "}
-      {Array.from({ length: repairs }, (_, index) => (
-        <i key={`heart-${index}`} className="fa-solid fa-heart"></i>
-      ))}
-      {Array.from({ length: 3 - repairs }, (_, index) => (
-        <i key={`heart-crack-${index}`} className="fa-solid fa-heart-crack"></i>
-      ))}
-    </>
+    figureBySource.get(labelSource)?.caption.en ??
+    (chainIndex === maidenChain.sources.length - 1
+      ? "The Unwavering One"
+      : "The Maiden")
   )
 }
 

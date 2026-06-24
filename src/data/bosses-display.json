@@ -1,0 +1,42 @@
+{
+  "sectionLabels": ["Base game", "Mea Culpa", "The Third Sin"],
+  "sections": [
+    ["BS11", "BS01", "BS02", "BS03", "BS04", "BS05", "BS06", "BS08", "BS07", "BS10", "BS12"],
+    ["BS101", "BS102A", "BS102B"],
+    ["BS201"]
+  ],
+  "displayNames": {
+    "BS11": "Faceless One, Chisel of Oblivion",
+    "BS01": "Great Preceptor Radames",
+    "BS02": "Orospina, Lady Embroiderer",
+    "BS03": "Lesmes, Incorrupt Sacristan",
+    "BS04": "Afilaor, Sentinel of the Emery",
+    "BS05": "Benedicta of the Endless Orison",
+    "BS06": "Odon of the Confraternity of Salt",
+    "BS07": "Sinodo, Hymn of the Thousand Voices",
+    "BS08": "Svsona, Fermosa Fembra",
+    "BS10": "Eviterno, First of the Penitents",
+    "BS12": "Incarnate Devotion",
+    "BS101": "Sor Cautiva del Silencio",
+    "BS102A": "Brother Asterion",
+    "BS102B": "Brother Asterion (rematch)",
+    "BS201": "Crescencia, Duchess of the Sleeping Village"
+  },
+  "urls": {
+    "BS11": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=509061",
+    "BS01": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520342",
+    "BS02": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=519429",
+    "BS03": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=519390",
+    "BS04": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=521018",
+    "BS05": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522452",
+    "BS06": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522520",
+    "BS07": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522624",
+    "BS08": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523602",
+    "BS10": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523723",
+    "BS12": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523749",
+    "BS101": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523985",
+    "BS102A": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523989",
+    "BS102B": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523997",
+    "BS201": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=597892"
+  }
+}

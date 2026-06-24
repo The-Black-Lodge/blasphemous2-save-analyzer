@@ -13,7 +13,7 @@ const [
   outCss = path.join(__dirname, "../src/styles/figure-sprites.css"),
   publicDir = path.join(__dirname, "../public/sprites"),
   assetBase = "/blasphemous2-save-analyzer/",
-  scaleRaw = "2",
+  scaleRaw = "1.5",
 ] = process.argv.slice(2)
 
 const scale = Number(scaleRaw)

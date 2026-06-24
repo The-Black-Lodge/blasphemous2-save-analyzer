@@ -161,6 +161,7 @@ export default function AltarResonance() {
 
   return (
     <aside className="altar-resonances">
+      <h4 className="altar-resonance-heading">Resonances</h4>
       <nav className="altar-tabs" aria-label="Resonance categories">
         <button
           type="button"
