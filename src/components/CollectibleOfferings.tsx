@@ -1,7 +1,7 @@
 import offeringsData from "../data/offerings.json"
 import { useSave } from "./SaveContext"
 import { collectibleCollectionSummaries } from "./collectibleCollectionSummaries"
-import type { CollectibleLocation } from "./collectibleLocations"
+import type { CollectibleLocation } from "../utils/collectibleLocations"
 import {
   getOfferingRowCaption,
   isOfferingPieceCollected,
