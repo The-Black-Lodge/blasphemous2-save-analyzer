@@ -4,6 +4,7 @@ import type { SaveContextType } from "../types/save"
 const SaveContext = createContext<SaveContextType>({
   save: null,
   setSave: () => {},
+  openSaveFile: () => {},
 })
 
 export default SaveContext

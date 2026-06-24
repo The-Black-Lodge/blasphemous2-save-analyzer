@@ -1,6 +1,20 @@
 import { useRef, useState, type ReactNode } from "react"
-import SaveContext from "./SaveContext"
+import SaveContext, { useSave } from "./SaveContext"
 import { parseSaveFile, type ReadableSaveJson } from "../utils/saveParser"
+
+export function OpenSaveButton() {
+  const { openSaveFile } = useSave()
+
+  return (
+    <button
+      type="button"
+      className="app-open-save"
+      onClick={openSaveFile}
+    >
+      Open save file (.bin)
+    </button>
+  )
+}
 
 export default function SaveProvider({ children }: { children?: ReactNode }) {
   const [save, setSave] = useState<ReadableSaveJson | null>(null)
@@ -22,7 +36,13 @@ export default function SaveProvider({ children }: { children?: ReactNode }) {
   }
 
   return (
-    <SaveContext.Provider value={{ save, setSave }}>
+    <SaveContext.Provider
+      value={{
+        save,
+        setSave,
+        openSaveFile: () => inputRef.current?.click(),
+      }}
+    >
       <input
         ref={inputRef}
         type="file"
@@ -30,9 +50,6 @@ export default function SaveProvider({ children }: { children?: ReactNode }) {
         hidden
         onChange={onFileSelected}
       />
-      <button type="button" onClick={() => inputRef.current?.click()}>
-        Open save file (.bin)
-      </button>
       {children}
     </SaveContext.Provider>
   )

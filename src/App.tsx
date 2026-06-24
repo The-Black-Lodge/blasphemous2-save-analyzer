@@ -13,7 +13,7 @@ import Player from "./components/Player"
 import Prayer from "./components/Prayer"
 import Quest from "./components/Quest"
 import Rosary from "./components/Rosary"
-import SaveProvider from "./components/SaveProvider"
+import SaveProvider, { OpenSaveButton } from "./components/SaveProvider"
 import Collectibles from "./components/Collectibles"
 
 type SectionTab =
@@ -91,20 +91,23 @@ function AppContent() {
     <TabContext.Provider value={tab}>
       <AppNavigationContext.Provider value={{ scrollToCollectible }}>
       <>
-        <nav className="app-tabs" aria-label="Inventory sections">
-          {TABS.map(({ id, label }) => (
-            <button
-              key={id}
-              type="button"
-              className="app-tab"
-              role="tab"
-              aria-selected={tab === id}
-              onClick={() => setTab(id)}
-            >
-              {label}
-            </button>
-          ))}
-        </nav>
+        <div className="app-top-bar">
+          <nav className="app-tabs" aria-label="Inventory sections">
+            {TABS.map(({ id, label }) => (
+              <button
+                key={id}
+                type="button"
+                className="app-tab"
+                role="tab"
+                aria-selected={tab === id}
+                onClick={() => setTab(id)}
+              >
+                {label}
+              </button>
+            ))}
+          </nav>
+          <OpenSaveButton />
+        </div>
         <main className="app-content">
           {visibleSections.map(({ id, Component }) => (
             <Component key={id} />

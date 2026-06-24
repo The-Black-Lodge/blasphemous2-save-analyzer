@@ -787,12 +787,44 @@ code {
   filter: url(#altar-figure-missing-tint);
 }
 
+.app-top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--border);
+  padding-right: 1rem;
+  background: var(--bg);
+}
+
 .app-tabs {
   display: flex;
+  flex: 1 1 auto;
   flex-wrap: wrap;
   gap: 0;
-  border-bottom: 1px solid var(--border);
-  padding: 0 1rem;
+  min-width: 0;
+  padding: 0 0 0 1rem;
+}
+
+.app-open-save {
+  flex: 0 0 auto;
+  margin: 0.5rem 0;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--text);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.app-open-save:hover {
+  color: var(--text-h);
+  border-color: var(--accent-border);
 }
 
 .app-tab {
