@@ -1,10 +1,8 @@
 import mementosData from "../data/mementos.json"
 import { useSave } from "./SaveContext"
 import { collectibleCollectionSummaries } from "./collectibleCollectionSummaries"
-import {
-  isCollectibleLocationCollected,
-  type CollectibleLocation,
-} from "../utils/collectibleLocations"
+import { isRemembranceCollected } from "../utils/remembrances"
+import type { CollectibleLocation } from "../utils/collectibleLocations"
 
 const REMEMBRANCE_LOCATIONS =
   mementosData.locations as CollectibleLocation[]
@@ -25,7 +23,7 @@ export default function CollectibleRemembrances() {
 
       <div className="collectible-grid">
         {REMEMBRANCE_LOCATIONS.map((location) => {
-          const collected = isCollectibleLocationCollected(save, location)
+          const collected = isRemembranceCollected(save, location)
           const caption = location.caption ?? location.itemName ?? "Remembrance"
           return (
             <div

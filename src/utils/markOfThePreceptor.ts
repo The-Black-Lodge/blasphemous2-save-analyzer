@@ -1,5 +1,6 @@
 import markOfThePreceptorData from "../data/mark-of-the-preceptor.json"
 import type { ReadableSaveJson } from "./saveParser"
+import { findStat } from "./playerDecoders"
 
 export interface PreceptorLocation {
   id: number
@@ -12,6 +13,9 @@ export interface PreceptorLocation {
 
 export const PRECEPTOR_LOCATIONS =
   markOfThePreceptorData.locations as PreceptorLocation[]
+
+export const MARKS_PRECEPTOR_STAT = "MarksPreceptor"
+export const PRECEPTOR_MARK_COUNT = PRECEPTOR_LOCATIONS.length
 
 function isRoomTriggerActive(
   save: ReadableSaveJson | null,
@@ -56,4 +60,26 @@ export function getPreceptorMarksCollectedCount(
   return PRECEPTOR_LOCATIONS.filter((location) =>
     isPreceptorMarkCollected(save, location),
   ).length
+}
+
+export function getMarksPreceptorBalance(
+  save: ReadableSaveJson | null,
+): number | null {
+  const stats = save?.player?.stats as Record<string, unknown> | undefined
+  if (!stats) return null
+
+  const entry = findStat(stats, [MARKS_PRECEPTOR_STAT])
+  if (!entry || !("value" in entry)) return null
+  return entry.value
+}
+
+/** All world marks collected and none left to spend on Mea Culpa memories. */
+export function areAllPreceptorMarksSpent(
+  save: ReadableSaveJson | null,
+): boolean {
+  const collected = getPreceptorMarksCollectedCount(save)
+  if (collected === null || collected < PRECEPTOR_MARK_COUNT) return false
+
+  const balance = getMarksPreceptorBalance(save)
+  return balance !== null && balance === 0
 }

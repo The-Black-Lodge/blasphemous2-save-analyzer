@@ -1,6 +1,7 @@
 import questLootPickups from "../data/quest-loot-pickups.json"
 import type { ReadableSaveJson } from "./saveParser"
 import { formatItemRef } from "./catalogs"
+import { inferDeliveredSculptorTools } from "./sculptorTools"
 
 interface InventoryItem {
   item?: {
@@ -261,6 +262,8 @@ export function getInferredQuestSources(
   if (cesareo) {
     for (const item of inferWaxSeedItems(cesareo)) inferred.add(item)
   }
+
+  for (const item of inferDeliveredSculptorTools(save)) inferred.add(item)
 
   return inferred
 }
