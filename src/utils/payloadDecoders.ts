@@ -26,6 +26,7 @@ const STATS_COMPONENT_ID = -911447619
 const ABILITIES_COMPONENT_ID = -749611200
 const QUEST_MANAGER_ID = -596494782
 const QUEST_MANAGER_TYPE_ID = 0xc7ee3d13
+const SHOP_PERSISTENCE_TYPE_ID = 0x6401dbab
 
 const QUEST_ID_MAP: Record<number, { name: string; category: string; description: string }> = Object.fromEntries([
   // Bosses quest (tracks boss defeats)
@@ -465,6 +466,16 @@ function decodeQuestPersistencePayload(
   }
 }
 
+function normalizeQuestVariables(
+  variables: Record<string | number, number>,
+): Record<number, number> {
+  const out: Record<number, number> = {}
+  for (const [key, value] of Object.entries(variables)) {
+    out[Number(key)] = value
+  }
+  return out
+}
+
 function decodeBossKillStatus(
   questVariables: Record<number, number>,
 ): Record<string, unknown> {
@@ -473,9 +484,10 @@ function decodeBossKillStatus(
 
   for (const boss of allBosses) {
     const varValue = questVariables[boss.varID] ?? 0.0
-    const defeated = varValue === 1.0
+    const defeated = varValue >= 0.5
     bosses.push({
       id: boss.id,
+      varID: boss.varID,
       code: boss.code,
       name: boss.name,
       defeated,
@@ -490,6 +502,40 @@ function decodeBossKillStatus(
     bossesDefeated: defeatedCount,
     bossesRemaining: allBosses.length - defeatedCount,
   }
+}
+
+export interface ShopPersistenceEntry {
+  shopId: number
+  soldItems: number[]
+  unlockConditionals: number[]
+  soldOrbs: number[]
+}
+
+export function decodeShopPersistencePayload(
+  payload: Uint8Array,
+): { type: "ShopPersistenceData"; shops: ShopPersistenceEntry[] } | null {
+  if (payload.length < 4) return null
+
+  const reader = new B2BinaryReader(payload)
+  const count = reader.readInt32()
+  const shops: ShopPersistenceEntry[] = []
+
+  for (let i = 0; i < count; i++) {
+    if (reader.getRemaining() < 20) break
+    const obj = readNestedPersistentObject(reader)
+    const shopReader = new B2BinaryReader(obj.payload)
+    if (shopReader.getRemaining() < 4) continue
+
+    const shopId = shopReader.readInt32()
+    const soldItems = readInt32List(shopReader)
+    const unlockConditionals = readInt32List(shopReader)
+    const soldOrbs =
+      shopReader.getRemaining() >= 4 ? readInt32List(shopReader) : []
+
+    shops.push({ shopId, soldItems, unlockConditionals, soldOrbs })
+  }
+
+  return { type: "ShopPersistenceData", shops }
 }
 
 export function decodePersistentPayload(
@@ -508,6 +554,14 @@ export function decodePersistentPayload(
   ) {
     const quest = decodeQuestPersistencePayload(payload)
     if (quest) return quest
+  }
+
+  if (
+    typeId === SHOP_PERSISTENCE_TYPE_ID ||
+    typeNameMatch(typeName, "ShopManager+ShopPersistenceData")
+  ) {
+    const shop = decodeShopPersistencePayload(payload)
+    if (shop) return shop
   }
 
   if (
@@ -726,6 +780,29 @@ export function extractInventorySummary(
   return extractPlayerSummary(parsed)
 }
 
+function readShopPersistence(parsed: ParsedSave): ShopPersistenceEntry[] | null {
+  const common = parsed.snapshot.commonElements
+  for (const [key, entry] of Object.entries(common)) {
+    if (formatElementKey(Number(key), "manager") !== "ID_SHOP_MANAGER") continue
+
+    const decoded = entry.object.decoded as
+      | { type?: string; shops?: ShopPersistenceEntry[] }
+      | null
+    if (decoded?.type === "ShopPersistenceData" && decoded.shops) {
+      return decoded.shops
+    }
+
+    const fresh = decodeShopPersistencePayload(entry.object.payload)
+    if (fresh?.shops) {
+      entry.object.decoded = fresh
+      return fresh.shops
+    }
+    break
+  }
+
+  return null
+}
+
 function getCommonManagerData(
   parsed: ParsedSave,
   managerKey: string,
@@ -825,11 +902,16 @@ export function extractPlayerSummary(
     const questData = entry.object.decoded as Record<string, unknown> | null
     if (questData && questData.type === "QuestPersistenceData") {
       summary.questPersistence = questData
-      const questVariables = (questData.variables as Record<number, number>) ?? {}
+      const questVariables = normalizeQuestVariables(
+        (questData.variables as Record<string | number, number>) ?? {},
+      )
       summary.bossKillStatus = decodeBossKillStatus(questVariables)
     }
     break
   }
+
+  const shops = readShopPersistence(parsed)
+  if (shops) summary.shops = shops
 
   return Object.keys(summary).length > 0 ? summary : null
 }

@@ -8,7 +8,9 @@ import sculptorToolsData from "../data/sculptor-tools.json"
 import CollectibleChildren from "./CollectibleChildren"
 import CollectibleCobijadas from "./CollectibleCobijadas"
 import CollectibleGoldenLumps from "./CollectibleGoldenLumps"
+import CollectibleMarkOfMartyrdom from "./CollectibleMarkOfMartyrdom"
 import CollectibleMarkOfTheEmbrujo from "./CollectibleMarkOfTheEmbrujo"
+import CollectibleMarkOfThePreceptor from "./CollectibleMarkOfThePreceptor"
 import CollectibleHiddenSymbols from "./CollectibleHiddenSymbols"
 import CollectiblePlaceholder from "./CollectiblePlaceholder"
 import CollectibleQuestGroup, {
@@ -54,9 +56,19 @@ const collectibleSections = [
     element: <CollectibleSculptorTools />,
   },
   {
+    key: "mark-of-martyrdom",
+    title: "Mark of Martyrdom",
+    element: <CollectibleMarkOfMartyrdom />,
+  },
+  {
     key: "mark-of-the-embrujo",
     title: "Mark of the Embrujo",
     element: <CollectibleMarkOfTheEmbrujo />,
+  },
+  {
+    key: "mark-of-the-preceptor",
+    title: "Mark of the Preceptor",
+    element: <CollectibleMarkOfThePreceptor />,
   },
   ...collections.map((collection) => ({
     key: collection.id,

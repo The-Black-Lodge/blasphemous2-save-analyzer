@@ -11,6 +11,7 @@ import './styles/hud-sprites.css'
 import './styles/npc-sprites.css'
 import './styles/symbol-sprites.css'
 import './styles/weapon-memory-sprites.css'
+import './styles/mark-collectible-sprites.css'
 import './index.css'
 import App from './App.tsx'
 

@@ -1,7 +1,7 @@
 {
   "generatedBy": "build_mark_of_the_embrujo.py",
   "title": "Mark of the Embrujo",
-  "sprite": "QI99",
+  "sprite": "embrujo-brand",
   "locations": [
     {
       "id": 1,

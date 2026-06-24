@@ -1,0 +1,435 @@
+{
+  "generatedBy": "build_mark_collectibles.py",
+  "title": "Mark of Martyrdom",
+  "sprite": "QI99",
+  "locations": [
+    {
+      "id": 1,
+      "sceneFile": "Z0105",
+      "roomHash": 1291908244,
+      "elementKey": 1860906432,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522634"
+    },
+    {
+      "id": 2,
+      "sceneFile": "Z0203",
+      "roomHash": 1291908279,
+      "elementKey": 1241953459,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522340"
+    },
+    {
+      "id": 3,
+      "sceneFile": "Z0301",
+      "roomHash": 1291908182,
+      "elementKey": -746934463,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520250"
+    },
+    {
+      "id": 4,
+      "sceneFile": "Z0305",
+      "roomHash": 1291908178,
+      "elementKey": -694925091,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522641"
+    },
+    {
+      "id": 5,
+      "sceneFile": "Z0308",
+      "roomHash": 1291908173,
+      "elementKey": 1702345488,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522649"
+    },
+    {
+      "id": 6,
+      "sceneFile": "Z0412",
+      "roomHash": -274175731,
+      "elementKey": -746934463,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520324"
+    },
+    {
+      "id": 7,
+      "sceneFile": "Z0415",
+      "roomHash": -274175726,
+      "elementKey": -838890837,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520876"
+    },
+    {
+      "id": 8,
+      "sceneFile": "Z0503",
+      "roomHash": 1291908114,
+      "elementKey": -746934463,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523379"
+    },
+    {
+      "id": 9,
+      "sceneFile": "Z05BZ02",
+      "roomHash": -2116507163,
+      "elementKey": -41400469,
+      "source": "quest",
+      "label": "INT_QUEST_ITEM_PICKUP",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523324"
+    },
+    {
+      "id": 10,
+      "sceneFile": "Z0605",
+      "roomHash": 1291908149,
+      "elementKey": -616671249,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523329"
+    },
+    {
+      "id": 11,
+      "sceneFile": "Z0810",
+      "roomHash": -274175861,
+      "elementKey": -746934463,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520941"
+    },
+    {
+      "id": 12,
+      "sceneFile": "Z0817",
+      "roomHash": -274175868,
+      "elementKey": -746934463,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523415"
+    },
+    {
+      "id": 13,
+      "sceneFile": "Z0901",
+      "roomHash": 1291907984,
+      "elementKey": -746934463,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=519389"
+    },
+    {
+      "id": 14,
+      "sceneFile": "Z0927",
+      "roomHash": 129108564,
+      "elementKey": -530634492,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520857"
+    },
+    {
+      "id": 15,
+      "sceneFile": "Z1210",
+      "roomHash": -133013162,
+      "elementKey": -746934463,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": null
+    },
+    {
+      "id": 16,
+      "sceneFile": "Z1307",
+      "roomHash": -1699097201,
+      "elementKey": -1441524550,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": null
+    },
+    {
+      "id": 17,
+      "sceneFile": "Z1330",
+      "roomHash": -1295812673,
+      "elementKey": -746934463,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": null
+    },
+    {
+      "id": 18,
+      "sceneFile": "Z1405",
+      "roomHash": -1699097166,
+      "elementKey": -746934463,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": null
+    },
+    {
+      "id": 19,
+      "sceneFile": "Z1418",
+      "roomHash": -133013236,
+      "elementKey": -746934463,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": null
+    },
+    {
+      "id": 20,
+      "sceneFile": "Z1419",
+      "roomHash": -133013237,
+      "elementKey": -746934463,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": null
+    },
+    {
+      "id": 21,
+      "sceneFile": "Z1619",
+      "roomHash": -133013303,
+      "elementKey": -746934463,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": null
+    },
+    {
+      "id": 22,
+      "sceneFile": "Z1709",
+      "roomHash": -1699097339,
+      "elementKey": -41400469,
+      "source": "quest",
+      "label": "INT_QUEST_ITEM_PICKUP",
+      "url": null
+    },
+    {
+      "id": 23,
+      "sceneFile": "Z1801",
+      "roomHash": -1699097302,
+      "elementKey": -41400469,
+      "source": "quest",
+      "label": "INT_QUEST_ITEM_PICKUP_TEARSLUXURY3",
+      "url": null
+    },
+    {
+      "id": 24,
+      "sceneFile": "Z1802",
+      "roomHash": -1699097303,
+      "elementKey": -41400469,
+      "source": "quest",
+      "label": "INT_QUEST_ITEM_PICKUP_ORB",
+      "url": null
+    },
+    {
+      "id": 25,
+      "sceneFile": "Z1803",
+      "roomHash": -1699097304,
+      "elementKey": -41400469,
+      "source": "quest",
+      "label": "INT_QUEST_ITEM_PICKUP_ORB",
+      "url": null
+    },
+    {
+      "id": 26,
+      "sceneFile": "Z1804",
+      "roomHash": -1699097305,
+      "elementKey": -41400469,
+      "source": "quest",
+      "label": "INT_QUEST_ITEM_PICKUP_TEARSLUXURY3",
+      "url": null
+    },
+    {
+      "id": 27,
+      "sceneFile": "Z1903",
+      "roomHash": -1699097399,
+      "elementKey": 1758578496,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": null
+    },
+    {
+      "id": 28,
+      "sceneFile": "Z1909",
+      "roomHash": -1699097389,
+      "elementKey": -746934463,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": null
+    },
+    {
+      "id": 29,
+      "sceneFile": "Z1910",
+      "roomHash": -133013457,
+      "elementKey": 1989242165,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520938"
+    },
+    {
+      "id": 30,
+      "sceneFile": "Z2106",
+      "roomHash": 1574233243,
+      "elementKey": -746934463,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES",
+      "url": null
+    },
+    {
+      "id": 31,
+      "sceneFile": "Z2301",
+      "roomHash": 1574233184,
+      "elementKey": -41400469,
+      "source": "quest",
+      "label": "INT_QUEST_ITEM_PICKUP",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=521012"
+    },
+    {
+      "id": 32,
+      "sceneFile": "Z2401",
+      "roomHash": 1574233213,
+      "elementKey": -746934463,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES (10 Cherubs)",
+      "url": null
+    },
+    {
+      "id": 33,
+      "sceneFile": "Z2401",
+      "roomHash": 1574233213,
+      "elementKey": -394447120,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES (29 Cherubs)",
+      "url": null
+    },
+    {
+      "id": 34,
+      "sceneFile": "Z2401",
+      "roomHash": 1574233213,
+      "elementKey": 1460786171,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES (17 Cherubs)",
+      "url": null
+    },
+    {
+      "id": 35,
+      "sceneFile": "Z2402",
+      "roomHash": 1574233212,
+      "elementKey": 1769684405,
+      "source": "chest",
+      "label": "INT_CHEST_CURRENCIES (33 Cherubs)",
+      "url": null,
+      "tracking": { "type": "roomTrigger" }
+    },
+    {
+      "id": 36,
+      "sceneFile": "Z1303",
+      "source": "boss",
+      "label": "Radames",
+      "markCount": 1,
+      "url": null,
+      "tracking": { "type": "bossKill", "bossVarID": 931769267, "bossCode": "BS01" }
+    },
+    {
+      "id": 37,
+      "sceneFile": "Z0204",
+      "source": "boss",
+      "label": "Orospina",
+      "markCount": 1,
+      "url": null,
+      "tracking": { "type": "bossKill", "bossVarID": 972433550, "bossCode": "BS02" }
+    },
+    {
+      "id": 38,
+      "sceneFile": "Z0304",
+      "source": "boss",
+      "label": "Lesmes",
+      "markCount": 1,
+      "url": null,
+      "tracking": { "type": "bossKill", "bossVarID": 1093909737, "bossCode": "BS03" }
+    },
+    {
+      "id": 39,
+      "sceneFile": "Z1106",
+      "source": "boss",
+      "label": "Afilaor",
+      "markCount": 1,
+      "url": null,
+      "tracking": { "type": "bossKill", "bossVarID": 486012140, "bossCode": "BS04" }
+    },
+    {
+      "id": 40,
+      "sceneFile": "Z1203",
+      "source": "boss",
+      "label": "Benedicta",
+      "markCount": 1,
+      "url": null,
+      "tracking": { "type": "bossKill", "bossVarID": 607488327, "bossCode": "BS05" }
+    },
+    {
+      "id": 41,
+      "sceneFile": "Z0611",
+      "source": "boss",
+      "label": "Tercios",
+      "markCount": 1,
+      "url": null,
+      "tracking": { "type": "bossKill", "bossVarID": 648152610, "bossCode": "BS06" }
+    },
+    {
+      "id": 42,
+      "sceneFile": "Z0713",
+      "source": "boss",
+      "label": "Susona",
+      "markCount": 1,
+      "url": null,
+      "tracking": { "type": "bossKill", "bossVarID": 769628797, "bossCode": "BS07" }
+    },
+    {
+      "id": 43,
+      "sceneFile": "Z0806",
+      "source": "boss",
+      "label": "Orgaz",
+      "markCount": 1,
+      "url": null,
+      "tracking": { "type": "bossKill", "bossVarID": -577512320, "bossCode": "BS08" }
+    },
+    {
+      "id": 44,
+      "sceneFile": "Z1006",
+      "source": "boss",
+      "label": "Eviterno",
+      "markCount": 1,
+      "url": null,
+      "tracking": { "type": "bossKill", "bossVarID": 810398647, "bossCode": "BS10" }
+    },
+    {
+      "id": 45,
+      "sceneFile": null,
+      "source": "shop",
+      "label": "Regina (Holy Hand) — mark 1",
+      "markCount": 1,
+      "url": null,
+      "tracking": { "type": "shopOrb", "shopId": 1033931609, "orbIndex": 0 }
+    },
+    {
+      "id": 46,
+      "sceneFile": null,
+      "source": "shop",
+      "label": "Regina (Holy Hand) — mark 2",
+      "markCount": 1,
+      "url": null,
+      "tracking": { "type": "shopOrb", "shopId": 1033931609, "orbIndex": 1 }
+    },
+    {
+      "id": 47,
+      "sceneFile": null,
+      "source": "shop",
+      "label": "Medardo Escolástico",
+      "markCount": 1,
+      "url": null,
+      "tracking": { "type": "shopItem", "shopId": 637619968, "itemId": 997923798 }
+    }
+  ],
+  "killBar": {
+    "max": 40,
+    "statName": "Orb Experience"
+  }
+}

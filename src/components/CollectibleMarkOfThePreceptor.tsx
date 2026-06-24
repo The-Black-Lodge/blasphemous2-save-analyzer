@@ -1,30 +1,31 @@
-import markOfTheEmbrujoData from "../data/mark-of-the-embrujo.json"
+import markOfThePreceptorData from "../data/mark-of-the-preceptor.json"
 import { useSave } from "./SaveContext"
 import {
-  EMBRUJO_LOCATIONS,
-  isEmbrujoMarkCollected,
-} from "../utils/markOfTheEmbrujo"
+  isPreceptorMarkCollected,
+  PRECEPTOR_LOCATIONS,
+} from "../utils/markOfThePreceptor"
 
-export default function CollectibleMarkOfTheEmbrujo() {
+export default function CollectibleMarkOfThePreceptor() {
   const { save } = useSave()
 
   return (
     <section className="collectible-quest-group">
       <span
-        className={`qi-sprite qi-sprite--${markOfTheEmbrujoData.sprite} float-left`}
+        className={`qi-sprite qi-sprite--${markOfThePreceptorData.sprite} float-left`}
         aria-hidden="true"
       />
-      <h3 className="leading-icon">{markOfTheEmbrujoData.title}</h3>
+      <h3 className="leading-icon">{markOfThePreceptorData.title}</h3>
       <h4 className="collectible-summary">
-        Use <em>Marks</em> to unlock <em>Weapon Memories</em>.
+        Mea Culpa DLC marks for <em>Weapon Memories</em> on the Mea Culpa
+        weapon.
       </h4>
 
       <div className="collectible-grid">
-        {EMBRUJO_LOCATIONS.map((location) => {
-          const collected = isEmbrujoMarkCollected(save, location)
+        {PRECEPTOR_LOCATIONS.map((location) => {
+          const collected = isPreceptorMarkCollected(save, location)
           return (
             <div
-              key={location.id}
+              key={`${location.id}-${location.elementKey}`}
               className={`collectible-cell${collected ? " collected" : ""}`}
               title={collected ? "Collected" : "Not yet collected"}
             >

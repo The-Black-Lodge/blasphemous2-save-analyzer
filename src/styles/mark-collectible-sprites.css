@@ -1,0 +1,14 @@
+/* Mark collectible icons (non-quest-sheet sprites). */
+
+.qi-sprite.qi-sprite--embrujo-brand {
+  width: 33px;
+  height: 33px;
+  background-image: url("/blasphemous2-save-analyzer/sprites/embrujo-icon.png");
+  background-position: 0 0;
+}
+
+.collectible-quest-group .qi-sprite.qi-sprite--embrujo-brand {
+  transform: scale(var(--qi-sprite-scale))
+    translate(calc(var(--qi-header-offset-x) - 2px), calc(var(--qi-header-offset-y) - 4px));
+  transform-origin: top left;
+}
