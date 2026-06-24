@@ -1,4 +1,5 @@
 import b2data from "../data/b2data.json"
+import prayerUrls from "../data/prayers.json"
 import { useSave } from "./SaveContext"
 import { getAcquiredPrayerSources } from "../utils/inventoryPrayers"
 import { getEquippedPrayers } from "../utils/inventoryEquipped"
@@ -11,46 +12,110 @@ function useTab() {
   return tab
 }
 
-const PRAYER_SLOT_LABELS: Record<0 | 1, string> = {
-  0: "Quick Prayer",
-  1: "Full Prayer",
+/** Soleá of Excommunication — always last chant slot. */
+const CHANT_LAST_SOURCE = "PR103"
+/** Bleeding Chalice — always last quick verse slot. */
+const VERSE_LAST_SOURCE = "PR108"
+
+function sortPrayerSources(
+  sources: string[],
+  captionBySource: Map<string, string>,
+  pinLast?: string,
+): string[] {
+  const sorted = [...sources].sort((a, b) =>
+    (captionBySource.get(a) ?? a).localeCompare(captionBySource.get(b) ?? b),
+  )
+  if (pinLast) {
+    const index = sorted.indexOf(pinLast)
+    if (index >= 0) {
+      sorted.splice(index, 1)
+      sorted.push(pinLast)
+    }
+  }
+  return sorted
 }
 
-function PrayerGrid({
+const prayerUrlBySource = prayerUrls.urls as Record<string, string>
+
+function PrayerCell({
+  source,
+  caption,
+  acquired,
+  equipped = false,
+}: {
+  source: string
+  caption: string
+  acquired: boolean
+  equipped?: boolean
+}) {
+  const url = prayerUrlBySource[source]
+
+  return (
+    <div
+      className={`collectible-cell prayer-cell${acquired ? "" : " prayer-cell--missing"}${equipped ? " prayer-cell--equipped" : ""}`}
+      title={equipped ? `${caption} (equipped)` : caption}
+    >
+      <div className="prayer-cell-icon-slot">
+        <span className={`pr-sprite pr-sprite--${source}`} aria-hidden="true" />
+      </div>
+      <span className="prayer-cell-label">{caption}</span>
+      {url ? (
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <i className="fa-solid fa-link" />
+        </a>
+      ) : null}
+    </div>
+  )
+}
+
+function PrayerColumn({
   label,
   sources,
   acquired,
+  equippedSource,
 }: {
   label: string
   sources: string[]
   acquired: Set<string>
+  equippedSource?: string
 }) {
   const prayersBySource = new Map(
     b2data.prayers.map((prayer) => [prayer.source, prayer]),
   )
+  const equippedPrayer = equippedSource
+    ? prayersBySource.get(equippedSource)
+    : undefined
 
   return (
     <div className="prayer-column">
-      <h3>{label}</h3>
-      <div className="prayer-grid">
-        {sources.map((source) => {
-          const prayer = prayersBySource.get(source)
-          if (!prayer) return null
+      <h3 className="collectible-grid-section-label">{label}</h3>
+      <div className="prayer-column-grid">
+        {equippedPrayer ? (
+          <>
+            <PrayerCell
+              source={equippedSource!}
+              caption={equippedPrayer.caption.en}
+              acquired={acquired.has(equippedSource!)}
+              equipped
+            />
+            <hr className="collectible-grid-divider" aria-hidden="true" />
+          </>
+        ) : null}
+        {sources
+          .filter((source) => source !== equippedSource)
+          .map((source) => {
+            const prayer = prayersBySource.get(source)
+            if (!prayer) return null
 
-          const isAcquired = acquired.has(source)
-          return (
-            <div
-              key={source}
-              className={`prayer-item${isAcquired ? "" : " prayer-item--missing"}`}
-            >
-              <span
-                className={`pr-sprite pr-sprite--${source}`}
-                aria-hidden="true"
+            return (
+              <PrayerCell
+                key={source}
+                source={source}
+                caption={prayer.caption.en}
+                acquired={acquired.has(source)}
               />
-              <div className="prayer-label">{prayer.caption.en}</div>
-            </div>
-          )
-        })}
+            )
+          })}
       </div>
     </div>
   )
@@ -63,6 +128,9 @@ export default function Prayer() {
   const equipped = getEquippedPrayers(save)
   const prayersBySource = new Map(
     b2data.prayers.map((prayer) => [prayer.source, prayer]),
+  )
+  const captionBySource = new Map(
+    b2data.prayers.map((prayer) => [prayer.source, prayer.caption.en]),
   )
 
   const chants: string[] = []
@@ -80,41 +148,49 @@ export default function Prayer() {
     }
   }
 
+  const sortedChants = sortPrayerSources(chants, captionBySource, CHANT_LAST_SOURCE)
+  const sortedVerses = sortPrayerSources(verses, captionBySource, VERSE_LAST_SOURCE)
+  const sortedUnclassified = sortPrayerSources(unclassified, captionBySource)
+
+  const equippedBySlot = new Map(
+    equipped.map(({ slot, source }) => [slot, source]),
+  )
+
   return (
     <section className="prayer">
       {tab === "all" && <h2>Prayers</h2>}
-      {equipped.length > 0 && (
-        <div className="prayer-equipped">
-          <h3>Equipped</h3>
-          <div className="prayer-equipped-grid">
-            {equipped.map(({ slot, source }) => {
-              const prayer = prayersBySource.get(source)
-              return (
-                <div key={`equipped-${slot}-${source}`} className="prayer-item">
-                  <span
-                    className={`pr-sprite pr-sprite--${source}`}
-                    aria-hidden="true"
-                  />
-                  <div className="prayer-label">
-                    {PRAYER_SLOT_LABELS[slot]}: {prayer?.caption.en ?? source}
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      )}
-      <div className="prayer-columns">
-        <PrayerGrid label="Chants" sources={chants} acquired={acquired} />
-        <PrayerGrid label="Quick Verses" sources={verses} acquired={acquired} />
+      <div className="prayer-panel">
+        <PrayerColumn
+          label="Quick Verses"
+          sources={sortedVerses}
+          acquired={acquired}
+          equippedSource={equippedBySlot.get(0)}
+        />
+        <div className="prayer-panel-divider" aria-hidden="true" />
+        <PrayerColumn
+          label="Chants"
+          sources={sortedChants}
+          acquired={acquired}
+          equippedSource={equippedBySlot.get(1)}
+        />
       </div>
       {unclassified.length > 0 ? (
         <div className="prayer-section-other">
-          <PrayerGrid
-            label="Other"
-            sources={unclassified}
-            acquired={acquired}
-          />
+          <div className="collectible-grid">
+            <h3 className="collectible-grid-section-label">Other</h3>
+            {sortedUnclassified.map((source) => {
+              const prayer = prayersBySource.get(source)
+              if (!prayer) return null
+              return (
+                <PrayerCell
+                  key={source}
+                  source={source}
+                  caption={prayer.caption.en}
+                  acquired={acquired.has(source)}
+                />
+              )
+            })}
+          </div>
         </div>
       ) : null}
     </section>
