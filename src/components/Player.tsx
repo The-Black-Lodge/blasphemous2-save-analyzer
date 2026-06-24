@@ -169,10 +169,10 @@ export default function Player() {
       flaskRange={flaskRange}
       healingFlaskFactor={healingFlaskFactor}
       goldFlaskActive={goldFlaskActive}
-      fervour={fervour}
+      fervour={fervour ?? undefined}
       guiltValue={guiltStat?.value}
       guiltDropsInWorld={guilt?.dropCount}
-      tears={tears}
+      tears={tears ?? undefined}
     />,
   )
 

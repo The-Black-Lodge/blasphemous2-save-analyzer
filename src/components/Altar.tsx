@@ -1,5 +1,6 @@
 import { useState, useContext } from "react"
 import b2data from "../data/b2data.json"
+import figuresDisplay from "../data/figures-display.json"
 import { FigureCategorySprite } from "./FigureCategorySprite"
 import { FigureSprite } from "./FigureSprite"
 import { useSave } from "./SaveContext"
@@ -38,6 +39,27 @@ const maidenChain = getMaidenChain()
 const figureBySource = new Map(
   b2data.figures.map((figure) => [figure.source, figure]),
 )
+const figureUrls = figuresDisplay.urls as Record<string, string>
+
+function FigureLink({ url }: { url: string | null }) {
+  if (!url) return null
+
+  return (
+    <a
+      className="altar-figure-link"
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i className="fa-solid fa-link" />
+    </a>
+  )
+}
+
+function getFigureUrl(source: string): string | null {
+  const url = figureUrls[source]
+  return url ? url : null
+}
 
 function getFigureSpriteSource(source: string, acquired: Set<string>): string {
   if (source === maidenChain.displaySource) {
@@ -87,6 +109,7 @@ function FigureItem({
   const figure = figureBySource.get(source)
   if (!figure) return null
 
+  const url = getFigureUrl(source)
   const owned = isFigureOwned(source, acquired)
   const itemClassName = owned
     ? "altar-figure-item"
@@ -103,6 +126,7 @@ function FigureItem({
             acquired={acquired}
           />
         </span>
+        <FigureLink url={url} />
         <span className="altar-figure-label">
           <MaidenLabel chainIndex={chainIndex} />
         </span>
@@ -124,6 +148,7 @@ function FigureItem({
             burnt={isBurnt}
           />
         </span>
+        <FigureLink url={url} />
         <span className="altar-figure-label">
           {isBurnt ? `Burnt Figure (${figure.caption.en})` : figure.caption.en}
         </span>
@@ -139,6 +164,7 @@ function FigureItem({
           acquired={acquired}
         />
       </span>
+      <FigureLink url={url} />
       <span className="altar-figure-label">{figure.caption.en}</span>
     </li>
   )
