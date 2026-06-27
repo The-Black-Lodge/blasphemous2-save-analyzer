@@ -97,11 +97,13 @@ const BOSS_VARS = [
   { id: 9, varID: 931874834, name: "Tutorial Boss", code: "BS11" },
 ]
 
+// DLC boss vars from Completion Config (Mea Culpa) + Boss Rush Input Quest Var assets.
+// Not in GameModeManagerConfig.varsOfDeadBossesList — base game only has BS01–BS11 there.
 const DLC_BOSS_VARS = [
-  { id: 10, varID: -1364307071, name: "Mater Priora", code: "BS101" },
-  { id: 11, varID: -1713357321, name: "Penitent Rogue A", code: "BS102A" },
-  { id: 12, varID: 97115205, name: "Penitent Rogue B", code: "BS102B" },
-  { id: 13, varID: -1393746147, name: "Crescencia", code: "BS201" },
+  { id: 10, varID: 234662490, name: "Mater Priora", code: "BS101" },
+  { id: 11, varID: 1303537091, name: "Penitent Rogue A", code: "BS102A" },
+  { id: 12, varID: 1303542534, name: "Penitent Rogue B", code: "BS102B" },
+  { id: 13, varID: 234698169, name: "Crescencia", code: "BS201" },
 ]
 const STATS_TYPE_IDS = new Set([0x5ce1f99b, 0xefa6f720])
 const ABILITIES_TYPE_ID = 0x533635a5
