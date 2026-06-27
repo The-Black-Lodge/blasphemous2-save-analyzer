@@ -21,6 +21,15 @@ export interface CollectibleLocation {
   itemName?: string
   caption?: string
   elementKey?: number
+  /** Older saves may persist the same trigger under a different hashedID. */
+  alternateElementKeys?: number[]
+}
+
+function resolveElementKeys(location: CollectibleLocation): number[] {
+  const keys: number[] = []
+  if (location.elementKey !== undefined) keys.push(location.elementKey)
+  if (location.alternateElementKeys) keys.push(...location.alternateElementKeys)
+  return keys
 }
 
 export interface CollectibleLocationData {
@@ -54,19 +63,16 @@ export function isCollectibleLocationCollected(
     return getQuestItemAcquisition(location.itemName, status) !== "missing"
   }
 
-  if (location.elementKey === undefined) return false
+  const elementKeys = resolveElementKeys(location)
+  if (elementKeys.length === 0) return false
 
   if (tracking.type === "roomTriggerCleared") {
-    return isRoomTriggerCleared(
-      save,
-      location.roomHash,
-      location.elementKey,
+    return elementKeys.some((elementKey) =>
+      isRoomTriggerCleared(save, location.roomHash, elementKey),
     )
   }
 
-  return isRoomTriggerCollected(
-    save,
-    location.roomHash,
-    location.elementKey,
+  return elementKeys.some((elementKey) =>
+    isRoomTriggerCollected(save, location.roomHash, elementKey),
   )
 }

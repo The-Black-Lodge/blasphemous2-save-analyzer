@@ -24,21 +24,24 @@
       "sceneFile": "Z1043",
       "roomHash": 626501788,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523443",
-      "elementKey": 1400134226
+      "elementKey": 1400134226,
+      "alternateElementKeys": [463350469]
     },
     {
       "id": 4,
       "sceneFile": "Z1111",
       "roomHash": -133013192,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523408",
-      "elementKey": 463350469
+      "elementKey": 1400134226,
+      "alternateElementKeys": [463350469]
     },
     {
       "id": 5,
       "sceneFile": "Z1215",
       "roomHash": -133013167,
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523395",
-      "elementKey": 463350469
+      "elementKey": 1400134226,
+      "alternateElementKeys": [463350469]
     }
   ]
 }
