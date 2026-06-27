@@ -77,22 +77,32 @@
   background-position: -238px -37px;
 }
 
+.hud-sprite--life-orb-empty {
+  width: 14px;
+  height: 14px;
+  background-image: url('/blasphemous2-save-analyzer/sprites/player-HUD-v2-spritesheet.png');
+  background-position: -168px -144px;
+}
+
+.hud-sprite--life-orb-full {
+  width: 14px;
+  height: 14px;
+  background-image: url('/blasphemous2-save-analyzer/sprites/player-HUD-v2-spritesheet.png');
+  background-position: -149px -144px;
+}
+
+.hud-sprite--life-orb-link {
+  width: 4px;
+  height: 4px;
+  background-image: url('/blasphemous2-save-analyzer/sprites/player-HUD-v2-spritesheet.png');
+  background-position: -163px -148px;
+}
+
 .hud-sprite--menu-arrow {
   width: 22px;
   height: 16px;
   background-image: url('/blasphemous2-save-analyzer/sprites/player-HUD-spritesheet.png');
   background-position: -1px -411px;
-}
-
-.hud-sprite--menu-arrow-sm {
-  width: 22px;
-  height: 16px;
-  background-image: url('/blasphemous2-save-analyzer/sprites/player-HUD-spritesheet.png');
-  background-position: -1px -411px;
-  transform: scale(1.0);
-  transform-origin: top center;
-  margin-top: 4px;
-  margin-right: 4px;
 }
 
 .hud-sprite--popup-bg {

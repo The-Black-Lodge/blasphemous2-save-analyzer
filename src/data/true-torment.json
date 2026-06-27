@@ -1,0 +1,60 @@
+{
+  "title": "True Torment",
+  "domineLabel": "Domines",
+  "torments": [
+    {
+      "id": "CH01",
+      "challengeId": -904187966,
+      "name": "Final Judgment",
+      "description": "Enemies will be more challenging. Falling into chasms and thorns will lead to instant death."
+    },
+    {
+      "id": "CH02",
+      "challengeId": -500903439,
+      "name": "Vow of Poverty",
+      "description": "Fervor and rosary beads upgrades will remain locked."
+    },
+    {
+      "id": "CH03",
+      "challengeId": -2066987380,
+      "name": "Spilled Blood",
+      "description": "Your health bar will be replaced by life orbs."
+    },
+    {
+      "id": "CH04",
+      "challengeId": -1307472493,
+      "name": "Chalice of Guilt",
+      "description": "When you die, you will drop a single Guilt Fragment that will contain half of the Tears of Atonement and experience obtained."
+    },
+    {
+      "id": "CH05",
+      "challengeId": 1421410862,
+      "name": "Ascension of Penance",
+      "description": "Any hit you receive will increase your Guilt. In exchange, your attacks will be more powerful when you are free from Guilt."
+    },
+    {
+      "id": "CH06",
+      "challengeId": 1824695389,
+      "name": "Peace for the Remorseful",
+      "description": "Enemies will reappear if you leave and then return to their room. In exchange, you will have additional resistance to all elements."
+    },
+    {
+      "id": "CH07",
+      "challengeId": 258611448,
+      "name": "Barefoot Procession",
+      "description": "Any hit you receive will deplete your fervor bar. In exchange, fervor gains will increase."
+    },
+    {
+      "id": "CH08",
+      "challengeId": 1018126335,
+      "name": "Endless Thirst",
+      "description": "You gain less experience in combat and will collect fewer Marks of Martyrdom. In exchange, the Altarpiece of Favours will be completely unlocked from the start."
+    },
+    {
+      "id": "CH09",
+      "challengeId": -547957606,
+      "name": "Ultimate Torment",
+      "description": "Your penance starts again. You will lose all obtained items, weapons and upgrades from your previous playthrough. This challenge cannot be disabled."
+    }
+  ]
+}

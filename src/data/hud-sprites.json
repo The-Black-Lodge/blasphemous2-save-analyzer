@@ -3,6 +3,10 @@
     "player-HUD-spritesheet": {
       "w": 512,
       "h": 512
+    },
+    "player-HUD-v2-spritesheet": {
+      "w": 256,
+      "h": 256
     }
   },
   "sprites": {
@@ -93,6 +97,30 @@
       "y": 85,
       "w": 22,
       "h": 16
+    },
+    "life-orb-empty": {
+      "name": "Player-HUD-penitence-life-empty",
+      "sheet": "player-HUD-v2-spritesheet",
+      "x": 168,
+      "y": 98,
+      "w": 14,
+      "h": 14
+    },
+    "life-orb-link": {
+      "name": "Player-HUD-penitence-life-link",
+      "sheet": "player-HUD-v2-spritesheet",
+      "x": 163,
+      "y": 104,
+      "w": 4,
+      "h": 4
+    },
+    "life-orb-full": {
+      "name": "Player-HUD-penitence-life",
+      "sheet": "player-HUD-v2-spritesheet",
+      "x": 149,
+      "y": 98,
+      "w": 14,
+      "h": 14
     }
   },
   "scale": 2

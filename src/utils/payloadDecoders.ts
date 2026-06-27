@@ -186,6 +186,60 @@ function readInt32List(reader: B2BinaryReader): number[] {
   return values
 }
 
+const GAME_MODE_TYPE_ID = 0x0356c921
+const CHALLENGES_TYPE_ID = 0x89e8b711
+
+function readBoolByte(reader: B2BinaryReader): boolean {
+  if (reader.getRemaining() < 1) return false
+  return reader.readBytes(1)[0] !== 0
+}
+
+function decodeGameModePersistencePayload(
+  payload: Uint8Array,
+): Record<string, unknown> | null {
+  if (payload.length < 8) return null
+
+  const reader = new B2BinaryReader(payload)
+  const result: Record<string, unknown> = {
+    type: "GameModePersistenceData",
+    currentMode: reader.readInt32(),
+    newGamePlusUpgrades: reader.readInt32(),
+  }
+
+  if (reader.getRemaining() >= 1) {
+    result.ch09FixApplied = readBoolByte(reader)
+  }
+
+  return result
+}
+
+function decodeChallengesPersistencePayload(
+  payload: Uint8Array,
+): Record<string, unknown> | null {
+  if (payload.length < 4) return null
+
+  const reader = new B2BinaryReader(payload)
+  const count = reader.readInt32()
+  const challengeStates: { challengeId: number; active: boolean }[] = []
+
+  for (let i = 0; i < count; i++) {
+    if (reader.getRemaining() < 5) break
+    challengeStates.push({
+      challengeId: reader.readInt32(),
+      active: readBoolByte(reader),
+    })
+  }
+
+  return {
+    type: "ChallengesPersistenceData",
+    challengeStates,
+    prevCompletedChallengesIds: readInt32List(reader),
+    completedChallengesIds: readInt32List(reader),
+    cancelledChallengesIds: readInt32List(reader),
+    initialChallengesChosen: readBoolByte(reader),
+  }
+}
+
 function decodeAltarPiecePresetFields(
   payload: Uint8Array,
 ): Record<string, unknown> | null {
@@ -676,6 +730,22 @@ export function decodePersistentPayload(
   ) {
     const trigger = decodeTriggerData(payload)
     if (trigger) return trigger
+  }
+
+  if (
+    typeId === GAME_MODE_TYPE_ID ||
+    typeNameMatch(typeName, "GameModePersistenceData")
+  ) {
+    const gameMode = decodeGameModePersistencePayload(payload)
+    if (gameMode) return gameMode
+  }
+
+  if (
+    typeId === CHALLENGES_TYPE_ID ||
+    typeNameMatch(typeName, "ChallengesPersistenceData")
+  ) {
+    const challenges = decodeChallengesPersistencePayload(payload)
+    if (challenges) return challenges
   }
 
   if (payload.length === 4) {

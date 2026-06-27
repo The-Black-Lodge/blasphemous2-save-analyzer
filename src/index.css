@@ -115,6 +115,23 @@ code {
   margin-left: 2rem;
 }
 
+.life-orb-display {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: baseline;
+  position: relative;
+  top: 3px;
+}
+
+.life-orb-display .hud-sprite {
+  --hud-sprite-scale: 1;
+  margin-right: 6px;
+}
+
+.life-orb-display .hud-sprite:last-child {
+  margin-right: 0;
+}
+
 .leading-icon {
   margin-left: 2.5rem;
 }
@@ -966,6 +983,12 @@ code {
 
 .player-panel-section h3 {
   margin: 0 0 0.5rem;
+}
+
+.player .true-torment-count {
+  margin: 0 0 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-h);
 }
 
 .player-panel-section h4 {

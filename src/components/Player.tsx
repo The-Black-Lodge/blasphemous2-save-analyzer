@@ -5,9 +5,16 @@ import { findStat } from "../utils/playerDecoders"
 import { formatHashKey, resolveIdLabel, type ItemRef } from "../utils/catalogs"
 import type { ReadableSaveJson } from "../utils/saveParser"
 import { useSave } from "./SaveContext"
+import {
+  CH03_CHALLENGE_ID,
+  getTrueTormentState,
+  isChallengeActive,
+} from "../utils/trueTorment"
 import ArsenalOfPenitence from "./ArsenalOfPenitence"
 import PlayerStatsSection from "./PlayerStatsSection"
 import RelicsOfContrition from "./RelicsOfContrition"
+import TrueTorment from "./TrueTorment"
+import trueTormentData from "../data/true-torment.json"
 
 function useTab() {
   const tab = useContext(TabContext)
@@ -115,6 +122,11 @@ export default function Player() {
   }))
 
   const hasEquipment = !!equipment
+  const trueTormentState = getTrueTormentState(save as ReadableSaveJson)
+  const spilledBloodActive = isChallengeActive(
+    trueTormentState,
+    CH03_CHALLENGE_ID,
+  )
 
   const hasAbilityUnlocks =
     (abilityLock?.showedAbilities?.length ?? 0) > 0
@@ -169,6 +181,7 @@ export default function Player() {
       flaskRange={flaskRange}
       healingFlaskFactor={healingFlaskFactor}
       goldFlaskActive={goldFlaskActive}
+      spilledBloodActive={spilledBloodActive}
       fervour={fervour ?? undefined}
       guiltValue={guiltStat?.value}
       guiltDropsInWorld={guilt?.dropCount}
@@ -192,6 +205,18 @@ export default function Player() {
         <ArsenalOfPenitence
           weaponSlots={equipment?.weaponSlots}
           unlockedWeapons={equipment?.unlockedWeapons}
+        />
+      </div>,
+    )
+  }
+
+  if (trueTormentState) {
+    sections.push(
+      <div key="true-torment" className="player-panel-section">
+        <h3>{trueTormentData.title}</h3>
+        <TrueTorment
+          enabled={trueTormentState.enabled}
+          activeChallengeIds={trueTormentState.activeChallengeIds}
         />
       </div>,
     )

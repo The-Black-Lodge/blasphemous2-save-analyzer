@@ -12,6 +12,8 @@ import {
   formatGoldenFlaskProgress,
   getGoldenFlaskProgress,
 } from "../utils/lacrimatorio"
+import { healthToLifeOrbs } from "../utils/trueTorment"
+import LifeOrbSprites from "./LifeOrbSprites"
 
 interface StatEntry {
   statName: string | null
@@ -25,6 +27,7 @@ interface PlayerStatsSectionProps {
   flaskRange?: StatEntry
   healingFlaskFactor?: StatEntry
   goldFlaskActive: boolean
+  spilledBloodActive?: boolean
   fervour?: StatEntry
   guiltValue?: number
   guiltDropsInWorld?: number
@@ -69,6 +72,7 @@ export default function PlayerStatsSection({
   flaskRange,
   healingFlaskFactor,
   goldFlaskActive,
+  spilledBloodActive = false,
   fervour,
   guiltValue,
   guiltDropsInWorld,
@@ -84,7 +88,13 @@ export default function PlayerStatsSection({
     <div className="player-panel-section">
       {healthRange && (
         <StatLine>
-          Health: {healthRange.value} → {chaliceCount}/{CHALICE_ITEMS.length}{" "}
+          Health:{" "}
+          {spilledBloodActive ? (
+            <LifeOrbSprites count={healthToLifeOrbs(healthRange.value)} />
+          ) : (
+            healthRange.value
+          )}{" "}
+          → {chaliceCount}/{CHALICE_ITEMS.length}{" "}
           <CollectibleLink
             collectionKey="ornate-chalice"
             label="Ornate Chalices"
