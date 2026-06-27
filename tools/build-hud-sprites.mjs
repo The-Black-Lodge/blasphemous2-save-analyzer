@@ -218,6 +218,28 @@ for (const [className, rect] of Object.entries(sprites).sort(([a], [b]) =>
   )
 }
 
+const menuArrow = sprites["menu-arrow"]
+if (menuArrow) {
+  const sheetHeight = atlas[menuArrow.sheet]?.h
+  if (sheetHeight) {
+    const cssX = menuArrow.x
+    const cssY = sheetHeight - menuArrow.y - menuArrow.h
+    lines.push(
+      ".hud-sprite--menu-arrow-sm {",
+      `  width: ${menuArrow.w}px;`,
+      `  height: ${menuArrow.h}px;`,
+      `  background-image: ${sheetUrl(menuArrow.sheet)};`,
+      `  background-position: ${-cssX}px ${-cssY}px;`,
+      "  transform: scale(1.0);",
+      "  transform-origin: top center;",
+      "  margin-top: 4px;",
+      "  margin-right: 4px;",
+      "}",
+      "",
+    )
+  }
+}
+
 fs.writeFileSync(outCss, lines.join("\n"))
 
 console.log(`Wrote ${Object.keys(sprites).length} HUD sprites`)
