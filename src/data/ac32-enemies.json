@@ -1,0 +1,312 @@
+{
+  "enemies": [
+    {
+      "code": "EN01",
+      "scriptableId": -1186513166
+    },
+    {
+      "code": "EN02",
+      "scriptableId": 1542370189
+    },
+    {
+      "code": "EN03",
+      "scriptableId": -23713752
+    },
+    {
+      "code": "EN04",
+      "scriptableId": -1946028053
+    },
+    {
+      "code": "EN05",
+      "scriptableId": 782855302
+    },
+    {
+      "code": "EN06",
+      "scriptableId": -783228639
+    },
+    {
+      "code": "EN07",
+      "scriptableId": 1945654716
+    },
+    {
+      "code": "EN08",
+      "scriptableId": 735801135
+    },
+    {
+      "code": "EN09",
+      "scriptableId": -830282806
+    },
+    {
+      "code": "EN10",
+      "scriptableId": 379570776
+    },
+    {
+      "code": "EN11",
+      "scriptableId": -1186513165
+    },
+    {
+      "code": "EN12",
+      "scriptableId": 1542370190
+    },
+    {
+      "code": "EN13",
+      "scriptableId": -23713751
+    },
+    {
+      "code": "EN14",
+      "scriptableId": -1946028052
+    },
+    {
+      "code": "EN15",
+      "scriptableId": 782855303
+    },
+    {
+      "code": "EN16",
+      "scriptableId": -783228638
+    },
+    {
+      "code": "EN17",
+      "scriptableId": 1945654717
+    },
+    {
+      "code": "EN18",
+      "scriptableId": 735801136
+    },
+    {
+      "code": "EN19",
+      "scriptableId": -830282805
+    },
+    {
+      "code": "EN20",
+      "scriptableId": 379570777
+    },
+    {
+      "code": "EN21",
+      "scriptableId": -1186513164
+    },
+    {
+      "code": "EN22",
+      "scriptableId": 1542370191
+    },
+    {
+      "code": "EN23",
+      "scriptableId": -23713750
+    },
+    {
+      "code": "EN24",
+      "scriptableId": -1946028051
+    },
+    {
+      "code": "EN25",
+      "scriptableId": 782855304
+    },
+    {
+      "code": "EN26",
+      "scriptableId": -783228637
+    },
+    {
+      "code": "EN27",
+      "scriptableId": 1945654718
+    },
+    {
+      "code": "EN28",
+      "scriptableId": 735801137
+    },
+    {
+      "code": "EN29",
+      "scriptableId": -830282804
+    },
+    {
+      "code": "EN30",
+      "scriptableId": 379570778
+    },
+    {
+      "code": "EN31",
+      "scriptableId": -1186513163
+    },
+    {
+      "code": "EN32",
+      "scriptableId": 1542370192
+    },
+    {
+      "code": "EN33",
+      "scriptableId": -23713749
+    },
+    {
+      "code": "EN34",
+      "scriptableId": -1946028050
+    },
+    {
+      "code": "EN35",
+      "scriptableId": 782855305
+    },
+    {
+      "code": "EN36",
+      "scriptableId": -783228636
+    },
+    {
+      "code": "EN37",
+      "scriptableId": 1945654719
+    },
+    {
+      "code": "EN38",
+      "scriptableId": 735801138
+    },
+    {
+      "code": "EN39",
+      "scriptableId": -830282803
+    },
+    {
+      "code": "EN40",
+      "scriptableId": 379570779
+    },
+    {
+      "code": "EN41",
+      "scriptableId": -1186513162
+    },
+    {
+      "code": "EN42",
+      "scriptableId": 1542370193
+    },
+    {
+      "code": "EN43",
+      "scriptableId": -23713748
+    },
+    {
+      "code": "EN44",
+      "scriptableId": -1946028049
+    },
+    {
+      "code": "EN45",
+      "scriptableId": 782855306
+    },
+    {
+      "code": "EN46",
+      "scriptableId": -783228635
+    },
+    {
+      "code": "EN47",
+      "scriptableId": 1945654720
+    },
+    {
+      "code": "EN48",
+      "scriptableId": 735801139
+    },
+    {
+      "code": "EN49",
+      "scriptableId": -830282802
+    },
+    {
+      "code": "EN50",
+      "scriptableId": 379570780
+    },
+    {
+      "code": "EN51",
+      "scriptableId": -1186513161
+    },
+    {
+      "code": "EN52",
+      "scriptableId": 1542370194
+    },
+    {
+      "code": "EN53",
+      "scriptableId": -23713747
+    },
+    {
+      "code": "EN54",
+      "scriptableId": -1946028048
+    },
+    {
+      "code": "EN55",
+      "scriptableId": 782855307
+    },
+    {
+      "code": "EN56",
+      "scriptableId": -783228634
+    },
+    {
+      "code": "EN57",
+      "scriptableId": 1945654721
+    },
+    {
+      "code": "EN58",
+      "scriptableId": 735801140
+    },
+    {
+      "code": "EN59",
+      "scriptableId": -830282801
+    },
+    {
+      "code": "EN60",
+      "scriptableId": 379570781
+    },
+    {
+      "code": "EN61",
+      "scriptableId": -1186513160
+    },
+    {
+      "code": "EN62",
+      "scriptableId": 1542370195
+    },
+    {
+      "code": "EN63",
+      "scriptableId": -23713746
+    },
+    {
+      "code": "EN64",
+      "scriptableId": -1946028047
+    },
+    {
+      "code": "EN65",
+      "scriptableId": 782855308
+    },
+    {
+      "code": "EN66",
+      "scriptableId": -783228633
+    },
+    {
+      "code": "EN67",
+      "scriptableId": 1945654722
+    },
+    {
+      "code": "EN68",
+      "scriptableId": 735801141
+    },
+    {
+      "code": "EN69",
+      "scriptableId": -830282800
+    },
+    {
+      "code": "EN70",
+      "scriptableId": 379570782
+    },
+    {
+      "code": "EN71",
+      "scriptableId": -1186513159
+    },
+    {
+      "code": "EN72",
+      "scriptableId": 1542370196
+    },
+    {
+      "code": "EN73",
+      "scriptableId": -23713745
+    },
+    {
+      "code": "EN74",
+      "scriptableId": -1946028046
+    },
+    {
+      "code": "EN75",
+      "scriptableId": 782855309
+    },
+    {
+      "code": "EN76",
+      "scriptableId": -783228632
+    },
+    {
+      "code": "EN77",
+      "scriptableId": 1945654723
+    }
+  ]
+}

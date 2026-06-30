@@ -14,7 +14,11 @@ import Prayer from "./components/Prayer"
 import Quest from "./components/Quest"
 import Rosary from "./components/Rosary"
 import SaveProvider, { OpenSaveButton } from "./components/SaveProvider"
+import GlobalSaveProvider, {
+  OpenGlobalDataButton,
+} from "./components/GlobalSaveProvider"
 import Collectibles from "./components/Collectibles"
+import GlobalAnalyzer from "./components/GlobalAnalyzer"
 
 type SectionTab =
   | "bosses"
@@ -24,6 +28,7 @@ type SectionTab =
   | "prayers"
   | "altar"
   | "collectibles"
+  | "global"
 type Tab = "all" | SectionTab
 
 const TabContext = createContext<Tab>("all")
@@ -52,6 +57,7 @@ const SECTIONS: { id: SectionTab; label: string; Component: ComponentType }[] =
     { id: "altar", label: "Altarpiece of Favours", Component: Altar },
     { id: "collectibles", label: "Collectibles", Component: Collectibles },
     { id: "bosses", label: "Bosses", Component: Bosses },
+    { id: "global", label: "Global Analyzer", Component: GlobalAnalyzer },
   ]
 
 const TABS: { id: Tab; label: string }[] = [
@@ -119,7 +125,7 @@ function AppContent() {
               </button>
             ))}
           </nav>
-          <OpenSaveButton />
+          {tab === "global" ? <OpenGlobalDataButton /> : <OpenSaveButton />}
         </div>
         <main className="app-content">
           {visibleSections.map(({ id, Component }) => (
@@ -146,7 +152,9 @@ function AppContent() {
 function App() {
   return (
     <SaveProvider>
-      <AppContent />
+      <GlobalSaveProvider>
+        <AppContent />
+      </GlobalSaveProvider>
     </SaveProvider>
   )
 }

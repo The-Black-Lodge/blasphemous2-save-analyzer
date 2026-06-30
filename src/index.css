@@ -871,6 +871,17 @@ code {
   border-color: var(--accent-border);
 }
 
+.app-open-save--accent {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+}
+
+.app-open-save--accent:hover {
+  background: rgba(170, 59, 255, 0.18);
+  border-color: var(--accent);
+  color: var(--text-h);
+}
+
 .app-save-location-hint {
   position: relative;
   font-size: 0.65rem;
@@ -1792,4 +1803,110 @@ code {
   margin-top: 0.75rem;
   font-weight: 600;
   color: var(--text-h);
+}
+
+.global-analyzer {
+  margin-bottom: 2rem;
+}
+
+.global-analyzer-hint {
+  margin: 1rem 0;
+  color: var(--text-lo);
+}
+
+.global-analyzer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.global-analyzer-slot {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 0.85rem;
+}
+
+.global-analyzer-slot legend {
+  padding: 0;
+  float: left;
+  margin-right: 0.25rem;
+}
+
+.global-analyzer-slot-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.global-analyzer-meta {
+  font-size: 0.75rem;
+  color: var(--text-lo);
+}
+
+.global-analyzer-section-title {
+  margin: 1.25rem 0 0.5rem;
+}
+
+.global-analyzer-progress {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+}
+
+.global-analyzer-progress-note {
+  color: var(--text-lo);
+  font-size: 0.8rem;
+}
+
+.global-save-filename {
+  font-size: 0.65rem;
+  line-height: 1.2;
+  color: var(--text-lo);
+  max-width: 14rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.global-enemy-grid {
+  background: rgb(21, 24, 34);
+  border: 2px solid rgb(142, 126, 91);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 0.35rem;
+  max-width: 40rem;
+  margin: 0.5rem 0 1rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.global-enemy-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.35rem;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  font-size: 0.8rem;
+  color: var(--text-lo);
+}
+
+.global-enemy-row--killed {
+  color: var(--text-h);
+  border-color: rgb(142, 126, 91);
+}
+
+.global-enemy-code {
+  font-family: var(--mono);
+}
+
+.global-enemy-status {
+  font-size: 0.75rem;
 }
