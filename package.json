@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "build:enemies": "python tools/build-enemy-assets.py",
+    "build:ac32-spawns": "python tools/update-ac32-spawn-flags.py",
     "lint": "eslint .",
     "preview": "vite preview"
   },

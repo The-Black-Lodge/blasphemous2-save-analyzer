@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T00:48:29.075285+00:00",
+  "generatedAt": "2026-07-01T15:13:25.776553+00:00",
   "spriteScale": 2,
   "spriteHeight": 48,
   "enemies": {
@@ -1287,20 +1287,20 @@
     },
     "EN70": {
       "devName": "Fire Rotten Skull",
-      "displayName": "Fire Rotten Skull",
+      "displayName": "Charred Skull",
       "spriteFile": "EN70.png",
-      "spriteStatus": "generated",
+      "spriteStatus": "manual-pick",
       "spritePick": {
         "source": "EN70 - CharredSkull",
         "spriteDir": "EN70 - CharredSkull",
         "animationPrefix": "EN70-CharredSkull",
-        "asset": "EN70-CharredSkull_26.asset",
+        "asset": "EN70-CharredSkull_0.asset",
         "sheet": "EN70-CharredSkull.png",
         "sheetPath": "#Art/Sprites/enemies/EN70 - CharredSkull/EN70-CharredSkull.png",
-        "x": 610,
-        "y": 108,
-        "w": 65,
-        "h": 88
+        "x": 30,
+        "y": 218,
+        "w": 39,
+        "h": 61
       }
     },
     "EN71": {

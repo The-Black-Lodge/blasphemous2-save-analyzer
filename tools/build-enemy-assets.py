@@ -114,6 +114,17 @@ MANUAL_SPRITE_PICKS: dict[str, dict[str, str]] = {
         "asset": "waxcrawler_crawling_anim_0.asset",
         "sheet": "waxcrawler_crawling_anim.png",
     },
+    "EN70": {
+        "spriteDir": "EN70 - CharredSkull",
+        "animationPrefix": "EN70-CharredSkull",
+        "asset": "EN70-CharredSkull_0.asset",
+        "sheet": "EN70-CharredSkull.png",
+    },
+}
+
+# Display names that differ from prefab folder labels (survive regen).
+MANUAL_DISPLAY_NAMES: dict[str, str] = {
+    "EN70": "Charred Skull",
 }
 
 
@@ -612,6 +623,10 @@ def main() -> int:
             }
 
     apply_variant_display_names(enemies)
+
+    for code, display_name in MANUAL_DISPLAY_NAMES.items():
+        if code in enemies:
+            enemies[code]["displayName"] = display_name
 
     payload = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),

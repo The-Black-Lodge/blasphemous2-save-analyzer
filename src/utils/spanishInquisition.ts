@@ -4,7 +4,21 @@ import { unityStringHash } from "./unityStringHash"
 
 export const SPANISH_INQUISITION_TITLE =
   "Nobody Expects the Spanish Inquisition!"
-export const AC32_TRACKED_COUNT = 65
+
+export interface Ac32EnemyEntry {
+  code: string
+  scriptableId: number
+  occursInGame?: boolean
+}
+
+const AC32_ENEMY_LIST = ac32Enemies.enemies as Ac32EnemyEntry[]
+
+/** Enemies with a World-scene spawnpoint in exported assets. */
+export const AC32_IN_GAME_ENEMIES = AC32_ENEMY_LIST.filter(
+  (enemy) => enemy.occursInGame !== false,
+)
+
+export const AC32_TRACKED_COUNT = AC32_IN_GAME_ENEMIES.length
 
 const AC32_ACHIEVEMENT_IDS = new Set([
   unityStringHash("AC32"),
@@ -25,12 +39,19 @@ export interface SpanishInquisitionStatus {
   trackedTotal: number
 }
 
-export function getSpanishInquisitionBestiary(): SpanishInquisitionStatus {
-  const enemies = ac32Enemies.enemies.map(({ code, scriptableId }) => ({
+function toKillStatus(
+  enemies: Ac32EnemyEntry[],
+  killedIds: ReadonlySet<number>,
+): EnemyKillStatus[] {
+  return enemies.map(({ code, scriptableId }) => ({
     code,
     scriptableId,
-    killed: false,
+    killed: killedIds.has(scriptableId),
   }))
+}
+
+export function getSpanishInquisitionBestiary(): SpanishInquisitionStatus {
+  const enemies = toKillStatus(AC32_IN_GAME_ENEMIES, new Set())
 
   return {
     enemies,
@@ -44,7 +65,7 @@ export function getSpanishInquisitionStatus(
   saveSlot: number,
 ): SpanishInquisitionStatus {
   const knownIds = new Set(
-    ac32Enemies.enemies.map((enemy) => enemy.scriptableId),
+    AC32_IN_GAME_ENEMIES.map((enemy) => enemy.scriptableId),
   )
   const killedIds = new Set<number>()
 
@@ -66,11 +87,7 @@ export function getSpanishInquisitionStatus(
     }
   }
 
-  const enemies = ac32Enemies.enemies.map(({ code, scriptableId }) => ({
-    code,
-    scriptableId,
-    killed: killedIds.has(scriptableId),
-  }))
+  const enemies = toKillStatus(AC32_IN_GAME_ENEMIES, killedIds)
 
   return {
     enemies,

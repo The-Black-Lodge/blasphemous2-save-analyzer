@@ -2,311 +2,390 @@
   "enemies": [
     {
       "code": "EN01",
-      "scriptableId": -1186513166
+      "scriptableId": -1186513166,
+      "occursInGame": true
     },
     {
       "code": "EN02",
-      "scriptableId": 1542370189
+      "scriptableId": 1542370189,
+      "occursInGame": true
     },
     {
       "code": "EN03",
-      "scriptableId": -23713752
+      "scriptableId": -23713752,
+      "occursInGame": true
     },
     {
       "code": "EN04",
-      "scriptableId": -1946028053
+      "scriptableId": -1946028053,
+      "occursInGame": true
     },
     {
       "code": "EN05",
-      "scriptableId": 782855302
+      "scriptableId": 782855302,
+      "occursInGame": false
     },
     {
       "code": "EN06",
-      "scriptableId": -783228639
+      "scriptableId": -783228639,
+      "occursInGame": true
     },
     {
       "code": "EN07",
-      "scriptableId": 1945654716
+      "scriptableId": 1945654716,
+      "occursInGame": true
     },
     {
       "code": "EN08",
-      "scriptableId": 735801135
+      "scriptableId": 735801135,
+      "occursInGame": true
     },
     {
       "code": "EN09",
-      "scriptableId": -830282806
+      "scriptableId": -830282806,
+      "occursInGame": true
     },
     {
       "code": "EN10",
-      "scriptableId": 379570776
+      "scriptableId": 379570776,
+      "occursInGame": true
     },
     {
       "code": "EN11",
-      "scriptableId": -1186513165
+      "scriptableId": -1186513165,
+      "occursInGame": false
     },
     {
       "code": "EN12",
-      "scriptableId": 1542370190
+      "scriptableId": 1542370190,
+      "occursInGame": false
     },
     {
       "code": "EN13",
-      "scriptableId": -23713751
+      "scriptableId": -23713751,
+      "occursInGame": false
     },
     {
       "code": "EN14",
-      "scriptableId": -1946028052
+      "scriptableId": -1946028052,
+      "occursInGame": false
     },
     {
       "code": "EN15",
-      "scriptableId": 782855303
+      "scriptableId": 782855303,
+      "occursInGame": true
     },
     {
       "code": "EN16",
-      "scriptableId": -783228638
+      "scriptableId": -783228638,
+      "occursInGame": true
     },
     {
       "code": "EN17",
-      "scriptableId": 1945654717
+      "scriptableId": 1945654717,
+      "occursInGame": false
     },
     {
       "code": "EN18",
-      "scriptableId": 735801136
+      "scriptableId": 735801136,
+      "occursInGame": true
     },
     {
       "code": "EN19",
-      "scriptableId": -830282805
+      "scriptableId": -830282805,
+      "occursInGame": true
     },
     {
       "code": "EN20",
-      "scriptableId": 379570777
+      "scriptableId": 379570777,
+      "occursInGame": true
     },
     {
       "code": "EN21",
-      "scriptableId": -1186513164
+      "scriptableId": -1186513164,
+      "occursInGame": false
     },
     {
       "code": "EN22",
-      "scriptableId": 1542370191
+      "scriptableId": 1542370191,
+      "occursInGame": true
     },
     {
       "code": "EN23",
-      "scriptableId": -23713750
+      "scriptableId": -23713750,
+      "occursInGame": true
     },
     {
       "code": "EN24",
-      "scriptableId": -1946028051
+      "scriptableId": -1946028051,
+      "occursInGame": true
     },
     {
       "code": "EN25",
-      "scriptableId": 782855304
+      "scriptableId": 782855304,
+      "occursInGame": false
     },
     {
       "code": "EN26",
-      "scriptableId": -783228637
+      "scriptableId": -783228637,
+      "occursInGame": true
     },
     {
       "code": "EN27",
-      "scriptableId": 1945654718
+      "scriptableId": 1945654718,
+      "occursInGame": true
     },
     {
       "code": "EN28",
-      "scriptableId": 735801137
+      "scriptableId": 735801137,
+      "occursInGame": false
     },
     {
       "code": "EN29",
-      "scriptableId": -830282804
+      "scriptableId": -830282804,
+      "occursInGame": true
     },
     {
       "code": "EN30",
-      "scriptableId": 379570778
+      "scriptableId": 379570778,
+      "occursInGame": true
     },
     {
       "code": "EN31",
-      "scriptableId": -1186513163
+      "scriptableId": -1186513163,
+      "occursInGame": true
     },
     {
       "code": "EN32",
-      "scriptableId": 1542370192
+      "scriptableId": 1542370192,
+      "occursInGame": true
     },
     {
       "code": "EN33",
-      "scriptableId": -23713749
+      "scriptableId": -23713749,
+      "occursInGame": true
     },
     {
       "code": "EN34",
-      "scriptableId": -1946028050
+      "scriptableId": -1946028050,
+      "occursInGame": true
     },
     {
       "code": "EN35",
-      "scriptableId": 782855305
+      "scriptableId": 782855305,
+      "occursInGame": false
     },
     {
       "code": "EN36",
-      "scriptableId": -783228636
+      "scriptableId": -783228636,
+      "occursInGame": true
     },
     {
       "code": "EN37",
-      "scriptableId": 1945654719
+      "scriptableId": 1945654719,
+      "occursInGame": true
     },
     {
       "code": "EN38",
-      "scriptableId": 735801138
+      "scriptableId": 735801138,
+      "occursInGame": true
     },
     {
       "code": "EN39",
-      "scriptableId": -830282803
+      "scriptableId": -830282803,
+      "occursInGame": true
     },
     {
       "code": "EN40",
-      "scriptableId": 379570779
+      "scriptableId": 379570779,
+      "occursInGame": true
     },
     {
       "code": "EN41",
-      "scriptableId": -1186513162
+      "scriptableId": -1186513162,
+      "occursInGame": true
     },
     {
       "code": "EN42",
-      "scriptableId": 1542370193
+      "scriptableId": 1542370193,
+      "occursInGame": true
     },
     {
       "code": "EN43",
-      "scriptableId": -23713748
+      "scriptableId": -23713748,
+      "occursInGame": true
     },
     {
       "code": "EN44",
-      "scriptableId": -1946028049
+      "scriptableId": -1946028049,
+      "occursInGame": true
     },
     {
       "code": "EN45",
-      "scriptableId": 782855306
+      "scriptableId": 782855306,
+      "occursInGame": true
     },
     {
       "code": "EN46",
-      "scriptableId": -783228635
+      "scriptableId": -783228635,
+      "occursInGame": true
     },
     {
       "code": "EN47",
-      "scriptableId": 1945654720
+      "scriptableId": 1945654720,
+      "occursInGame": true
     },
     {
       "code": "EN48",
-      "scriptableId": 735801139
+      "scriptableId": 735801139,
+      "occursInGame": true
     },
     {
       "code": "EN49",
-      "scriptableId": -830282802
+      "scriptableId": -830282802,
+      "occursInGame": true
     },
     {
       "code": "EN50",
-      "scriptableId": 379570780
+      "scriptableId": 379570780,
+      "occursInGame": true
     },
     {
       "code": "EN51",
-      "scriptableId": -1186513161
+      "scriptableId": -1186513161,
+      "occursInGame": true
     },
     {
       "code": "EN52",
-      "scriptableId": 1542370194
+      "scriptableId": 1542370194,
+      "occursInGame": false
     },
     {
       "code": "EN53",
-      "scriptableId": -23713747
+      "scriptableId": -23713747,
+      "occursInGame": true
     },
     {
       "code": "EN54",
-      "scriptableId": -1946028048
+      "scriptableId": -1946028048,
+      "occursInGame": true
     },
     {
       "code": "EN55",
-      "scriptableId": 782855307
+      "scriptableId": 782855307,
+      "occursInGame": true
     },
     {
       "code": "EN56",
-      "scriptableId": -783228634
+      "scriptableId": -783228634,
+      "occursInGame": false
     },
     {
       "code": "EN57",
-      "scriptableId": 1945654721
+      "scriptableId": 1945654721,
+      "occursInGame": true
     },
     {
       "code": "EN58",
-      "scriptableId": 735801140
+      "scriptableId": 735801140,
+      "occursInGame": true
     },
     {
       "code": "EN59",
-      "scriptableId": -830282801
+      "scriptableId": -830282801,
+      "occursInGame": true
     },
     {
       "code": "EN60",
-      "scriptableId": 379570781
+      "scriptableId": 379570781,
+      "occursInGame": true
     },
     {
       "code": "EN61",
-      "scriptableId": -1186513160
+      "scriptableId": -1186513160,
+      "occursInGame": false
     },
     {
       "code": "EN62",
-      "scriptableId": 1542370195
+      "scriptableId": 1542370195,
+      "occursInGame": true
     },
     {
       "code": "EN63",
-      "scriptableId": -23713746
+      "scriptableId": -23713746,
+      "occursInGame": true
     },
     {
       "code": "EN64",
-      "scriptableId": -1946028047
+      "scriptableId": -1946028047,
+      "occursInGame": true
     },
     {
       "code": "EN65",
-      "scriptableId": 782855308
+      "scriptableId": 782855308,
+      "occursInGame": true
     },
     {
       "code": "EN66",
-      "scriptableId": -783228633
+      "scriptableId": -783228633,
+      "occursInGame": true
     },
     {
       "code": "EN67",
-      "scriptableId": 1945654722
+      "scriptableId": 1945654722,
+      "occursInGame": true
     },
     {
       "code": "EN68",
-      "scriptableId": 735801141
+      "scriptableId": 735801141,
+      "occursInGame": true
     },
     {
       "code": "EN69",
-      "scriptableId": -830282800
+      "scriptableId": -830282800,
+      "occursInGame": true
     },
     {
       "code": "EN70",
-      "scriptableId": 379570782
+      "scriptableId": 379570782,
+      "occursInGame": true
     },
     {
       "code": "EN71",
-      "scriptableId": -1186513159
+      "scriptableId": -1186513159,
+      "occursInGame": true
     },
     {
       "code": "EN72",
-      "scriptableId": 1542370196
+      "scriptableId": 1542370196,
+      "occursInGame": true
     },
     {
       "code": "EN73",
-      "scriptableId": -23713745
+      "scriptableId": -23713745,
+      "occursInGame": true
     },
     {
       "code": "EN74",
-      "scriptableId": -1946028046
+      "scriptableId": -1946028046,
+      "occursInGame": true
     },
     {
       "code": "EN75",
-      "scriptableId": 782855309
+      "scriptableId": 782855309,
+      "occursInGame": true
     },
     {
       "code": "EN76",
-      "scriptableId": -783228632
+      "scriptableId": -783228632,
+      "occursInGame": true
     },
     {
       "code": "EN77",
-      "scriptableId": 1945654723
+      "scriptableId": 1945654723,
+      "occursInGame": true
     }
-  ]
+  ],
+  "spawnScanAt": "2026-07-01T14:51:40.741551+00:00",
+  "inGameCount": 64
 }
