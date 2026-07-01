@@ -42,7 +42,7 @@ export default function GlobalAchievementEnemyKills({
         </p>
       ) : null}
 
-<p>Still working out the correct sprites/enemies for this - may be inaccurate!</p>
+<p>Still working out the correct sprites/enemies for this - may be inaccurate! Feel free to <a href="https://github.com/The-Black-Lodge/blasphemous2-save-analyzer/issues/2" target="_blank" rel="noopener noreferrer">discuss the issue on GitHub</a></p>.
 
       <div className="global-enemy-grid">
         {inquisition.enemies.map((enemy) => {
