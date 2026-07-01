@@ -25,6 +25,20 @@ export interface SpanishInquisitionStatus {
   trackedTotal: number
 }
 
+export function getSpanishInquisitionBestiary(): SpanishInquisitionStatus {
+  const enemies = ac32Enemies.enemies.map(({ code, scriptableId }) => ({
+    code,
+    scriptableId,
+    killed: false,
+  }))
+
+  return {
+    enemies,
+    killedCount: 0,
+    trackedTotal: AC32_TRACKED_COUNT,
+  }
+}
+
 export function getSpanishInquisitionStatus(
   progress: AchievementProgressEntry[],
   saveSlot: number,

@@ -1,0 +1,1438 @@
+{
+  "generatedAt": "2026-07-01T00:48:29.075285+00:00",
+  "spriteScale": 2,
+  "spriteHeight": 48,
+  "enemies": {
+    "EN01": {
+      "devName": "Ambusher",
+      "displayName": "Ambusher",
+      "spriteFile": "EN01.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN01 - Ambusher - Spr",
+        "spriteDir": "EN01 - Ambusher - Spr",
+        "animationPrefix": "AmbusherIdle",
+        "asset": "AmbusherIdle_4.asset",
+        "sheet": "AmbusherIdle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN01 - Ambusher - Spr/AmbusherIdle.png",
+        "x": 40,
+        "y": 0,
+        "w": 40,
+        "h": 28
+      }
+    },
+    "EN02": {
+      "devName": "Shielder Thrower",
+      "displayName": "Shielder Thrower",
+      "spriteFile": "EN02.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN02 - ShieldedThrower - Spr",
+        "spriteDir": "EN02 - ShieldedThrower - Spr",
+        "animationPrefix": "EN02ShieldedThrowerIdle",
+        "asset": "EN02ShieldedThrowerIdle_5.asset",
+        "sheet": "EN02ShieldedThrowerIdle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN02 - ShieldedThrower - Spr/EN02ShieldedThrowerIdle.png",
+        "x": 180,
+        "y": 0,
+        "w": 59,
+        "h": 60
+      }
+    },
+    "EN03": {
+      "devName": "Tangled Monk",
+      "displayName": "Tangled Monk",
+      "spriteFile": "EN03.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN03 - TangledMonk - Spr",
+        "spriteDir": "EN03 - TangledMonk - Spr",
+        "animationPrefix": "TangledMonkIdle",
+        "asset": "TangledMonkIdle_5.asset",
+        "sheet": "TangledMonkIdle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN03 - TangledMonk - Spr/TangledMonkIdle.png",
+        "x": 131,
+        "y": 80,
+        "w": 57,
+        "h": 78
+      }
+    },
+    "EN04": {
+      "devName": "Golden Bird",
+      "displayName": "Golden Bird",
+      "spriteFile": "EN04.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN04 - GoldenBird - Spr",
+        "spriteDir": "EN04 - GoldenBird - Spr",
+        "animationPrefix": "EN04GoldenBirdIdle",
+        "asset": "EN04GoldenBirdIdle_4.asset",
+        "sheet": "EN04GoldenBirdIdle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN04 - GoldenBird - Spr/EN04GoldenBirdIdle.png",
+        "x": 103,
+        "y": 41,
+        "w": 48,
+        "h": 37
+      }
+    },
+    "EN05": {
+      "devName": "Brander",
+      "displayName": "Brander",
+      "spriteFile": "EN05.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN05 - Brander - Spr",
+        "spriteDir": "EN05 - Brander - Spr",
+        "animationPrefix": "BranderIdle",
+        "asset": "BranderIdle_4.asset",
+        "sheet": "BranderIdle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN05 - Brander - Spr/BranderIdle.png",
+        "x": 324,
+        "y": 0,
+        "w": 164,
+        "h": 109
+      }
+    },
+    "EN06": {
+      "devName": "Mortaja",
+      "displayName": "Mortaja",
+      "spriteFile": "EN06.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN06 - Mortaja - Spr",
+        "spriteDir": "EN06 - Mortaja - Spr",
+        "animationPrefix": "MortajaIdle",
+        "asset": "MortajaIdle_4.asset",
+        "sheet": "MortajaIdle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN06 - Mortaja - Spr/MortajaIdle.png",
+        "x": 76,
+        "y": 84,
+        "w": 73,
+        "h": 84
+      }
+    },
+    "EN07": {
+      "devName": "Fernando",
+      "displayName": "Fernando",
+      "spriteFile": "EN07.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN07 - Fernando - Spr",
+        "spriteDir": "EN07 - Fernando - Spr",
+        "animationPrefix": "walkingTomb_idle",
+        "asset": "walkingTomb_idle_5.asset",
+        "sheet": "walkingTomb_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN07 - Fernando - Spr/walkingTomb_idle.png",
+        "x": 140,
+        "y": 72,
+        "w": 70,
+        "h": 72
+      }
+    },
+    "EN08": {
+      "devName": "WallEnemy",
+      "displayName": "Wall Enemy",
+      "spriteFile": "EN08.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN08 - WallEnemy - Spr",
+        "spriteDir": "EN08 - WallEnemy - Spr",
+        "animationPrefix": "EN08_WallEnemy_attack",
+        "asset": "EN08_WallEnemy_attack_12.asset",
+        "sheet": "EN08_WallEnemy_attack.png",
+        "sheetPath": "#Art/Sprites/enemies/EN08 - WallEnemy - Spr/EN08_WallEnemy_attack.png",
+        "x": 110,
+        "y": 239,
+        "w": 81,
+        "h": 112
+      }
+    },
+    "EN09": {
+      "devName": "Rociero",
+      "displayName": "Rociero",
+      "spriteFile": "EN09.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN09 - WheelCarrier - Spr",
+        "spriteDir": "EN09 - WheelCarrier - Spr",
+        "animationPrefix": "YellowCartwheel_idle",
+        "asset": "YellowCartwheel_idle_6.asset",
+        "sheet": "YellowCartwheel_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN09 - WheelCarrier - Spr/YellowCartwheel_idle.png",
+        "x": 92,
+        "y": 64,
+        "w": 44,
+        "h": 60
+      }
+    },
+    "EN10": {
+      "devName": "Esquilon",
+      "displayName": "Esquilon",
+      "spriteFile": "EN10.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN10 - Esquilon - Spr",
+        "spriteDir": "EN10 - Esquilon - Spr",
+        "animationPrefix": "bellcarrier_stoprunning_anim",
+        "asset": "bellcarrier_stoprunning_anim_9.asset",
+        "sheet": "bellcarrier_stoprunning_anim.png",
+        "sheetPath": "#Art/Sprites/enemies/EN10 - Esquilon - Spr/bellcarrier_stoprunning_anim.png",
+        "x": 106,
+        "y": 106,
+        "w": 88,
+        "h": 100
+      }
+    },
+    "EN11": {
+      "devName": "EN11",
+      "displayName": "Ambusher Variant 1",
+      "spriteFile": "EN11.png",
+      "spriteStatus": "variant-proxy",
+      "spritePick": {
+        "source": "variant-proxy",
+        "proxyCode": "EN01",
+        "note": "Shares art with base enemy type; separate ScriptableID for kill tracking.",
+        "basePick": {
+          "source": "EN01 - Ambusher - Spr",
+          "spriteDir": "EN01 - Ambusher - Spr",
+          "animationPrefix": "AmbusherIdle",
+          "asset": "AmbusherIdle_4.asset",
+          "sheet": "AmbusherIdle.png",
+          "sheetPath": "#Art/Sprites/enemies/EN01 - Ambusher - Spr/AmbusherIdle.png",
+          "x": 40,
+          "y": 0,
+          "w": 40,
+          "h": 28
+        }
+      }
+    },
+    "EN12": {
+      "devName": "EN12",
+      "displayName": "Shielder Thrower Variant 1",
+      "spriteFile": "EN12.png",
+      "spriteStatus": "variant-proxy",
+      "spritePick": {
+        "source": "variant-proxy",
+        "proxyCode": "EN02",
+        "note": "Shares art with base enemy type; separate ScriptableID for kill tracking.",
+        "basePick": {
+          "source": "EN02 - ShieldedThrower - Spr",
+          "spriteDir": "EN02 - ShieldedThrower - Spr",
+          "animationPrefix": "EN02ShieldedThrowerIdle",
+          "asset": "EN02ShieldedThrowerIdle_5.asset",
+          "sheet": "EN02ShieldedThrowerIdle.png",
+          "sheetPath": "#Art/Sprites/enemies/EN02 - ShieldedThrower - Spr/EN02ShieldedThrowerIdle.png",
+          "x": 180,
+          "y": 0,
+          "w": 59,
+          "h": 60
+        }
+      }
+    },
+    "EN13": {
+      "devName": "Wall Crawler",
+      "displayName": "Wall Crawler",
+      "spriteFile": "EN13.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN13 - WallCrawler - Spr",
+        "spriteDir": "EN13 - WallCrawler - Spr",
+        "animationPrefix": "WallClimberIdle",
+        "asset": "WallClimberIdle_3.asset",
+        "sheet": "EN13 WallClimberIdle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN13 - WallCrawler - Spr/EN13 WallClimberIdle.png",
+        "x": 57,
+        "y": 0,
+        "w": 57,
+        "h": 82
+      }
+    },
+    "EN14": {
+      "devName": "Flagelant",
+      "displayName": "Flagelant",
+      "spriteFile": "EN14.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "Sprite",
+        "spriteDir": null,
+        "animationPrefix": "flagellant_idle_anim",
+        "asset": "flagellant_idle_anim_14.asset",
+        "sheet": "flagellant_idle_anim.png",
+        "sheetPath": "Texture2D/flagellant_idle_anim.png",
+        "x": 126,
+        "y": 53,
+        "w": 35,
+        "h": 49
+      }
+    },
+    "EN15": {
+      "devName": "Rotten Skull",
+      "displayName": "Rotten Skull",
+      "spriteFile": "EN15.png",
+      "spriteStatus": "manual-pick",
+      "spritePick": {
+        "source": "EN15 - RottenSkull - Spr",
+        "spriteDir": "EN15 - RottenSkull - Spr",
+        "animationPrefix": "EN15-RottenSkull",
+        "asset": "EN15-RottenSkull_0.asset",
+        "sheet": "EN15-RottenSkull.png",
+        "sheetPath": "#Art/Sprites/enemies/EN15 - RottenSkull - Spr/EN15-RottenSkull.png",
+        "x": 0,
+        "y": 300,
+        "w": 100,
+        "h": 100
+      }
+    },
+    "EN16": {
+      "devName": "Stone Hand",
+      "displayName": "Stone Hand",
+      "spriteFile": "EN16.png",
+      "spriteStatus": "manual-pick",
+      "spritePick": {
+        "source": "EN16 - Stonehands",
+        "spriteDir": "EN16 - Stonehands",
+        "animationPrefix": "EN16 Stonehands Attack",
+        "asset": "EN16 Stonehands Attack_4.asset",
+        "sheet": "EN16 Stonehands Attack.png",
+        "sheetPath": "#Art/Sprites/enemies/EN16 - Stonehands/EN16 Stonehands Attack.png",
+        "x": 0,
+        "y": 387,
+        "w": 76,
+        "h": 110
+      }
+    },
+    "EN17": {
+      "devName": "EN17",
+      "displayName": "Fernando Variant 1",
+      "spriteFile": "EN17.png",
+      "spriteStatus": "variant-proxy",
+      "spritePick": {
+        "source": "variant-proxy",
+        "proxyCode": "EN07",
+        "note": "Shares art with base enemy type; separate ScriptableID for kill tracking.",
+        "basePick": {
+          "source": "EN07 - Fernando - Spr",
+          "spriteDir": "EN07 - Fernando - Spr",
+          "animationPrefix": "walkingTomb_idle",
+          "asset": "walkingTomb_idle_5.asset",
+          "sheet": "walkingTomb_idle.png",
+          "sheetPath": "#Art/Sprites/enemies/EN07 - Fernando - Spr/walkingTomb_idle.png",
+          "x": 140,
+          "y": 72,
+          "w": 70,
+          "h": 72
+        }
+      }
+    },
+    "EN18": {
+      "devName": "Buried Monk",
+      "displayName": "Buried Monk",
+      "spriteFile": "EN18.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN18 - BuriedMonk - Spr",
+        "spriteDir": "EN18 - BuriedMonk - Spr",
+        "animationPrefix": "EN18 BuriedMonkIdle",
+        "asset": "EN18 BuriedMonkIdle_5.asset",
+        "sheet": "EN18 BuriedMonkIdle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN18 - BuriedMonk - Spr/EN18 BuriedMonkIdle.png",
+        "x": 135,
+        "y": 0,
+        "w": 32,
+        "h": 83
+      }
+    },
+    "EN19": {
+      "devName": "Owl Lady",
+      "displayName": "Owl Lady",
+      "spriteFile": "EN19.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN19 - Owl Lady - Spr",
+        "spriteDir": "EN19 - Owl Lady - Spr",
+        "animationPrefix": "EN19Owllady-idle2",
+        "asset": "EN19Owllady-idle2_9.asset",
+        "sheet": "EN19Owllady-idle2.png",
+        "sheetPath": "#Art/Sprites/enemies/EN19 - Owl Lady - Spr/EN19Owllady-idle2.png",
+        "x": 94,
+        "y": 66,
+        "w": 47,
+        "h": 65
+      }
+    },
+    "EN20": {
+      "devName": "Mist Warrior",
+      "displayName": "Mist Warrior",
+      "spriteFile": "EN20.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN20 - Mistwarrior",
+        "spriteDir": "EN20 - Mistwarrior",
+        "animationPrefix": "MistwarriorSpawn-Idle",
+        "asset": "MistwarriorSpawn-Idle_6.asset",
+        "sheet": "MistwarriorSpawn-Idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN20 - Mistwarrior/MistwarriorSpawn-Idle.png",
+        "x": 204,
+        "y": 79,
+        "w": 51,
+        "h": 75
+      }
+    },
+    "EN21": {
+      "devName": "EN21",
+      "displayName": "Ambusher Variant 2",
+      "spriteFile": "EN21.png",
+      "spriteStatus": "variant-proxy",
+      "spritePick": {
+        "source": "variant-proxy",
+        "proxyCode": "EN01",
+        "note": "Shares art with base enemy type; separate ScriptableID for kill tracking.",
+        "basePick": {
+          "source": "EN01 - Ambusher - Spr",
+          "spriteDir": "EN01 - Ambusher - Spr",
+          "animationPrefix": "AmbusherIdle",
+          "asset": "AmbusherIdle_4.asset",
+          "sheet": "AmbusherIdle.png",
+          "sheetPath": "#Art/Sprites/enemies/EN01 - Ambusher - Spr/AmbusherIdle.png",
+          "x": 40,
+          "y": 0,
+          "w": 40,
+          "h": 28
+        }
+      }
+    },
+    "EN22": {
+      "devName": "Platform Hugger",
+      "displayName": "Platform Hugger",
+      "spriteFile": "EN22.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN22 - Platform Hugger - Spr",
+        "spriteDir": "EN22 - Platform Hugger - Spr",
+        "animationPrefix": "EN22 PlatformHugger",
+        "asset": "EN22 PlatformHugger_12.asset",
+        "sheet": "EN22 PlatformHugger.png",
+        "sheetPath": "#Art/Sprites/enemies/EN22 - Platform Hugger - Spr/EN22 PlatformHugger.png",
+        "x": 209,
+        "y": 0,
+        "w": 38,
+        "h": 57
+      }
+    },
+    "EN23": {
+      "devName": "Winged Beast",
+      "displayName": "Winged Beast",
+      "spriteFile": "EN23.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN23 - Winged Beast - Spr",
+        "spriteDir": "EN23 - Winged Beast - Spr",
+        "animationPrefix": "EN23WingedBeastIdle",
+        "asset": "EN23WingedBeastIdle_5.asset",
+        "sheet": "EN23WingedBeastIdle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN23 - Winged Beast - Spr/EN23WingedBeastIdle.png",
+        "x": 380,
+        "y": 89,
+        "w": 90,
+        "h": 86
+      }
+    },
+    "EN24": {
+      "devName": "Sniper",
+      "displayName": "Sniper",
+      "spriteFile": "EN24.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN24 - Sniper - Spr",
+        "spriteDir": "EN24 - Sniper - Spr",
+        "animationPrefix": "EN-24 Sniper_idle",
+        "asset": "EN-24 Sniper_idle_4.asset",
+        "sheet": "EN-24 Sniper_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN24 - Sniper - Spr/EN-24 Sniper_idle.png",
+        "x": 320,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      }
+    },
+    "EN25": {
+      "devName": "EN25",
+      "displayName": "Brander Variant 2",
+      "spriteFile": "EN25.png",
+      "spriteStatus": "variant-proxy",
+      "spritePick": {
+        "source": "variant-proxy",
+        "proxyCode": "EN05",
+        "note": "Shares art with base enemy type; separate ScriptableID for kill tracking.",
+        "basePick": {
+          "source": "EN05 - Brander - Spr",
+          "spriteDir": "EN05 - Brander - Spr",
+          "animationPrefix": "BranderIdle",
+          "asset": "BranderIdle_4.asset",
+          "sheet": "BranderIdle.png",
+          "sheetPath": "#Art/Sprites/enemies/EN05 - Brander - Spr/BranderIdle.png",
+          "x": 324,
+          "y": 0,
+          "w": 164,
+          "h": 109
+        }
+      }
+    },
+    "EN26": {
+      "devName": "Lancer",
+      "displayName": "Lancer",
+      "spriteFile": "EN26.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN26 - Lancer - Spr",
+        "spriteDir": "EN26 - Lancer - Spr",
+        "animationPrefix": "En26Lancer-idle",
+        "asset": "En26Lancer-idle_4.asset",
+        "sheet": "En26Lancer-idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN26 - Lancer - Spr/En26Lancer-idle.png",
+        "x": 97,
+        "y": 112,
+        "w": 45,
+        "h": 111
+      }
+    },
+    "EN27": {
+      "devName": "Heavy Melee",
+      "displayName": "Heavy Melee",
+      "spriteFile": "EN27.png",
+      "spriteStatus": "manual-pick",
+      "spritePick": {
+        "source": "EN27 - HeavyMelee - Spr",
+        "spriteDir": "EN27 - HeavyMelee - Spr",
+        "animationPrefix": "EN27 HeavyMelee Walk",
+        "asset": "EN27 HeavyMelee Walk_0.asset",
+        "sheet": "EN27 HeavyMelee Walk.png",
+        "sheetPath": "#Art/Sprites/enemies/EN27 - HeavyMelee - Spr/EN27 HeavyMelee Walk.png",
+        "x": 0,
+        "y": 378,
+        "w": 109,
+        "h": 128
+      }
+    },
+    "EN28": {
+      "devName": "Dagger Thrower",
+      "displayName": "Dagger Thrower",
+      "spriteFile": "EN28.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN28 - DaggerThrower - Spr",
+        "spriteDir": "EN28 - DaggerThrower - Spr",
+        "animationPrefix": "EN28 DaggerThrower Idle",
+        "asset": "EN28 DaggerThrower Idle_3.asset",
+        "sheet": "EN28 DaggerThrower Idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN28 - DaggerThrower - Spr/EN28 DaggerThrower Idle.png",
+        "x": 162,
+        "y": 0,
+        "w": 52,
+        "h": 75
+      }
+    },
+    "EN29": {
+      "devName": "Flying Patrolling",
+      "displayName": "Flying Patrolling",
+      "spriteFile": "EN29.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN29 - FlyingPatrolling Pit - Spr",
+        "spriteDir": "EN29 - FlyingPatrolling Pit - Spr",
+        "animationPrefix": "EN29_flyingPatrollingPit_idle",
+        "asset": "EN29_flyingPatrollingPit_idle_4.asset",
+        "sheet": "EN29_flyingPatrollingPit_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN29 - FlyingPatrolling Pit - Spr/EN29_flyingPatrollingPit_idle.png",
+        "x": 163,
+        "y": 0,
+        "w": 78,
+        "h": 48
+      }
+    },
+    "EN30": {
+      "devName": "Chandelier Girl",
+      "displayName": "Chandelier Girl",
+      "spriteFile": "EN30.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN30 - ChandelierGirl - Spr",
+        "spriteDir": "EN30 - ChandelierGirl - Spr",
+        "animationPrefix": "En30ChandelierGirl-idle",
+        "asset": "En30ChandelierGirl-idle_5.asset",
+        "sheet": "En30ChandelierGirl-idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN30 - ChandelierGirl - Spr/En30ChandelierGirl-idle.png",
+        "x": 176,
+        "y": 50,
+        "w": 42,
+        "h": 50
+      }
+    },
+    "EN31": {
+      "devName": "Explosive Monk",
+      "displayName": "Explosive Monk",
+      "spriteFile": "EN31.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN31 - Explosive Monk - Spr",
+        "spriteDir": "EN31 - Explosive Monk - Spr",
+        "animationPrefix": "EN31 ExplosiveMonk Idle",
+        "asset": "EN31 ExplosiveMonk Idle_4.asset",
+        "sheet": "EN31 ExplosiveMonk Idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN31 - Explosive Monk - Spr/EN31 ExplosiveMonk Idle.png",
+        "x": 0,
+        "y": 0,
+        "w": 37,
+        "h": 77
+      }
+    },
+    "EN32": {
+      "devName": "Flying Patrolling Sand Ruins",
+      "displayName": "Flying Patrolling Sand Ruins",
+      "spriteFile": "EN32.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN32 - FlyingPatrolling Sandruins- Spr",
+        "spriteDir": "EN32 - FlyingPatrolling Sandruins- Spr",
+        "animationPrefix": "EN29 Flying Patrolling Fly",
+        "asset": "EN29 Flying Patrolling Fly_4.asset",
+        "sheet": "EN32 Flying Patrolling Sandruins Flap.png",
+        "sheetPath": "#Art/Sprites/enemies/EN32 - FlyingPatrolling Sandruins- Spr/EN32 Flying Patrolling Sandruins Flap.png",
+        "x": 163,
+        "y": 0,
+        "w": 78,
+        "h": 48
+      }
+    },
+    "EN33": {
+      "devName": "Woman From The Sea",
+      "displayName": "Woman From The Sea",
+      "spriteFile": "EN33.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN33 - WomanOfTheSea - Spr",
+        "spriteDir": "EN33 - WomanOfTheSea - Spr",
+        "animationPrefix": "EN33WomanOfTheSea_Idle",
+        "asset": "EN33WomanOfTheSea_Idle_5.asset",
+        "sheet": "EN33WomanOfTheSea_Idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN33 - WomanOfTheSea - Spr/EN33WomanOfTheSea_Idle.png",
+        "x": 162,
+        "y": 0,
+        "w": 54,
+        "h": 72
+      }
+    },
+    "EN34": {
+      "devName": "Shielded Giant",
+      "displayName": "Shielded Giant",
+      "spriteFile": "EN34.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN34 - Shielded Giant - Spr",
+        "spriteDir": "EN34 - Shielded Giant - Spr",
+        "animationPrefix": "EN34ShieldedGiant_idle",
+        "asset": "EN34ShieldedGiant_idle_11.asset",
+        "sheet": "EN34ShieldedGiant_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN34 - Shielded Giant - Spr/EN34ShieldedGiant_idle.png",
+        "x": 255,
+        "y": 264,
+        "w": 85,
+        "h": 131
+      }
+    },
+    "EN35": {
+      "devName": "EN35",
+      "displayName": "Brander Variant 3",
+      "spriteFile": "EN35.png",
+      "spriteStatus": "variant-proxy",
+      "spritePick": {
+        "source": "variant-proxy",
+        "proxyCode": "EN05",
+        "note": "Shares art with base enemy type; separate ScriptableID for kill tracking.",
+        "basePick": {
+          "source": "EN05 - Brander - Spr",
+          "spriteDir": "EN05 - Brander - Spr",
+          "animationPrefix": "BranderIdle",
+          "asset": "BranderIdle_4.asset",
+          "sheet": "BranderIdle.png",
+          "sheetPath": "#Art/Sprites/enemies/EN05 - Brander - Spr/BranderIdle.png",
+          "x": 324,
+          "y": 0,
+          "w": 164,
+          "h": 109
+        }
+      }
+    },
+    "EN36": {
+      "devName": "Drowned Soldier",
+      "displayName": "Drowned Soldier",
+      "spriteFile": "EN36.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN36 - Drowned Soldier - Spr",
+        "spriteDir": "EN36 - Drowned Soldier - Spr",
+        "animationPrefix": "DrownedSoldier-Idle-Sheet",
+        "asset": "DrownedSoldier-Idle-Sheet_4.asset",
+        "sheet": "DrownedSoldier-Idle-Sheet.png",
+        "sheetPath": "#Art/Sprites/enemies/EN36 - Drowned Soldier - Spr/DrownedSoldier-Idle-Sheet.png",
+        "x": 84,
+        "y": 0,
+        "w": 82,
+        "h": 51
+      }
+    },
+    "EN37": {
+      "devName": "Flying Hand",
+      "displayName": "Flying Hand",
+      "spriteFile": "EN37.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN37 - FlyingHand - Spr",
+        "spriteDir": "EN37 - FlyingHand - Spr",
+        "animationPrefix": "EN37 FlyingHand Attack",
+        "asset": "EN37 FlyingHand Attack_7.asset",
+        "sheet": "EN37 FlyingHand Attack.png",
+        "sheetPath": "#Art/Sprites/enemies/EN37 - FlyingHand - Spr/EN37 FlyingHand Attack.png",
+        "x": 305,
+        "y": 106,
+        "w": 55,
+        "h": 105
+      }
+    },
+    "EN38": {
+      "devName": "Ink Kamikaze",
+      "displayName": "Ink Kamikaze",
+      "spriteFile": "EN38.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN38 - Ink Kamikaze - Spr",
+        "spriteDir": "EN38 - Ink Kamikaze - Spr",
+        "animationPrefix": "oil_idle",
+        "asset": "oil_idle_7.asset",
+        "sheet": "oil_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN38 - Ink Kamikaze - Spr/oil_idle.png",
+        "x": 38,
+        "y": 0,
+        "w": 38,
+        "h": 46
+      }
+    },
+    "EN39": {
+      "devName": "Jumper",
+      "displayName": "Jumper",
+      "spriteFile": "EN39.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN39 - Jumper - Spr",
+        "spriteDir": "EN39 - Jumper - Spr",
+        "animationPrefix": "jumper_idle",
+        "asset": "jumper_idle_4.asset",
+        "sheet": "jumper_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN39 - Jumper - Spr/jumper_idle.png",
+        "x": 0,
+        "y": 55,
+        "w": 40,
+        "h": 27
+      }
+    },
+    "EN40": {
+      "devName": "Underground Swimmer",
+      "displayName": "Underground Swimmer",
+      "spriteFile": "EN40.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN40 - UnderwaterSwimmer - Spr",
+        "spriteDir": "EN40 - UnderwaterSwimmer - Spr",
+        "animationPrefix": "UnderwaterSwimmer_attack",
+        "asset": "UnderwaterSwimmer_attack_6.asset",
+        "sheet": "UnderwaterSwimmer_attack.png",
+        "sheetPath": "#Art/Sprites/enemies/EN40 - UnderwaterSwimmer - Spr/UnderwaterSwimmer_attack.png",
+        "x": 81,
+        "y": 88,
+        "w": 42,
+        "h": 46
+      }
+    },
+    "EN41": {
+      "devName": "Flying 2-Positions",
+      "displayName": "Flying 2 Positions",
+      "spriteFile": "EN41.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN41 - 2Positions",
+        "spriteDir": "EN41 - 2Positions",
+        "animationPrefix": "EN41_2positions_idle",
+        "asset": "EN41_2positions_idle_5.asset",
+        "sheet": "EN41_2positions_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN41 - 2Positions/EN41_2positions_idle.png",
+        "x": 120,
+        "y": 0,
+        "w": 24,
+        "h": 32
+      }
+    },
+    "EN42": {
+      "devName": "Underground Turret",
+      "displayName": "Underground Turret",
+      "spriteFile": "EN42.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN42 - Underground Turret - Spr",
+        "spriteDir": "EN42 - Underground Turret - Spr",
+        "animationPrefix": "EN42UndergroundTurret_bodyIdle",
+        "asset": "EN42UndergroundTurret_bodyIdle_6.asset",
+        "sheet": "EN42UndergroundTurret_bodyIdle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN42 - Underground Turret - Spr/EN42UndergroundTurret_bodyIdle.png",
+        "x": 0,
+        "y": 81,
+        "w": 45,
+        "h": 27
+      }
+    },
+    "EN43": {
+      "devName": "Grounded Caves Melee",
+      "displayName": "Grounded Caves Melee",
+      "spriteFile": "EN43.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN43 - Grounded Caves Melee - Spr",
+        "spriteDir": "EN43 - Grounded Caves Melee - Spr",
+        "animationPrefix": "EN43_GroundedCavesMelee_idle",
+        "asset": "EN43_GroundedCavesMelee_idle_5.asset",
+        "sheet": "EN43_GroundedCavesMelee_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN43 - Grounded Caves Melee - Spr/EN43_GroundedCavesMelee_idle.png",
+        "x": 187,
+        "y": 59,
+        "w": 44,
+        "h": 56
+      }
+    },
+    "EN44": {
+      "devName": "Ranged Wall Enemy",
+      "displayName": "Ranged Wall Enemy",
+      "spriteFile": "EN44.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN44 - Ranged Wall Enemy - Spr",
+        "spriteDir": "EN44 - Ranged Wall Enemy - Spr",
+        "animationPrefix": "EN44 Ranged Wall Enemy Attack",
+        "asset": "EN44 Ranged Wall Enemy Attack_17.asset",
+        "sheet": "EN44 Ranged Wall Enemy Attack.png",
+        "sheetPath": "#Art/Sprites/enemies/EN44 - Ranged Wall Enemy - Spr/EN44 Ranged Wall Enemy Attack.png",
+        "x": 91,
+        "y": 126,
+        "w": 28,
+        "h": 131
+      }
+    },
+    "EN45": {
+      "devName": "Walking Statue",
+      "displayName": "Walking Statue",
+      "spriteFile": "EN45.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN45 - Walking Statue - Spr",
+        "spriteDir": "EN45 - Walking Statue - Spr",
+        "animationPrefix": "EN45 Walking Statue Idle",
+        "asset": "EN45 Walking Statue Idle_8.asset",
+        "sheet": "EN45 Walking Statue Idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN45 - Walking Statue - Spr/EN45 Walking Statue Idle.png",
+        "x": 210,
+        "y": 0,
+        "w": 23,
+        "h": 93
+      }
+    },
+    "EN46": {
+      "devName": "Censer Spinner",
+      "displayName": "Censer Spinner",
+      "spriteFile": "EN46.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN46 - Censer Spinner - Spr",
+        "spriteDir": "EN46 - Censer Spinner - Spr",
+        "animationPrefix": "incense_idle",
+        "asset": "incense_idle_7.asset",
+        "sheet": "incense_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN46 - Censer Spinner - Spr/incense_idle.png",
+        "x": 662,
+        "y": 438,
+        "w": 57,
+        "h": 77
+      }
+    },
+    "EN47": {
+      "devName": "Ruined Knight",
+      "displayName": "Ruined Knight",
+      "spriteFile": "EN47.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN47 - Ruined Knight - Spr",
+        "spriteDir": "EN47 - Ruined Knight - Spr",
+        "animationPrefix": "EN47_RuinedKnight_idle",
+        "asset": "EN47_RuinedKnight_idle_6.asset",
+        "sheet": "EN47_RuinedKnight_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN47 - Ruined Knight - Spr/EN47_RuinedKnight_idle.png",
+        "x": 122,
+        "y": 0,
+        "w": 63,
+        "h": 73
+      }
+    },
+    "EN48": {
+      "devName": "Teleport Melee",
+      "displayName": "Teleport Melee",
+      "spriteFile": "EN48.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN48 - Teleport Melee - Spr",
+        "spriteDir": "EN48 - Teleport Melee - Spr",
+        "animationPrefix": "EN48 Teleport Melee Idle",
+        "asset": "EN48 Teleport Melee Idle_2.asset",
+        "sheet": "EN48 Teleport Melee Idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN48 - Teleport Melee - Spr/EN48 Teleport Melee Idle.png",
+        "x": 0,
+        "y": 168,
+        "w": 60,
+        "h": 84
+      }
+    },
+    "EN49": {
+      "devName": "Homing Portrait",
+      "displayName": "Homing Portrait",
+      "spriteFile": "EN49.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN49 - Homing Portrait - Spr",
+        "spriteDir": "EN49 - Homing Portrait - Spr",
+        "animationPrefix": "portrait_idle",
+        "asset": "portrait_idle_3.asset",
+        "sheet": "portrait_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN49 - Homing Portrait - Spr/portrait_idle.png",
+        "x": 70,
+        "y": 0,
+        "w": 70,
+        "h": 84
+      }
+    },
+    "EN50": {
+      "devName": "Amalgama",
+      "displayName": "Amalgama",
+      "spriteFile": "EN50.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN50 - Amalgama - Spr",
+        "spriteDir": "EN50 - Amalgama - Spr",
+        "animationPrefix": "EN50 Amalgama Idle",
+        "asset": "EN50 Amalgama Idle_12.asset",
+        "sheet": "EN50 Amalgama Idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN50 - Amalgama - Spr/EN50 Amalgama Idle.png",
+        "x": 204,
+        "y": 204,
+        "w": 102,
+        "h": 102
+      }
+    },
+    "EN51": {
+      "devName": "Fat Worm",
+      "displayName": "Fat Worm",
+      "spriteFile": "EN51.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN51 - Fat Worm - Spr",
+        "spriteDir": "EN51 - Fat Worm - Spr",
+        "animationPrefix": "EN51 Fatworm-Idle-Sheet",
+        "asset": "EN51 Fatworm-Idle-Sheet_8.asset",
+        "sheet": "EN51 Fatworm-Idle-Sheet.png",
+        "sheetPath": "#Art/Sprites/enemies/EN51 - Fat Worm - Spr/EN51 Fatworm-Idle-Sheet.png",
+        "x": 111,
+        "y": 296,
+        "w": 111,
+        "h": 98
+      }
+    },
+    "EN52": {
+      "devName": "EN52",
+      "displayName": "Shielder Thrower Variant 5",
+      "spriteFile": "EN52.png",
+      "spriteStatus": "variant-proxy",
+      "spritePick": {
+        "source": "variant-proxy",
+        "proxyCode": "EN02",
+        "note": "Shares art with base enemy type; separate ScriptableID for kill tracking.",
+        "basePick": {
+          "source": "EN02 - ShieldedThrower - Spr",
+          "spriteDir": "EN02 - ShieldedThrower - Spr",
+          "animationPrefix": "EN02ShieldedThrowerIdle",
+          "asset": "EN02ShieldedThrowerIdle_5.asset",
+          "sheet": "EN02ShieldedThrowerIdle.png",
+          "sheetPath": "#Art/Sprites/enemies/EN02 - ShieldedThrower - Spr/EN02ShieldedThrowerIdle.png",
+          "x": 180,
+          "y": 0,
+          "w": 59,
+          "h": 60
+        }
+      }
+    },
+    "EN53": {
+      "devName": "Spear of the Cathedra",
+      "displayName": "Spear of the Cathedra",
+      "spriteFile": "EN53.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN53 - Spear of the Cathedra - Spr",
+        "spriteDir": "EN53 - Spear of the Cathedra - Spr",
+        "animationPrefix": "Bishop_idle_patrol",
+        "asset": "Bishop_idle_patrol_7.asset",
+        "sheet": "Bishop_idle_patrol.png",
+        "sheetPath": "#Art/Sprites/enemies/EN53 - Spear of the Cathedra - Spr/Bishop_idle_patrol.png",
+        "x": 84,
+        "y": 293,
+        "w": 81,
+        "h": 145
+      }
+    },
+    "EN54": {
+      "devName": "Lancer Variation",
+      "displayName": "Lancer Variation",
+      "spriteFile": "EN54.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN54 - Lancer Variation - Spr",
+        "spriteDir": "EN54 - Lancer Variation - Spr",
+        "animationPrefix": "EN54LancerVariation-idle",
+        "asset": "EN54LancerVariation-idle_4.asset",
+        "sheet": "EN54LancerVariation-idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN54 - Lancer Variation - Spr/EN54LancerVariation-idle.png",
+        "x": 97,
+        "y": 112,
+        "w": 45,
+        "h": 111
+      }
+    },
+    "EN55": {
+      "devName": "Wax Crawler",
+      "displayName": "Wax Crawler",
+      "spriteFile": "EN55.png",
+      "spriteStatus": "manual-pick",
+      "spritePick": {
+        "source": "EN55 - Wax Crawler - Spr",
+        "spriteDir": "EN55 - Wax Crawler - Spr",
+        "animationPrefix": "waxcrawler_crawling_anim",
+        "asset": "waxcrawler_crawling_anim_0.asset",
+        "sheet": "waxcrawler_crawling_anim.png",
+        "sheetPath": "#Art/Sprites/enemies/EN55 - Wax Crawler - Spr/waxcrawler_crawling_anim.png",
+        "x": 74,
+        "y": 89,
+        "w": 77,
+        "h": 22
+      }
+    },
+    "EN56": {
+      "devName": "Ambusher Elite",
+      "displayName": "Ambusher Elite",
+      "spriteFile": "EN56.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN01v1 - Ambusher - Spr",
+        "spriteDir": "EN01v1 - Ambusher - Spr",
+        "animationPrefix": "en56_stun",
+        "asset": "en56_stun_4.asset",
+        "sheet": "en56_stun.png",
+        "sheetPath": "#Art/Sprites/enemies/EN01v1 - Ambusher - Spr/en56_stun.png",
+        "x": 52,
+        "y": 0,
+        "w": 52,
+        "h": 23
+      }
+    },
+    "EN57": {
+      "devName": "Iron Maiden",
+      "displayName": "Iron Maiden",
+      "spriteFile": "EN57.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN57 Iron Maiden - Spr",
+        "spriteDir": "EN57 Iron Maiden - Spr",
+        "animationPrefix": "EN57 Iron Maiden Armor Spin to Idle ",
+        "asset": "EN57 Iron Maiden Armor Spin to Idle _6.asset",
+        "sheet": "EN57 Iron Maiden Armor Spin to Idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN57 Iron Maiden - Spr/EN57 Iron Maiden Armor Spin to Idle.png",
+        "x": 279,
+        "y": 0,
+        "w": 79,
+        "h": 99
+      }
+    },
+    "EN58": {
+      "devName": "Sickles Woman",
+      "displayName": "Sickles Woman",
+      "spriteFile": "EN58.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN58 - Sickles Woman - Spr",
+        "spriteDir": "EN58 - Sickles Woman - Spr",
+        "animationPrefix": "EN58 Sickles Woman Idle",
+        "asset": "EN58 Sickles Woman Idle_7.asset",
+        "sheet": "EN58 Sickles Woman Idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN58 - Sickles Woman - Spr/EN58 Sickles Woman Idle.png",
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "EN59": {
+      "devName": "Coffin Carried",
+      "displayName": "Coffin Carried",
+      "spriteFile": "EN59.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN59 - Coffin Carried - Spr",
+        "spriteDir": "EN59 - Coffin Carried - Spr",
+        "animationPrefix": "coffincarried_backwardidle",
+        "asset": "coffincarried_backwardidle_6.asset",
+        "sheet": "coffincarried_backwardidle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN59 - Coffin Carried - Spr/coffincarried_backwardidle.png",
+        "x": 94,
+        "y": 83,
+        "w": 92,
+        "h": 84
+      }
+    },
+    "EN60": {
+      "devName": "Teleport Melee Elite",
+      "displayName": "Teleport Melee Elite",
+      "spriteFile": "EN60.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN60 - Teleport Melee Elite - Spr",
+        "spriteDir": "EN60 - Teleport Melee Elite - Spr",
+        "animationPrefix": "EN48 Teleport Melee Idle",
+        "asset": "EN48 Teleport Melee Idle_2.asset",
+        "sheet": "EN60 Teleport Melee Elite Idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN60 - Teleport Melee Elite - Spr/EN60 Teleport Melee Elite Idle.png",
+        "x": 0,
+        "y": 0,
+        "w": 60,
+        "h": 113
+      }
+    },
+    "EN61": {
+      "devName": "EN61",
+      "displayName": "Ambusher Variant 6",
+      "spriteFile": "EN61.png",
+      "spriteStatus": "variant-proxy",
+      "spritePick": {
+        "source": "variant-proxy",
+        "proxyCode": "EN01",
+        "note": "Shares art with base enemy type; separate ScriptableID for kill tracking.",
+        "basePick": {
+          "source": "EN01 - Ambusher - Spr",
+          "spriteDir": "EN01 - Ambusher - Spr",
+          "animationPrefix": "AmbusherIdle",
+          "asset": "AmbusherIdle_4.asset",
+          "sheet": "AmbusherIdle.png",
+          "sheetPath": "#Art/Sprites/enemies/EN01 - Ambusher - Spr/AmbusherIdle.png",
+          "x": 40,
+          "y": 0,
+          "w": 40,
+          "h": 28
+        }
+      }
+    },
+    "EN62": {
+      "devName": "Sacred Knight",
+      "displayName": "Sacred Knight",
+      "spriteFile": "EN62.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN62 - Sacred Knight - Spr",
+        "spriteDir": "EN62 - Sacred Knight - Spr",
+        "animationPrefix": "EN62_SacredKnight_idle",
+        "asset": "EN62_SacredKnight_idle_6.asset",
+        "sheet": "EN62_SacredKnight_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN62 - Sacred Knight - Spr/EN62_SacredKnight_idle.png",
+        "x": 0,
+        "y": 73,
+        "w": 64,
+        "h": 72
+      }
+    },
+    "EN63": {
+      "devName": "Head Thrower",
+      "displayName": "Head Thrower",
+      "spriteFile": "EN63.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN63 - Head Thrower - Spr",
+        "spriteDir": "EN63 - Head Thrower - Spr",
+        "animationPrefix": "EN64_headsthrower_idle",
+        "asset": "EN64_headsthrower_idle_7.asset",
+        "sheet": "EN63_headsthrower_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN63 - Head Thrower - Spr/EN63_headsthrower_idle.png",
+        "x": 36,
+        "y": 53,
+        "w": 36,
+        "h": 53
+      }
+    },
+    "EN64": {
+      "devName": "Botijera",
+      "displayName": "Botijera",
+      "spriteFile": "EN64.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN64 - Botijera - Spr",
+        "spriteDir": "EN64 - Botijera - Spr",
+        "animationPrefix": "botijera_idle",
+        "asset": "botijera_idle_6.asset",
+        "sheet": "botijera_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN64 - Botijera - Spr/botijera_idle.png",
+        "x": 152,
+        "y": 0,
+        "w": 35,
+        "h": 56
+      }
+    },
+    "EN65": {
+      "devName": "Fire Heavy Melee",
+      "displayName": "Fire Heavy Melee",
+      "spriteFile": "EN65.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN65 - Fire Heavy Melee - Spr",
+        "spriteDir": "EN65 - Fire Heavy Melee - Spr",
+        "animationPrefix": "EN65 FireHeavyMelee Idle",
+        "asset": "EN65 FireHeavyMelee Idle_6.asset",
+        "sheet": "EN65 FireHeavyMelee Idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN65 - Fire Heavy Melee - Spr/EN65 FireHeavyMelee Idle.png",
+        "x": 225,
+        "y": 376,
+        "w": 103,
+        "h": 131
+      }
+    },
+    "EN66": {
+      "devName": "Stone Winged Beast",
+      "displayName": "Stone Winged Beast",
+      "spriteFile": "EN66.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN66 - Stone Winged Beast - Spr",
+        "spriteDir": "EN66 - Stone Winged Beast - Spr",
+        "animationPrefix": "EN66StoneWingedBeastIdle",
+        "asset": "EN66StoneWingedBeastIdle_5.asset",
+        "sheet": "EN66StoneWingedBeastIdle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN66 - Stone Winged Beast - Spr/EN66StoneWingedBeastIdle.png",
+        "x": 276,
+        "y": 87,
+        "w": 93,
+        "h": 86
+      }
+    },
+    "EN67": {
+      "devName": "Grounded Caves Melee Elite",
+      "displayName": "Grounded Caves Melee Elite",
+      "spriteFile": "EN67.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN67 - Grounded Caves Melee Elite - Spr",
+        "spriteDir": "EN67 - Grounded Caves Melee Elite - Spr",
+        "animationPrefix": "EN43_GroundedCavesMelee_idle",
+        "asset": "EN43_GroundedCavesMelee_idle_5.asset",
+        "sheet": "EN67_GroundedCavesMeleeElite_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN67 - Grounded Caves Melee Elite - Spr/EN67_GroundedCavesMeleeElite_idle.png",
+        "x": 96,
+        "y": 56,
+        "w": 47,
+        "h": 56
+      }
+    },
+    "EN68": {
+      "devName": "Shielded Giant Variation",
+      "displayName": "Shielded Giant Variation",
+      "spriteFile": "EN68.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN68 Shielded Giant Variation - Spr",
+        "spriteDir": "EN68 Shielded Giant Variation - Spr",
+        "animationPrefix": "EN34ShieldedGiant_idle",
+        "asset": "EN34ShieldedGiant_idle_11.asset",
+        "sheet": "EN68ShieldedGiant_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN68 Shielded Giant Variation - Spr/EN68ShieldedGiant_idle.png",
+        "x": 261,
+        "y": 265,
+        "w": 87,
+        "h": 131
+      }
+    },
+    "EN69": {
+      "devName": "Stone Forest Melee",
+      "displayName": "Stone Forest Melee",
+      "spriteFile": "EN69.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN69 - Stone Forest Melee - Spr",
+        "spriteDir": "EN69 - Stone Forest Melee - Spr",
+        "animationPrefix": "EN43_GroundedCavesMelee_idle",
+        "asset": "EN43_GroundedCavesMelee_idle_5.asset",
+        "sheet": "EN69_StoneForestMelee_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN69 - Stone Forest Melee - Spr/EN69_StoneForestMelee_idle.png",
+        "x": 187,
+        "y": 59,
+        "w": 44,
+        "h": 56
+      }
+    },
+    "EN70": {
+      "devName": "Fire Rotten Skull",
+      "displayName": "Fire Rotten Skull",
+      "spriteFile": "EN70.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN70 - CharredSkull",
+        "spriteDir": "EN70 - CharredSkull",
+        "animationPrefix": "EN70-CharredSkull",
+        "asset": "EN70-CharredSkull_26.asset",
+        "sheet": "EN70-CharredSkull.png",
+        "sheetPath": "#Art/Sprites/enemies/EN70 - CharredSkull/EN70-CharredSkull.png",
+        "x": 610,
+        "y": 108,
+        "w": 65,
+        "h": 88
+      }
+    },
+    "EN71": {
+      "devName": "MysticSkull",
+      "displayName": "Mystic Skull",
+      "spriteFile": "EN71.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN71 - MysticSkull - spr",
+        "spriteDir": "EN71 - MysticSkull - spr",
+        "animationPrefix": "EN71-MysticSkull",
+        "asset": "EN71-MysticSkull_26.asset",
+        "sheet": "EN71-MysticSkull.png",
+        "sheetPath": "#Art/Sprites/enemies/EN71 - MysticSkull - spr/EN71-MysticSkull.png",
+        "x": 622,
+        "y": 121,
+        "w": 37,
+        "h": 58
+      }
+    },
+    "EN72": {
+      "devName": "BouncerThrower",
+      "displayName": "Bouncer Thrower",
+      "spriteFile": "EN72.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN72 - BouncerThrower - spr",
+        "spriteDir": "EN72 - BouncerThrower - spr",
+        "animationPrefix": "EN02ShieldedThrowerIdle",
+        "asset": "EN02ShieldedThrowerIdle_5.asset",
+        "sheet": "EN72BouncerThrowerIdle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN72 - BouncerThrower - spr/EN72BouncerThrowerIdle.png",
+        "x": 179,
+        "y": 72,
+        "w": 59,
+        "h": 65
+      }
+    },
+    "EN73": {
+      "devName": "Lightning Coffin Carried",
+      "displayName": "Lightning Coffin Carried",
+      "spriteFile": "EN73.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN73 - LightningCarried -spr",
+        "spriteDir": "EN73 - LightningCarried -spr",
+        "animationPrefix": "EN73Lightningcarried_backwardidle",
+        "asset": "EN73Lightningcarried_backwardidle_6.asset",
+        "sheet": "EN73Lightningcarried_backwardidle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN73 - LightningCarried -spr/EN73Lightningcarried_backwardidle.png",
+        "x": 96,
+        "y": 85,
+        "w": 92,
+        "h": 84
+      }
+    },
+    "EN74": {
+      "devName": "Miasma Coffin Carried",
+      "displayName": "Miasma Coffin Carried",
+      "spriteFile": "EN74.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN74 - MiasmaCarried -Spr",
+        "spriteDir": "EN74 - MiasmaCarried -Spr",
+        "animationPrefix": "EN74Miasmacarried_backwardidle",
+        "asset": "EN74Miasmacarried_backwardidle_6.asset",
+        "sheet": "EN74Miasmacarried_backwardidle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN74 - MiasmaCarried -Spr/EN74Miasmacarried_backwardidle.png",
+        "x": 94,
+        "y": 83,
+        "w": 92,
+        "h": 84
+      }
+    },
+    "EN75": {
+      "devName": "Lightning Heavy Melee",
+      "displayName": "Lightning Heavy Melee",
+      "spriteFile": "EN75.png",
+      "spriteStatus": "manual-pick",
+      "spritePick": {
+        "source": "EN75 - Ligthning Heavy Melee - Spr",
+        "spriteDir": "EN75 - Ligthning Heavy Melee - Spr",
+        "animationPrefix": "EN75 LightningHeavyMelee Turnaround",
+        "asset": "EN75 LightningHeavyMelee Turnaround_0.asset",
+        "sheet": "EN75 LightningHeavyMelee Turnaround.png",
+        "sheetPath": "#Art/Sprites/enemies/EN75 - Ligthning Heavy Melee - Spr/EN75 LightningHeavyMelee Turnaround.png",
+        "x": 261,
+        "y": 117,
+        "w": 123,
+        "h": 118
+      }
+    },
+    "EN76": {
+      "devName": "Miasma Shielded Giant",
+      "displayName": "Miasma Shielded Giant",
+      "spriteFile": "EN76.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN76 - Miasma Shielded Giant -Spr",
+        "spriteDir": "EN76 - Miasma Shielded Giant -Spr",
+        "animationPrefix": "EN76MiasmaShieldedGiant_idle",
+        "asset": "EN76MiasmaShieldedGiant_idle_11.asset",
+        "sheet": "EN76MiasmaShieldedGiant_idle.png",
+        "sheetPath": "#Art/Sprites/enemies/EN76 - Miasma Shielded Giant -Spr/EN76MiasmaShieldedGiant_idle.png",
+        "x": 1408,
+        "y": 144,
+        "w": 128,
+        "h": 144
+      }
+    },
+    "EN77": {
+      "devName": "DummyGhost Variant",
+      "displayName": "Dummy Ghost Variant",
+      "spriteFile": "EN77.png",
+      "spriteStatus": "generated",
+      "spritePick": {
+        "source": "EN77 - DummyVariant -Spr",
+        "spriteDir": "EN77 - DummyVariant -Spr",
+        "animationPrefix": "En77DummyVariantAttack",
+        "asset": "En77DummyVariantAttack_17.asset",
+        "sheet": "En77DummyVariantAttack.png",
+        "sheetPath": "#Art/Sprites/enemies/EN77 - DummyVariant -Spr/En77DummyVariantAttack.png",
+        "x": 1760,
+        "y": 360,
+        "w": 220,
+        "h": 180
+      }
+    }
+  },
+  "stats": {
+    "ok": 69,
+    "proxy": 8,
+    "missing": 0
+  }
+}

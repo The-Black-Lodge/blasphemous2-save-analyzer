@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:enemies": "python tools/build-enemy-assets.py",
     "lint": "eslint .",
     "preview": "vite preview"
   },
