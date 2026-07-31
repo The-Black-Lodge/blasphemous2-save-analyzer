@@ -80,7 +80,9 @@ function AppContent() {
   const scrollToCollectible = useCallback((sectionKey: string) => {
     collectibleScrollTarget.current = sectionKey
     setTab((current) =>
-      current === "all" || current === "collectibles" ? current : "collectibles",
+      current === "all" || current === "collectibles"
+        ? current
+        : "collectibles",
     )
   }, [])
 
@@ -109,41 +111,68 @@ function AppContent() {
   return (
     <TabContext.Provider value={tab}>
       <AppNavigationContext.Provider value={{ scrollToCollectible, goToTab }}>
-      <>
-        <div className="app-top-bar">
-          <nav className="app-tabs" aria-label="Inventory sections">
-            {TABS.map(({ id, label }) => (
-              <button
-                key={id}
-                type="button"
-                className="app-tab"
-                role="tab"
-                aria-selected={tab === id}
-                onClick={() => setTab(id)}
-              >
-                {label}
-              </button>
+        <>
+          <div className="app-top-bar">
+            <nav
+              className="app-tabs"
+              aria-label="Inventory sections"
+            >
+              {TABS.map(({ id, label }) => (
+                <button
+                  key={id}
+                  type="button"
+                  className="app-tab"
+                  role="tab"
+                  aria-selected={tab === id}
+                  onClick={() => setTab(id)}
+                >
+                  {label}
+                </button>
+              ))}
+            </nav>
+            {tab === "global" ? <OpenGlobalDataButton /> : <OpenSaveButton />}
+          </div>
+          <main className="app-content">
+            {visibleSections.map(({ id, Component }) => (
+              <Component key={id} />
             ))}
-          </nav>
-          {tab === "global" ? <OpenGlobalDataButton /> : <OpenSaveButton />}
-        </div>
-        <main className="app-content">
-          {visibleSections.map(({ id, Component }) => (
-            <Component key={id} />
-          ))}
-        </main>
-        <footer className="app-footer">
-          <a
-            className="app-github-link"
-            href="https://github.com/The-Black-Lodge/blasphemous2-save-analyzer"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View source on GitHub"
-          >
-            <i className="fa-brands fa-github" aria-hidden="true" />
-          </a>
-        </footer>
-      </>
+          </main>
+          <footer className="app-footer">
+            <span className="footer-text">
+              © {new Date().getFullYear()} {" "}
+              <a
+                href="https://southpawgeek.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                J. A. Guerra
+              </a>
+            </span>
+            <span className="footer-separator">·</span>
+            <a
+              className="app-github-link"
+              href="https://github.com/The-Black-Lodge/blasphemous2-save-analyzer"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View source on GitHub"
+            >
+              <i
+                className="fa-brands fa-github"
+                aria-hidden="true"
+              />
+            </a>
+            <span className="footer-separator">·</span>
+            <span className="footer-text">
+              <a
+                href="https://diatomravine.com/games"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Diatom Ravine
+              </a>
+            </span>
+          </footer>
+        </>
       </AppNavigationContext.Provider>
     </TabContext.Provider>
   )
