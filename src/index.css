@@ -974,6 +974,10 @@ code {
   padding: 1.5rem 1rem 2rem;
 }
 
+.footer-separator {
+  margin: 0 0.45rem;
+}
+
 .app-github-link {
   color: var(--text-lo);
   font-size: 1.35rem;
