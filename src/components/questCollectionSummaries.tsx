@@ -3,6 +3,21 @@ import type { ReactNode } from "react"
 const MAPGENIE =
   "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds="
 
+/**
+ * Collections delivered to an NPC where world pickup IDs are incomplete.
+ * Inventory is tracked; after hand-in, some cells can look missing until the
+ * full set is turned in — unmarked cells are not a pickup checklist.
+ */
+export const questCollectionsWithDeliveryTrackingGap = new Set([
+  "ornate-chalice",
+  "empty-receptacle",
+  "silver-clad-shard",
+  "fervent-kiss",
+])
+
+export const DELIVERY_TRACKING_NOTE =
+  "Tracker limitation: items still in your inventory are shown. After you deliver them, some may look missing until the full set is turned in. Unfortunately, unmarked cells are not a reliable pickup checklist."
+
 export const questCollectionSummaries: Record<string, ReactNode> = {
   "ornate-chalice": (
     <>

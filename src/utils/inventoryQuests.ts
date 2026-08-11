@@ -33,30 +33,33 @@ export interface QuestItemStatus {
   pickedUp: Set<string>
 }
 
-/** ST11 — Blood Lady */
+/**
+ * ST11 — Blood Lady.
+ * NPC27_ST11_BLOODLADY maps all* InputQuestVars to these hashes.
+ * one* flags (CHALICE_UPGRADE / RECEPTACLE_UPGRADE / SHARD_UPGRADE) only mean
+ * "at least one handed in" and must not mark every item collected.
+ */
 const ST11_QUEST_ID = 1085383975
 const ST11_VARS = {
-  CHALICE_UPGRADE: -549613052,
-  RECEPTACLE_UPGRADE: 375976085,
-  SHARD_UPGRADE: 2079137411,
-  HEALTH_FINISHED: 1970708205,
-  FLASKN_FINISHED: 1368681068,
-  FLASKH_FINISHED: -693867466,
+  /** allChaliceUpgrades — asset id HEALTH_FINISHED */
+  ALL_CHALICES: 1970708205,
+  /** allReceptacleUpgrades — asset id FLASKN_FINISHED */
+  ALL_RECEPTACLES: 1368681068,
+  /** allShardUpgrades — asset id FLASKH_FINISHED */
+  ALL_SHARDS: -693867466,
 } as const
 
 const CHALICE_ITEMS = ["QI42", "QI43", "QI44", "QI45", "QI46"] as const
 const RECEPTACLE_ITEMS = ["QI47", "QI48", "QI49", "QI50"] as const
 const SHARD_ITEMS = ["QI51", "QI52", "QI53"] as const
 
-/** ST12 — Besamanos (Hand-Kisser) */
+/** ST12 — Besamanos (Hand-Kisser). Forgotten Tributes are Procession of Shadows, not ST12. */
 const ST12_QUEST_ID = 1488668502
 const ST12_VARS = {
-  HAND_SECRET: -1163596600,
   KISSES_DELIVERED: 479213983,
   HAND_SECRET_DOOR: -795119097,
 } as const
 
-const TRIBUTE_ITEMS = ["QI29", "QI30", "QI31"] as const
 const FERVENT_KISS_ITEMS = ["QI37", "QI38", "QI39", "QI40", "QI41"] as const
 const ROSARY_KNOT_ITEMS = ["QI32", "QI33", "QI34", "QI35"] as const
 
@@ -188,25 +191,18 @@ export function getWorldPickedUpQuestSources(
 function inferBloodLadyItems(quest: QuestRecord): string[] {
   const items: string[] = []
   const v = quest.variables
-  const status = quest.status
+  const questComplete = quest.status >= 3.5
 
-  const chalicesDone =
-    status >= 3.5 ||
-    questVarActive(v[ST11_VARS.CHALICE_UPGRADE]) ||
-    questVarActive(v[ST11_VARS.FLASKN_FINISHED]) ||
-    questVarActive(v[ST11_VARS.FLASKH_FINISHED])
-
-  const receptaclesDone =
-    status >= 3.5 ||
-    questVarActive(v[ST11_VARS.RECEPTACLE_UPGRADE]) ||
-    questVarActive(v[ST11_VARS.HEALTH_FINISHED])
-
-  const shardsDone =
-    status >= 3.5 || questVarActive(v[ST11_VARS.SHARD_UPGRADE])
-
-  if (chalicesDone) items.push(...CHALICE_ITEMS)
-  if (receptaclesDone) items.push(...RECEPTACLE_ITEMS)
-  if (shardsDone) items.push(...SHARD_ITEMS)
+  // Only the all* flags (or full quest completion) mean every item was handed in.
+  if (questComplete || questVarActive(v[ST11_VARS.ALL_CHALICES])) {
+    items.push(...CHALICE_ITEMS)
+  }
+  if (questComplete || questVarActive(v[ST11_VARS.ALL_RECEPTACLES])) {
+    items.push(...RECEPTACLE_ITEMS)
+  }
+  if (questComplete || questVarActive(v[ST11_VARS.ALL_SHARDS])) {
+    items.push(...SHARD_ITEMS)
+  }
 
   return items
 }
@@ -214,13 +210,6 @@ function inferBloodLadyItems(quest: QuestRecord): string[] {
 function inferBesamanosItems(quest: QuestRecord): string[] {
   const items: string[] = []
   const v = quest.variables
-
-  const questStarted =
-    questVarActive(v[ST12_VARS.HAND_SECRET]) ||
-    questVarActive(v[ST12_VARS.HAND_SECRET_DOOR]) ||
-    (v[ST12_VARS.KISSES_DELIVERED] ?? 0) >= 1
-
-  if (questStarted) items.push(...TRIBUTE_ITEMS)
 
   const kissesDelivered = v[ST12_VARS.KISSES_DELIVERED] ?? 0
   if (kissesDelivered >= 5) items.push(...FERVENT_KISS_ITEMS)

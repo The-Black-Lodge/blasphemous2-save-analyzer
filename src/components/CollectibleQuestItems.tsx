@@ -27,7 +27,11 @@ import CollectibleQuestGroup, {
 } from "./CollectibleQuestGroup"
 import CollectibleSculptorTools from "./CollectibleSculptorTools"
 import { collectibleCollectionSummaries } from "./collectibleCollectionSummaries"
-import { questCollectionSummaries } from "./questCollectionSummaries"
+import {
+  DELIVERY_TRACKING_NOTE,
+  questCollectionSummaries,
+  questCollectionsWithDeliveryTrackingGap,
+} from "./questCollectionSummaries"
 import type { CollectibleLocationData } from "../utils/collectibleLocations"
 import { isLullabyCollected } from "../utils/lullabies"
 import { isSealedEnvelopeCollected } from "../utils/sealedEnvelopes"
@@ -142,6 +146,11 @@ const collectibleSections = [
       <CollectibleQuestGroup
         collection={collection}
         summary={questCollectionSummaries[collection.id]}
+        trackingNote={
+          questCollectionsWithDeliveryTrackingGap.has(collection.id)
+            ? DELIVERY_TRACKING_NOTE
+            : undefined
+        }
       />
     ),
   })),

@@ -23,11 +23,13 @@ export interface QuestCollection {
 interface CollectibleQuestGroupProps {
   collection: QuestCollection
   summary?: ReactNode
+  trackingNote?: string
 }
 
 export default function CollectibleQuestGroup({
   collection,
   summary,
+  trackingNote,
 }: CollectibleQuestGroupProps) {
   const { save } = useSave()
   const status = getQuestItemStatus(save)
@@ -40,6 +42,9 @@ export default function CollectibleQuestGroup({
       />
       <h3 className="leading-icon">{collection.title}</h3>
       {summary ? <h4 className="collectible-summary">{summary}</h4> : null}
+      {trackingNote ? (
+        <p className="collectible-tracking-note">{trackingNote}</p>
+      ) : null}
       <div className="collectible-grid">
         {collection.items.map((entry) => {
           const acquired =

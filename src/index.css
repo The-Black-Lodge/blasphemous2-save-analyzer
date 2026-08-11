@@ -1592,6 +1592,16 @@ code {
   line-height: 145%;
 }
 
+.collectible-quest-group .collectible-tracking-note {
+  clear: both;
+  margin: -0.35rem 0 0.75rem;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-lo);
+  line-height: 145%;
+}
+
 .collectible-summary a,
 .collectible-reward-list a {
   color: var(--text-h);

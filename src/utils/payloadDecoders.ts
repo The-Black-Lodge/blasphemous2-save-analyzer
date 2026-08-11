@@ -46,7 +46,7 @@ const QUEST_ID_MAP: Record<number, { name: string; category: string; description
   [1085383973, { name: "Shop Conditional 3", category: "shop", description: "SHOPMISSABLES - additional shop items" }],
   // Arena/progression quests
   [1488668501, { name: "Arena Progress", category: "arena", description: "Arena quest progress" }],
-  [1488668502, { name: "Arena Conditional", category: "arena", description: "Arena quest conditional" }],
+  [1488668502, { name: "Besamanos", category: "main_story", description: "ST12 - Hand-Kisser, fervent kisses and rosary knots" }],
   [1488668499, { name: "Arena Conditional 2", category: "arena", description: "Arena quest conditional 2" }],
   // Location access quests
   [-1643499380, { name: "Location Access", category: "location", description: "Location access quests" }],
