@@ -1,26 +1,15 @@
 import lacrimatorioData from "../data/lacrimatorio.json"
 import type { ReadableSaveJson } from "./saveParser"
-import {
-  getQuestItemAcquisition,
-  getQuestItemStatus,
-} from "./inventoryQuests"
-import { isRoomTriggerCleared } from "./roomTriggers"
 
-/** Shrine placement order; later rewards imply earlier steps are done. */
-export const LACRIMATORIO_PROGRESSION = [
-  "QI106",
-  "QI107",
-  "QI108",
-  "QI109",
-  "QI110",
-  "QI111",
-] as const
+/** ST105 — tomb shrines for Imperfectus Lacrimatorio. */
+export const ST105_QUEST_ID = -1455898281
 
 export interface LacrimatorioShrine {
   id: number
   sceneFile: string
   roomHash: number
   elementKey: number
+  questVarID: number
   itemName: string
   caption: string
   url: string | null
@@ -29,33 +18,30 @@ export interface LacrimatorioShrine {
 export const LACRIMATORIO_SHRINES =
   lacrimatorioData.shrines as LacrimatorioShrine[]
 
-function isProgressionRewardCollected(
-  itemName: string,
-  status: ReturnType<typeof getQuestItemStatus>,
-): boolean {
-  if (getQuestItemAcquisition(itemName, status) !== "missing") return true
+function getQuestVariables(
+  save: ReadableSaveJson | null,
+): Record<number, number> {
+  const raw = (
+    save?.player?.questPersistence as
+      | { variables?: Record<string | number, number> }
+      | undefined
+  )?.variables
+  if (!raw) return {}
 
-  const index = LACRIMATORIO_PROGRESSION.indexOf(
-    itemName as (typeof LACRIMATORIO_PROGRESSION)[number],
-  )
-  if (index < 0) return false
-
-  for (let i = index + 1; i < LACRIMATORIO_PROGRESSION.length; i++) {
-    if (status.pickedUp.has(LACRIMATORIO_PROGRESSION[i])) return true
+  const out: Record<number, number> = {}
+  for (const [key, value] of Object.entries(raw)) {
+    out[Number(key)] = value
   }
-
-  return false
+  return out
 }
 
-/** Imperfectus piece placed at this shrine. */
+/** Shrine used — ST105 TOMB*_FINISHED, not the room trigger (inactive on visit). */
 export function isLacrimatorioShrineCollected(
   save: ReadableSaveJson | null,
   shrine: LacrimatorioShrine,
 ): boolean {
-  const status = getQuestItemStatus(save)
-  if (isProgressionRewardCollected(shrine.itemName, status)) return true
-
-  return isRoomTriggerCleared(save, shrine.roomHash, shrine.elementKey)
+  const value = getQuestVariables(save)[shrine.questVarID]
+  return typeof value === "number" && value >= 0.5
 }
 
 export type GoldenFlaskProgress = "completed" | "in-progress" | "not-started"

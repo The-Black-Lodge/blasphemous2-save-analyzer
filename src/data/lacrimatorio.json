@@ -8,6 +8,7 @@
       "sceneFile": "Z2702",
       "roomHash": 1574233053,
       "elementKey": -130804785,
+      "questVarID": 586705146,
       "itemName": "QI106",
       "caption": "Imperfectus Lacrimatorio",
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523933"
@@ -17,6 +18,7 @@
       "sceneFile": "Z2705",
       "roomHash": 1574233056,
       "elementKey": -686435315,
+      "questVarID": 587607863,
       "itemName": "QI107",
       "caption": "Imperfectus Lacrimatorio",
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523945"
@@ -26,6 +28,7 @@
       "sceneFile": "Z2816",
       "roomHash": 8149135,
       "elementKey": 1027629592,
+      "questVarID": 576314941,
       "itemName": "QI108",
       "caption": "Imperfectus Lacrimatorio",
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=524284"
@@ -35,6 +38,7 @@
       "sceneFile": "Z2828",
       "roomHash": -1557934792,
       "elementKey": -1352005700,
+      "questVarID": 584333304,
       "itemName": "QI109",
       "caption": "Imperfectus Lacrimatorio",
       "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=524350"

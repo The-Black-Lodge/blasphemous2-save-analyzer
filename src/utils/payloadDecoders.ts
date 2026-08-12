@@ -66,7 +66,7 @@ const QUEST_ID_MAP: Record<number, { name: string; category: string; description
   [-1455898278, { name: "Gold Progress", category: "main_story", description: "Gold delivery progress" }],
   [-1455898279, { name: "Gold Progress 2", category: "main_story", description: "Gold delivery progress 2" }],
   [-1455898280, { name: "Gold Progress 3", category: "main_story", description: "Gold delivery progress 3" }],
-  [-1455898281, { name: "Gold Progress 4", category: "main_story", description: "Gold delivery progress 4" }],
+  [-1455898281, { name: "Ghost Tombs", category: "main_story", description: "ST105 - Lacrimatorio tomb shrines" }],
   [-1455898310, { name: "Gold Progress 5", category: "main_story", description: "Gold delivery progress 5" }],
   [-1455898309, { name: "Gold Progress 6", category: "main_story", description: "Gold delivery progress 6" }],
   [-1455898314, { name: "Gold Progress 7", category: "main_story", description: "Gold delivery progress 7" }],
