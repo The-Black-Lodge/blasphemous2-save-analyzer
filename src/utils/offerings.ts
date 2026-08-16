@@ -21,7 +21,7 @@ function locationsForPiece(pieceItem: string): CollectibleLocation[] {
   return ALL_LOCATIONS.filter((location) => location.itemName === pieceItem)
 }
 
-/** Ceramic, gold, silver — completed item icon leads each row. */
+/** Ceramic, gold, silver - completed item icon leads each row. */
 export const OFFERING_ROWS: OfferingRow[] = [
   {
     pieceItem: "QI204",

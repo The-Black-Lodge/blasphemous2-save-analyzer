@@ -52,7 +52,7 @@ export default function CollectibleLocationCollection({
                 collected
                   ? location.caption ?? "Collected"
                   : location.caption
-                    ? `${location.caption} — not yet collected`
+                    ? `${location.caption} - not yet collected`
                     : "Not yet collected"
               }
             >

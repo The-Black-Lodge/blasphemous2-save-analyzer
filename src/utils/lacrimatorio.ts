@@ -1,7 +1,7 @@
 import lacrimatorioData from "../data/lacrimatorio.json"
 import type { ReadableSaveJson } from "./saveParser"
 
-/** ST105 — tomb shrines for Imperfectus Lacrimatorio. */
+/** ST105 - tomb shrines for Imperfectus Lacrimatorio. */
 export const ST105_QUEST_ID = -1455898281
 
 export interface LacrimatorioShrine {
@@ -35,7 +35,7 @@ function getQuestVariables(
   return out
 }
 
-/** Shrine used — ST105 TOMB*_FINISHED, not the room trigger (inactive on visit). */
+/** Shrine used - ST105 TOMB*_FINISHED, not the room trigger (inactive on visit). */
 export function isLacrimatorioShrineCollected(
   save: ReadableSaveJson | null,
   shrine: LacrimatorioShrine,

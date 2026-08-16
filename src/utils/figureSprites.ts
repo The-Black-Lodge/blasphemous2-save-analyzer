@@ -68,7 +68,7 @@ export function resolveFigureSpriteVariant(
   _acquired: Set<string>,
 ): FigureSpriteVariant {
   // FG209 only has empty/full slices. "full" sits on the resonance atlas row and
-  // is the mist-charged board state — not the default inventory figurine display.
+  // is the mist-charged board state - not the default inventory figurine display.
   if (source === "FG209") {
     return "empty"
   }
@@ -91,4 +91,4 @@ export function getFigureSpriteClassName(
 export function hasBurnSprite(source: string): boolean {
   return Boolean(figureSpriteData.sprites[source]?.burn)
 }
-
+

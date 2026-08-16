@@ -1,0 +1,251 @@
+{
+  "generatedBy": "build_tears_of_atonement.py",
+  "title": "Tears of Atonement",
+  "urns": [
+    {
+      "id": 1,
+      "sceneFile": "Z0203",
+      "roomHash": 1291908279,
+      "elementKey": -1276957576,
+      "amount": 800,
+      "label": "Normal_1",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=509073"
+    },
+    {
+      "id": 2,
+      "sceneFile": "Z0414",
+      "roomHash": -274175725,
+      "elementKey": -1276957576,
+      "amount": 800,
+      "label": "Normal_1",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520332"
+    },
+    {
+      "id": 3,
+      "sceneFile": "Z05BZ06",
+      "roomHash": -2116507159,
+      "elementKey": -1276957576,
+      "amount": 800,
+      "label": "Normal_1",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520404"
+    },
+    {
+      "id": 4,
+      "sceneFile": "Z0730",
+      "roomHash": -1436975306,
+      "elementKey": -1276957576,
+      "amount": 800,
+      "label": "Normal_1",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=519431"
+    },
+    {
+      "id": 5,
+      "sceneFile": "Z1050",
+      "roomHash": -2102381564,
+      "elementKey": -1276957576,
+      "amount": 800,
+      "label": "Normal_1",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520740"
+    },
+    {
+      "id": 6,
+      "sceneFile": "Z1404",
+      "roomHash": -1699097165,
+      "elementKey": -1276957576,
+      "amount": 800,
+      "label": "Normal_1",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520952"
+    },
+    {
+      "id": 7,
+      "sceneFile": "Z1718",
+      "roomHash": -133013399,
+      "elementKey": -1276957576,
+      "amount": 800,
+      "label": "Normal_1",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522463"
+    },
+    {
+      "id": 8,
+      "sceneFile": "Z1901",
+      "roomHash": -1699097397,
+      "elementKey": -1276957576,
+      "amount": 800,
+      "label": "Normal_1",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520733"
+    },
+    {
+      "id": 9,
+      "sceneFile": "Z1103",
+      "roomHash": -1699097135,
+      "elementKey": 2024747359,
+      "amount": 1200,
+      "label": "Normal_2",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522456"
+    },
+    {
+      "id": 10,
+      "sceneFile": "Z1209",
+      "roomHash": -1699097112,
+      "elementKey": 2024747359,
+      "amount": 1200,
+      "label": "Normal_2",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522498"
+    },
+    {
+      "id": 11,
+      "sceneFile": "Z1602",
+      "roomHash": -1699097233,
+      "elementKey": 2024747359,
+      "amount": 1200,
+      "label": "Normal_2",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522582"
+    },
+    {
+      "id": 12,
+      "sceneFile": "Z1310",
+      "roomHash": -133013259,
+      "elementKey": -94588669,
+      "amount": 1800,
+      "label": "Normal_3",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523501"
+    },
+    {
+      "id": 13,
+      "sceneFile": "Z1329",
+      "roomHash": 1433070675,
+      "elementKey": -23431021,
+      "amount": 1800,
+      "label": "Normal_3",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523480"
+    },
+    {
+      "id": 14,
+      "sceneFile": "Z0304",
+      "roomHash": 1291908177,
+      "elementKey": -240174027,
+      "amount": 2000,
+      "label": "Luxury_1",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520254"
+    },
+    {
+      "id": 15,
+      "sceneFile": "Z0307",
+      "roomHash": 1291908180,
+      "elementKey": 1672521875,
+      "amount": 2000,
+      "label": "Luxury_1",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520879"
+    },
+    {
+      "id": 16,
+      "sceneFile": "Z0308",
+      "roomHash": 1291908173,
+      "elementKey": 1547651628,
+      "amount": 2000,
+      "label": "Luxury_1",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520361"
+    },
+    {
+      "id": 17,
+      "sceneFile": "Z0605",
+      "roomHash": 1291908149,
+      "elementKey": -746934463,
+      "amount": 2000,
+      "label": "Luxury_1",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522353"
+    },
+    {
+      "id": 18,
+      "sceneFile": "Z0313",
+      "roomHash": -274175757,
+      "elementKey": -438015722,
+      "amount": 3500,
+      "label": "Luxury_2",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520887"
+    },
+    {
+      "id": 19,
+      "sceneFile": "Z1918",
+      "roomHash": -133013449,
+      "elementKey": 271731151,
+      "amount": 3500,
+      "label": "Luxury_2",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=509140"
+    },
+    {
+      "id": 20,
+      "sceneFile": "Z2103",
+      "roomHash": 1574233248,
+      "elementKey": -909872355,
+      "amount": 3500,
+      "label": "Luxury_2",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522527"
+    },
+    {
+      "id": 21,
+      "sceneFile": "Z0303",
+      "roomHash": 1291908184,
+      "elementKey": 1404208637,
+      "amount": 5000,
+      "label": "Luxury_3",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520263"
+    },
+    {
+      "id": 22,
+      "sceneFile": "Z1605",
+      "roomHash": -1699097232,
+      "elementKey": -746934463,
+      "amount": 5000,
+      "label": "Luxury_3",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=522657"
+    }
+  ],
+  "others": [
+    {
+      "id": 1,
+      "sceneFile": "Z1404",
+      "roomHash": -1699097165,
+      "elementKey": -41400469,
+      "amount": 2000,
+      "label": "Quest pickup (no urn graphic)",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=521008"
+    },
+    {
+      "id": 2,
+      "sceneFile": "Z1045",
+      "roomHash": 626501786,
+      "elementKey": -41400469,
+      "amount": 5000,
+      "label": "Quest pickup (no urn graphic)",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=520942"
+    },
+    {
+      "id": 3,
+      "sceneFile": "Z1801",
+      "roomHash": -1699097302,
+      "elementKey": -41400469,
+      "amount": 5000,
+      "label": "TEARSLUXURY3 arena pickup",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523705"
+    },
+    {
+      "id": 4,
+      "sceneFile": "Z1804",
+      "roomHash": -1699097305,
+      "elementKey": -41400469,
+      "amount": 5000,
+      "label": "TEARSLUXURY3 arena pickup",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=523721"
+    },
+    {
+      "id": 5,
+      "sceneFile": "Z0611",
+      "roomHash": -274175796,
+      "elementKey": 185785547,
+      "amount": 1000,
+      "label": "Gauntlet clear",
+      "url": "https://mapgenie.io/blasphemous-2/maps/cvstodia?locationIds=509187"
+    }
+  ]
+}

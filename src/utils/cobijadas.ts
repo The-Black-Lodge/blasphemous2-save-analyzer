@@ -125,7 +125,7 @@ export function isCobijadaReleased(
   return triggerActive === true
 }
 
-/** ST25 total sisters released (0–9), or null if quest data unavailable. */
+/** ST25 total sisters released (0-9), or null if quest data unavailable. */
 export function getCobijadasReleasedCount(
   save: ReadableSaveJson | null,
 ): number | null {

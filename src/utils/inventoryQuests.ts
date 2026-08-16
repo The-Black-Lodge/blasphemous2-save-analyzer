@@ -34,18 +34,18 @@ export interface QuestItemStatus {
 }
 
 /**
- * ST11 — Blood Lady.
+ * ST11 - Blood Lady.
  * NPC27_ST11_BLOODLADY maps all* InputQuestVars to these hashes.
  * one* flags (CHALICE_UPGRADE / RECEPTACLE_UPGRADE / SHARD_UPGRADE) only mean
  * "at least one handed in" and must not mark every item collected.
  */
 const ST11_QUEST_ID = 1085383975
 const ST11_VARS = {
-  /** allChaliceUpgrades — asset id HEALTH_FINISHED */
+  /** allChaliceUpgrades - asset id HEALTH_FINISHED */
   ALL_CHALICES: 1970708205,
-  /** allReceptacleUpgrades — asset id FLASKN_FINISHED */
+  /** allReceptacleUpgrades - asset id FLASKN_FINISHED */
   ALL_RECEPTACLES: 1368681068,
-  /** allShardUpgrades — asset id FLASKH_FINISHED */
+  /** allShardUpgrades - asset id FLASKH_FINISHED */
   ALL_SHARDS: -693867466,
 } as const
 
@@ -53,7 +53,7 @@ const CHALICE_ITEMS = ["QI42", "QI43", "QI44", "QI45", "QI46"] as const
 const RECEPTACLE_ITEMS = ["QI47", "QI48", "QI49", "QI50"] as const
 const SHARD_ITEMS = ["QI51", "QI52", "QI53"] as const
 
-/** ST12 — Besamanos (Hand-Kisser). Forgotten Tributes are Procession of Shadows, not ST12. */
+/** ST12 - Besamanos (Hand-Kisser). Forgotten Tributes are Procession of Shadows, not ST12. */
 const ST12_QUEST_ID = 1488668502
 const ST12_VARS = {
   KISSES_DELIVERED: 479213983,
@@ -63,7 +63,7 @@ const ST12_VARS = {
 const FERVENT_KISS_ITEMS = ["QI37", "QI38", "QI39", "QI40", "QI41"] as const
 const ROSARY_KNOT_ITEMS = ["QI32", "QI33", "QI34", "QI35"] as const
 
-/** ST29 — Cesareo (wax seeds at Severed Tower) */
+/** ST29 - Cesareo (wax seeds at Severed Tower) */
 const ST29_QUEST_ID = 729153612
 const ST29_VARS = {
   SEEDS_PLANTED: -67422643,
@@ -214,7 +214,7 @@ function inferBesamanosItems(quest: QuestRecord): string[] {
   const kissesDelivered = v[ST12_VARS.KISSES_DELIVERED] ?? 0
   if (kissesDelivered >= 5) items.push(...FERVENT_KISS_ITEMS)
 
-  // Lamp Lady door unlocked — rosary knot turn-ins completed for this line.
+  // Lamp Lady door unlocked - rosary knot turn-ins completed for this line.
   if (questVarActive(v[ST12_VARS.HAND_SECRET_DOOR])) {
     items.push(...ROSARY_KNOT_ITEMS)
   }

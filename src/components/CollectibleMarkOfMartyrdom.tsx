@@ -32,7 +32,7 @@ export default function CollectibleMarkOfMartyrdom() {
           <div className="martyrdom-kill-bar-header">
             <span><em>Marks</em> earned from enemy kills</span>
             <span className="martyrdom-kill-bar-count">
-              {killBarEarned !== null ? `${killBarEarned} / ${KILL_BAR_MAX}` : "—"}
+              {killBarEarned !== null ? `${killBarEarned} / ${KILL_BAR_MAX}` : "-"}
             </span>
           </div>
           <div

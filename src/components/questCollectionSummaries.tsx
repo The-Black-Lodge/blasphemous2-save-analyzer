@@ -6,7 +6,7 @@ const MAPGENIE =
 /**
  * Collections delivered to an NPC where world pickup IDs are incomplete.
  * Inventory is tracked; after hand-in, some cells can look missing until the
- * full set is turned in — unmarked cells are not a pickup checklist.
+ * full set is turned in - unmarked cells are not a pickup checklist.
  */
 export const questCollectionsWithDeliveryTrackingGap = new Set([
   "ornate-chalice",

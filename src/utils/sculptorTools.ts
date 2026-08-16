@@ -10,7 +10,7 @@ import {
 
 export const SCULPTOR_TOOL_PROGRESSION = sculptorToolsData.progression as readonly string[]
 
-/** ST05 — Imaginero / Sculptor's Tools (Montañés). */
+/** ST05 - Imaginero / Sculptor's Tools (Montañés). */
 export const ST05_QUEST_ID = unityStringHash("ST05")
 
 const SCULPTOR_TOOL_OFFERED_VARS: Record<string, number> = {

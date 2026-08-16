@@ -60,7 +60,7 @@ export default function CollectibleSculptorTools() {
                   <div
                     className={`sculptor-tool-progression-step${acquired ? "" : " sculptor-tool-progression-step--missing"}`}
                     title={
-                      acquired ? caption : `${caption} — not yet obtained`
+                      acquired ? caption : `${caption} - not yet obtained`
                     }
                   >
                     <div className="sculptor-tool-progression-icon-slot">

@@ -6,7 +6,7 @@ interface InventoryItem {
   }
 }
 
-/** Prayer sources (PR##) owned by the player — same logic as the Prayers tab. */
+/** Prayer sources (PR##) owned by the player - same logic as the Prayers tab. */
 export function getAcquiredPrayerSources(
   save: ReadableSaveJson | null,
 ): Set<string> {

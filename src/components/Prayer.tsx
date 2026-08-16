@@ -12,9 +12,9 @@ function useTab() {
   return tab
 }
 
-/** Soleá of Excommunication — always last chant slot. */
+/** Soleá of Excommunication - always last chant slot. */
 const CHANT_LAST_SOURCE = "PR103"
-/** Bleeding Chalice — always last quick verse slot. */
+/** Bleeding Chalice - always last quick verse slot. */
 const VERSE_LAST_SOURCE = "PR108"
 
 function sortPrayerSources(

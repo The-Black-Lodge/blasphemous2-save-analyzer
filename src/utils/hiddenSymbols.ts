@@ -29,7 +29,7 @@ function getQuestVariables(save: ReadableSaveJson | null): Record<number, number
   return out
 }
 
-/** Symbol revealed via PR03 (Chime of the Twisted One) — quest var set on first chime. */
+/** Symbol revealed via PR03 (Chime of the Twisted One) - quest var set on first chime. */
 export function isHiddenSymbolCollected(
   save: ReadableSaveJson | null,
   location: HiddenSymbolLocation,

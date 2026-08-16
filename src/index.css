@@ -19,10 +19,10 @@
   /* Collectible grid cells (Children of Moonlight + quest collections) */
   --collectible-cell-width: 3.5rem;
 
-  /* Sticky tab bar — used for scroll-padding / scroll-margin on in-page targets */
+  /* Sticky tab bar - used for scroll-padding / scroll-margin on in-page targets */
   --app-top-bar-offset: 3.5rem;
 
-  /* Quest collection header sprites — nudge left/up (cherub HUD sprite unchanged) */
+  /* Quest collection header sprites - nudge left/up (cherub HUD sprite unchanged) */
   --qi-header-offset-x: -7px;
   --qi-header-offset-y: -6px;
 
@@ -1184,6 +1184,10 @@ code {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fill, var(--collectible-cell-width));
+}
+
+.tears-of-atonement-grid {
+  --collectible-cell-width: 7rem;
 }
 
 .collectible-cell {

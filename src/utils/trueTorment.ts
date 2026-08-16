@@ -30,7 +30,7 @@ export interface TrueTormentState {
   activeChallengeIds: Set<number>
 }
 
-/** CH03 Spilled Blood — health bar replaced by life orbs. */
+/** CH03 Spilled Blood - health bar replaced by life orbs. */
 export const CH03_CHALLENGE_ID = -2066987380
 export const CH03_HEALTH_PER_ORB = 40
 

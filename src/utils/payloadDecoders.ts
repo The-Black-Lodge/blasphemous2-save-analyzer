@@ -98,7 +98,7 @@ const BOSS_VARS = [
 ]
 
 // DLC boss vars from Completion Config (Mea Culpa) + Boss Rush Input Quest Var assets.
-// Not in GameModeManagerConfig.varsOfDeadBossesList — base game only has BS01–BS11 there.
+// Not in GameModeManagerConfig.varsOfDeadBossesList - base game only has BS01-BS11 there.
 const DLC_BOSS_VARS = [
   { id: 10, varID: 234662490, name: "Mater Priora", code: "BS101" },
   { id: 11, varID: 1303537091, name: "Penitent Rogue A", code: "BS102A" },

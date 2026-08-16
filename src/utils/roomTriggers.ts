@@ -28,7 +28,7 @@ export function getRoomTriggerActive(
   return null
 }
 
-/** Pickup collected — persistent trigger flipped on after looting. */
+/** Pickup collected - persistent trigger flipped on after looting. */
 export function isRoomTriggerCollected(
   save: ReadableSaveJson | null,
   roomHash: number,
@@ -37,7 +37,7 @@ export function isRoomTriggerCollected(
   return getRoomTriggerActive(save, roomHash, elementKey) === true
 }
 
-/** Interactable cleared — trigger inactive after use (e.g. Sleeping Daughters). */
+/** Interactable cleared - trigger inactive after use (e.g. Sleeping Daughters). */
 export function isRoomTriggerCleared(
   save: ReadableSaveJson | null,
   roomHash: number,

@@ -60,7 +60,7 @@ export default function CollectibleOfferings() {
                 title={
                   rowComplete
                     ? caption
-                    : `${caption} — not yet completed`
+                    : `${caption} - not yet completed`
                 }
               >
                 <div className="collectible-cell-icon-slot">

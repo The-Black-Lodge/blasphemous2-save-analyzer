@@ -30,7 +30,7 @@ export default function CollectibleLacrimatorio() {
               title={
                 collected
                   ? shrine.caption
-                  : `${shrine.caption} — not yet placed`
+                  : `${shrine.caption} - not yet placed`
               }
             >
               <span>#{shrine.id}</span>

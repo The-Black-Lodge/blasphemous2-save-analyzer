@@ -32,7 +32,7 @@ export default function CollectibleRemembrances() {
               title={
                 collected
                   ? caption
-                  : `${caption} — not yet collected`
+                  : `${caption} - not yet collected`
               }
             >
               <div className="collectible-cell-icon-slot">

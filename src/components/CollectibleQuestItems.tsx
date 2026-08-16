@@ -26,7 +26,9 @@ import CollectibleQuestGroup, {
   type QuestCollection,
 } from "./CollectibleQuestGroup"
 import CollectibleSculptorTools from "./CollectibleSculptorTools"
+import CollectibleTearsOfAtonement from "./CollectibleTearsOfAtonement"
 import { collectibleCollectionSummaries } from "./collectibleCollectionSummaries"
+import tearsOfAtonementData from "../data/tears-of-atonement.json"
 import {
   DELIVERY_TRACKING_NOTE,
   questCollectionSummaries,
@@ -94,6 +96,11 @@ const collectibleSections = [
     key: "sculptor-tools",
     title: sculptorToolsData.title,
     element: <CollectibleSculptorTools />,
+  },
+  {
+    key: "tears-of-atonement",
+    title: tearsOfAtonementData.title,
+    element: <CollectibleTearsOfAtonement />,
   },
   {
     key: "mark-of-martyrdom",
