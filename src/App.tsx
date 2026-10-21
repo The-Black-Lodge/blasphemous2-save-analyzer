@@ -137,41 +137,6 @@ function AppContent() {
               <Component key={id} />
             ))}
           </main>
-          <footer className="app-footer">
-            <span className="footer-text">
-              © {new Date().getFullYear()} {" "}
-              <a
-                href="https://southpawgeek.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                J. A. Guerra
-              </a>
-            </span>
-            <span className="footer-separator">·</span>
-            <a
-              className="app-github-link"
-              href="https://github.com/The-Black-Lodge/blasphemous2-save-analyzer"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="View source on GitHub"
-            >
-              <i
-                className="fa-brands fa-github"
-                aria-hidden="true"
-              />
-            </a>
-            <span className="footer-separator">·</span>
-            <span className="footer-text">
-              <a
-                href="https://diatomravine.com/games"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Diatom Ravine
-              </a>
-            </span>
-          </footer>
         </>
       </AppNavigationContext.Provider>
     </TabContext.Provider>
